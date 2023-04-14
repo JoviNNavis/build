@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6344818, g: 0.85677934, b: 0.80978996, a: 1}
+  m_IndirectSpecularColor: {r: 0.33594182, g: 0.63183933, b: 0.558182, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1990,7 +1990,7 @@ Transform:
   m_GameObject: {fileID: 136021632}
   m_LocalRotation: {x: -0, y: 0.043619405, z: -0, w: 0.9990483}
   m_LocalPosition: {x: 0, y: 1.7500049, z: 0}
-  m_LocalScale: {x: 0.20000003, y: 0.4999999, z: 0.20000003}
+  m_LocalScale: {x: 0.2, y: 0.5, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 431842323}
@@ -11336,7 +11336,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &431842323
 Transform:
   m_ObjectHideFlags: 0
@@ -13215,7 +13215,7 @@ Transform:
   m_GameObject: {fileID: 547279670}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1.2499999, z: 0}
-  m_LocalScale: {x: 0.20000002, y: 0.49999988, z: 0.20000002}
+  m_LocalScale: {x: 0.2, y: 0.5, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 431842323}
@@ -36337,8 +36337,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1482162622}
-  m_LocalRotation: {x: 0, y: 0.15643357, z: 0, w: 0.9876885}
-  m_LocalPosition: {x: -13.73, y: 43, z: -0.39}
+  m_LocalRotation: {x: -0, y: -0.9602354, z: -0, w: -0.27919155}
+  m_LocalPosition: {x: -13.85, y: 43, z: -0.19}
   m_LocalScale: {x: 5.9999995, y: 0.3, z: 5.9999995}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -36352,7 +36352,7 @@ Transform:
   - {fileID: 183566891}
   m_Father: {fileID: 1369896589}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 1458, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 1227.576, z: 0}
 --- !u!114 &1482162624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42229,17 +42229,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 66d5915007be4ce45b5df7006e4b96f7,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.48416737
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66d5915007be4ce45b5df7006e4b96f7,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.4841673
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66d5915007be4ce45b5df7006e4b96f7,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.4841673
+      value: 0.52
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66d5915007be4ce45b5df7006e4b96f7,
         type: 3}
@@ -58667,6 +58667,7 @@ GameObject:
   - component: {fileID: 985168633705316090}
   - component: {fileID: 985168633705316085}
   - component: {fileID: 985168633705316039}
+  - component: {fileID: 985168633705316092}
   m_Layer: 0
   m_Name: CubePath
   m_TagString: Untagged
@@ -58703,6 +58704,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7568027, y: 44.408443, z: 1.5}
   m_Center: {x: 0.37159866, y: 21.868235, z: 0}
+--- !u!114 &985168633705316092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985168633705316089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0f84ee0f26d86f48882434ae3568bca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam1: {fileID: 605208150}
+  cam2: {fileID: 1408766777}
 --- !u!33 &985168633771144361
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -104436,7 +104451,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7098834493173442980}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -853}
+  m_LocalPosition: {x: 0, y: 0, z: -276}
   m_LocalScale: {x: 0.5859375, y: 0.5859375, z: 0.5859375}
   m_ConstrainProportionsScale: 1
   m_Children:
