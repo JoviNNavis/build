@@ -12320,7 +12320,7 @@ MonoBehaviour:
   ai: {fileID: 1920393867}
   BeforeSkybox: {fileID: 0}
   water: {fileID: 122515070}
-  cam: {fileID: 1813662}
+  cam: {fileID: 1408766777}
   button: {fileID: 1617808420}
   playButon: {fileID: 1205800475}
   rewardPanel: {fileID: 364440460}
