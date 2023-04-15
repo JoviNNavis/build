@@ -27,7 +27,7 @@ public class StackScript : MonoBehaviour
         {
 
             Instantiate(blast, transform.position, Quaternion.Euler(-90, 0, 0));
-            stacks.transform.DOMoveY(stacks.transform.position.y - 0.15f, 0.15f, false);
+            stacks.transform.DOMoveY(stacks.transform.position.y - 0.15f, 0.10f, false);
     
             Destroy(other.gameObject);
             Destroy(this.gameObject, 0.1f);

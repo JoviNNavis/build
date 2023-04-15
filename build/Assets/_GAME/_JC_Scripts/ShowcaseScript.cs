@@ -7,7 +7,7 @@ public class ShowcaseScript : MonoBehaviour
     public GameObject oldImg, newImg, arrow;
 
     public GameObject bearModel, cube, pillar, smoke, img1, img2, button, img;
-
+    public GameObject blackscreen;
     public GameObject panelNew;
 
     void Start()
@@ -42,6 +42,7 @@ public class ShowcaseScript : MonoBehaviour
         cube.SetActive(true);
         pillar.SetActive(true);
         img1.SetActive(false);
+       
         img2.SetActive(true);
         StartCoroutine(bearDisable());
     }
@@ -49,7 +50,7 @@ public class ShowcaseScript : MonoBehaviour
     public void close()
     {
         panelNew.SetActive(false);
-       
+        blackscreen.SetActive(false);
     }
 
     IEnumerator bearDisable()
