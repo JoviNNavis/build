@@ -11348,7 +11348,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &431842323
 Transform:
   m_ObjectHideFlags: 0
@@ -12046,7 +12046,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 61752de5e7b24b746908e6e69e189afa, type: 3}
-    m_FontSize: 70
+    m_FontSize: 59
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -12332,9 +12332,10 @@ MonoBehaviour:
   ai: {fileID: 1920393867}
   BeforeSkybox: {fileID: 0}
   water: {fileID: 122515070}
-  cam: {fileID: 1408766777}
-  button: {fileID: 1813662}
+  cam: {fileID: 1813662}
+  button: {fileID: 138320296}
   playButon: {fileID: 1205800475}
+  newButton: {fileID: 1813662}
   rewardPanel: {fileID: 364440460}
   levelPanel: {fileID: 1628282492}
   chestPanel: {fileID: 0}
@@ -36635,7 +36636,7 @@ MonoBehaviour:
   changecolor: 0
   tail: {fileID: 1486550696}
   camAnim: {fileID: 1228945780}
-  knife: {fileID: 0}
+  knife: {fileID: 1817783779}
   _blue: {r: 0, g: 0, b: 0, a: 0}
   purple: {r: 0, g: 0, b: 0, a: 0}
   abovelevel5: 1
@@ -56250,6 +56251,7 @@ MonoBehaviour:
   puntured_ball: {fileID: 0}
   playerCrownSlider: {fileID: 0}
   playerImg: {fileID: 50878900}
+  lessValue: 0
 --- !u!1 &2007699977
 GameObject:
   m_ObjectHideFlags: 0
@@ -58581,6 +58583,7 @@ MonoBehaviour:
     type: 3}
   playerCrownSlider: {fileID: 4118225339579481922}
   playerImg: {fileID: 50878900}
+  lessValue: 0.015
 --- !u!4 &985168633705316088
 Transform:
   m_ObjectHideFlags: 0

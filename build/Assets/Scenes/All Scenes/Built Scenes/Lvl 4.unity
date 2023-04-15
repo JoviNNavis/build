@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1402113, g: 0.7094693, b: 0.9917381, a: 1}
+  m_IndirectSpecularColor: {r: 0.14021131, g: 0.7094693, b: 0.9917381, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -16051,6 +16051,7 @@ MonoBehaviour:
   cam: {fileID: 1408766777}
   button: {fileID: 1813662}
   playButon: {fileID: 1205800475}
+  newButton: {fileID: 0}
   rewardPanel: {fileID: 364440460}
   levelPanel: {fileID: 1628282492}
   chestPanel: {fileID: 0}
@@ -87470,6 +87471,7 @@ MonoBehaviour:
     type: 3}
   playerCrownSlider: {fileID: 72124516695599104}
   playerImg: {fileID: 1029748663}
+  lessValue: 0.0074
 --- !u!1 &8077495833353074168
 GameObject:
   m_ObjectHideFlags: 0
@@ -103057,6 +103059,7 @@ MonoBehaviour:
   puntured_ball: {fileID: 0}
   playerCrownSlider: {fileID: 0}
   playerImg: {fileID: 1029748663}
+  lessValue: 0
 --- !u!1 &8978664900938315446
 GameObject:
   m_ObjectHideFlags: 0

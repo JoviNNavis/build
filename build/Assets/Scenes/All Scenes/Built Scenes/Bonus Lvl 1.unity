@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5638572, g: 0.18723431, b: 0.79310197, a: 1}
+  m_IndirectSpecularColor: {r: 0.56378007, g: 0.18715121, b: 0.7930456, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4345,6 +4345,7 @@ MonoBehaviour:
   cam: {fileID: 1408766777}
   button: {fileID: 2324779176239176551}
   playButon: {fileID: 0}
+  newButton: {fileID: 0}
   rewardPanel: {fileID: 2324779175909874805}
   levelPanel: {fileID: 2324779174643902853}
   chestPanel: {fileID: 469792608}
@@ -10153,7 +10154,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 859733583}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3, y: 0.5, z: -0.53}
+  m_LocalPosition: {x: 3, y: 1.5, z: -0.53}
   m_LocalScale: {x: 2.8973002, y: 0.42205, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -53251,7 +53252,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8208014982978179023}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 5.41, y: 54.6, z: -8.9}
+  m_LocalPosition: {x: 6.44, y: 46.48, z: -8.9}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
