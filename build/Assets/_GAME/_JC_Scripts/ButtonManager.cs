@@ -14,7 +14,7 @@ public class ButtonManager : MonoBehaviour
     public AiScript ai;
     public Material BeforeSkybox;
     public MeshRenderer water;
-    public GameObject cam, button, playButon;
+    public GameObject cam, button, playButon, newButton;
 
     public GameObject rewardPanel, levelPanel, chestPanel, ChestlosePanel, countdownPanel, SculptPanel, knifeSkniPanel;
 
@@ -77,7 +77,7 @@ public class ButtonManager : MonoBehaviour
     {
         cam.SetActive(false);
         SculptPanel.gameObject.SetActive(false);
-        button.gameObject.SetActive(true);  
+        button.gameObject.SetActive(true);
         StartCoroutine(playButton2());
     }
 
@@ -180,7 +180,7 @@ public class ButtonManager : MonoBehaviour
         cam.gameObject.SetActive(true);
         ShowCase.SetActive(false);
         Dirlight.transform.rotation = Quaternion.Euler(50, -30, 0);
-        button.SetActive(true);
+        newButton.SetActive(true);
     }
 
     public void EnableSculptRoom()
@@ -191,7 +191,7 @@ public class ButtonManager : MonoBehaviour
         Dirlight.transform.rotation = Quaternion.Euler(50, -30, 0);
         ShowCase.SetActive(false);
         knifeSkniPanel.SetActive(false);
-        button.SetActive(false);
+        newButton.SetActive(false);
 
     }
 
@@ -203,7 +203,7 @@ public class ButtonManager : MonoBehaviour
         ShowCase.SetActive(true);
         Room.SetActive(false);
         knifeSkniPanel.SetActive(false);
-        button.SetActive(false);
+        newButton.SetActive(false);
 
     }
 

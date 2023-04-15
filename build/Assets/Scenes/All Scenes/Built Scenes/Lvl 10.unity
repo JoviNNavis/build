@@ -17884,6 +17884,7 @@ MonoBehaviour:
   cam: {fileID: 1408766777}
   button: {fileID: 2512180901353181794}
   playButon: {fileID: 2512180902405730535}
+  newButton: {fileID: 2512180901353181794}
   rewardPanel: {fileID: 2512180901023978864}
   levelPanel: {fileID: 2512180901907751040}
   chestPanel: {fileID: 0}
@@ -34991,7 +34992,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1507046141}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0832, y: 2.29, z: -0.4262}
+  m_LocalPosition: {x: 0.104, y: 2.29, z: -0.476}
   m_LocalScale: {x: 0.092274, y: 1.9772999, z: 0.092274}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41593,7 +41594,7 @@ MonoBehaviour:
   newBallPos: {fileID: 752006272}
   playerImg: {fileID: 2512180901404649288}
   playerchangecolor: 0
-  fillValue: 0.0078
+  fillValue: 0.0076
   counterText: {fileID: 2512180900354936356}
 --- !u!1 &1819460059
 GameObject:
@@ -44229,6 +44230,7 @@ MonoBehaviour:
     type: 3}
   playerCrownSlider: {fileID: 2972000508235066574}
   playerImg: {fileID: 2512180901404649288}
+  lessValue: 0
 --- !u!1 &71928137487969568
 GameObject:
   m_ObjectHideFlags: 0
@@ -70283,7 +70285,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 61752de5e7b24b746908e6e69e189afa, type: 3}
-    m_FontSize: 70
+    m_FontSize: 59
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -109633,6 +109635,7 @@ MonoBehaviour:
     type: 3}
   playerCrownSlider: {fileID: 2972000508235066574}
   playerImg: {fileID: 2512180901404649288}
+  lessValue: 0.0076
 --- !u!1 &3872512708934110312
 GameObject:
   m_ObjectHideFlags: 0
@@ -135934,7 +135937,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.4514627, y: 0.27449435, z: 0.4740191}
-  m_Center: {x: 2.0328407, y: 0.014375776, z: -0.10242489}
+  m_Center: {x: 2.0328407, y: -0.1, z: -0.10242489}
 --- !u!4 &6369049489408799552
 Transform:
   m_ObjectHideFlags: 0

@@ -107,7 +107,7 @@ public class KnifeScript1 : MonoBehaviour
 
     IEnumerator txtDisable()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.55f);
         countText.SetActive(false);
     }
 }
