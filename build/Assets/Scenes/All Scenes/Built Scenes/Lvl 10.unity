@@ -17473,7 +17473,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &431842323
 Transform:
   m_ObjectHideFlags: 0
@@ -154685,11 +154685,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 2913950279661660007}
-  coin: {fileID: 0}
+  coin: {fileID: 2512180902174797847}
   glow: {fileID: 1782367768}
   confetti: {fileID: 1843631585}
-  rewardPanel: {fileID: 0}
-  noThanksButton: {fileID: 0}
+  rewardPanel: {fileID: 2512180901023978864}
+  noThanksButton: {fileID: 7019929383493267137}
 --- !u!1 &9078928636185610898
 GameObject:
   m_ObjectHideFlags: 0
