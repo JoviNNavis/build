@@ -133,9 +133,24 @@ public class ButtonManager : MonoBehaviour
         newImg.SetActive(true);
     }
 
-    public void ExtraReward()
+    public void ExtraRewardx2()
     {
         rewardPanel.SetActive(false);
+        cashScript.cashValue += 1050;
+        countdownPanel.SetActive(true);
+    }
+
+    public void ExtraRewardx3()
+    {
+        rewardPanel.SetActive(false);
+        cashScript.cashValue += 1575;
+        countdownPanel.SetActive(true);
+    }
+
+    public void ExtraRewardx5()
+    {
+        rewardPanel.SetActive(false);
+        cashScript.cashValue += 2625;
         countdownPanel.SetActive(true);
     }
 

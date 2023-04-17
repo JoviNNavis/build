@@ -30,7 +30,6 @@ public class ExtraReward : MonoBehaviour
         if(countValue <= 0)
         {
             countValue = 5;
-            cashScript.cashValue += 1100;
             thisPanel.SetActive(false);
             newPanel.SetActive(true);
         }
