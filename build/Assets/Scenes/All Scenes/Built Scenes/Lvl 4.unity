@@ -46225,7 +46225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 114c102cfd74d69448699bd051a00108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upForce: 500
+  upForce: 600
   powerup_mode: 0
   _fire: {fileID: 2119057435}
   skyboxbefore: {fileID: 0}
@@ -52966,7 +52966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isaicolor: 0
-  upForce: 500
+  upForce: 650
   level5above: 0
   fire: {fileID: 1659589742}
 --- !u!95 &1570535875

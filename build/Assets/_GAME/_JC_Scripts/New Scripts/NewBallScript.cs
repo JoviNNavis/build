@@ -136,7 +136,7 @@ public class NewBallScript : MonoBehaviour
                 camAnim.SetBool("Move", true);
               FindObjectOfType<ButtonManager>().changecolor = true;
               
-                float _newUpforce = upForce + 150;
+                float _newUpforce = upForce + 200;
        
              
                 StartCoroutine(poweranimations());
