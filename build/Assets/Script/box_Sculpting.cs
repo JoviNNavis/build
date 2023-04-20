@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 using DG.Tweening;
 
 public class box_Sculpting : MonoBehaviour
@@ -10,6 +11,7 @@ public class box_Sculpting : MonoBehaviour
     public TextMeshProUGUI moneyText;
     public TextMeshProUGUI powertext;
     // public ParticleSystem confitee;
+    public int noofcubes;
     public GameObject fingeranim;
     public int Power_coincount;
     public int money_coincount;
@@ -21,10 +23,15 @@ public class box_Sculpting : MonoBehaviour
     public Animator knife;
     public Animator sword;
     bool _isautomatic;
+[SerializeField]   private float incval;
     public ParticleSystem falling;
     public GameObject[] positions;
     public MeshRenderer mesh;
     public List<Transform> cubeposes;
+    public List<MeshCollider> colliders;
+
+    public Image filbar;
+    public Image image;
 
     public GameObject Panel;
     void Start()
@@ -32,18 +39,16 @@ public class box_Sculpting : MonoBehaviour
         knife.enabled = false;
         sword.enabled = false;
         _isautomatic = true;
+       
+        Debug.Log(incval);
         moneyText.text = money_coincount.ToString();
         speedtext.text = speed_coincount.ToString();
         powertext.text = Power_coincount.ToString();
         fingeranim.SetActive(true);
-       
+        filbar.fillAmount = 0;
     }
 
-    public void SPEED()
-    {
-      
 
-    }
 
     public void power()
     {
@@ -55,7 +60,6 @@ public class box_Sculpting : MonoBehaviour
             moneyText.text = ((int)money_coincount).ToString();
         }
      
-       // powertext
     }
     IEnumerator knifeanim()
     {
@@ -83,6 +87,16 @@ public class box_Sculpting : MonoBehaviour
             StartCoroutine(automatic());
         }
     }
+    IEnumerator animdelay()
+    {
+        for(int i = 0; i <= colliders.Count; i++)
+        {
+            colliders[i].enabled = false;
+            yield return new WaitForSeconds(0.3f);
+            colliders[i].enabled = true;
+        }
+     
+    }
     void clicked()
     {
         if (Input.GetMouseButtonDown(0))
@@ -103,24 +117,26 @@ public class box_Sculpting : MonoBehaviour
                 if (hit.collider != null)
                 {
                   GameObject  target = hit.collider.gameObject;
-
+                   // filbar.fillAmount += incval;
                     StartCoroutine(knifeanim());
-
+                
                     if (target.tag == "TopRightBlocks")
                     {
-                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.localPosition + new Vector3(2.2f,0,0f), 2, 1, 0.3f, false);
-                        FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.localPosition + new Vector3(2.2f, 0.0f, 0f), 2, 1, 0.3f, false);
+              
+                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(1.2f, 0.3f, 0.5f), 5, 1, 0.3f, false);
+                        FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(1.2f, 0.3f, 0.5f), 5, 1, 0.3f, false);
                         FindObjectOfType<clicks>().knife.transform.DOLocalRotate(new Vector3(-0, 150, -18), 0.2f, RotateMode.Fast);
                         FindObjectOfType<clicks>().sword.transform.DOLocalRotate(new Vector3(-0, 150, -25), 0.2f, RotateMode.Fast);
-
+                        
                         money_coincount += 20;
                         moneyText.text = money_coincount.ToString();
                     }
 
                        if (target.tag == "TopLeftBlocks")
                     {
-                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.localPosition+ new Vector3(-0, -0.6f, -0.31f), 1, 1, 0.3f, false);
-                        FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.localPosition + new Vector3(-0, -0.6f, -0.31f), 1, 1, 0.3f, false);
+
+                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.position+ new Vector3(-1.2f, 0.3f, -0.31f), 5, 1, 0.3f, false);
+                        FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(-1.2f, 0.3f, -0.31f), 5, 1, 0.3f, false);
 
                         FindObjectOfType<clicks>().knife.transform.DOLocalRotate(new Vector3(-0, 0, -18), 0.2f, RotateMode.Fast);
                         FindObjectOfType<clicks>().sword.transform.DOLocalRotate(new Vector3(-0, 0, -25), 0.2f, RotateMode.Fast);
@@ -131,8 +147,9 @@ public class box_Sculpting : MonoBehaviour
 
                        if (target.tag == "DownRightBlocks")
                     {
-                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.localPosition + new Vector3(2.2f, -1.02f, 0f), 1, 1, 0.3f, false);
-                        FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.localPosition + new Vector3(2.2f, -1.02f, 0f), 1, 1, 0.3f, false);
+        
+                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(1.2f, -0.6f, 0f), 5, 1, 0.3f, false);
+                        FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(1.2f, -0.6f, 0f), 5, 1, 0.3f, false);
 
                         FindObjectOfType<clicks>().knife.transform.DOLocalRotate(new Vector3(-0, -150, 18), 0.2f, RotateMode.Fast);
                         FindObjectOfType<clicks>().sword.transform.DOLocalRotate(new Vector3(-0, -150, 25), 0.2f, RotateMode.Fast);
@@ -142,8 +159,9 @@ public class box_Sculpting : MonoBehaviour
                     }
                        if (target.tag == "DownLeftBlocks")
                     {
-                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.localPosition+new Vector3(0, -0.8f, -0.51f),1,1, 0.3f, false);
-                        FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.localPosition + new Vector3(0, -0.8f, -0.51f), 1, 1, 0.3f, false);
+             
+                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.position+new Vector3(-1.2f, -0.6f, -0), 5, 1, 0.3f, false);
+                        FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(-1.2f, -0.6f, -0), 5, 1, 0.3f, false);
 
                         FindObjectOfType<clicks>().knife.transform.DOLocalRotate(new Vector3(-0, -0, 18), 0.2f, RotateMode.Fast);
                         FindObjectOfType<clicks>().sword.transform.DOLocalRotate(new Vector3(-0, -0, 25), 0.2f, RotateMode.Fast);
@@ -154,8 +172,9 @@ public class box_Sculpting : MonoBehaviour
                     }
                     if (target.tag == "MiddleBlocks")
                     {
-                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.localPosition + new Vector3(-1.0f, -0.0f, 0f), 1, 1, 0.3f, false);
-                        FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.localPosition + new Vector3(-1.0f, -0.0f, 0f), 1, 1, 0.3f, false);
+              
+                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(-1.2f, -0.0f, 0f), 5, 1, 0.3f, false);
+                        FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(-1.2f, -0.0f, 0f), 5, 1, 0.3f, false);
 
 
                     }
@@ -170,23 +189,23 @@ public class box_Sculpting : MonoBehaviour
 
     IEnumerator win()
     {
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(3f);
         Panel.SetActive(true);
     }
 
-    IEnumerator movement()
-    {
-        yield return new WaitForSeconds(0.1f);
-    }
+    
     void Update()
     {
-
+        if(cubeposes.Count == 0){
+            Destroy(image);
+        }
+       // filbar.fillAmount = 1 / cubeposes.Count;
         if(cubeposes == null)
         {
             cubeposes.Clear();
         }
         time += Time.deltaTime;
-        movement();
+   
         if ((time >= 4.9f))
         {
             randno += 1;

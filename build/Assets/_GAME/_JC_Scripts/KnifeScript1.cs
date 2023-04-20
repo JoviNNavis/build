@@ -26,7 +26,7 @@ public class KnifeScript1 : MonoBehaviour
 
     void Start()
     {
-        fireRate = 11;
+        fireRate = 10.5f;
     }
 
     // Update is called once per frame

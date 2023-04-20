@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class ShowcaseScript : MonoBehaviour
@@ -9,11 +10,14 @@ public class ShowcaseScript : MonoBehaviour
     public GameObject bearModel, cube, pillar, smoke, img1, img2, button, img;
     public GameObject blackscreen;
     public GameObject panelNew;
-
+    public GameObject downbar;
+    public Button _bear;
     void Start()
     {
+        downbar.SetActive(false);
         StartCoroutine(startGame());
-    }
+        _bear.interactable = false;
+            }
 
     // Update is called once per frame
     void Update()
@@ -38,7 +42,7 @@ public class ShowcaseScript : MonoBehaviour
         newImg.SetActive(false);
         arrow.SetActive(false);
         bearModel.SetActive(true);
-        smoke.SetActive(true);
+        downbar.SetActive(true);
         cube.SetActive(true);
         pillar.SetActive(true);
         img1.SetActive(false);
@@ -46,7 +50,16 @@ public class ShowcaseScript : MonoBehaviour
         img2.SetActive(true);
         StartCoroutine(bearDisable());
     }
+    public void _pillar()
+    {
+        smoke.SetActive(true);
+        cube.SetActive(true);
+        smoke.SetActive(true);
+        pillar.SetActive(true);
+        img1.SetActive(false);
+        _bear.interactable = true;
 
+    }
     public void close()
     {
         panelNew.SetActive(false);

@@ -7,14 +7,20 @@ public class Poles_Script : MonoBehaviour
 {
     public List<GameObject> poles;
     public List<GameObject> ROPES;
+    public List<GameObject> _coins;
     void Start()
     {
         for (int i = 0; i < ROPES.Count; i++)
         {
             ROPES[i].SetActive(false);
         }
-       
+        for (int i = 0; i < _coins.Count; i++)
+        {
+            _coins[i].SetActive(false);
+        }
+
         upgrade_poles();
+      StartCoroutine(coinsupgrade());
     }
     IEnumerator openmoles()
     {
@@ -30,7 +36,17 @@ public class Poles_Script : MonoBehaviour
 
         }
     }
-    void upgrade_poles()
+    IEnumerator coinsupgrade()
+    {
+
+        for (int i = 0; i < _coins.Count; i++)
+        {
+            _coins[i].SetActive(true);
+            yield return new WaitForSeconds(30);
+
+        }
+    }
+        void upgrade_poles()
     {
         StartCoroutine(openmoles());
     }

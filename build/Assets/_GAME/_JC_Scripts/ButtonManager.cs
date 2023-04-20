@@ -219,7 +219,7 @@ public class ButtonManager : MonoBehaviour
         Room.SetActive(false);
         knifeSkniPanel.SetActive(false);
         newButton.SetActive(false);
-
+       // SceneManager.LoadScene(8);
     }
 
     public void showCaseforShowcaseLvl()

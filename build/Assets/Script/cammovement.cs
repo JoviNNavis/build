@@ -6,6 +6,8 @@ public class cammovement : MonoBehaviour
     [SerializeField] private Camera cam;
     bool toucheddown, touchedup;
     [SerializeField] public Transform target;
+    [SerializeField] public Transform targetpos;
+
     [SerializeField] private float distanceToTarget ;
     public float axis;
     private Vector3 previousPosition;
@@ -74,8 +76,8 @@ public class cammovement : MonoBehaviour
                 cam.transform.Rotate(new Vector3(0, 0, 0), rotationAroundXAxispos);
              
             }
-            
-            cam.transform.position = target.position+new Vector3(0,-3,0);
+
+            cam.transform.position = target.localPosition+new Vector3(0.6f,-2.04f,0.1f) ;
             cam.transform.Translate(new Vector3(0, 0, -distanceToTarget));
 
             previousPosition = newPosition;
