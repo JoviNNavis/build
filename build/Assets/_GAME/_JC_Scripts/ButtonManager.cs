@@ -6,20 +6,21 @@ using DG.Tweening;
 
 public class ButtonManager : MonoBehaviour
 {
-    public KnifeScript1 playerKnife;
+   public KnifeScript1 playerKnife;
 
     public KnifeScript knifePlayer2;
+    public KnifeScriptSword knifeplayerrr;
     public bool isaicolor;
     public bool changecolor;
     public AiScript ai;
     public Material BeforeSkybox;
     public MeshRenderer water;
     public GameObject cam, button, playButon, newButton;
-
-    public GameObject rewardPanel, levelPanel, chestPanel, ChestlosePanel, countdownPanel, SculptPanel, knifeSkniPanel;
+    public bool isskin;
+    public GameObject rewardPanel, levelPanel, chestPanel, ChestlosePanel, countdownPanel,countdownpanel_ad, SculptPanel, knifeSkniPanel;
 
     public BonusKnifeScript bonusKnife;
-
+    public GameObject pressbutton;
     public UpScript up;
 
     public GameObject newPanel1, newPanel2;
@@ -221,7 +222,23 @@ public class ButtonManager : MonoBehaviour
         newButton.SetActive(false);
        // SceneManager.LoadScene(8);
     }
+    public void knieskin(bool isclicked)
+    {
+        mid.isskin = isclicked;
 
+        if (mid.isskin)
+        {
+            countdownpanel_ad.SetActive(true);
+
+        }
+        else
+        {
+            countdownpanel_ad.SetActive(false);
+        }
+       
+    }
+
+    
     public void showCaseforShowcaseLvl()
     {
         knifeSkniPanel.SetActive(false);
@@ -238,17 +255,37 @@ public class ButtonManager : MonoBehaviour
     IEnumerator playButton11()
     {
         yield return new WaitForSeconds(2f);
-        knifePlayer2.enabled = true;
+        if (mid.isskin)
+        {
+            knifePlayer2.enabled = false;
+            knifeplayerrr.enabled = true;
+
+        }
+        else
+        {
+            knifeplayerrr.enabled = false;
+            knifePlayer2.enabled = true;
+        }
         ai.enabled = true;
-        //playButon.SetActive(true);
+   
     }
 
     IEnumerator playButton2()
     {
         yield return new WaitForSeconds(5.5f);
-        knifePlayer2.enabled = true;
+        if (mid.isskin)
+        {
+            knifePlayer2.enabled = false;
+            knifeplayerrr.enabled = true;
+
+        }
+        else
+        {
+            knifeplayerrr.enabled = false;
+            knifePlayer2.enabled = true;
+        }
         ai.enabled = true;
-        //playButon.SetActive(true);
+       
     }
 
     IEnumerator playButton3()

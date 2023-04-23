@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class TEST1 : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject panel;
+    public GameObject CUBE, SPEHERE;
+   public bool isskin;
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    public void canvason(GameObject cUBE)
+    {
+        panel.SetActive(true);
+    }
+
+  
     void Update()
     {
         
+       
     }
 }

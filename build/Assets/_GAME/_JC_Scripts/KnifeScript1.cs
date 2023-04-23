@@ -29,7 +29,7 @@ public class KnifeScript1 : MonoBehaviour
         fireRate = 10.5f;
     }
 
-    // Update is called once per frame
+ 
     void Update()
     {
         ischangecolor = FindObjectOfType<ButtonManager>().changecolor;

@@ -22,7 +22,7 @@ public class NewBallScript : MonoBehaviour
     public Animator camAnim;
 
     public KnifeScript knife;
-    
+    public KnifeScriptSword sword;
 
     private MeshRenderer _knife;
   public   Color _blue;
@@ -31,14 +31,7 @@ public class NewBallScript : MonoBehaviour
     int num,max;
     void Start()
     {
-        //if (abovelevel5)
-        //{
-        //    RenderSettings.skybox = skyboxafter5;
-        //}
-        //else
-        //{
-        //    RenderSettings.skybox = skyboxbefore5;
-        //}
+      
 
         if (level <= 4)
         {

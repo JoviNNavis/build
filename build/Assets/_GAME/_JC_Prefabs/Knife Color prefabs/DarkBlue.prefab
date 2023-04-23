@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 2590846551577548757}
   - component: {fileID: 2590846551577548754}
   - component: {fileID: 699753498705485528}
-  - component: {fileID: 9060527234637685904}
   - component: {fileID: 3346538960117507289}
   - component: {fileID: 6113990560122466801}
   - component: {fileID: 1079879568917017465}
+  - component: {fileID: 2285002136286765654}
   m_Layer: 0
   m_Name: DarkBlue
   m_TagString: Knife
@@ -86,21 +86,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.08
   m_Center: {x: 0.06, y: -0.14, z: -0.12}
---- !u!114 &9060527234637685904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2590846551577548752}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38505be8906fabf419d4eea5ea953139, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 8798149283435879309}
-  waitTime: 0.5
-  rotz: -7
 --- !u!114 &3346538960117507289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,6 +125,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.08
   m_Center: {x: 0.06, y: -0.14, z: -0.12}
+--- !u!114 &2285002136286765654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2590846551577548752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0d7ab12ab0fcd43838e6d6e3a8e6d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 8798149283435879309}
+  waitTime: 0
+  rotz: 0
 --- !u!1 &2899988264808368394
 GameObject:
   m_ObjectHideFlags: 0

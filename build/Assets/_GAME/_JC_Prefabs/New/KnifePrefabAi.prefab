@@ -191,9 +191,8 @@ GameObject:
   m_Component:
   - component: {fileID: 648605147286977979}
   - component: {fileID: 648605147286977976}
-  - component: {fileID: 648605147286977977}
-  - component: {fileID: 648605147286977862}
   - component: {fileID: 648605147286977863}
+  - component: {fileID: 1869211662}
   m_Layer: 0
   m_Name: KnifePrefabAi
   m_TagString: DKnife
@@ -231,41 +230,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.4514627, y: 0.27449435, z: 0.4740191}
   m_Center: {x: 2.0328407, y: 0.014375776, z: -0.10242489}
---- !u!95 &648605147286977977
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 648605147286977978}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5a6e094a8d2fc09468b5016670815432, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &648605147286977862
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 648605147286977978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38505be8906fabf419d4eea5ea953139, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 648605147286977977}
-  waitTime: 0.25
-  rotz: 7
 --- !u!114 &648605147286977863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,6 +243,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
+--- !u!114 &1869211662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648605147286977978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0d7ab12ab0fcd43838e6d6e3a8e6d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 3215998281436771439}
+  waitTime: 0
+  rotz: 0
 --- !u!1 &1821035425602220367
 GameObject:
   m_ObjectHideFlags: 0
@@ -503,7 +482,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5864573151599437325}
   - component: {fileID: 5864573151599437323}
-  - component: {fileID: 5864573151599437321}
   - component: {fileID: 5864573151599437320}
   m_Layer: 0
   m_Name: KnifePrefab
@@ -542,21 +520,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.4514627, y: 0.27449435, z: 0.4740191}
   m_Center: {x: 2.0328407, y: 0.014375776, z: -0.10242489}
---- !u!114 &5864573151599437321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5864573151599437326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38505be8906fabf419d4eea5ea953139, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 3215998281436771439}
-  waitTime: 2
-  rotz: 0
 --- !u!114 &5864573151599437320
 MonoBehaviour:
   m_ObjectHideFlags: 0

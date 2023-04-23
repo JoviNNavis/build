@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ShowcaseScript : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class ShowcaseScript : MonoBehaviour
 
     public GameObject bearModel, cube, pillar, smoke, img1, img2, button, img;
     public GameObject blackscreen;
+    public GameObject countdownpanel;
     public GameObject panelNew;
     public GameObject downbar;
     public Button _bear;
@@ -50,6 +52,12 @@ public class ShowcaseScript : MonoBehaviour
         img2.SetActive(true);
         StartCoroutine(bearDisable());
     }
+   public void nextswordlevel(bool isclicked)
+    {
+
+       mid.isskin = isclicked;
+        StartCoroutine(countdownpnl());
+    }
     public void _pillar()
     {
         smoke.SetActive(true);
@@ -73,6 +81,13 @@ public class ShowcaseScript : MonoBehaviour
         img.SetActive(false);
         yield return new WaitForSeconds(1f);
         panelNew.SetActive(true);
+    }
+    IEnumerator countdownpnl()
+    {
+        countdownpanel.SetActive(true);
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
     }
 
 }

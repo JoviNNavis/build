@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -2123270945108576538}
   - component: {fileID: 5183434124251210249}
   - component: {fileID: 6703869237653830027}
-  - component: {fileID: 7035668023187193128}
+  - component: {fileID: 3309155889213271539}
   m_Layer: 0
   m_Name: pink
   m_TagString: AiKnife
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
---- !u!114 &7035668023187193128
+--- !u!114 &3309155889213271539
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,12 +115,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2590846551577548752}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38505be8906fabf419d4eea5ea953139, type: 3}
+  m_Script: {fileID: 11500000, guid: ec0d7ab12ab0fcd43838e6d6e3a8e6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 2327637210817777342}
-  waitTime: 0.5
-  rotz: -7
+  waitTime: 0
+  rotz: 0
 --- !u!1 &2899988264808368394
 GameObject:
   m_ObjectHideFlags: 0
