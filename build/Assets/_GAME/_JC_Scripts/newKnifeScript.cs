@@ -15,12 +15,12 @@ public class newKnifeScript : MonoBehaviour
     [SerializeField] private float nextfireRate;
     public float xpos;
     public GameObject knife;
-
+    public GameObject sword;
     public Text knifeCountText;
     public int knifeCount;
 
     public float spanwPosy;
-
+    public GameObject before_knife, after_Knife;
     void Start()
     {
         xpos = gameObject.transform.position.x - 2f;
@@ -30,6 +30,17 @@ public class newKnifeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (mid.isskin)
+        {
+            after_Knife.SetActive(true);
+            before_knife.SetActive(false);
+        }
+        else
+        {
+            after_Knife.SetActive(false);
+            before_knife.SetActive(true);
+        }
         knifeCountText.text = "" + knifeCount;
         if(knifeCount == 0)
         {
@@ -71,7 +82,17 @@ public class newKnifeScript : MonoBehaviour
 
         if (fireTime >= nextfireRate)
         {
-            Instantiate(knife, new Vector3(xpos, spanwPosy, transform.localPosition.z), Quaternion.Euler(-90, 0, 0));
+            if (mid.isskin)
+            {
+
+                Instantiate(sword, new Vector3(xpos, spanwPosy, transform.localPosition.z), Quaternion.Euler(-90, 0, 0));
+
+            }
+            else
+            {
+                Instantiate(knife, new Vector3(xpos, spanwPosy, transform.localPosition.z), Quaternion.Euler(-90, 0, 0));
+
+            }
             knifeCount -= 1;
             transform.rotation = Quaternion.Euler(90, -180, 0);
             fireTime = 0;

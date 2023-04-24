@@ -18,7 +18,7 @@ public class ButtonManager : MonoBehaviour
     public GameObject cam, button, playButon, newButton;
     public bool isskin;
     public GameObject rewardPanel, levelPanel, chestPanel, ChestlosePanel, countdownPanel,countdownpanel_ad, SculptPanel, knifeSkniPanel;
-
+    bool ispresed;
     public BonusKnifeScript bonusKnife;
     public GameObject pressbutton;
     public UpScript up;
@@ -43,7 +43,17 @@ public class ButtonManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (mid.isskin)
+        {
+            knifePlayer2.enabled = false;
+            knifeplayerrr.enabled = true;
+
+        }
+        else
+        {
+            knifeplayerrr.enabled = false;
+            knifePlayer2.enabled = true;
+        }
     }
 
     public void gameStart1()  //lvl 1
@@ -87,6 +97,7 @@ public class ButtonManager : MonoBehaviour
         cam.SetActive(false);
         button.gameObject.SetActive(false);
         SculptPanel.gameObject.SetActive(false);
+        ispresed = true;
         StartCoroutine(playButton11());
     }
 
@@ -254,6 +265,7 @@ public class ButtonManager : MonoBehaviour
 
     IEnumerator playButton11()
     {
+        ispresed = true;
         yield return new WaitForSeconds(2f);
         if (mid.isskin)
         {

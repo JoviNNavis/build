@@ -71,7 +71,7 @@ MonoBehaviour:
   tower: {fileID: 0}
   drops: {fileID: 2972288043886553753, guid: 242ef5c18410a6e4fbe21f0290d74aa8, type: 3}
   plane: {fileID: 3982792686158755893}
-  anim: {fileID: 0}
+  anim: {fileID: 8146402862647615204}
   knife: {fileID: 0}
 --- !u!135 &699753498705485528
 SphereCollider:

@@ -256,6 +256,8 @@ MonoBehaviour:
   changecolor: 0
   tail: {fileID: 2857406669346811758}
   camAnim: {fileID: 4056342948515322414, guid: da7badd321b15394988a9a39e1d82058, type: 3}
+  knife: {fileID: 1434514867130457378, guid: 1b98ebbe5b368554c9cc99a2836bec22, type: 3}
+  sword: {fileID: 1434514867130457381, guid: 1b98ebbe5b368554c9cc99a2836bec22, type: 3}
   _blue: {r: 0, g: 0, b: 0, a: 0}
   purple: {r: 0, g: 0, b: 0, a: 0}
   abovelevel5: 0

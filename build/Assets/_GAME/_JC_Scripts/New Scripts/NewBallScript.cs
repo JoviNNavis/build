@@ -21,8 +21,8 @@ public class NewBallScript : MonoBehaviour
 
     public Animator camAnim;
 
-    public KnifeScript knife;
-    public KnifeScriptSword sword;
+    //public KnifeScript knife;
+  //  public KnifeScriptSword sword;
 
     private MeshRenderer _knife;
   public   Color _blue;
