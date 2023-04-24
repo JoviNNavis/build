@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1402113, g: 0.7094693, b: 0.9917381, a: 1}
+  m_IndirectSpecularColor: {r: 0.14021131, g: 0.7094693, b: 0.9917381, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3768,9 +3768,12 @@ MonoBehaviour:
   nextfireRate: 1
   xpos: 0
   knife: {fileID: 2590846551577548752, guid: fbaaa5070a09c644da0b3eea77b89068, type: 3}
+  sword: {fileID: 0}
   knifeCountText: {fileID: 1925368879}
   knifeCount: 50
   spanwPosy: 0
+  before_knife: {fileID: 0}
+  after_Knife: {fileID: 0}
 --- !u!1 &284185179
 GameObject:
   m_ObjectHideFlags: 0
@@ -11891,6 +11894,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerKnife: {fileID: 0}
   knifePlayer2: {fileID: 0}
+  knifeplayerrr: {fileID: 0}
   isaicolor: 0
   changecolor: 0
   ai: {fileID: 0}
@@ -11900,15 +11904,19 @@ MonoBehaviour:
   button: {fileID: 1813662}
   playButon: {fileID: 1205800475}
   newButton: {fileID: 0}
+  isskin: 0
   rewardPanel: {fileID: 364440460}
   levelPanel: {fileID: 1628282492}
   chestPanel: {fileID: 0}
   ChestlosePanel: {fileID: 0}
   countdownPanel: {fileID: 0}
+  countdownpanel_ad: {fileID: 0}
   SculptPanel: {fileID: 0}
   knifeSkniPanel: {fileID: 0}
   bonusKnife: {fileID: 0}
+  pressbutton: {fileID: 0}
   up: {fileID: 0}
+  isbelowlevel5: 0
   newPanel1: {fileID: 0}
   newPanel2: {fileID: 0}
   arrow: {fileID: 0}
@@ -12267,6 +12275,7 @@ MonoBehaviour:
   stack: {fileID: 431842322}
   balls: {fileID: 1482162624}
   newKnife: {fileID: 280337304}
+  newknife2: {fileID: 0}
 --- !u!1 &526551477
 GameObject:
   m_ObjectHideFlags: 0
@@ -12768,6 +12777,82 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!1 &552172898
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 552172899}
+  - component: {fileID: 552172901}
+  - component: {fileID: 552172900}
+  m_Layer: 5
+  m_Name: Image (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &552172899
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552172898}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.2827998, y: 1.2828001, z: 1.2828001}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1879804015}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 126, y: 154}
+  m_SizeDelta: {x: 200, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &552172900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552172898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 10a0249fd2a212f4986d09a5ceae42be, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &552172901
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552172898}
+  m_CullTransparentMesh: 1
 --- !u!1 &555768242
 GameObject:
   m_ObjectHideFlags: 0
@@ -13000,7 +13085,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -343, y: -80.00012}
+  m_AnchoredPosition: {x: -343, y: -80}
   m_SizeDelta: {x: 380.8, y: 354.59998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &587781870
@@ -15502,6 +15587,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 809170303}
+  anim2: {fileID: 0}
+  knife: {fileID: 0}
+  sword: {fileID: 0}
+  kniferot: {fileID: 0}
+  swordrot: {fileID: 0}
   waitTime: 0.25
   rotz: 0
 --- !u!1 &811027089
@@ -24688,12 +24778,13 @@ RectTransform:
   m_Children:
   - {fileID: 334370800}
   - {fileID: 1889442378}
+  - {fileID: 1258565016}
   m_Father: {fileID: 212066013}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 108, y: -80.00012}
+  m_AnchoredPosition: {x: 108, y: -80}
   m_SizeDelta: {x: 380.8, y: 354.59998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1166371222
@@ -25852,6 +25943,82 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!1 &1258565015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1258565016}
+  - component: {fileID: 1258565018}
+  - component: {fileID: 1258565017}
+  m_Layer: 5
+  m_Name: Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1258565016
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258565015}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.2828, y: 1.2828, z: 1.2828}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1166371220}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 153, y: 154}
+  m_SizeDelta: {x: 200, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1258565017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258565015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 10a0249fd2a212f4986d09a5ceae42be, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1258565018
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258565015}
+  m_CullTransparentMesh: 1
 --- !u!1 &1262626395
 GameObject:
   m_ObjectHideFlags: 0
@@ -29014,6 +29181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knife: {fileID: 0}
+  knife1: {fileID: 0}
   isOver: 0
   losePanel: {fileID: 0}
   Balls: []
@@ -37192,6 +37360,7 @@ RectTransform:
   m_Children:
   - {fileID: 119250985}
   - {fileID: 607764560}
+  - {fileID: 552172899}
   m_Father: {fileID: 212066013}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -54585,6 +54754,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 4192906698190301022}
+  anim2: {fileID: 0}
+  knife: {fileID: 0}
+  sword: {fileID: 0}
+  kniferot: {fileID: 0}
+  swordrot: {fileID: 0}
   waitTime: 0.25
   rotz: 0
 --- !u!95 &4192906698190301022
