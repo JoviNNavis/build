@@ -12579,6 +12579,7 @@ MonoBehaviour:
   bonusKnife: {fileID: 0}
   pressbutton: {fileID: 0}
   up: {fileID: 0}
+  isbelowlevel5: 0
   newPanel1: {fileID: 0}
   newPanel2: {fileID: 0}
   arrow: {fileID: 0}
@@ -12937,6 +12938,7 @@ MonoBehaviour:
   stack: {fileID: 431842322}
   balls: {fileID: 1482162624}
   newKnife: {fileID: 280337304}
+  newknife2: {fileID: 0}
 --- !u!1 &526551477
 GameObject:
   m_ObjectHideFlags: 0
@@ -13780,7 +13782,7 @@ PrefabInstance:
     - target: {fileID: 648605147286977979, guid: 9c9d49157211ff9459f8a583a8f6fe4a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.197
+      value: 0.029
       objectReference: {fileID: 0}
     - target: {fileID: 648605147286977979, guid: 9c9d49157211ff9459f8a583a8f6fe4a,
         type: 3}
@@ -37072,6 +37074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knife: {fileID: 280337304}
+  knife1: {fileID: 0}
   isOver: 0
   losePanel: {fileID: 4879302394055608924}
   Balls:
@@ -64315,8 +64318,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1622307787670745380}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.581, y: 0.274, z: 0.22}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.581, y: 0.189, z: 0.041}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

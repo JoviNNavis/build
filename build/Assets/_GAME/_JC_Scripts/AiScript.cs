@@ -37,7 +37,7 @@ public class AiScript : MonoBehaviour
     {
         transform.Rotate(0.5f, 0, 0);
         aicolor = FindObjectOfType<ButtonManager>().isaicolor;
-        rndclr = Random.Range(0, knifemat.Length-1);
+       
     }
 
     IEnumerator shoot()
@@ -59,8 +59,10 @@ public class AiScript : MonoBehaviour
             if (aicolor)
             {
 
-                GameObject aiobject = Instantiate(knifemat[rndclr-1], transform.position, Quaternion.Euler(0, 180, 0));
+                GameObject aiobject = Instantiate(knifemat[rndclr], transform.position, Quaternion.Euler(0, 180, 0));
                 FindObjectOfType<AiFailScript>().Knifes.Add(aiobject.gameObject.transform);
+                fireRate1 = 4f;
+
                 rndclr++;
                 transform.position += new Vector3(0, 0.7f, 0);
                 newBallPos.transform.position += new Vector3(0, 0.7f, 0);
@@ -73,6 +75,8 @@ public class AiScript : MonoBehaviour
             {
                 GameObject aiobject = Instantiate(Knife, transform.position, Quaternion.Euler(0, 180, 0));
                 FindObjectOfType<AiFailScript>().Knifes.Add(aiobject.gameObject.transform);
+                fireRate1 = 3f;
+
                 rndclr++;
                 transform.position += new Vector3(0, 0.7f, 0);
                 newBallPos.transform.position += new Vector3(0, 0.7f, 0);
