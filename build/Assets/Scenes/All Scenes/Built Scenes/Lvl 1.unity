@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1402113, g: 0.7094693, b: 0.9917381, a: 1}
+  m_IndirectSpecularColor: {r: 0.14021131, g: 0.7094693, b: 0.9917381, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1032,8 +1032,8 @@ GameObject:
   m_Component:
   - component: {fileID: 78444266}
   - component: {fileID: 78444268}
-  - component: {fileID: 78444270}
   - component: {fileID: 78444271}
+  - component: {fileID: 78444272}
   m_Layer: 0
   m_Name: KnifePrefab
   m_TagString: DKnife
@@ -1071,26 +1071,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.4514627, y: 0.27449435, z: 0.4740191}
   m_Center: {x: 2.0328407, y: 0.014375776, z: -0.10242489}
---- !u!114 &78444270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 78444265}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38505be8906fabf419d4eea5ea953139, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 9061984966287713416}
-  anim2: {fileID: 0}
-  knife: {fileID: 0}
-  sword: {fileID: 0}
-  kniferot: {fileID: 0}
-  swordrot: {fileID: 0}
-  waitTime: 2
-  rotz: 0
 --- !u!114 &78444271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1104,6 +1084,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
+--- !u!114 &78444272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78444265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0d7ab12ab0fcd43838e6d6e3a8e6d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 9061984966287713416}
+  waitTime: 0.25
+  rotz: 7
 --- !u!1 &96920347
 GameObject:
   m_ObjectHideFlags: 0
