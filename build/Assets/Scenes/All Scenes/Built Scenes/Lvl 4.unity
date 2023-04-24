@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.14021131, g: 0.7094693, b: 0.9917381, a: 1}
+  m_IndirectSpecularColor: {r: 0.1402113, g: 0.7094693, b: 0.9917381, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6418,7 +6418,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 280337303}
-  - component: {fileID: 280337304}
+  - component: {fileID: 280337305}
   m_Layer: 0
   m_Name: KnifePlayerAfterWin
   m_TagString: Untagged
@@ -6442,7 +6442,7 @@ Transform:
   m_Father: {fileID: 1369896589}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 90, y: -180, z: 0}
---- !u!114 &280337304
+--- !u!114 &280337305
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6451,7 +6451,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 280337302}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cc2d6570fdcc5348919973ac357ea32, type: 3}
+  m_Script: {fileID: 11500000, guid: ce57ee739be6fc54c88513845f165d33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fireRate: 3.3
@@ -6460,12 +6460,9 @@ MonoBehaviour:
   nextfireRate: 0
   xpos: 0
   knife: {fileID: 2590846551577548752, guid: fbaaa5070a09c644da0b3eea77b89068, type: 3}
-  sword: {fileID: 0}
   knifeCountText: {fileID: 1925368879}
   knifeCount: 50
   spanwPosy: 94.32
-  before_knife: {fileID: 0}
-  after_Knife: {fileID: 0}
 --- !u!1 &284185179
 GameObject:
   m_ObjectHideFlags: 0
@@ -15900,6 +15897,7 @@ MonoBehaviour:
   bonusKnife: {fileID: 0}
   pressbutton: {fileID: 0}
   up: {fileID: 0}
+  isbelowlevel5: 1
   newPanel1: {fileID: 0}
   newPanel2: {fileID: 0}
   arrow: {fileID: 0}
@@ -16405,7 +16403,8 @@ MonoBehaviour:
   cam2: {fileID: 991518137}
   stack: {fileID: 431842322}
   balls: {fileID: 1482162624}
-  newKnife: {fileID: 280337304}
+  newKnife: {fileID: 0}
+  newknife2: {fileID: 280337305}
 --- !u!1 &526551477
 GameObject:
   m_ObjectHideFlags: 0
@@ -45907,7 +45906,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89cc06f149e7d3a4fab880834dc4e0f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knife: {fileID: 280337304}
+  knife: {fileID: 0}
+  knife1: {fileID: 280337305}
   isOver: 0
   losePanel: {fileID: 4174893738625215276}
   Balls:

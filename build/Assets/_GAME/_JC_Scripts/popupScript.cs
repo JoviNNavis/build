@@ -8,9 +8,9 @@ public class popupScript : MonoBehaviour
     public GameObject cam1, cam2;
     public GameObject stack;
     public BallSpinScript balls;
-
+    bool isbolw;
     public newKnifeScript newKnife;
-
+    public newKnifeScript1 newknife2;
 
     void Start()
     {
@@ -22,7 +22,7 @@ public class popupScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        isbolw = FindObjectOfType<ButtonManager>().isbelowlevel5;
     }
 
     IEnumerator win()
@@ -35,7 +35,15 @@ public class popupScript : MonoBehaviour
         cam1.SetActive(false);
         cam2.SetActive(true);
         yield return new WaitForSeconds(2f);
-        newKnife.enabled = true;
+        if (isbolw)
+        {
+            newknife2.enabled = true;
+        }
+        else
+        {
+            newKnife.enabled = true;
+        }
+      
         stack.SetActive(true);
         yield return new WaitForSeconds(0.2f);
         balls.enabled = true;

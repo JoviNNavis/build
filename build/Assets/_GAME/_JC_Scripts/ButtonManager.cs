@@ -22,7 +22,7 @@ public class ButtonManager : MonoBehaviour
     public BonusKnifeScript bonusKnife;
     public GameObject pressbutton;
     public UpScript up;
-
+    public bool isbelowlevel5;
     public GameObject newPanel1, newPanel2;
 
     public GameObject arrow, oldImg, newImg;
@@ -43,16 +43,23 @@ public class ButtonManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (mid.isskin)
+        if (!isbelowlevel5)
         {
-            knifePlayer2.enabled = false;
-            knifeplayerrr.enabled = true;
+            if (mid.isskin)
+            {
+                knifePlayer2.enabled = false;
+                knifeplayerrr.enabled = true;
 
+            }
+            else
+            {
+                knifeplayerrr.enabled = false;
+                knifePlayer2.enabled = true;
+            }
         }
         else
         {
-            knifeplayerrr.enabled = false;
-            knifePlayer2.enabled = true;
+            return;
         }
     }
 
@@ -267,15 +274,25 @@ public class ButtonManager : MonoBehaviour
     {
         ispresed = true;
         yield return new WaitForSeconds(2f);
-        if (mid.isskin)
+        if (!isbelowlevel5)
         {
-            knifePlayer2.enabled = false;
-            knifeplayerrr.enabled = true;
+
+
+            if (mid.isskin)
+            {
+                knifePlayer2.enabled = false;
+                knifeplayerrr.enabled = true;
+
+            }
+            else
+            {
+                knifeplayerrr.enabled = false;
+                knifePlayer2.enabled = true;
+            }
 
         }
         else
         {
-            knifeplayerrr.enabled = false;
             knifePlayer2.enabled = true;
         }
         ai.enabled = true;
@@ -285,17 +302,29 @@ public class ButtonManager : MonoBehaviour
     IEnumerator playButton2()
     {
         yield return new WaitForSeconds(5.5f);
-        if (mid.isskin)
+        if (!isbelowlevel5)
         {
-            knifePlayer2.enabled = false;
-            knifeplayerrr.enabled = true;
+
+
+            if (mid.isskin)
+            {
+                knifePlayer2.enabled = false;
+                knifeplayerrr.enabled = true;
+
+            }
+            else
+            {
+                knifeplayerrr.enabled = false;
+                knifePlayer2.enabled = true;
+            }
 
         }
         else
         {
-            knifeplayerrr.enabled = false;
             knifePlayer2.enabled = true;
         }
+
+
         ai.enabled = true;
        
     }

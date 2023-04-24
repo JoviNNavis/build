@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.14021131, g: 0.7094693, b: 0.9917381, a: 1}
+  m_IndirectSpecularColor: {r: 0.1402113, g: 0.7094693, b: 0.9917381, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8265,7 +8265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 280337303}
-  - component: {fileID: 280337304}
+  - component: {fileID: 280337305}
   m_Layer: 0
   m_Name: KnifePlayerAfterWin
   m_TagString: Untagged
@@ -8289,16 +8289,16 @@ Transform:
   m_Father: {fileID: 1369896589}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 90, y: -180, z: 0}
---- !u!114 &280337304
+--- !u!114 &280337305
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280337302}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cc2d6570fdcc5348919973ac357ea32, type: 3}
+  m_Script: {fileID: 11500000, guid: ce57ee739be6fc54c88513845f165d33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fireRate: 3.3
@@ -8307,12 +8307,9 @@ MonoBehaviour:
   nextfireRate: 1
   xpos: 0
   knife: {fileID: 2590846551577548752, guid: fbaaa5070a09c644da0b3eea77b89068, type: 3}
-  sword: {fileID: 0}
   knifeCountText: {fileID: 1925368879}
   knifeCount: 50
   spanwPosy: 94.3
-  before_knife: {fileID: 0}
-  after_Knife: {fileID: 0}
 --- !u!1 &281191856
 GameObject:
   m_ObjectHideFlags: 0
@@ -19183,6 +19180,7 @@ MonoBehaviour:
   bonusKnife: {fileID: 0}
   pressbutton: {fileID: 0}
   up: {fileID: 0}
+  isbelowlevel5: 1
   newPanel1: {fileID: 0}
   newPanel2: {fileID: 0}
   arrow: {fileID: 0}
@@ -19688,7 +19686,8 @@ MonoBehaviour:
   cam2: {fileID: 991518137}
   stack: {fileID: 431842322}
   balls: {fileID: 1482162624}
-  newKnife: {fileID: 280337304}
+  newKnife: {fileID: 0}
+  newknife2: {fileID: 280337305}
 --- !u!1 &526551477
 GameObject:
   m_ObjectHideFlags: 0
@@ -34095,7 +34094,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 991518137}
   m_LocalRotation: {x: 0.20634222, y: -0.6842678, z: 0.2118162, w: 0.6665842}
-  m_LocalPosition: {x: -3.4500012, y: 101.12, z: 0.16000108}
+  m_LocalPosition: {x: -3.4500022, y: 100.9, z: 0.0000012043907}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -45145,7 +45144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89cc06f149e7d3a4fab880834dc4e0f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knife: {fileID: 280337304}
+  knife: {fileID: 0}
+  knife1: {fileID: 280337305}
   isOver: 0
   losePanel: {fileID: 5474199352041813721}
   Balls:
@@ -86413,26 +86413,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
---- !u!114 &6419705728916662851
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6419705728916662852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38505be8906fabf419d4eea5ea953139, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 2654241996976207909}
-  anim2: {fileID: 0}
-  knife: {fileID: 0}
-  sword: {fileID: 0}
-  kniferot: {fileID: 0}
-  swordrot: {fileID: 0}
-  waitTime: 2
-  rotz: 0
 --- !u!1 &6419705728916662852
 GameObject:
   m_ObjectHideFlags: 0
@@ -86443,7 +86423,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6419705728916662855}
   - component: {fileID: 6419705728916662849}
-  - component: {fileID: 6419705728916662851}
   - component: {fileID: 6419705728916662850}
   m_Layer: 0
   m_Name: KnifePrefab
