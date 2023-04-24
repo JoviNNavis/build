@@ -8,7 +8,7 @@ public class SpikeScript : MonoBehaviour
    
 
     public Animator anim;
-    bool isbolw;
+
     void Start()
     {
         
@@ -17,7 +17,7 @@ public class SpikeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isbolw = FindObjectOfType<ButtonManager>().isbelowlevel5;
+       
     }
 
     private void OnTriggerEnter(Collider other)

@@ -123,8 +123,8 @@ public class box_Sculpting : MonoBehaviour
                     if (target.tag == "TopRightBlocks")
                     {
               
-                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(1.2f, 0.3f, 0.5f), 5, 1, 0.3f, false);
-                        FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(1.2f, 0.3f, 0.5f), 5, 1, 0.3f, false);
+                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(1.1f, 0.3f, 0.5f), 5, 1, 0.3f, false);
+                        FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(1.1f, 0.3f, 0.5f), 5, 1, 0.3f, false);
                         FindObjectOfType<clicks>().knife.transform.DOLocalRotate(new Vector3(-0, 150, -18), 0.2f, RotateMode.Fast);
                         FindObjectOfType<clicks>().sword.transform.DOLocalRotate(new Vector3(-0, 150, -25), 0.2f, RotateMode.Fast);
                         
@@ -135,8 +135,8 @@ public class box_Sculpting : MonoBehaviour
                        if (target.tag == "TopLeftBlocks")
                     {
 
-                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.position+ new Vector3(-1.2f, 0.3f, -0.31f), 5, 1, 0.3f, false);
-                        FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(-1.2f, 0.3f, -0.31f), 5, 1, 0.3f, false);
+                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.position+ new Vector3(-1.1f, 0.3f, -0.31f), 5, 1, 0.3f, false);
+                        FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(-1.1f, 0.3f, -0.31f), 5, 1, 0.3f, false);
 
                         FindObjectOfType<clicks>().knife.transform.DOLocalRotate(new Vector3(-0, 0, -18), 0.2f, RotateMode.Fast);
                         FindObjectOfType<clicks>().sword.transform.DOLocalRotate(new Vector3(-0, 0, -25), 0.2f, RotateMode.Fast);
@@ -148,8 +148,8 @@ public class box_Sculpting : MonoBehaviour
                        if (target.tag == "DownRightBlocks")
                     {
         
-                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(1.2f, -0.6f, 0f), 5, 1, 0.3f, false);
-                        FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(1.2f, -0.6f, 0f), 5, 1, 0.3f, false);
+                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(1.1f, -0.6f, 0f), 5, 1, 0.3f, false);
+                        FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(1.1f, -0.6f, 0f), 5, 1, 0.3f, false);
 
                         FindObjectOfType<clicks>().knife.transform.DOLocalRotate(new Vector3(-0, -150, 18), 0.2f, RotateMode.Fast);
                         FindObjectOfType<clicks>().sword.transform.DOLocalRotate(new Vector3(-0, -150, 25), 0.2f, RotateMode.Fast);
@@ -160,8 +160,8 @@ public class box_Sculpting : MonoBehaviour
                        if (target.tag == "DownLeftBlocks")
                     {
              
-                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.position+new Vector3(-1.2f, -0.6f, -0), 5, 1, 0.3f, false);
-                        FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(-1.2f, -0.6f, -0), 5, 1, 0.3f, false);
+                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.position+new Vector3(-1.1f, -0.6f, -0), 5, 1, 0.3f, false);
+                        FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(-1.1f, -0.6f, -0), 5, 1, 0.3f, false);
 
                         FindObjectOfType<clicks>().knife.transform.DOLocalRotate(new Vector3(-0, -0, 18), 0.2f, RotateMode.Fast);
                         FindObjectOfType<clicks>().sword.transform.DOLocalRotate(new Vector3(-0, -0, 25), 0.2f, RotateMode.Fast);
