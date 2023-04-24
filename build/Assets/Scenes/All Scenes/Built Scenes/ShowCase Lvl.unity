@@ -10459,10 +10459,13 @@ MonoBehaviour:
   chestPanel: {fileID: 0}
   ChestlosePanel: {fileID: 0}
   countdownPanel: {fileID: 0}
+  countdownpanel_ad: {fileID: 0}
   SculptPanel: {fileID: 0}
   knifeSkniPanel: {fileID: 5342236111381027270}
   bonusKnife: {fileID: 0}
+  pressbutton: {fileID: 0}
   up: {fileID: 0}
+  isbelowlevel5: 0
   newPanel1: {fileID: 1131354427}
   newPanel2: {fileID: 0}
   arrow: {fileID: 0}
