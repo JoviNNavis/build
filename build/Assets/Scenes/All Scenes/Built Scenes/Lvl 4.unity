@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1402113, g: 0.7094693, b: 0.9917381, a: 1}
+  m_IndirectSpecularColor: {r: 0.14021131, g: 0.7094693, b: 0.9917381, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1549,7 +1549,7 @@ GameObject:
   - component: {fileID: 78444268}
   - component: {fileID: 78444269}
   - component: {fileID: 78444270}
-  - component: {fileID: 78444272}
+  - component: {fileID: 78444271}
   m_Layer: 0
   m_Name: KnifePrefab
   m_TagString: DKnife
@@ -1614,7 +1614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
---- !u!114 &78444272
+--- !u!114 &78444271
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1623,12 +1623,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 78444265}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38505be8906fabf419d4eea5ea953139, type: 3}
+  m_Script: {fileID: 11500000, guid: ec0d7ab12ab0fcd43838e6d6e3a8e6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 3667667836424970109}
-  waitTime: 0
-  rotz: 0
+  waitTime: 0.25
+  rotz: 7
 --- !u!1 &79448861
 GameObject:
   m_ObjectHideFlags: 0
@@ -6460,9 +6460,12 @@ MonoBehaviour:
   nextfireRate: 0
   xpos: 0
   knife: {fileID: 2590846551577548752, guid: fbaaa5070a09c644da0b3eea77b89068, type: 3}
+  sword: {fileID: 0}
   knifeCountText: {fileID: 1925368879}
   knifeCount: 50
   spanwPosy: 94.32
+  before_knife: {fileID: 0}
+  after_Knife: {fileID: 0}
 --- !u!1 &284185179
 GameObject:
   m_ObjectHideFlags: 0
@@ -15875,6 +15878,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerKnife: {fileID: 0}
   knifePlayer2: {fileID: 1817783779}
+  knifeplayerrr: {fileID: 0}
   isaicolor: 0
   changecolor: 0
   ai: {fileID: 1920393867}
@@ -15884,14 +15888,17 @@ MonoBehaviour:
   button: {fileID: 1813662}
   playButon: {fileID: 1205800475}
   newButton: {fileID: 0}
+  isskin: 0
   rewardPanel: {fileID: 364440460}
   levelPanel: {fileID: 1628282492}
   chestPanel: {fileID: 0}
   ChestlosePanel: {fileID: 4174893738625215276}
   countdownPanel: {fileID: 5762086358938201313}
+  countdownpanel_ad: {fileID: 0}
   SculptPanel: {fileID: 0}
   knifeSkniPanel: {fileID: 0}
   bonusKnife: {fileID: 0}
+  pressbutton: {fileID: 0}
   up: {fileID: 0}
   newPanel1: {fileID: 0}
   newPanel2: {fileID: 0}
@@ -23717,7 +23724,7 @@ GameObject:
   - component: {fileID: 809170301}
   - component: {fileID: 809170302}
   - component: {fileID: 809170305}
-  - component: {fileID: 809170303}
+  - component: {fileID: 809170306}
   m_Layer: 0
   m_Name: KnifePrefabAi
   m_TagString: DKnife
@@ -23754,21 +23761,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.4514627, y: 0.27449435, z: 0.4740191}
   m_Center: {x: 2.0328407, y: 0.014375776, z: -0.10242489}
---- !u!114 &809170303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 809170300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38505be8906fabf419d4eea5ea953139, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 1925118541850040115}
-  waitTime: 0
-  rotz: 0
 --- !u!114 &809170305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23782,6 +23774,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
+--- !u!114 &809170306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809170300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0d7ab12ab0fcd43838e6d6e3a8e6d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1925118541850040115}
+  waitTime: 0.25
+  rotz: 7
 --- !u!1 &811027089
 GameObject:
   m_ObjectHideFlags: 0
@@ -46159,7 +46166,6 @@ MonoBehaviour:
   changecolor: 0
   tail: {fileID: 1486550696}
   camAnim: {fileID: 1228945780}
-  knife: {fileID: 0}
   _blue: {r: 0, g: 0, b: 0, a: 0}
   purple: {r: 0, g: 0, b: 0, a: 0}
   abovelevel5: 0

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1402113, g: 0.7094693, b: 0.9917381, a: 1}
+  m_IndirectSpecularColor: {r: 0.14021131, g: 0.7094693, b: 0.9917381, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5067,9 +5067,12 @@ MonoBehaviour:
   nextfireRate: 0
   xpos: 0
   knife: {fileID: 2590846551577548752, guid: fbaaa5070a09c644da0b3eea77b89068, type: 3}
+  sword: {fileID: 0}
   knifeCountText: {fileID: 1925368879}
   knifeCount: 50
   spanwPosy: 64.32
+  before_knife: {fileID: 0}
+  after_Knife: {fileID: 0}
 --- !u!1 &284185179
 GameObject:
   m_ObjectHideFlags: 0
@@ -14032,6 +14035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerKnife: {fileID: 0}
   knifePlayer2: {fileID: 1817783779}
+  knifeplayerrr: {fileID: 0}
   isaicolor: 0
   changecolor: 0
   ai: {fileID: 1920393867}
@@ -14041,14 +14045,17 @@ MonoBehaviour:
   button: {fileID: 1813662}
   playButon: {fileID: 1205800475}
   newButton: {fileID: 0}
+  isskin: 0
   rewardPanel: {fileID: 364440460}
   levelPanel: {fileID: 1628282492}
   chestPanel: {fileID: 0}
   ChestlosePanel: {fileID: 2741648863911847984}
   countdownPanel: {fileID: 1869170278612878248}
+  countdownpanel_ad: {fileID: 0}
   SculptPanel: {fileID: 0}
   knifeSkniPanel: {fileID: 0}
   bonusKnife: {fileID: 0}
+  pressbutton: {fileID: 0}
   up: {fileID: 0}
   newPanel1: {fileID: 0}
   newPanel2: {fileID: 0}
@@ -40419,7 +40426,6 @@ MonoBehaviour:
   changecolor: 0
   tail: {fileID: 1486550696}
   camAnim: {fileID: 1228945780}
-  knife: {fileID: 0}
   _blue: {r: 0, g: 0, b: 0, a: 0}
   purple: {r: 0, g: 0, b: 0, a: 0}
   abovelevel5: 0
@@ -65170,21 +65176,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
---- !u!114 &1882703154058484553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1882703154058484558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38505be8906fabf419d4eea5ea953139, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 7485571761418225967}
-  waitTime: 2
-  rotz: 0
 --- !u!65 &1882703154058484555
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65225,9 +65216,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1882703154058484557}
   - component: {fileID: 1882703154058484555}
-  - component: {fileID: 1882703154058484553}
   - component: {fileID: 1882703154058484552}
   - component: {fileID: 1882703154058484559}
+  - component: {fileID: 1882703154058484560}
   m_Layer: 0
   m_Name: KnifePrefab
   m_TagString: DKnife
@@ -65249,6 +65240,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam1: {fileID: 605208150}
   cam2: {fileID: 1408766777}
+--- !u!114 &1882703154058484560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882703154058484558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0d7ab12ab0fcd43838e6d6e3a8e6d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 7485571761418225967}
+  waitTime: 0.25
+  rotz: 7
 --- !u!33 &1882703154201942714
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -65505,21 +65511,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &2154316948816587834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2154316948816587974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38505be8906fabf419d4eea5ea953139, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 4054471452179129619}
-  waitTime: 0.25
-  rotz: 7
 --- !u!114 &2154316948816587835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65556,8 +65547,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2154316948816587975}
   - component: {fileID: 2154316948816587972}
-  - component: {fileID: 2154316948816587834}
   - component: {fileID: 2154316948816587835}
+  - component: {fileID: 2154316948816587976}
   m_Layer: 0
   m_Name: KnifePrefabAi (1)
   m_TagString: DKnife
@@ -65582,6 +65573,21 @@ Transform:
   m_Father: {fileID: 203852508}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2154316948816587976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2154316948816587974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0d7ab12ab0fcd43838e6d6e3a8e6d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 4054471452179129619}
+  waitTime: 0.25
+  rotz: 7
 --- !u!4 &2221134997767103161
 Transform:
   m_ObjectHideFlags: 0
