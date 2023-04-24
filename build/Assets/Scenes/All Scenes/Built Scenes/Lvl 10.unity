@@ -11042,6 +11042,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: sword 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6248631515535831665, guid: f1311175b24d2234c86bca9e9899ba15,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6772369222675900619, guid: f1311175b24d2234c86bca9e9899ba15,
         type: 3}
       propertyPath: m_RootOrder
@@ -18901,7 +18906,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &601645290
 Transform:
   m_ObjectHideFlags: 0
