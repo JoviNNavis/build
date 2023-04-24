@@ -151,7 +151,6 @@ MonoBehaviour:
   drops: {fileID: 19894390, guid: 4cd7d9c6cec4b104c8573cc5b11a900d, type: 3}
   plane: {fileID: 0}
   anim: {fileID: 0}
-  knife: {fileID: 2590846551451260453}
 --- !u!135 &1295768178702481238
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -163,8 +162,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.02
-  m_Center: {x: 0.06, y: 0.02, z: -0.005}
+  m_Radius: 0.16793162
+  m_Center: {x: 0.060000077, y: -0.14000002, z: -0.20793153}
 --- !u!54 &9146111261655308705
 Rigidbody:
   m_ObjectHideFlags: 0

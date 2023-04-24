@@ -57795,7 +57795,7 @@ MonoBehaviour:
   fireTime: 0
   nextfireRate: 1
   totalblocks: 0
-  knife: {fileID: 2590846551577548752, guid: 737c61e8dffc7374287ba61ebd073272, type: 3}
+  knife: {fileID: 2590846551577548752, guid: 432ea40104c93d245a2a68ef34a2259b, type: 3}
   playerCrownSlider: {fileID: 7482594925982364654}
   newBallPos: {fileID: 1300608063}
   playerImg: {fileID: 1611646442}

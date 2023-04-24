@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.14021131, g: 0.7094693, b: 0.9917381, a: 1}
+  m_IndirectSpecularColor: {r: 0.1402113, g: 0.7094693, b: 0.9917381, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -20361,7 +20361,7 @@ MonoBehaviour:
   fireTime: 0
   nextfireRate: 1
   newBallPos: {fileID: 630835570}
-  knife: {fileID: 2590846551577548752, guid: 737c61e8dffc7374287ba61ebd073272, type: 3}
+  knife: {fileID: 2590846551577548752, guid: 432ea40104c93d245a2a68ef34a2259b, type: 3}
   PlayerRank: {fileID: 540431830}
   playerImg: {fileID: 540431832}
   rankValue: 0.015

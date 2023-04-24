@@ -61,7 +61,7 @@ public class AiScript : MonoBehaviour
 
                 GameObject aiobject = Instantiate(knifemat[rndclr], transform.position, Quaternion.Euler(0, 180, 0));
                 FindObjectOfType<AiFailScript>().Knifes.Add(aiobject.gameObject.transform);
-                fireRate1 = 4f;
+                fireRate1 = 3.5f;
 
                 rndclr++;
                 transform.position += new Vector3(0, 0.7f, 0);

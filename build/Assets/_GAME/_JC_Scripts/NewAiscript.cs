@@ -29,7 +29,7 @@ public class NewAiscript : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("AiKnife") || collision.gameObject.CompareTag("DKnife"))
             {
-                if (FindObjectOfType<Ballpowerup>().time < 0.25f)
+                if (FindObjectOfType<Ballpowerup>().time < 0.3f)
 
                 {
                     fire.Play();

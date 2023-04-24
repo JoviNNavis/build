@@ -12,7 +12,7 @@ public class KnifePrefabScript : MonoBehaviour
     public ParticleSystem drops;
     public GameObject plane;
     public Animator anim;
-    public MeshRenderer knife;
+  //  public MeshRenderer knife;
 
     void Start()
     {

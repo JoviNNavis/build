@@ -119,6 +119,7 @@ public class ButtonManager : MonoBehaviour
     {
         rewardPanel.SetActive(false);
         levelPanel.SetActive(true);
+        ChestlosePanel.SetActive(false);
     }
 
     public void Restart()
