@@ -4337,6 +4337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerKnife: {fileID: 0}
   knifePlayer2: {fileID: 0}
+  knifeplayerrr: {fileID: 0}
   isaicolor: 0
   changecolor: 0
   ai: {fileID: 0}
@@ -4346,15 +4347,19 @@ MonoBehaviour:
   button: {fileID: 2324779176239176551}
   playButon: {fileID: 0}
   newButton: {fileID: 0}
+  isskin: 0
   rewardPanel: {fileID: 2324779175909874805}
   levelPanel: {fileID: 2324779174643902853}
   chestPanel: {fileID: 469792608}
   ChestlosePanel: {fileID: 0}
   countdownPanel: {fileID: 4979409958080537731}
+  countdownpanel_ad: {fileID: 0}
   SculptPanel: {fileID: 0}
   knifeSkniPanel: {fileID: 0}
   bonusKnife: {fileID: 1817783779}
+  pressbutton: {fileID: 0}
   up: {fileID: 1817783780}
+  isbelowlevel5: 0
   newPanel1: {fileID: 0}
   newPanel2: {fileID: 0}
   arrow: {fileID: 0}
@@ -35642,7 +35647,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &2324779175925909928
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -36353,6 +36358,7 @@ MonoBehaviour:
   stack: {fileID: 0}
   balls: {fileID: 0}
   newKnife: {fileID: 0}
+  newknife2: {fileID: 0}
 --- !u!224 &2324779176082937997
 RectTransform:
   m_ObjectHideFlags: 0
