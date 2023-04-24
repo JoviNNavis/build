@@ -20351,7 +20351,7 @@ MonoBehaviour:
   ischangecolor: 0
   fireRate: 12
   knifemat:
-  - {fileID: 2590846551577548752, guid: 737c61e8dffc7374287ba61ebd073272, type: 3}
+  - {fileID: 2590846551577548752, guid: 432ea40104c93d245a2a68ef34a2259b, type: 3}
   - {fileID: 2590846551577548752, guid: 61b1b12c781ad70428b541ac13762c38, type: 3}
   - {fileID: 2590846551577548752, guid: 6fbca814bdfe68643a96fdf58a3be262, type: 3}
   - {fileID: 2590846551577548752, guid: 73ebba1dc0928524b99f7620df14d62f, type: 3}
