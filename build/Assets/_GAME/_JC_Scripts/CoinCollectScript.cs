@@ -10,6 +10,8 @@ public class CoinCollectScript : MonoBehaviour
 
     int delay = 0;
 
+    public AudioClip collect;
+
     void Start()
     {
 
@@ -25,8 +27,8 @@ public class CoinCollectScript : MonoBehaviour
     {
         if(other.CompareTag("Knife"))
         {
-
-            if(!this.GetComponent<RectTransform>())
+            SoundManger.soundctrl.playClip(collect);
+            if (!this.GetComponent<RectTransform>())
             {
                 this.gameObject.AddComponent<RectTransform>();
                 this.GetComponent<RectTransform>().anchorMin = Vector2.one;

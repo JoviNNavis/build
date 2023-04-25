@@ -15,6 +15,8 @@ public class SpikeBallScript : MonoBehaviour
 
     public Animator camAnim;
 
+    public AudioClip ballBounce, fireBallbounce;
+
     void Start()
     {
         RenderSettings.skybox = skybox;
@@ -58,6 +60,7 @@ public class SpikeBallScript : MonoBehaviour
         {
             if (FindObjectOfType<Ballpowerup>().time < 0.4f)
             {
+                SoundManger.soundctrl.playClip(fireBallbounce);
                 camAnim.SetBool("Move", true);
                 FindObjectOfType<ButtonManager>().changecolor = true;
                 RenderSettings.fogColor = FindObjectOfType<ColorScript>().after_fog;
@@ -75,6 +78,7 @@ public class SpikeBallScript : MonoBehaviour
             }
             else
             {
+                SoundManger.soundctrl.playClip(ballBounce);
                 _fire.Pause();
                 _fire.Clear();
                 FindObjectOfType<Starf1>().inpowermode = false;

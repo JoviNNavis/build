@@ -22,6 +22,8 @@ public class BonusKnifeScript : MonoBehaviour
 
     public float fillValue;
 
+    public AudioClip knifeThrow;
+
     void Start()
     {
 
@@ -66,6 +68,7 @@ public class BonusKnifeScript : MonoBehaviour
 
         if (fireTime >= nextfireRate)
         {
+            SoundManger.soundctrl.playClip(knifeThrow);
             Instantiate(knife, new Vector3(posX, transform.localPosition.y, transform.localPosition.z), Quaternion.identity);
             transform.rotation = Quaternion.Euler(90, -180, 0);
             fireTime = 0;

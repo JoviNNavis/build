@@ -21000,7 +21000,7 @@ MonoBehaviour:
   Room: {fileID: 0}
   ShowCase: {fileID: 0}
   Dirlight: {fileID: 0}
-  tapSound: {fileID: 0}
+  tapSound: {fileID: 8300000, guid: 6c501b5afbbaa0c409529fc19ab611c4, type: 3}
 --- !u!1 &508017724
 GameObject:
   m_ObjectHideFlags: 0

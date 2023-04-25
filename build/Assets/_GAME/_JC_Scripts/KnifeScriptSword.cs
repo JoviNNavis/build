@@ -27,6 +27,8 @@ public class KnifeScriptSword : MonoBehaviour
 
     public GameObject counterText;
 
+    public AudioClip knifeThrow;
+
     void Start()
     {
         
@@ -80,7 +82,7 @@ public class KnifeScriptSword : MonoBehaviour
         counterText.SetActive(true);
         if (fireTime >= nextfireRate)
         {
-            
+            SoundManger.soundctrl.playClip(knifeThrow);
             if (ischangecolor)
                 {
                 
