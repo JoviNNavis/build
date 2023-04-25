@@ -72,9 +72,8 @@ public class newKnifeScript1 : MonoBehaviour
 
         if (fireTime >= nextfireRate)
         {
-          
-           
-                Instantiate(knife, new Vector3(xpos, spanwPosy, transform.localPosition.z), Quaternion.Euler(-90, 0, 0));
+
+            Instantiate(knife, new Vector3(xpos, spanwPosy, transform.localPosition.z), Quaternion.Euler(-90, 0, 0));
 
             
             knifeCount -= 1;

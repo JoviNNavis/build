@@ -11,6 +11,7 @@ public class SelectionScript : MonoBehaviour
 
     public GameObject[] names;
 
+    public AudioClip playerSelect;
 
 
     void Start()
@@ -27,9 +28,11 @@ public class SelectionScript : MonoBehaviour
 
     IEnumerator selection()
     {
+        
         yield return new WaitForSeconds(1f);
         baner2.transform.DOMoveX(Screen.width / 2, 0.5f, false).SetEase(Ease.InOutSine);
         yield return new WaitForSeconds(0.09f);
+        SoundManger.soundctrl.playClip(playerSelect);
         names[0].SetActive(false);
         names[1].SetActive(true);
         yield return new WaitForSeconds(0.1f);

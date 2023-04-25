@@ -12,6 +12,7 @@ public class KnifePrefabScript : MonoBehaviour
     public ParticleSystem drops;
     public GameObject plane;
     public Animator anim;
+    public AudioClip hit, bonusBallHit;
   //  public MeshRenderer knife;
 
     void Start()
@@ -37,6 +38,7 @@ public class KnifePrefabScript : MonoBehaviour
         if (other.gameObject.CompareTag("Block") || other.gameObject.CompareTag("Finish"))
         {
             Instantiate(drops, other.transform.position+ new Vector3(1,0,-0.4f), Quaternion.Euler(0, -270, 0));
+            
             //Instantiate(plane, other.transform.position+new  Vector3(0.77f, -0.1f, -0.15f), Quaternion.Euler(0, -90, 0));
             plane.SetActive(true);
             transform.position = new Vector3(-0.581f, transform.localPosition.y, transform.localPosition.z);
@@ -46,6 +48,7 @@ public class KnifePrefabScript : MonoBehaviour
 
         if (other.gameObject.CompareTag("AfterBall"))
         {
+            SoundManger.soundctrl.playClip(bonusBallHit);
             other.transform.SetParent(this.transform, true);
             transform.DOJump(new Vector3(10, 10, 10), 5, 1, 4);
             transform.position -= new Vector3(0f, 0, 0);

@@ -21,6 +21,8 @@ public class NewBallScript : MonoBehaviour
 
     public Animator camAnim;
 
+    public AudioClip ballBounce, fireBall; 
+
     //public KnifeScript knife;
   //  public KnifeScriptSword sword;
 
@@ -126,6 +128,7 @@ public class NewBallScript : MonoBehaviour
         {
             if (FindObjectOfType<Ballpowerup>().time < 0.4f)
             {
+                SoundManger.soundctrl.playClip(fireBall);
                 camAnim.SetBool("Move", true);
               FindObjectOfType<ButtonManager>().changecolor = true;
               
@@ -158,7 +161,7 @@ public class NewBallScript : MonoBehaviour
             {
                 _fire.Pause();
                 _fire.Clear();
-
+                SoundManger.soundctrl.playClip(ballBounce);
                 camAnim.SetBool("Move", false);
                 powerup_mode = false;
                 FindObjectOfType<ButtonManager>().changecolor = false;

@@ -14,6 +14,8 @@ public class CoinScript : MonoBehaviour
     [SerializeField] private int CoinNo;
 
     private int CoinValue = 5;
+
+    public AudioClip coinCollect;
     void Start()
     {
         InitialPos = new Vector3[CoinNo];
@@ -65,6 +67,7 @@ public class CoinScript : MonoBehaviour
         //PlayerPrefs.SetInt("Countcoin", PlayerPrefs.GetInt("Countcoin") + 50);
 
         //Counter.text = PlayerPrefs.GetInt("Countcoin").ToString();
+        SoundManger.soundctrl.playClip(coinCollect);
 
         cashScript.cashValue += CoinValue;
 

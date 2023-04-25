@@ -24,6 +24,8 @@ public class KnifeScript1 : MonoBehaviour
 
     public GameObject countText;
 
+    public AudioClip hit;
+
     void Start()
     {
         fireRate = 10.5f;
@@ -76,6 +78,7 @@ public class KnifeScript1 : MonoBehaviour
 
         if (fireTime >= nextfireRate)
         {
+            SoundManger.soundctrl.playClip(hit);
             if (ischangecolor)
             {
                 GameObject _knife =  Instantiate(knifemat[randcolors], new Vector3(2.4f, transform.localPosition.y, transform.localPosition.z), Quaternion.identity);

@@ -20,6 +20,8 @@ public class FailScript : MonoBehaviour
 
     public Image playerImg;
 
+    public AudioClip ballPunture;
+
     void Start()
     {
         //Knifes.Add(gameObject.transform);
@@ -87,6 +89,7 @@ public class FailScript : MonoBehaviour
         }
         if (collision.gameObject.tag == "Ball" && Knifes.Count == 1)
         {
+            SoundManger.soundctrl.playClip(ballPunture);
             GameObject pball =   Instantiate(puntured_ball, collision.transform.position+ new Vector3(0.3f, 0, 0), Quaternion.Euler(0, -270, 0));
 
             Destroy(collision.gameObject, 0.2f);
@@ -98,6 +101,7 @@ public class FailScript : MonoBehaviour
         }
         if (collision.gameObject.tag == "Ball" && Knifes.Count == 2)
         {
+            SoundManger.soundctrl.playClip(ballPunture);
             GameObject pball = Instantiate(puntured_ball, collision.transform.position+new Vector3(0.3f,0,0), Quaternion.Euler(0, -270, 0));
 
             Destroy(collision.gameObject, 0.2f);
@@ -111,6 +115,7 @@ public class FailScript : MonoBehaviour
 
         if (collision.gameObject.tag == "Ball" && Knifes.Count >= 3)
         {
+            SoundManger.soundctrl.playClip(ballPunture);
             GameObject pball = Instantiate(puntured_ball, collision.transform.position+new Vector3(0.3f,0,0), Quaternion.Euler(0, -0270, 0));
 
             Destroy(collision.gameObject, 0.2f);

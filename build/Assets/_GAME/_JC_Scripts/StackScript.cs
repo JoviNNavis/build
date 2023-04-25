@@ -7,7 +7,7 @@ public class StackScript : MonoBehaviour
     public GameObject blast;
     public GameObject stacks;
 
-
+    public AudioClip knifeHit;
     void Start()
     {
         
@@ -25,7 +25,7 @@ public class StackScript : MonoBehaviour
     {
         if (other.gameObject.tag == "Knife")
         {
-
+            SoundManger.soundctrl.playClip(knifeHit);
             Instantiate(blast, transform.position, Quaternion.Euler(-90, 0, 0));
             stacks.transform.DOMoveY(stacks.transform.position.y - 0.15f, 0.10f, false);
     
