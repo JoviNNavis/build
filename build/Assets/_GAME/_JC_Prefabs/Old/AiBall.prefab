@@ -283,6 +283,8 @@ MonoBehaviour:
   upForce: 500
   level5above: 0
   fire: {fileID: 6072966656141315739}
+  ballBounce: {fileID: 8300000, guid: 30645f3aee2e5da4aa240094992e6412, type: 3}
+  fireBall: {fileID: 8300000, guid: faf8ca3c1e73dd04a8ccd54d82e5e9e6, type: 3}
 --- !u!95 &9016151103270701448
 Animator:
   serializedVersion: 4

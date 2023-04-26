@@ -9,6 +9,9 @@ public class NewAiscript : MonoBehaviour
     public float upForce;
  public   bool level5above;
     public ParticleSystem fire;
+
+    public AudioClip ballBounce, fireBall;
+
     void Start()
     {
         isaicolor = false;
@@ -30,8 +33,8 @@ public class NewAiscript : MonoBehaviour
             if (collision.gameObject.CompareTag("AiKnife") || collision.gameObject.CompareTag("DKnife"))
             {
                 if (FindObjectOfType<Ballpowerup>().time < 0.3f)
-
                 {
+                    SoundMangerAi.soundctrl.playClip(fireBall);
                     fire.Play();
                     FindObjectOfType<ButtonManager>().isaicolor = true;
                     float _newUpforce = upForce + 150;
@@ -41,7 +44,8 @@ public class NewAiscript : MonoBehaviour
                 }
                 else
                 {
-                  //  FindObjectOfType<ButtonManager>().water.material.SetColor("_BaseColor", FindObjectOfType<NewBallScript>()._blue);
+                    SoundMangerAi.soundctrl.playClip(ballBounce);
+                    //  FindObjectOfType<ButtonManager>().water.material.SetColor("_BaseColor", FindObjectOfType<NewBallScript>()._blue);
                     FindObjectOfType<ButtonManager>().isaicolor = false;
                     Rb.AddForce(transform.up * upForce, ForceMode.Force);
                     fire.Pause();
@@ -56,8 +60,8 @@ public class NewAiscript : MonoBehaviour
                     if (FindObjectOfType<Ballpowerup>().time < 0.3f)
 
                     {
+                    SoundMangerAi.soundctrl.playClip(fireBall);
                     fire.Play();
-
                     FindObjectOfType<ButtonManager>().isaicolor = true;
                         float _newUpforce = upForce + 150;
                         Rb.AddForce(transform.up * _newUpforce, ForceMode.Force);
@@ -66,8 +70,8 @@ public class NewAiscript : MonoBehaviour
                     }
                     else
                     {
-                      
-                        FindObjectOfType<ButtonManager>().isaicolor = false;
+                    SoundMangerAi.soundctrl.playClip(ballBounce);
+                    FindObjectOfType<ButtonManager>().isaicolor = false;
                         Rb.AddForce(transform.up * upForce, ForceMode.Force);
                     fire.Pause();
                     fire.Clear();

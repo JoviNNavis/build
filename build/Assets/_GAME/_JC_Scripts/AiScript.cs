@@ -17,6 +17,8 @@ public class AiScript : MonoBehaviour
    public bool aicolor;
     public GameObject Knife;
 
+    public AudioClip knifeThrow;
+
     void Start()
     {
         fireRate1 = 3f;
@@ -55,7 +57,7 @@ public class AiScript : MonoBehaviour
 
         if (fireTime1 >= nextfireRate1)
         {
-
+            SoundMangerAi.soundctrl.playClip(knifeThrow);
             if (aicolor)
             {
 

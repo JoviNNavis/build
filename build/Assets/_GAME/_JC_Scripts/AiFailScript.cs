@@ -19,6 +19,8 @@ public class AiFailScript : MonoBehaviour
 
     public GameObject aiUiPos;
 
+    public AudioClip ballPuncture;
+
     void Start()
     {
         //Knifes.Add(gameObject.transform);
@@ -45,6 +47,7 @@ public class AiFailScript : MonoBehaviour
 
         if (collision.gameObject.tag == "AiBall" && Knifes.Count == 1)
         {
+            SoundMangerAi.soundctrl.playClip(ballPuncture);
             Destroy(collision.gameObject, 0.1f);
             ai.enabled = false;
             StartCoroutine(knifeR1());
@@ -52,6 +55,7 @@ public class AiFailScript : MonoBehaviour
 
         if (collision.gameObject.tag == "AiBall" && Knifes.Count == 2)
         {
+            SoundMangerAi.soundctrl.playClip(ballPuncture);
             Destroy(collision.gameObject, 0.1f);
             ai.enabled = false;
             StartCoroutine(knifeR2());
@@ -59,6 +63,7 @@ public class AiFailScript : MonoBehaviour
 
         if (collision.gameObject.tag == "AiBall" && Knifes.Count >= 3)
         {
+            SoundMangerAi.soundctrl.playClip(ballPuncture);
             Destroy(collision.gameObject, 0.1f);
             ai.enabled = false;
             StartCoroutine(knifeR3());
