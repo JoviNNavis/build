@@ -25,6 +25,8 @@ public class FailScript1 : MonoBehaviour
 
     public AudioClip ballPunture;
 
+    public Transform emptyObj;
+
     void Start()
     {
         //Knifes.Add(gameObject.transform);
@@ -108,11 +110,12 @@ public class FailScript1 : MonoBehaviour
 
         if (collision.gameObject.tag == "Ball" && Knifes.Count == 1)
         {
-            GameObject pball=   Instantiate(puntured_ball,collision.transform.position + new Vector3(0.3f, 0, 0), Quaternion.Euler(0,-0, 0));
+            GameObject pball =   Instantiate(puntured_ball,collision.transform.position + new Vector3(0.3f, 0, 0), Quaternion.Euler(0,-0, 0));
+            
             SoundManger.soundctrl.playClip(ballPunture);
             Destroy(collision.gameObject, 0.1f);
             Destroy(pball, 0.12f);
-            knife1.enabled = false;
+            knife1.enabled = false; 
             StartCoroutine(knifeR1());
             Debug.Log("touched");
 
@@ -149,7 +152,8 @@ public class FailScript1 : MonoBehaviour
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.08f, false).OnComplete(knifeRemove);
         yield return new WaitForSeconds(0.1f);
         knife1.enabled = true;
-        Instantiate(newBall, newBallPos.position, Quaternion.identity);
+        GameObject oldBall =  Instantiate(newBall, newBallPos.position, Quaternion.identity);
+        oldBall.transform.SetParent(emptyObj, true);
     }
 
     IEnumerator knifeR2()
@@ -168,7 +172,8 @@ public class FailScript1 : MonoBehaviour
         newBallPos.transform.position -= new Vector3(0, 0.7f, 0);
         yield return new WaitForSeconds(0.1f);
         knife1.enabled = true;
-        Instantiate(newBall, newBallPos.position, Quaternion.identity);
+        GameObject oldBall = Instantiate(newBall, newBallPos.position, Quaternion.identity);
+        oldBall.transform.SetParent(emptyObj, true);
     }
 
     IEnumerator knifeR3()
@@ -193,7 +198,8 @@ public class FailScript1 : MonoBehaviour
         newBallPos.transform.position -= new Vector3(0, 0.7f, 0);
         yield return new WaitForSeconds(0.2f);
         knife1.enabled = true;
-        Instantiate(newBall, newBallPos.position, Quaternion.identity);
+        GameObject oldBall = Instantiate(newBall, newBallPos.position, Quaternion.identity);
+        oldBall.transform.SetParent(emptyObj, true);
     }
 
     IEnumerator knifeR4()

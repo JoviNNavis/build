@@ -26,7 +26,7 @@ public class AiScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-       StartCoroutine(shoot());
+       //StartCoroutine(shoot());
     }
 
     private void LateUpdate()
@@ -39,7 +39,7 @@ public class AiScript : MonoBehaviour
     {
         transform.Rotate(0.5f, 0, 0);
         aicolor = FindObjectOfType<ButtonManager>().isaicolor;
-       
+        StartCoroutine(shoot());
     }
 
     IEnumerator shoot()
@@ -57,7 +57,7 @@ public class AiScript : MonoBehaviour
 
         if (fireTime1 >= nextfireRate1)
         {
-            SoundMangerAi.soundctrl.playClip(knifeThrow);
+            
             if (aicolor)
             {
 
@@ -75,6 +75,7 @@ public class AiScript : MonoBehaviour
             }
             else
             {
+                SoundMangerAi.soundctrl.playClip(knifeThrow);
                 GameObject aiobject = Instantiate(Knife, transform.position, Quaternion.Euler(0, 180, 0));
                 FindObjectOfType<AiFailScript>().Knifes.Add(aiobject.gameObject.transform);
                 fireRate1 = 3f;

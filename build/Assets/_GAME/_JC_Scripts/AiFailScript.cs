@@ -21,6 +21,8 @@ public class AiFailScript : MonoBehaviour
 
     public AudioClip ballPuncture;
 
+    public Transform emptyObj;
+
     void Start()
     {
         //Knifes.Add(gameObject.transform);
@@ -77,7 +79,8 @@ public class AiFailScript : MonoBehaviour
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.03f, false).OnComplete(knifeRemove);
         yield return new WaitForSeconds(0.4f);
         ai.enabled = true;
-        Instantiate(newBall, newBallPos.position, Quaternion.identity);
+        GameObject oldBall = Instantiate(newBall, newBallPos.position, Quaternion.identity);
+        oldBall.transform.SetParent(emptyObj);
     }
 
     IEnumerator knifeR2()
@@ -96,8 +99,8 @@ public class AiFailScript : MonoBehaviour
         newBallPos.transform.position -= new Vector3(0, 0.7f, 0);
         yield return new WaitForSeconds(0.4f);
         ai.enabled = true;
-        Instantiate(newBall, newBallPos.position, Quaternion.identity);
-
+        GameObject oldBall = Instantiate(newBall, newBallPos.position, Quaternion.identity);
+        oldBall.transform.SetParent(emptyObj);
     }
 
     IEnumerator knifeR3()
@@ -124,7 +127,8 @@ public class AiFailScript : MonoBehaviour
         newBallPos.transform.position -= new Vector3(0, 0.7f, 0);
         yield return new WaitForSeconds(0.4f);
         ai.enabled = true;
-        Instantiate(newBall, newBallPos.position, Quaternion.identity);
+        GameObject oldBall = Instantiate(newBall, newBallPos.position, Quaternion.identity);
+        oldBall.transform.SetParent(emptyObj);
     }
 
     IEnumerator knifeR4()

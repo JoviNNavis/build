@@ -17427,6 +17427,7 @@ MonoBehaviour:
   lostPanel: {fileID: 7732494707446415902}
   islevelcompleted: 0
   isLost: 0
+  emptyObj: {fileID: 0}
 --- !u!54 &837195052
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30493,6 +30494,7 @@ MonoBehaviour:
   newBallPos: {fileID: 72625663}
   aiUiPos: {fileID: 349829554}
   ballPuncture: {fileID: 0}
+  emptyObj: {fileID: 0}
 --- !u!54 &1064590150
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -34857,6 +34859,7 @@ Transform:
   - {fileID: 72625663}
   - {fileID: 4813697536958284701}
   - {fileID: 5810763576794191785}
+  - {fileID: 1402953574}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -35179,6 +35182,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1382785288}
   m_CullTransparentMesh: 1
+--- !u!1 &1402953573
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1402953574}
+  m_Layer: 0
+  m_Name: EmptyObj
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1402953574
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402953573}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1369896589}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1407410271
 GameObject:
   m_ObjectHideFlags: 0
@@ -57378,6 +57412,7 @@ MonoBehaviour:
   playerImg: {fileID: 50878900}
   lessValue: 0
   ballPunture: {fileID: 0}
+  emptyObj: {fileID: 0}
 --- !u!1 &2007699977
 GameObject:
   m_ObjectHideFlags: 0
@@ -59788,6 +59823,7 @@ MonoBehaviour:
   playerImg: {fileID: 50878900}
   lessValue: 0.015
   ballPunture: {fileID: 8300000, guid: b485a744ad289bc4fa50aaa47e43b96a, type: 3}
+  emptyObj: {fileID: 1402953574}
 --- !u!4 &985168633705316088
 Transform:
   m_ObjectHideFlags: 0
@@ -61013,6 +61049,7 @@ MonoBehaviour:
   newBallPos: {fileID: 72625663}
   aiUiPos: {fileID: 349829554}
   ballPuncture: {fileID: 8300000, guid: b485a744ad289bc4fa50aaa47e43b96a, type: 3}
+  emptyObj: {fileID: 1402953574}
 --- !u!65 &985168634188410451
 BoxCollider:
   m_ObjectHideFlags: 0

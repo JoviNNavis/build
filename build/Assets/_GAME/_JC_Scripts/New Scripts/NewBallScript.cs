@@ -130,7 +130,7 @@ public class NewBallScript : MonoBehaviour
             {
                 SoundManger.soundctrl.playClip(fireBall);
                 camAnim.SetBool("Move", true);
-              FindObjectOfType<ButtonManager>().changecolor = true;
+                FindObjectOfType<ButtonManager>().changecolor = true;
               
                 float _newUpforce = upForce + 200;
        

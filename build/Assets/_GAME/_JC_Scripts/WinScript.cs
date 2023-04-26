@@ -20,6 +20,8 @@ public class WinScript : MonoBehaviour
     public bool islevelcompleted;
     public bool isLost = false;
 
+    public GameObject emptyObj;
+
     void Start()
     {
         water = FindObjectOfType<ButtonManager>().water;
@@ -85,6 +87,8 @@ public class WinScript : MonoBehaviour
         newBall.SetActive(true);
         newBall.transform.DOJump(jumpPos.position, 2, 1, 1, false);
         newBall.transform.SetParent(jumpPos.transform, true);
+        yield return new WaitForSeconds(1f);
+        emptyObj.SetActive(false);
     }
 
     IEnumerator gameLost()

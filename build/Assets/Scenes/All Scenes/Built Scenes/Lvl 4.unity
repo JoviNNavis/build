@@ -24738,6 +24738,7 @@ MonoBehaviour:
   lostPanel: {fileID: 3822904456169106448}
   islevelcompleted: 0
   isLost: 0
+  emptyObj: {fileID: 0}
 --- !u!54 &837195052
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27079,6 +27080,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 894265096}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &894370651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 894370652}
+  m_Layer: 0
+  m_Name: EmptyObj
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &894370652
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894370651}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1369896589}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &909800084
 GameObject:
   m_ObjectHideFlags: 0
@@ -43077,6 +43109,7 @@ Transform:
   - {fileID: 291665116}
   - {fileID: 1947403902}
   - {fileID: 1071617101}
+  - {fileID: 894370652}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -57530,6 +57563,7 @@ MonoBehaviour:
   newBallPos: {fileID: 1947403902}
   aiUiPos: {fileID: 349829554}
   ballPuncture: {fileID: 0}
+  emptyObj: {fileID: 0}
 --- !u!1 &1808331553
 GameObject:
   m_ObjectHideFlags: 0
@@ -88810,6 +88844,7 @@ MonoBehaviour:
   newBallPos: {fileID: 1947403902}
   aiUiPos: {fileID: 349829554}
   ballPuncture: {fileID: 8300000, guid: b485a744ad289bc4fa50aaa47e43b96a, type: 3}
+  emptyObj: {fileID: 894370652}
 --- !u!1 &8077495832404600278
 GameObject:
   m_ObjectHideFlags: 0
@@ -88867,6 +88902,7 @@ MonoBehaviour:
   playerImg: {fileID: 1029748663}
   lessValue: 0.0074
   ballPunture: {fileID: 8300000, guid: b485a744ad289bc4fa50aaa47e43b96a, type: 3}
+  emptyObj: {fileID: 894370652}
 --- !u!1 &8077495833353074168
 GameObject:
   m_ObjectHideFlags: 0
@@ -104457,6 +104493,7 @@ MonoBehaviour:
   playerImg: {fileID: 1029748663}
   lessValue: 0
   ballPunture: {fileID: 0}
+  emptyObj: {fileID: 0}
 --- !u!1 &8978664900938315446
 GameObject:
   m_ObjectHideFlags: 0
