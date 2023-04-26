@@ -56,6 +56,7 @@ public class KnifePrefabScript : MonoBehaviour
             Destroy(other.gameObject, 0.3f);
         }
     }
+
     IEnumerator disableanim()
     {
    anim.SetBool("static", true);
