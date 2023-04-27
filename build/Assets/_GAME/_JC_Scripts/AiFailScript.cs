@@ -74,6 +74,7 @@ public class AiFailScript : MonoBehaviour
 
     IEnumerator knifeR1()
     {
+        ai.enabled = false;
         yield return new WaitForSeconds(0.5f);
         Debug.Log("1");
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.03f, false).OnComplete(knifeRemove);
@@ -85,6 +86,7 @@ public class AiFailScript : MonoBehaviour
 
     IEnumerator knifeR2()
     {
+        ai.enabled = false;
         yield return new WaitForSeconds(0.5f);
         Debug.Log("1");
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.03f, false).OnComplete(knifeRemove);
@@ -98,13 +100,15 @@ public class AiFailScript : MonoBehaviour
         Knifeai.transform.position -= new Vector3(0, 0.7f, 0);
         newBallPos.transform.position -= new Vector3(0, 0.7f, 0);
         yield return new WaitForSeconds(0.4f);
-        ai.enabled = true;
+        
         GameObject oldBall = Instantiate(newBall, newBallPos.position, Quaternion.identity);
         oldBall.transform.SetParent(emptyObj);
+        ai.enabled = true;
     }
 
     IEnumerator knifeR3()
     {
+        ai.enabled = false;
         yield return new WaitForSeconds(0.5f);
         Debug.Log("1");
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.03f, false).OnComplete(knifeRemove);
@@ -125,10 +129,10 @@ public class AiFailScript : MonoBehaviour
         aiUiPos.transform.position -= new Vector3(7.8f, 0, 0);
         Knifeai.transform.position -= new Vector3(0, 0.7f, 0);
         newBallPos.transform.position -= new Vector3(0, 0.7f, 0);
-        yield return new WaitForSeconds(0.4f);
-        ai.enabled = true;
+        yield return new WaitForSeconds(0.4f);  
         GameObject oldBall = Instantiate(newBall, newBallPos.position, Quaternion.identity);
         oldBall.transform.SetParent(emptyObj);
+        ai.enabled = true;
     }
 
     IEnumerator knifeR4()

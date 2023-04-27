@@ -51641,7 +51641,7 @@ MonoBehaviour:
   newBallPos: {fileID: 72625663}
   AiPalce: {fileID: 349829554}
   rndclr: 0
-  rankValue: 5.7
+  rankValue: 4.8
   aicolor: 0
   Knife: {fileID: 2590846551577548752, guid: b1df1881c2835ee4ea799456e4a9c975, type: 3}
   knifeThrow: {fileID: 8300000, guid: 60f11383c193e3244ba00919fcebedd6, type: 3}
