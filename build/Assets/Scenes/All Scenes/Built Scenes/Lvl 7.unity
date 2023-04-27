@@ -12598,6 +12598,7 @@ MonoBehaviour:
   isbelowlevel5: 0
   newPanel1: {fileID: 0}
   newPanel2: {fileID: 0}
+  isstart: 0
   arrow: {fileID: 0}
   oldImg: {fileID: 0}
   newImg: {fileID: 0}
@@ -106641,7 +106642,7 @@ PrefabInstance:
     - target: {fileID: 6549153037393732905, guid: 7fdf7b177e526e245b2480cebe9809de,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2
+      value: 1.767
       objectReference: {fileID: 0}
     - target: {fileID: 6549153037393732905, guid: 7fdf7b177e526e245b2480cebe9809de,
         type: 3}
