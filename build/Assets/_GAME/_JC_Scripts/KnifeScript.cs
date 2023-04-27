@@ -94,6 +94,7 @@ public class KnifeScript : MonoBehaviour
                     transform.rotation = Quaternion.Euler(90, -180, 0);
                     playerImg.fillAmount += fillValue;
                     playerCrownSlider.value += fillValue;
+                fireRate = 15;
                     //PlayerRank.transform.position += new Vector3(rankValue, 0, 0);
                     fireTime = 0;
                     if (randcolors >= knifemat.Length)
@@ -107,8 +108,9 @@ public class KnifeScript : MonoBehaviour
                 GameObject _knife = Instantiate(knife, new Vector3(2.4f, transform.localPosition.y, transform.localPosition.z), Quaternion.identity);
 
                     FindObjectOfType<FailScript1>().Knifes.Add(_knife.gameObject.transform);
+                fireRate = 14;
 
-                    transform.position += new Vector3(0, 0.7f, 0);
+                transform.position += new Vector3(0, 0.7f, 0);
                     newBallPos.transform.position += new Vector3(0, 0.7f, 0);
                     transform.rotation = Quaternion.Euler(90, -180, 0);
                     playerImg.fillAmount += fillValue;
