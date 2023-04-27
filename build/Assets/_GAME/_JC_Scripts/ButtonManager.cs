@@ -24,7 +24,8 @@ public class ButtonManager : MonoBehaviour
     public UpScript up;
     public bool isbelowlevel5;
     public GameObject newPanel1, newPanel2;
-
+    public bool isstart;
+    
     public GameObject arrow, oldImg, newImg;
 
     public alertScript alert;
@@ -40,6 +41,7 @@ public class ButtonManager : MonoBehaviour
     void Start()
     {
         BeforeSkybox = RenderSettings.skybox;
+        isstart = false;
     }
 
     // Update is called once per frame
@@ -47,16 +49,19 @@ public class ButtonManager : MonoBehaviour
     {
         if (!isbelowlevel5)
         {
-            if (mid.isskin)
+            if (isstart)
             {
-                knifePlayer2.enabled = false;
-                knifeplayerrr.enabled = true;
+                if (mid.isskin)
+                {
+                    knifePlayer2.enabled = false;
+                    knifeplayerrr.enabled = true;
 
-            }
-            else
-            {
-                knifeplayerrr.enabled = false;
-                knifePlayer2.enabled = true;
+                }
+                else
+                {
+                    knifeplayerrr.enabled = false;
+                    knifePlayer2.enabled = true;
+                }
             }
         }
         else
@@ -104,6 +109,7 @@ public class ButtonManager : MonoBehaviour
         SculptPanel.gameObject.SetActive(false);
         button.gameObject.SetActive(true);
         StartCoroutine(playButton2());
+        isstart = true;
     }
 
     public void gameStart5()   // lvl 8 to lvl 10
@@ -113,6 +119,8 @@ public class ButtonManager : MonoBehaviour
         button.gameObject.SetActive(false);
         SculptPanel.gameObject.SetActive(false);
         ispresed = true;
+        isstart = true;
+
         StartCoroutine(playButton11());
     }
 
