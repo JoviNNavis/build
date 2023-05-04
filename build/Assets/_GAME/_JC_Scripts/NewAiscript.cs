@@ -30,7 +30,7 @@ public class NewAiscript : MonoBehaviour
     {
         if (!level5above)
         {
-            if (collision.gameObject.CompareTag("AiKnife") || collision.gameObject.CompareTag("DKnife"))
+            if (collision.gameObject.CompareTag("AiKnife"))
             {
                 if (FindObjectOfType<Ballpowerup>().time < 0.3f)
                 {
@@ -52,10 +52,20 @@ public class NewAiscript : MonoBehaviour
                     fire.Clear();
                 }
             }
+
+             if (collision.gameObject.CompareTag("DKnife"))
+             {
+                SoundMangerAi.soundctrl.playClip(ballBounce);
+                //  FindObjectOfType<ButtonManager>().water.material.SetColor("_BaseColor", FindObjectOfType<NewBallScript>()._blue);
+                FindObjectOfType<ButtonManager>().isaicolor = false;
+                Rb.AddForce(transform.up * upForce, ForceMode.Force);
+                fire.Pause();
+                fire.Clear();
+             }
         }
         if (level5above)
             {
-                if (collision.gameObject.CompareTag("AiKnife") || collision.gameObject.CompareTag("DKnife"))
+                if (collision.gameObject.CompareTag("AiKnife"))
                 {
                     if (FindObjectOfType<Ballpowerup>().time < 0.3f)
 
@@ -75,12 +85,19 @@ public class NewAiscript : MonoBehaviour
                         Rb.AddForce(transform.up * upForce, ForceMode.Force);
                     fire.Pause();
                     fire.Clear();
+                    }
                 }
-                }
+
+            if (collision.gameObject.CompareTag("DKnife"))
+            {
+                SoundMangerAi.soundctrl.playClip(ballBounce);
+                FindObjectOfType<ButtonManager>().isaicolor = false;
+                Rb.AddForce(transform.up * upForce, ForceMode.Force);
+                fire.Pause();
+                fire.Clear();
             }
 
-
-        
+        }   
     }
 
     //private void OnTriggerEnter(Collider other)

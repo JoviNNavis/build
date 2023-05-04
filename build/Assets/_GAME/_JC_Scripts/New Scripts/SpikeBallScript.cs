@@ -56,7 +56,7 @@ public class SpikeBallScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Knife") || collision.gameObject.CompareTag("DKnife"))
+        if (collision.gameObject.CompareTag("Knife"))
         {
             if (FindObjectOfType<Ballpowerup>().time < 0.4f)
             {
@@ -97,6 +97,25 @@ public class SpikeBallScript : MonoBehaviour
                 //    FindObjectOfType<Knife_anim_controller>().spike.material.color = FindObjectOfType<Knife_anim_controller>().beforeSpikecolor;
 
             }
+        }
+
+        if (collision.gameObject.CompareTag("DKnife"))
+        {
+            SoundManger.soundctrl.playClip(ballBounce);
+            _fire.Pause();
+            _fire.Clear();
+            FindObjectOfType<Starf1>().inpowermode = false;
+
+            camAnim.SetBool("Move", false);
+            powerup_mode = false;
+            FindObjectOfType<ButtonManager>().changecolor = false;
+            RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
+
+
+            RenderSettings.skybox = skybox;
+            Rb.AddForce(transform.up * upForce, ForceMode.Force);
+
+            FindObjectOfType<ColorScript>().spikemat.color = FindObjectOfType<ColorScript>().beforecolor;
         }
 
         if (collision.gameObject.CompareTag("End"))

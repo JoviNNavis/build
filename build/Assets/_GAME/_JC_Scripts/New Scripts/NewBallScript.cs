@@ -124,7 +124,7 @@ public class NewBallScript : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Knife") || collision.gameObject.CompareTag("DKnife"))
+        if (collision.gameObject.CompareTag("Knife"))
         {
             if (FindObjectOfType<Ballpowerup>().time < 0.4f)
             {
@@ -191,11 +191,39 @@ public class NewBallScript : MonoBehaviour
                 {
                   
                 }
-           
-
-
-
             }
+        }
+
+        if (collision.gameObject.CompareTag("DKnife"))
+        {
+            _fire.Pause();
+            _fire.Clear();
+            SoundManger.soundctrl.playClip(ballBounce);
+            camAnim.SetBool("Move", false);
+            powerup_mode = false;
+            FindObjectOfType<ButtonManager>().changecolor = false;
+
+            if (FindObjectOfType<ColorScript>().spikelevel)
+            {
+                FindObjectOfType<Starf1>().inpowermode = false;
+            }
+            StartCoroutine(animations());
+            //if (abovelevel5)
+            //{
+            //    RenderSettings.skybox = skyboxafter5;
+            //}
+            //else
+            //{
+            //    RenderSettings.skybox = skyboxbefore5;
+            //}
+            RenderSettings.skybox = skyboxbefore;
+            Rb.mass = 1f;
+            water.material.SetColor("_BaseColor", _blue);
+            changecolor = false;
+            RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
+            FindObjectOfType<ColorScript>().spikemat.color = FindObjectOfType<ColorScript>().beforecolor;
+
+            Rb.AddForce(transform.up * upForce, ForceMode.Force);
         }
 
         if (collision.gameObject.CompareTag("End"))

@@ -53442,14 +53442,14 @@ MonoBehaviour:
   isOver: 0
   losePanel: {fileID: 268112907}
   Balls:
-  - {fileID: 2007718617}
-  - {fileID: 713768570}
-  - {fileID: 624861573}
-  - {fileID: 909800085}
-  - {fileID: 968450846}
-  - {fileID: 620067324}
-  - {fileID: 526551478}
-  - {fileID: 1168426562}
+  - {fileID: 2114267205929314212}
+  - {fileID: 8489005631473977528}
+  - {fileID: 2138901600}
+  - {fileID: 1587114657}
+  - {fileID: 1136659071}
+  - {fileID: 603278270}
+  - {fileID: 1057697746}
+  - {fileID: 1021584403}
 --- !u!1 &1486550689
 GameObject:
   m_ObjectHideFlags: 0
@@ -78210,14 +78210,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1593344626496699678}
-  m_LocalRotation: {x: 0, y: 0.26311538, z: 0, w: 0.96476436}
+  m_LocalRotation: {x: -0.7071068, y: 0.7071068, z: -0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 4.8, y: 4.8, z: 4.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2007718617}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 30.51, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: -90}
 --- !u!4 &2221134997767103161
 Transform:
   m_ObjectHideFlags: 0
