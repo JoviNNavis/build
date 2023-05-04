@@ -22,6 +22,8 @@ public class WinScript : MonoBehaviour
 
     public GameObject emptyObj;
 
+    public GameObject bonuschestBanner;
+
     void Start()
     {
         water = FindObjectOfType<ButtonManager>().water;
@@ -87,8 +89,10 @@ public class WinScript : MonoBehaviour
         newBall.SetActive(true);
         newBall.transform.DOJump(jumpPos.position, 2, 1, 1, false);
         newBall.transform.SetParent(jumpPos.transform, true);
-        yield return new WaitForSeconds(1f);
+        bonuschestBanner.SetActive(true);
+        yield return new WaitForSeconds(1.5f);
         emptyObj.SetActive(false);
+        bonuschestBanner.SetActive(false);
     }
 
     IEnumerator gameLost()

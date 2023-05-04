@@ -6657,6 +6657,7 @@ MonoBehaviour:
   isbelowlevel5: 0
   newPanel1: {fileID: 1877645705}
   newPanel2: {fileID: 591529393}
+  isstart: 0
   arrow: {fileID: 325552014}
   oldImg: {fileID: 881977935424228602}
   newImg: {fileID: 590511278}

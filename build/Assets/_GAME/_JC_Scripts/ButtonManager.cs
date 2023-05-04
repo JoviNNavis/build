@@ -38,6 +38,14 @@ public class ButtonManager : MonoBehaviour
 
     public AudioClip tapSound;
 
+    public AudioSource Plysounds, Aisounds;
+
+    public GameObject settingPanel;
+
+    public GameObject hapticON, hapticOFF, soundON, soundOFF;
+
+    public GameObject retryButton;
+
     void Start()
     {
         BeforeSkybox = RenderSettings.skybox;
@@ -73,6 +81,7 @@ public class ButtonManager : MonoBehaviour
     public void gameStart1()  //lvl 1
     {
         SoundManger.soundctrl.playClip(tapSound);
+        retryButton.SetActive(true);
         cam.SetActive(false);
         button.gameObject.SetActive(false);
         StartCoroutine(playButton1());
@@ -81,6 +90,7 @@ public class ButtonManager : MonoBehaviour
     public void gameStart2()  //lvl 2
     {
         SoundManger.soundctrl.playClip(tapSound);
+        retryButton.SetActive(true);
         cam.SetActive(false);
         button.gameObject.SetActive(true);
         StartCoroutine(playButton2());
@@ -89,6 +99,7 @@ public class ButtonManager : MonoBehaviour
     public void gameStart11()   // lvl 3 to lvl 5
     {
         SoundManger.soundctrl.playClip(tapSound);
+        retryButton.SetActive(true);
         cam.SetActive(false);
         button.gameObject.SetActive(false);
         StartCoroutine(playButton11());
@@ -97,6 +108,7 @@ public class ButtonManager : MonoBehaviour
     public void gameStart3()  //bonus lvl
     {
         SoundManger.soundctrl.playClip(tapSound);
+        retryButton.SetActive(true);
         cam.SetActive(false);
         button.gameObject.SetActive(false);
         StartCoroutine(playButton1());
@@ -105,6 +117,7 @@ public class ButtonManager : MonoBehaviour
     public void gameStart4()   // lvl 7
     {
         SoundManger.soundctrl.playClip(tapSound);
+        retryButton.SetActive(true);
         cam.SetActive(false);
         SculptPanel.gameObject.SetActive(false);
         button.gameObject.SetActive(true);
@@ -115,6 +128,7 @@ public class ButtonManager : MonoBehaviour
     public void gameStart5()   // lvl 8 to lvl 10
     {
         SoundManger.soundctrl.playClip(tapSound);
+        retryButton.SetActive(true);
         cam.SetActive(false);
         button.gameObject.SetActive(false);
         SculptPanel.gameObject.SetActive(false);
@@ -297,6 +311,44 @@ public class ButtonManager : MonoBehaviour
         SoundManger.soundctrl.playClip(tapSound);
         knifeSkniPanel.SetActive(false);
         Room.SetActive(false);
+    }
+
+    public void SettingsButtonOpen()
+    {
+        settingPanel.SetActive(true);
+    }
+
+    public void SettingsButtonClose()
+    {
+        settingPanel.SetActive(false);
+    }
+
+    public void hapticOn()
+    {
+        hapticON.SetActive(false);
+        hapticOFF.SetActive(true);
+    }
+
+    public void hapticOff()
+    {
+        hapticOFF.SetActive(false);
+        hapticON.SetActive(true);
+    }
+
+    public void soundcOn()
+    {
+        Plysounds.volume = 0;
+        Aisounds.volume = 0;
+        soundON.SetActive(false);
+        soundOFF.SetActive(true);
+    }
+
+    public void soundOff()
+    {
+        Plysounds.volume = 1;
+        Aisounds.volume = 1;
+        soundOFF.SetActive(false);
+        soundON.SetActive(true);
     }
 
     IEnumerator playButton1()
