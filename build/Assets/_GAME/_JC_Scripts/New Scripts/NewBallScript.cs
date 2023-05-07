@@ -105,23 +105,23 @@ public class NewBallScript : MonoBehaviour
 
         }
     }
-    IEnumerator animations()
-    {
+    //IEnumerator animations()
+    //{
       
-        Rb.useGravity = false;
-        yield return new WaitForSeconds(0.3f);
+    //  //  Rb.useGravity = false;
+    //    yield return new WaitForSeconds(0.3f);
 
-        Rb.useGravity = true;
-    }
+    //  //  Rb.useGravity = true;
+    //}
 
-    IEnumerator poweranimations()
-    {
+    //IEnumerator poweranimations()
+    //{
      
-        Rb.useGravity = false;
-        yield return new WaitForSeconds(0.4f);
+    //   // Rb.useGravity = false;
+    //    yield return new WaitForSeconds(0.4f);
 
-        Rb.useGravity = true;
-    }
+    //   // Rb.useGravity = true;
+    //}
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Knife"))
@@ -135,7 +135,7 @@ public class NewBallScript : MonoBehaviour
                 float _newUpforce = upForce + 200;
        
              
-                StartCoroutine(poweranimations());
+              //  StartCoroutine(poweranimations());
 
               Rb.AddForce(transform.up * _newUpforce, ForceMode.Force);
                
@@ -170,7 +170,7 @@ public class NewBallScript : MonoBehaviour
                 {
                     FindObjectOfType<Starf1>().inpowermode = false;
                 }
-                StartCoroutine(animations());
+              //  StartCoroutine(animations());
                 //if (abovelevel5)
                 //{
                 //    RenderSettings.skybox = skyboxafter5;
@@ -180,7 +180,7 @@ public class NewBallScript : MonoBehaviour
                 //    RenderSettings.skybox = skyboxbefore5;
                 //}
                 RenderSettings.skybox = skyboxbefore;
-                Rb.mass = 1f;
+
                 water.material.SetColor("_BaseColor", _blue);
                 changecolor = false;
                 RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
@@ -207,7 +207,7 @@ public class NewBallScript : MonoBehaviour
             {
                 FindObjectOfType<Starf1>().inpowermode = false;
             }
-            StartCoroutine(animations());
+           // StartCoroutine(animations());
             //if (abovelevel5)
             //{
             //    RenderSettings.skybox = skyboxafter5;
@@ -217,7 +217,7 @@ public class NewBallScript : MonoBehaviour
             //    RenderSettings.skybox = skyboxbefore5;
             //}
             RenderSettings.skybox = skyboxbefore;
-            Rb.mass = 1f;
+  
             water.material.SetColor("_BaseColor", _blue);
             changecolor = false;
             RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;

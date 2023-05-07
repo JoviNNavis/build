@@ -14,6 +14,7 @@ public class NewAiscript : MonoBehaviour
 
     void Start()
     {
+        upForce = 600;
         isaicolor = false;
         Rb = GetComponent<Rigidbody>();
         fire.Pause();
