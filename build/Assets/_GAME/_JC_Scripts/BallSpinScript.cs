@@ -41,7 +41,7 @@ public class BallSpinScript : MonoBehaviour
 
                 for (int i = 0; i < Balls.Count; i++)
                 {
-                    Balls[i].transform.Rotate(0, 1f, 0);
+                    Balls[i].transform.Rotate(0, 2f, 0);
                 }
             }
 
@@ -51,7 +51,7 @@ public class BallSpinScript : MonoBehaviour
 
                 for (int i = 0; i < Balls.Count; i++)
                 {
-                    Balls[i].transform.Rotate(0, -1f, 0);
+                    Balls[i].transform.Rotate(0, -2f, 0);
                 }
             }
 
@@ -61,7 +61,7 @@ public class BallSpinScript : MonoBehaviour
 
                 for (int i = 0; i < Balls.Count; i++)
                 {
-                    Balls[i].transform.Rotate(0, 1f, 0);
+                    Balls[i].transform.Rotate(0, 2f, 0);
                 }
             }
         }
