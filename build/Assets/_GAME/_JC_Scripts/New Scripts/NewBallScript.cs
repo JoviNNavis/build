@@ -126,7 +126,7 @@ public class NewBallScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Knife"))
         {
-            if (FindObjectOfType<Ballpowerup>().time < 0.4f)
+            if (FindObjectOfType<Ballpowerup>().time < 0.75f)
             {
                 SoundManger.soundctrl.playClip(fireBall);
                 camAnim.SetBool("Move", true);
