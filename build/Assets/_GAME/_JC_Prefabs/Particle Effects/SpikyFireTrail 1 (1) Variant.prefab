@@ -80,7 +80,7 @@ PrefabInstance:
     - target: {fileID: 5874121810703591077, guid: 6963a285473b46146bd4da0ee7d840bc,
         type: 3}
       propertyPath: m_Name
-      value: SpikyFireTrail 1 (1)
+      value: SpikyFireTrail 1 (1) Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6963a285473b46146bd4da0ee7d840bc, type: 3}

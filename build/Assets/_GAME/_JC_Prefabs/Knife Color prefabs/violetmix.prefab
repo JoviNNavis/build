@@ -69,7 +69,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 75
   tower: {fileID: 0}
-  drops: {fileID: 2972288043886553753, guid: 242ef5c18410a6e4fbe21f0290d74aa8, type: 3}
+  drops: {fileID: 19894390, guid: 38b76b2af38b4a449ace8addd62210de, type: 3}
   plane: {fileID: 6730542048966358657}
   anim: {fileID: 8798149283435879309}
   hit: {fileID: 8300000, guid: 60f11383c193e3244ba00919fcebedd6, type: 3}
