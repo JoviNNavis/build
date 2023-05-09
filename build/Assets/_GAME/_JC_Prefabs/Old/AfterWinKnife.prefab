@@ -108,8 +108,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2590846551577548755}
   - component: {fileID: 2590846551577548754}
-  - component: {fileID: 1295768178702481238}
   - component: {fileID: 9146111261655308705}
+  - component: {fileID: 4278487226242709071}
   m_Layer: 0
   m_Name: AfterWinKnife
   m_TagString: Knife
@@ -150,22 +150,8 @@ MonoBehaviour:
   tower: {fileID: 0}
   drops: {fileID: 19894390, guid: 4cd7d9c6cec4b104c8573cc5b11a900d, type: 3}
   plane: {fileID: 0}
-  anim: {fileID: 0}
   hit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
   bonusBallHit: {fileID: 8300000, guid: b485a744ad289bc4fa50aaa47e43b96a, type: 3}
---- !u!135 &1295768178702481238
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2590846551577548752}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.16793162
-  m_Center: {x: 0.060000077, y: -0.14000002, z: -0.20793153}
 --- !u!54 &9146111261655308705
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -182,6 +168,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!65 &4278487226242709071
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2590846551577548752}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05941297, y: 0.05322085, z: 0.26273766}
+  m_Center: {x: 0.048047543, y: 0.017709997, z: -0.00159657}
 --- !u!1 &6447887427413798797
 GameObject:
   m_ObjectHideFlags: 0

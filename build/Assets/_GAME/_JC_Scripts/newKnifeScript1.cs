@@ -15,7 +15,8 @@ public class newKnifeScript1 : MonoBehaviour
     [SerializeField] private float nextfireRate;
     public float xpos;
     public GameObject knife;
- 
+
+
     public Text knifeCountText;
     public int knifeCount;
 
@@ -24,7 +25,8 @@ public class newKnifeScript1 : MonoBehaviour
     void Start()
     {
         xpos = gameObject.transform.position.x - 2f;
-       
+
+
     }
 
     // Update is called once per frame
@@ -75,7 +77,7 @@ public class newKnifeScript1 : MonoBehaviour
 
             Instantiate(knife, new Vector3(xpos, spanwPosy, transform.localPosition.z), Quaternion.Euler(-90, 0, 0));
 
-            
+         
             knifeCount -= 1;
             transform.rotation = Quaternion.Euler(90, -180, 0);
             fireTime = 0;

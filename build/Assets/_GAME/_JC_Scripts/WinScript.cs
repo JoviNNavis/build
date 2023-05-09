@@ -8,6 +8,7 @@ public class WinScript : MonoBehaviour
     public GameObject blast, winText;
     public GameObject lvl, retry;
 
+    
     public GameObject newBall;
     public Transform jumpPos;
     public bool spikelevel;
@@ -28,6 +29,7 @@ public class WinScript : MonoBehaviour
     {
         water = FindObjectOfType<ButtonManager>().water;
         _blue = new Color32(0, 137, 255, 255);
+       
     }
 
     

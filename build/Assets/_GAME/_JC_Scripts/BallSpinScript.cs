@@ -11,12 +11,16 @@ public class BallSpinScript : MonoBehaviour
     bool islevelbelow5;
     public GameObject losePanel;
 
-    public List<Transform> Balls = new List<Transform>();
+    public List<Transform> Balls ;
+    public List<Animator> ANIMBalls;
 
     float timer = 0;
     void Start()
     {
-
+        for (int i = 0; i < ANIMBalls.Count; i++)
+        {
+            ANIMBalls[i].enabled = true;
+        }
     }
 
 
@@ -41,7 +45,7 @@ public class BallSpinScript : MonoBehaviour
 
                 for (int i = 0; i < Balls.Count; i++)
                 {
-                    Balls[i].transform.Rotate(0, 2f, 0);
+                 //   Balls[i].transform.Rotate(0, 2f, 0);
                 }
             }
 
@@ -51,7 +55,7 @@ public class BallSpinScript : MonoBehaviour
 
                 for (int i = 0; i < Balls.Count; i++)
                 {
-                    Balls[i].transform.Rotate(0, -2f, 0);
+                //    Balls[i].transform.Rotate(0, -2f, 0);
                 }
             }
 
@@ -61,7 +65,7 @@ public class BallSpinScript : MonoBehaviour
 
                 for (int i = 0; i < Balls.Count; i++)
                 {
-                    Balls[i].transform.Rotate(0, 2f, 0);
+               //     Balls[i].transform.Rotate(0, 2f, 0);
                 }
             }
         }
@@ -81,7 +85,7 @@ public class BallSpinScript : MonoBehaviour
 
                 for (int i = 0; i < Balls.Count; i++)
                 {
-                    Balls[i].transform.Rotate(0, 1f, 0);
+                 //   Balls[i].transform.Rotate(0, 1f, 0);
                 }
             }
 
@@ -91,7 +95,7 @@ public class BallSpinScript : MonoBehaviour
 
                 for (int i = 0; i < Balls.Count; i++)
                 {
-                    Balls[i].transform.Rotate(0, -1f, 0);
+                   // Balls[i].transform.Rotate(0, -1f, 0);
                 }
             }
 
@@ -101,7 +105,7 @@ public class BallSpinScript : MonoBehaviour
 
                 for (int i = 0; i < Balls.Count; i++)
                 {
-                    Balls[i].transform.Rotate(0, 1f, 0);
+              //      Balls[i].transform.Rotate(0, 1f, 0);
                 }
             }
         

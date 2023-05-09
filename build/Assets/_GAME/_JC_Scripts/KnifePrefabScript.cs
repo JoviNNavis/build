@@ -11,15 +11,15 @@ public class KnifePrefabScript : MonoBehaviour
     public Transform tower;
     public ParticleSystem drops;
     public GameObject plane;
-    public Animator anim;
+    //public Animator anim;
     public AudioClip hit, bonusBallHit;
   //  public MeshRenderer knife;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        anim = GetComponent<Animator>();
-        plane.SetActive(false);
+       // anim = GetComponent<Animator>();
+        //plane.SetActive(false);
 
     }
 
@@ -42,7 +42,7 @@ public class KnifePrefabScript : MonoBehaviour
             //Instantiate(plane, other.transform.position+new  Vector3(0.77f, -0.1f, -0.15f), Quaternion.Euler(0, -90, 0));
             plane.SetActive(true);
             transform.position = new Vector3(-0.581f, transform.localPosition.y, transform.localPosition.z);
-            StartCoroutine(disable());
+           // StartCoroutine(disable());
             this.enabled = false;
         }
 
@@ -57,13 +57,13 @@ public class KnifePrefabScript : MonoBehaviour
         }
     }
 
-    IEnumerator disableanim()
-    {
-   anim.SetBool("static", true);
-        yield return new WaitForSeconds(0.3f);
-    anim.SetBool("static", false);
+   // IEnumerator disableanim()
+   // {
+   //anim.SetBool("static", true);
+   //     yield return new WaitForSeconds(0.3f);
+   // anim.SetBool("static", false);
 
-    }
+   // }
     IEnumerator disable()
     {
         yield return new WaitForSeconds(1f);
