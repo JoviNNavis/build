@@ -132,7 +132,7 @@ public class KnifeScript : MonoBehaviour
     IEnumerator txtDisable()
     {
         yield return new WaitForSeconds(0.75f);
-        counterText.SetActive(false);
+        //counterText.SetActive(false);
     }
 
 }
