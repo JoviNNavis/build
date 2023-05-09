@@ -28,7 +28,7 @@ public class StackScript : MonoBehaviour
             SoundManger.soundctrl.playClip(knifeHit);
             Instantiate(blast, transform.position, Quaternion.Euler(-90, 0, 0));
             //stacks.transform.localPosition -= new Vector3(0, 0.5f, 0);
-            stacks.transform.DOMoveY(stacks.transform.position.y - 0.17f, 0.1f, false);
+            stacks.transform.DOMoveY(stacks.transform.position.y - 0.15f, 0.1f, false);
     
             Destroy(other.gameObject);
             Destroy(this.gameObject, 0.1f);
