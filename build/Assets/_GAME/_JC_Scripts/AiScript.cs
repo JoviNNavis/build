@@ -66,7 +66,7 @@ public class AiScript : MonoBehaviour
                 FindObjectOfType<AiFailScript>().Knifes.Add(aiobject.gameObject.transform);
                 fireRate1 = 4.75f;
                 rndclr++;
-                fireTime1 = 0.4F;
+                fireTime1 = 0.1F;
                 transform.position += new Vector3(0, 0.7f, 0);
                 newBallPos.transform.position += new Vector3(0, 0.7f, 0);
                 transform.rotation = Quaternion.Euler(90, 0, 0);
