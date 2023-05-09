@@ -94,7 +94,7 @@ public class SpikeBallScript : MonoBehaviour
                
                 FindObjectOfType<ColorScript>().spikemat.color = FindObjectOfType<ColorScript>().beforecolor;
 
-                //    FindObjectOfType<Knife_anim_controller>().spike.material.color = FindObjectOfType<Knife_anim_controller>().beforeSpikecolor;
+              
 
             }
         }

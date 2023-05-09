@@ -171,15 +171,7 @@ public class NewBallScript : MonoBehaviour
                 {
                     FindObjectOfType<Starf1>().inpowermode = false;
                 }
-              //  StartCoroutine(animations());
-                //if (abovelevel5)
-                //{
-                //    RenderSettings.skybox = skyboxafter5;
-                //}
-                //else
-                //{
-                //    RenderSettings.skybox = skyboxbefore5;
-                //}
+           
                 RenderSettings.skybox = skyboxbefore;
 
                 water.material.SetColor("_BaseColor", _blue);
@@ -208,15 +200,7 @@ public class NewBallScript : MonoBehaviour
             {
                 FindObjectOfType<Starf1>().inpowermode = false;
             }
-           // StartCoroutine(animations());
-            //if (abovelevel5)
-            //{
-            //    RenderSettings.skybox = skyboxafter5;
-            //}
-            //else
-            //{
-            //    RenderSettings.skybox = skyboxbefore5;
-            //}
+           
             RenderSettings.skybox = skyboxbefore;
   
             water.material.SetColor("_BaseColor", _blue);
