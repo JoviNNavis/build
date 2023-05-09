@@ -7,7 +7,7 @@ public class WinScript1 : MonoBehaviour
 {
     public GameObject blast, winText;
     public GameObject lvl, retry, target, text;
-
+    
     public KnifeScript1 playerKnife;
 
     void Start()
@@ -28,6 +28,8 @@ public class WinScript1 : MonoBehaviour
             FindObjectOfType<KnifeScript1>().countText.SetActive(false);
             playerKnife.enabled = false;
             lvl.SetActive(false);
+            FindObjectOfType<KnifeScript1>().combo.SetActive(false);
+
             retry.SetActive(false);
             blast.SetActive(true);
             winText.SetActive(true);
