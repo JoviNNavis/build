@@ -45,7 +45,7 @@ public class popupScript : MonoBehaviour
         }
       
         stack.SetActive(true);
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.75f);
         balls.enabled = true;
     }
 }

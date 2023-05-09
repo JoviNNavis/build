@@ -16,7 +16,7 @@ public class StackScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0, 0.1f, 0);
+        transform.Rotate(0, 0.25f, 0);
       
 
     }
@@ -27,7 +27,8 @@ public class StackScript : MonoBehaviour
         {
             SoundManger.soundctrl.playClip(knifeHit);
             Instantiate(blast, transform.position, Quaternion.Euler(-90, 0, 0));
-            stacks.transform.DOMoveY(stacks.transform.position.y - 0.175f, 0.10f, false);
+            //stacks.transform.localPosition -= new Vector3(0, 0.5f, 0);
+            stacks.transform.DOMoveY(stacks.transform.position.y - 0.17f, 0.1f, false);
     
             Destroy(other.gameObject);
             Destroy(this.gameObject, 0.1f);
