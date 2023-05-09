@@ -18,12 +18,12 @@ public class KnifeScript1 : MonoBehaviour
     public Transform newBallPos;
     public GameObject knife;
     public GameObject PlayerRank;
-
+    public GameObject combo;
     public Image playerImg;
     public float rankValue;
 
     public GameObject countText;
-
+    public TMPro.TextMeshProUGUI _text;
     public AudioClip hit;
 
     void Start()
