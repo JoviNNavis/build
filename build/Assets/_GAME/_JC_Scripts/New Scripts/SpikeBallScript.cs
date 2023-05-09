@@ -58,7 +58,7 @@ public class SpikeBallScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Knife"))
         {
-            if (FindObjectOfType<Ballpowerup>().time < 0.4f)
+            if (FindObjectOfType<Ballpowerup>().time < 0.6f)
             {
                 SoundManger.soundctrl.playClip(fireBallbounce);
                 camAnim.SetBool("Move", true);
