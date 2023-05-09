@@ -24,14 +24,14 @@ public class KnifeScript : MonoBehaviour
     public Image playerImg;
     public bool playerchangecolor;
     public float fillValue;
-
+    public GameObject combo;
     public GameObject counterText;
-
+  public  int combovalue;
     public AudioClip knifeThrow;
-
+    public TMPro.TextMeshProUGUI _text;
     void Start()
     {
-        
+        combovalue = 1;
     }
 
 
@@ -85,7 +85,8 @@ public class KnifeScript : MonoBehaviour
             SoundManger.soundctrl.playClip(knifeThrow);
             if (ischangecolor)
                 {
-                
+        
+               
                 _knife = Instantiate(knifemat[randcolors], new Vector3(2.4f, transform.localPosition.y, transform.localPosition.z), Quaternion.identity);
                     FindObjectOfType<FailScript1>().Knifes.Add(_knife.gameObject.transform);
                     randcolors++;
@@ -95,7 +96,7 @@ public class KnifeScript : MonoBehaviour
                     playerImg.fillAmount += fillValue;
                     playerCrownSlider.value += fillValue;
                 fireRate = 15;
-                    //PlayerRank.transform.position += new Vector3(rankValue, 0, 0);
+    
                     fireTime = 0;
                     if (randcolors >= knifemat.Length)
                     {
@@ -104,12 +105,17 @@ public class KnifeScript : MonoBehaviour
                 }
                 else
                 {
+                combo.SetActive(false);
                 
                 GameObject _knife = Instantiate(knife, new Vector3(2.4f, transform.localPosition.y, transform.localPosition.z), Quaternion.identity);
-
-                    FindObjectOfType<FailScript1>().Knifes.Add(_knife.gameObject.transform);
+                
+                FindObjectOfType<FailScript1>().Knifes.Add(_knife.gameObject.transform);
                 fireRate = 14;
 
+               
+
+
+                combovalue = 1;
                 transform.position += new Vector3(0, 0.7f, 0);
                     newBallPos.transform.position += new Vector3(0, 0.7f, 0);
                     transform.rotation = Quaternion.Euler(90, -180, 0);
@@ -125,8 +131,8 @@ public class KnifeScript : MonoBehaviour
 
     IEnumerator txtDisable()
     {
-        yield return new WaitForSeconds(0.55f);
-        //counterText.SetActive(false);
+        yield return new WaitForSeconds(0.75f);
+        counterText.SetActive(false);
     }
 
 }

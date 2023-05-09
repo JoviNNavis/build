@@ -53,9 +53,10 @@ public class WinScript : MonoBehaviour
 
             islevelcompleted = true;
               stopwatercolor();
-            
+  FindObjectOfType<KnifeScript>().combo.SetActive(false);
 
-           
+
+
             aiKnife.enabled = false;
             lvl.SetActive(false);
             blast.SetActive(true);
@@ -76,6 +77,8 @@ public class WinScript : MonoBehaviour
             playerKnife.enabled = false;
             aiKnife.enabled = false;
             lvl.SetActive(false);
+            FindObjectOfType<KnifeScript>().combo.SetActive(false);
+
             retry.SetActive(false);
             Destroy(text);
             Destroy(target);

@@ -18,5 +18,7 @@ public class CounterKnifeScript : MonoBehaviour
     void Update()
     {
         knifeTxt.text = "+" + knifeCountValue;
+    
+
     }
 }

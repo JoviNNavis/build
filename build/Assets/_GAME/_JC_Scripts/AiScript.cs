@@ -66,12 +66,12 @@ public class AiScript : MonoBehaviour
                 FindObjectOfType<AiFailScript>().Knifes.Add(aiobject.gameObject.transform);
                 fireRate1 = 4.75f;
                 rndclr++;
-
+                fireTime1 = 0.4F;
                 transform.position += new Vector3(0, 0.7f, 0);
                 newBallPos.transform.position += new Vector3(0, 0.7f, 0);
                 transform.rotation = Quaternion.Euler(90, 0, 0);
                 AiPalce.transform.position += new Vector3(rankValue, 0, 0);
-                fireTime1 = 0;
+               // fireTime1 = 0;
                 if (rndclr >= knifemat.Length)
                 {
                     rndclr = 0;
