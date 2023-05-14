@@ -5,43 +5,43 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/All Scenes/Built Scenes/Lvl 1.unity
     guid: 50455d85cf00cab45bc1cb1df0aca226
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/All Scenes/Built Scenes/Lvl 2.unity
     guid: 4e2c3dbdeb97d014cb3147a1138c1d1b
   - enabled: 1
     path: Assets/Scenes/All Scenes/Built Scenes/Lvl 3.unity
     guid: 6c463502881f6764ea680be9d56cfa15
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/All Scenes/Built Scenes/Lvl 4.unity
     guid: 8bbf7c6387e12ce43843dd1d56e98b07
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/All Scenes/Built Scenes/Lvl 5.unity
     guid: 17e50d23017d36d40a002b449ac93650
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/All Scenes/Built Scenes/Bonus Lvl 1.unity
     guid: 6e780f40009fc5b479c4fc305c928c51
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/All Scenes/Built Scenes/PreSct Lvl 1.unity
     guid: 38f1d52a6dc90ab47a4ebb3e2386285b
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/All Scenes/Built Scenes/Sct Lvl 1.unity
     guid: 3a758ecb0241640458cb9b8c5e69ea3f
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/All Scenes/Built Scenes/ShowCase Lvl.unity
     guid: 92d13ef6f1237214fac1a4b4fc60fde6
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/All Scenes/Built Scenes/Lvl 7.unity
     guid: 67999a527df730c4e9c41d3034aa1d3e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/All Scenes/Built Scenes/Lvl 8.unity
     guid: ae222546f3d476242b591c8b058c8ff4
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/All Scenes/Built Scenes/Lvl 9.unity
     guid: e7bff02a18a55d74c943f6fe37870914
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/All Scenes/Built Scenes/Lvl 10.unity
     guid: 801084f82256ae3499dfc6ad3c27c2fe
   m_configObjects: {}
