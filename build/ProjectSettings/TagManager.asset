@@ -16,6 +16,9 @@ TagManager:
   - End
   - Stacks
   - AiMain
+  - AiPref
+  - KnifePref
+  - sb
   layers:
   - Default
   - TransparentFX

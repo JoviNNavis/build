@@ -35,7 +35,7 @@ public class ButtonManager : MonoBehaviour
     public alertScript alert;
 
     public GameObject defaultScroll, VIPScroll;
-
+    public GameObject settingsbutton;
     public GameObject uiBar, Room, ShowCase;
 
     public Transform Dirlight;
@@ -54,6 +54,7 @@ public class ButtonManager : MonoBehaviour
     {
         BeforeSkybox = RenderSettings.skybox;
         isstart = false;
+        settingsbutton = GameObject.FindGameObjectWithTag("sb");
     }
 
     // Update is called once per frame
@@ -87,6 +88,7 @@ public class ButtonManager : MonoBehaviour
         SoundManger.soundctrl.playClip(tapSound);
         retryButton.SetActive(true);
         cam.SetActive(false);
+        settingsbutton.SetActive(false);
         button.gameObject.SetActive(false);
         StartCoroutine(playButton1());
     }

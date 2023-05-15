@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 using DG.Tweening;
-
+using MoreMountains.NiceVibrations;
 //using Lofelt.NiceVibrations;
 public class FailScript1 : MonoBehaviour
 {
