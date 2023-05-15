@@ -364,6 +364,37 @@ public class ButtonManager : MonoBehaviour
         soundON.SetActive(true);
     }
 
+    public void bonusDouble2()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+        rewardPanel.SetActive(false);
+        cashScript.cashValue += BounsCoinCollect.coinValue * 2;
+        countdownPanel.SetActive(true);
+    }
+
+    public void bonusDouble3()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+        rewardPanel.SetActive(false);
+        cashScript.cashValue += BounsCoinCollect.coinValue * 3;
+        countdownPanel.SetActive(true);
+    }
+
+    public void bonusDouble5()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+        rewardPanel.SetActive(false);
+        cashScript.cashValue += BounsCoinCollect.coinValue * 5;
+        countdownPanel.SetActive(true);
+    }
+
+    public void bonusNext()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+        cashScript.cashValue += 500;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
     IEnumerator playButton1()
     {
         yield return new WaitForSeconds(2f);
