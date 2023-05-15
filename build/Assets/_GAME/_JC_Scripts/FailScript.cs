@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
+using MoreMountains.NiceVibrations;
+
 using DG.Tweening;
 
 public class FailScript : MonoBehaviour
@@ -85,6 +87,11 @@ public class FailScript : MonoBehaviour
         if (collision.gameObject.tag == "Knife")
         {
             knifeCounter.knifeCountValue += 1;
+            if (FindObjectOfType<ButtonManager>().ishaptic)
+            {
+                MMVibrationManager.Haptic(HapticTypes.SoftImpact);
+                Debug.LogError("vibe");
+            }
 
         }
         if (collision.gameObject.tag == "Ball" && Knifes.Count == 1)

@@ -13,7 +13,7 @@ public class ButtonManager : MonoBehaviour
     public KnifeScriptSword knifeplayerrr;
 
     public RayBall ballRay;
-
+    public bool ishaptic;
     public bool isaicolor;
     public bool changecolor;
     public AiScript ai;
@@ -55,6 +55,7 @@ public class ButtonManager : MonoBehaviour
         BeforeSkybox = RenderSettings.skybox;
         isstart = false;
         settingsbutton = GameObject.FindGameObjectWithTag("sb");
+        hapticOff();
     }
 
     // Update is called once per frame
@@ -98,6 +99,7 @@ public class ButtonManager : MonoBehaviour
         SoundManger.soundctrl.playClip(tapSound);
         retryButton.SetActive(true);
         cam.SetActive(false);
+        settingsbutton.SetActive(false);
         button.gameObject.SetActive(true);
         StartCoroutine(playButton2());
     }
@@ -106,6 +108,7 @@ public class ButtonManager : MonoBehaviour
     {
         SoundManger.soundctrl.playClip(tapSound);
         retryButton.SetActive(true);
+        settingsbutton.SetActive(false);
         cam.SetActive(false);
         button.gameObject.SetActive(false);
         StartCoroutine(playButton11());
@@ -124,6 +127,7 @@ public class ButtonManager : MonoBehaviour
     {
         SoundManger.soundctrl.playClip(tapSound);
         retryButton.SetActive(true);
+        settingsbutton.SetActive(false);
         cam.SetActive(false);
         SculptPanel.gameObject.SetActive(false);
         button.gameObject.SetActive(true);
@@ -136,6 +140,7 @@ public class ButtonManager : MonoBehaviour
         SoundManger.soundctrl.playClip(tapSound);
         retryButton.SetActive(true);
         cam.SetActive(false);
+        settingsbutton.SetActive(false);
         button.gameObject.SetActive(false);
         SculptPanel.gameObject.SetActive(false);
         ispresed = true;
@@ -331,12 +336,14 @@ public class ButtonManager : MonoBehaviour
 
     public void hapticOn()
     {
+        ishaptic = false;
         hapticON.SetActive(false);
         hapticOFF.SetActive(true);
     }
 
     public void hapticOff()
     {
+        ishaptic = true;
         hapticOFF.SetActive(false);
         hapticON.SetActive(true);
     }

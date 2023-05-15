@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MoreMountains.NiceVibrations;
 
 public class SpinBall : MonoBehaviour
 {
@@ -21,6 +22,11 @@ public class SpinBall : MonoBehaviour
     {
         if(other.CompareTag("Knife"))
         {
+            if (FindObjectOfType<ButtonManager>().ishaptic)
+            {
+                MMVibrationManager.Haptic(HapticTypes.Failure);
+                Debug.LogError("vibe");
+            }
             ball.Balls.Remove(transform);
             Destroy(other.gameObject);
             ball.isOver = true;

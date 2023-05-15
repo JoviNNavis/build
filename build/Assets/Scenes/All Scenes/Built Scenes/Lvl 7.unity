@@ -157,7 +157,7 @@ RectTransform:
   - {fileID: 690362057}
   - {fileID: 4326376505583159069}
   m_Father: {fileID: 441597546}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -1998,7 +1998,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 441597546}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -12024,11 +12024,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3967298903774023039}
   - {fileID: 811027090}
   - {fileID: 1877131779}
   - {fileID: 127480849}
   - {fileID: 1813663}
+  - {fileID: 3967298903774023039}
   - {fileID: 2070426129}
   - {fileID: 1130047089}
   - {fileID: 1205800476}
@@ -12905,6 +12905,7 @@ MonoBehaviour:
   knifePlayer2: {fileID: 1817783779}
   knifeplayerrr: {fileID: 1817783780}
   ballRay: {fileID: 1570535876}
+  ishaptic: 0
   isaicolor: 0
   changecolor: 0
   ai: {fileID: 1920393867}
@@ -17502,7 +17503,7 @@ RectTransform:
   - {fileID: 1462537525}
   - {fileID: 4118225339579481921}
   m_Father: {fileID: 441597546}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -47218,7 +47219,7 @@ RectTransform:
   - {fileID: 14972585}
   - {fileID: 511800751}
   m_Father: {fileID: 441597546}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -91084,7 +91085,7 @@ RectTransform:
   m_Children:
   - {fileID: 3967298903878737555}
   m_Father: {fileID: 441597546}
-  m_RootOrder: 0
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
