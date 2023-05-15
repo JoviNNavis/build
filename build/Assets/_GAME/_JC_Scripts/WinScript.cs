@@ -81,7 +81,7 @@ public class WinScript : MonoBehaviour
     {
         if(isLost == false && other.CompareTag("Knife"))
         {
-            rayball.enabled = false;
+            
             playerKnife.enabled = false;
             FindObjectOfType<KnifeScript>().counterText.SetActive(false);
 
@@ -95,12 +95,13 @@ public class WinScript : MonoBehaviour
             StartCoroutine(winJump());
             Destroy(text);
             Destroy(target);
+            rayball.enabled = false;
         }
 
 
         if (isLost == true && other.CompareTag("Knife"))
         {
-            rayball.enabled = false;
+            
             playerKnife.enabled = false;
             aiKnife.enabled = false;
             lvl.SetActive(false);
@@ -108,7 +109,8 @@ public class WinScript : MonoBehaviour
             retry.SetActive(false);
             Destroy(text);
             Destroy(target);
-            StartCoroutine(gameLost());        
+            StartCoroutine(gameLost());
+            rayball.enabled = false;
         }
 
 

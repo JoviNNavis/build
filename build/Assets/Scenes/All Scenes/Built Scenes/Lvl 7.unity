@@ -12904,6 +12904,7 @@ MonoBehaviour:
   playerKnife: {fileID: 0}
   knifePlayer2: {fileID: 1817783779}
   knifeplayerrr: {fileID: 1817783780}
+  ballRay: {fileID: 1570535876}
   isaicolor: 0
   changecolor: 0
   ai: {fileID: 1920393867}
@@ -17926,11 +17927,15 @@ MonoBehaviour:
   aiKnife: {fileID: 1920393867}
   text: {fileID: 1033613528}
   target: {fileID: 1357686245}
+  aiTarget: {fileID: 920293312}
   lostPanel: {fileID: 7732494707446415902}
   islevelcompleted: 0
   isLost: 0
   emptyObj: {fileID: 1402953573}
   bonuschestBanner: {fileID: 2506465885250981812}
+  rayball: {fileID: 1570535876}
+  playerNewObj: {fileID: 1732502738}
+  aiNewObj: {fileID: 1402953573}
 --- !u!54 &837195052
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24656,7 +24661,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0.042747617, y: -0, z: -0, w: 0.99908596}
-  m_LocalPosition: {x: 0, y: 2.64, z: -13.94}
+  m_LocalPosition: {x: 0, y: 24.6, z: -13.94}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -35725,6 +35730,7 @@ Transform:
   - {fileID: 4813697536958284701}
   - {fileID: 5810763576794191785}
   - {fileID: 1402953574}
+  - {fileID: 1732502739}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -36075,7 +36081,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1486550690}
   - {fileID: 1570535867}
   m_Father: {fileID: 1369896589}
   m_RootOrder: 13
@@ -36173,7 +36178,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1408766778
 Transform:
   m_ObjectHideFlags: 0
@@ -38177,7 +38182,7 @@ Transform:
   m_Children:
   - {fileID: 5088075980288363465}
   - {fileID: 7721699674410287076}
-  m_Father: {fileID: 1402953574}
+  m_Father: {fileID: 1732502739}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &1486550691
@@ -44025,6 +44030,7 @@ GameObject:
   - component: {fileID: 1570535868}
   - component: {fileID: 1570535874}
   - component: {fileID: 1570535875}
+  - component: {fileID: 1570535876}
   m_Layer: 0
   m_Name: AiBall
   m_TagString: AiBall
@@ -44048,7 +44054,7 @@ Transform:
   - {fileID: 1949560382}
   - {fileID: 9886589589176436}
   m_Father: {fileID: 1402953574}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!96 &1570535868
 TrailRenderer:
@@ -44250,7 +44256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isaicolor: 0
-  upForce: 740
+  upForce: 600
   level5above: 1
   fire: {fileID: 1949560384}
   ballBounce: {fileID: 8300000, guid: 30645f3aee2e5da4aa240094992e6412, type: 3}
@@ -44275,6 +44281,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1570535876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570535866}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 952a02de4bddf9e4295d31351c4b71e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayPos: {fileID: 1584184991}
+  rayRange: 2
+  aiKnife: {fileID: 1920393867}
 --- !u!1 &1584184990
 GameObject:
   m_ObjectHideFlags: 0
@@ -45864,6 +45885,38 @@ RectTransform:
   m_AnchoredPosition: {x: 150, y: -3778.7998}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1732502738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1732502739}
+  m_Layer: 0
+  m_Name: PlayerEMpty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1732502739
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732502738}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1486550690}
+  m_Father: {fileID: 1369896589}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1735257300
 GameObject:
   m_ObjectHideFlags: 0
@@ -52488,9 +52541,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1920393866}
   - component: {fileID: 1920393867}
+  - component: {fileID: 1920393868}
   m_Layer: 0
   m_Name: KnifeAi
-  m_TagString: Untagged
+  m_TagString: AiMain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52524,7 +52578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa2ba120b014ccb4eb6411ea8d89b780, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireRate1: 1.33
+  fireRate1: 18
   knifemat:
   - {fileID: 2590846551577548752, guid: aec3584c4acc569468b7612dc8693033, type: 3}
   - {fileID: 2590846551577548752, guid: a00675575a4f3454fb338b03c71504e1, type: 3}
@@ -52538,10 +52592,23 @@ MonoBehaviour:
   newBallPos: {fileID: 72625663}
   AiPalce: {fileID: 349829554}
   rndclr: 0
-  rankValue: 4.8
+  rankValue: 4.9
   aicolor: 0
   Knife: {fileID: 2590846551577548752, guid: b1df1881c2835ee4ea799456e4a9c975, type: 3}
   knifeThrow: {fileID: 8300000, guid: 60f11383c193e3244ba00919fcebedd6, type: 3}
+--- !u!65 &1920393868
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920393865}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1, z: 1}
+  m_Center: {x: 1.15, y: 0, z: 0}
 --- !u!1 &1925368877
 GameObject:
   m_ObjectHideFlags: 0
@@ -60762,7 +60829,7 @@ MonoBehaviour:
   playerImg: {fileID: 50878900}
   lessValue: 0.015
   ballPunture: {fileID: 8300000, guid: b485a744ad289bc4fa50aaa47e43b96a, type: 3}
-  emptyObj: {fileID: 1402953574}
+  emptyObj: {fileID: 1732502739}
 --- !u!4 &985168633705316088
 Transform:
   m_ObjectHideFlags: 0

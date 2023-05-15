@@ -14049,6 +14049,7 @@ MonoBehaviour:
   playerKnife: {fileID: 0}
   knifePlayer2: {fileID: 1817783779}
   knifeplayerrr: {fileID: 0}
+  ballRay: {fileID: 1570535875}
   isaicolor: 0
   changecolor: 0
   ai: {fileID: 1920393867}
@@ -22185,11 +22186,15 @@ MonoBehaviour:
   aiKnife: {fileID: 1920393867}
   text: {fileID: 262429175}
   target: {fileID: 1357686245}
+  aiTarget: {fileID: 920293312}
   lostPanel: {fileID: 5634819622248250101}
   islevelcompleted: 0
   isLost: 0
   emptyObj: {fileID: 1002872162}
   bonuschestBanner: {fileID: 1481893871535366648}
+  rayball: {fileID: 1570535875}
+  playerNewObj: {fileID: 1362658043}
+  aiNewObj: {fileID: 1002872162}
 --- !u!54 &837195052
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25731,7 +25736,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0.042747617, y: -0, z: -0, w: 0.99908596}
-  m_LocalPosition: {x: 0, y: 2.64, z: -13.94}
+  m_LocalPosition: {x: 0, y: 46.1, z: -13.94}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -31453,7 +31458,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1486550690}
   - {fileID: 1570535867}
   m_Father: {fileID: 1369896589}
   m_RootOrder: 9
@@ -37818,6 +37822,38 @@ MonoBehaviour:
   InitialRot: []
   CoinNo: 10
   coinCollect: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+--- !u!1 &1362658043
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1362658044}
+  m_Layer: 0
+  m_Name: PlayerEmpty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1362658044
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362658043}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1486550690}
+  m_Father: {fileID: 1369896589}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1363368872
 GameObject:
   m_ObjectHideFlags: 0
@@ -38067,6 +38103,7 @@ Transform:
   - {fileID: 752006272}
   - {fileID: 1540595357}
   - {fileID: 1002872163}
+  - {fileID: 1362658044}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -38741,7 +38778,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1408766778
 Transform:
   m_ObjectHideFlags: 0
@@ -41009,7 +41046,7 @@ Transform:
   m_Children:
   - {fileID: 6221146802895336824}
   - {fileID: 162947431}
-  m_Father: {fileID: 1002872163}
+  m_Father: {fileID: 1362658044}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &1486550691
@@ -47625,6 +47662,7 @@ GameObject:
   - component: {fileID: 1570535870}
   - component: {fileID: 1570535868}
   - component: {fileID: 1570535874}
+  - component: {fileID: 1570535875}
   m_Layer: 0
   m_Name: AiBall
   m_TagString: AiBall
@@ -47648,7 +47686,7 @@ Transform:
   - {fileID: 1885947148}
   - {fileID: 8266078393359489907}
   m_Father: {fileID: 1002872163}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!96 &1570535868
 TrailRenderer:
@@ -47850,11 +47888,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isaicolor: 0
-  upForce: 740
+  upForce: 600
   level5above: 0
   fire: {fileID: 1885947150}
   ballBounce: {fileID: 8300000, guid: 30645f3aee2e5da4aa240094992e6412, type: 3}
   fireBall: {fileID: 8300000, guid: faf8ca3c1e73dd04a8ccd54d82e5e9e6, type: 3}
+--- !u!114 &1570535875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570535866}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 952a02de4bddf9e4295d31351c4b71e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayPos: {fileID: 1584184991}
+  rayRange: 3
+  aiKnife: {fileID: 1920393867}
 --- !u!1 &1576474075
 GameObject:
   m_ObjectHideFlags: 0
@@ -53504,9 +53557,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1920393866}
   - component: {fileID: 1920393867}
+  - component: {fileID: 1920393868}
   m_Layer: 0
   m_Name: KnifeAi
-  m_TagString: Untagged
+  m_TagString: AiMain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53540,7 +53594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa2ba120b014ccb4eb6411ea8d89b780, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireRate1: 1.33
+  fireRate1: 18
   knifemat:
   - {fileID: 2590846551577548752, guid: ae40720f519f4f64195e0f751715326b, type: 3}
   - {fileID: 2590846551577548752, guid: a00675575a4f3454fb338b03c71504e1, type: 3}
@@ -53554,10 +53608,23 @@ MonoBehaviour:
   newBallPos: {fileID: 1540595357}
   AiPalce: {fileID: 349829554}
   rndclr: 0
-  rankValue: 3.2
+  rankValue: 3.3
   aicolor: 0
   Knife: {fileID: 2590846551577548752, guid: b1df1881c2835ee4ea799456e4a9c975, type: 3}
   knifeThrow: {fileID: 8300000, guid: 60f11383c193e3244ba00919fcebedd6, type: 3}
+--- !u!65 &1920393868
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920393865}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1, z: 1}
+  m_Center: {x: 1.15, y: 0, z: 0}
 --- !u!1 &1925368877
 GameObject:
   m_ObjectHideFlags: 0
@@ -87666,7 +87733,7 @@ MonoBehaviour:
   playerImg: {fileID: 1569328974}
   lessValue: 0.011
   ballPunture: {fileID: 8300000, guid: b485a744ad289bc4fa50aaa47e43b96a, type: 3}
-  emptyObj: {fileID: 1002872163}
+  emptyObj: {fileID: 1362658044}
 --- !u!4 &7233003352761415724
 Transform:
   m_ObjectHideFlags: 0
