@@ -27,6 +27,8 @@ public class WinScript : MonoBehaviour
 
     public RayBall rayball;
 
+    public GameObject playerNewObj, aiNewObj;
+
     void Start()
     {
         water = FindObjectOfType<ButtonManager>().water;
@@ -85,7 +87,6 @@ public class WinScript : MonoBehaviour
             aiKnife.enabled = false;
             lvl.SetActive(false);
             FindObjectOfType<KnifeScript>().combo.SetActive(false);
-
             retry.SetActive(false);
             Destroy(text);
             Destroy(target);
@@ -101,13 +102,15 @@ public class WinScript : MonoBehaviour
         newBall.transform.SetParent(jumpPos.transform, true);
         bonuschestBanner.SetActive(true);
         yield return new WaitForSeconds(1.5f);
-        emptyObj.SetActive(false);
+        playerNewObj.SetActive(false);
+        aiNewObj.SetActive(false);
         bonuschestBanner.SetActive(false);
     }
 
     IEnumerator gameLost()
     {
         yield return new WaitForSeconds(1f);
+        aiNewObj.SetActive(false);
         lostPanel.SetActive(true);
     }
 }
