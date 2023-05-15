@@ -790,7 +790,7 @@ PlayerSettings:
   scriptingDefineSymbols:
     Android: DREAMTECK_SPLINES
     Standalone: DREAMTECK_SPLINES
-    iPhone: DREAMTECK_SPLINES
+    iPhone: DREAMTECK_SPLINES;MOREMOUNTAINS_NICEVIBRATIONS
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}

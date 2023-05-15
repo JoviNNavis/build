@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using System.Linq;
 using DG.Tweening;
 
+//using Lofelt.NiceVibrations;
 public class FailScript1 : MonoBehaviour
 {
     public List<Transform> Knifes = new List<Transform>();
@@ -105,6 +106,7 @@ public class FailScript1 : MonoBehaviour
         if (collision.gameObject.tag == "Knife")
         {
             knifeCounter.knifeCountValue += 1;
+            
             //          Knifes.Add(collision.transform);
         }
 
