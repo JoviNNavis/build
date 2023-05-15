@@ -3,7 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Block
+  - DKnife
+  - Open
+  - AfterBall
+  - Ball
+  - AiBall
+  - Knife
+  - Coins
+  - AiKnife
+  - End
+  - Stacks
+  - AiMain
   layers:
   - Default
   - TransparentFX

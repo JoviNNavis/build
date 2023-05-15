@@ -25,6 +25,8 @@ public class WinScript : MonoBehaviour
 
     public GameObject bonuschestBanner;
 
+    public RayBall rayball;
+
     void Start()
     {
         water = FindObjectOfType<ButtonManager>().water;
@@ -50,6 +52,7 @@ public class WinScript : MonoBehaviour
     {
         if(isLost == false && other.CompareTag("Knife"))
         {
+            rayball.enabled = false;
             playerKnife.enabled = false;
             FindObjectOfType<KnifeScript>().counterText.SetActive(false);
 
@@ -70,12 +73,14 @@ public class WinScript : MonoBehaviour
 
         if (other.CompareTag("AiKnife"))
         {
+            rayball.enabled = false;
             isLost = true;
             aiKnife.enabled = false;
         }
 
         if (isLost == true && other.CompareTag("Knife"))
         {
+            rayball.enabled = false;
             playerKnife.enabled = false;
             aiKnife.enabled = false;
             lvl.SetActive(false);

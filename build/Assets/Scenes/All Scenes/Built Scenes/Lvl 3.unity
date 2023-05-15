@@ -53265,11 +53265,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isaicolor: 0
-  upForce: 740
+  upForce: 600
   level5above: 0
   fire: {fileID: 852846924}
   ballBounce: {fileID: 8300000, guid: 30645f3aee2e5da4aa240094992e6412, type: 3}
   fireBall: {fileID: 8300000, guid: b485a744ad289bc4fa50aaa47e43b96a, type: 3}
+  rayPos: {fileID: 1584184991}
+  rayRange: 2
+  aiKnife: {fileID: 1920393867}
 --- !u!95 &1570535875
 Animator:
   serializedVersion: 4

@@ -10,6 +10,9 @@ public class ButtonManager : MonoBehaviour
 
     public KnifeScript knifePlayer2;
     public KnifeScriptSword knifeplayerrr;
+
+    public RayBall ballRay;
+
     public bool isaicolor;
     public bool changecolor;
     public AiScript ai;
@@ -390,6 +393,7 @@ public class ButtonManager : MonoBehaviour
     IEnumerator playButton2()
     {
         yield return new WaitForSeconds(5.5f);
+        ballRay.enabled = true;
         if (!isbelowlevel5)
         {
 

@@ -21,7 +21,7 @@ public class AiScript : MonoBehaviour
 
     void Start()
     {
-        fireRate1 = 3f;
+        //fireRate1 = 3f;
     }
 
     private void FixedUpdate()
@@ -64,14 +64,14 @@ public class AiScript : MonoBehaviour
 
                 GameObject aiobject = Instantiate(knifemat[rndclr], transform.position, Quaternion.Euler(0, 180, 0));
                 FindObjectOfType<AiFailScript>().Knifes.Add(aiobject.gameObject.transform);
-                fireRate1 = 4.75f;
+                fireRate1 = 22f;
                 rndclr++;
-                fireTime1 = 0.1F;
+                fireTime1 = 0.05f;
                 transform.position += new Vector3(0, 0.7f, 0);
                 newBallPos.transform.position += new Vector3(0, 0.7f, 0);
                 transform.rotation = Quaternion.Euler(90, 0, 0);
                 AiPalce.transform.position += new Vector3(rankValue, 0, 0);
-               // fireTime1 = 0;
+                //fireTime1 = 0;
                 if (rndclr >= knifemat.Length)
                 {
                     rndclr = 0;
@@ -83,7 +83,7 @@ public class AiScript : MonoBehaviour
                 SoundMangerAi.soundctrl.playClip(knifeThrow);
                 GameObject aiobject = Instantiate(Knife, transform.position, Quaternion.Euler(0, 180, 0));
                 FindObjectOfType<AiFailScript>().Knifes.Add(aiobject.gameObject.transform);
-                fireRate1 = 3f;
+                fireRate1 = 18f;
 
                 transform.position += new Vector3(0, 0.7f, 0);
                 newBallPos.transform.position += new Vector3(0, 0.7f, 0);

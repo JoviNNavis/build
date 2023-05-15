@@ -21123,6 +21123,7 @@ MonoBehaviour:
   playerKnife: {fileID: 0}
   knifePlayer2: {fileID: 1817783779}
   knifeplayerrr: {fileID: 0}
+  ballRay: {fileID: 1570535877}
   isaicolor: 0
   changecolor: 0
   ai: {fileID: 1920393867}
@@ -33562,6 +33563,7 @@ MonoBehaviour:
   isLost: 0
   emptyObj: {fileID: 527990809}
   bonuschestBanner: {fileID: 12449984}
+  rayball: {fileID: 1570535877}
 --- !u!54 &837195052
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -44666,7 +44668,7 @@ GameObject:
   - component: {fileID: 1107534294}
   m_Layer: 0
   m_Name: Knife
-  m_TagString: Untagged
+  m_TagString: AiMain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60146,6 +60148,7 @@ GameObject:
   - component: {fileID: 1570535868}
   - component: {fileID: 1570535875}
   - component: {fileID: 1570535876}
+  - component: {fileID: 1570535877}
   m_Layer: 0
   m_Name: AiBall
   m_TagString: AiBall
@@ -60405,6 +60408,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1570535877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570535866}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 952a02de4bddf9e4295d31351c4b71e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayPos: {fileID: 1584184991}
+  rayRange: 2
+  aiKnife: {fileID: 1920393867}
 --- !u!1 &1579441445
 GameObject:
   m_ObjectHideFlags: 0
@@ -66626,9 +66644,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1920393866}
   - component: {fileID: 1920393867}
+  - component: {fileID: 1920393868}
   m_Layer: 0
   m_Name: KnifeAi
-  m_TagString: Untagged
+  m_TagString: AiMain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66662,7 +66681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa2ba120b014ccb4eb6411ea8d89b780, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireRate1: 2.5
+  fireRate1: 18
   knifemat:
   - {fileID: 2590846551577548752, guid: ae40720f519f4f64195e0f751715326b, type: 3}
   - {fileID: 2590846551577548752, guid: a00675575a4f3454fb338b03c71504e1, type: 3}
@@ -66680,6 +66699,19 @@ MonoBehaviour:
   aicolor: 0
   Knife: {fileID: 2590846551577548752, guid: b1df1881c2835ee4ea799456e4a9c975, type: 3}
   knifeThrow: {fileID: 8300000, guid: 60f11383c193e3244ba00919fcebedd6, type: 3}
+--- !u!65 &1920393868
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920393865}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.73, y: 1, z: 1}
+  m_Center: {x: 1.12, y: 0, z: 0}
 --- !u!1 &1925368877
 GameObject:
   m_ObjectHideFlags: 0

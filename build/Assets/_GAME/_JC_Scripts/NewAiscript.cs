@@ -7,10 +7,13 @@ public class NewAiscript : MonoBehaviour
     private Rigidbody Rb;
     public bool isaicolor;
     public float upForce;
- public   bool level5above;
+    public  bool level5above;
     public ParticleSystem fire;
 
     public AudioClip ballBounce, fireBall;
+
+
+    public 
 
     void Start()
     {
@@ -24,9 +27,8 @@ public class NewAiscript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
 
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if (!level5above)
