@@ -642,7 +642,6 @@ RectTransform:
   - {fileID: 1877645706}
   - {fileID: 591529394}
   - {fileID: 9061864025854735692}
-  - {fileID: 1341187567}
   - {fileID: 1508354711}
   m_Father: {fileID: 0}
   m_RootOrder: 10
@@ -4784,16 +4783,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1341187566}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 78}
-  m_LocalScale: {x: 1.2386004, y: 1.2386003, z: 1.2385995}
+  m_LocalPosition: {x: 0, y: 0, z: -21}
+  m_LocalScale: {x: 1.032167, y: 1.0321668, z: 1.2385997}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 180982270}
-  m_RootOrder: 8
+  m_Father: {fileID: 9061864025854735692}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 372, y: 1045}
+  m_AnchoredPosition: {x: -58, y: -7}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1341187568
@@ -5531,7 +5530,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 180982270}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6633,6 +6632,8 @@ MonoBehaviour:
   playerKnife: {fileID: 0}
   knifePlayer2: {fileID: 0}
   knifeplayerrr: {fileID: 0}
+  ballRay: {fileID: 0}
+  ishaptic: 0
   isaicolor: 0
   changecolor: 0
   ai: {fileID: 0}
@@ -6664,11 +6665,20 @@ MonoBehaviour:
   alert: {fileID: 0}
   defaultScroll: {fileID: 0}
   VIPScroll: {fileID: 0}
+  settingsbutton: {fileID: 0}
   uiBar: {fileID: 0}
   Room: {fileID: 0}
   ShowCase: {fileID: 0}
   Dirlight: {fileID: 0}
   tapSound: {fileID: 0}
+  Plysounds: {fileID: 0}
+  Aisounds: {fileID: 0}
+  settingPanel: {fileID: 0}
+  hapticON: {fileID: 0}
+  hapticOFF: {fileID: 0}
+  soundON: {fileID: 0}
+  soundOFF: {fileID: 0}
+  retryButton: {fileID: 0}
 --- !u!4 &2108150814
 Transform:
   m_ObjectHideFlags: 0
@@ -8690,6 +8700,7 @@ RectTransform:
   - {fileID: 9061864024600237917}
   - {fileID: 9061864025334268390}
   - {fileID: 9061864025026314976}
+  - {fileID: 1341187567}
   m_Father: {fileID: 180982270}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

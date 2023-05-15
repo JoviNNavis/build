@@ -100,7 +100,7 @@ MeshCollider:
   m_GameObject: {fileID: 1123286585290832123}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -190,7 +190,6 @@ MonoBehaviour:
   tower: {fileID: 0}
   drops: {fileID: 19894390, guid: 4cd7d9c6cec4b104c8573cc5b11a900d, type: 3}
   plane: {fileID: 0}
-  anim: {fileID: 4140212015596413387}
   hit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
   bonusBallHit: {fileID: 8300000, guid: b485a744ad289bc4fa50aaa47e43b96a, type: 3}
 --- !u!54 &9146111261655308705
@@ -220,8 +219,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.09705259
-  m_Center: {x: 0.06000006, y: -0.04623677, z: 0.09156978}
+  m_Radius: 0.05890431
+  m_Center: {x: 0.060000062, y: -0.04623677, z: 0.053421486}
 --- !u!1 &2747327511001776215
 GameObject:
   m_ObjectHideFlags: 0
