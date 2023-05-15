@@ -3610,7 +3610,7 @@ MonoBehaviour:
   playerImg: {fileID: 1611646442}
   lessValue: 0.0074
   ballPunture: {fileID: 8300000, guid: b485a744ad289bc4fa50aaa47e43b96a, type: 3}
-  emptyObj: {fileID: 1146569821}
+  emptyObj: {fileID: 1247432370}
 --- !u!114 &95841337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19613,6 +19613,7 @@ MonoBehaviour:
   playerKnife: {fileID: 0}
   knifePlayer2: {fileID: 1817783779}
   knifeplayerrr: {fileID: 0}
+  ballRay: {fileID: 1570535876}
   isaicolor: 0
   changecolor: 0
   ai: {fileID: 1920393867}
@@ -26456,11 +26457,15 @@ MonoBehaviour:
   aiKnife: {fileID: 1920393867}
   text: {fileID: 1277084262}
   target: {fileID: 1357686245}
+  aiTarget: {fileID: 920293312}
   lostPanel: {fileID: 6267391077456597387}
   islevelcompleted: 0
   isLost: 0
   emptyObj: {fileID: 1146569820}
   bonuschestBanner: {fileID: 4413086677843604888}
+  rayball: {fileID: 1570535876}
+  playerNewObj: {fileID: 1247432369}
+  aiNewObj: {fileID: 1146569820}
 --- !u!54 &837195052
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -38629,7 +38634,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1486550690}
   - {fileID: 1570535867}
   m_Father: {fileID: 1369896589}
   m_RootOrder: 11
@@ -40653,6 +40657,38 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1247432369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1247432370}
+  m_Layer: 0
+  m_Name: PlayerEmpty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1247432370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247432369}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1486550690}
+  m_Father: {fileID: 1369896589}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1253692802
 GameObject:
   m_ObjectHideFlags: 0
@@ -43599,6 +43635,7 @@ Transform:
   - {fileID: 230396093}
   - {fileID: 348662300}
   - {fileID: 1146569821}
+  - {fileID: 1247432370}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -45835,7 +45872,7 @@ Transform:
   m_Children:
   - {fileID: 490993887}
   - {fileID: 1639721294351887213}
-  m_Father: {fileID: 1146569821}
+  m_Father: {fileID: 1247432370}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &1486550691
@@ -53040,6 +53077,7 @@ GameObject:
   - component: {fileID: 1570535868}
   - component: {fileID: 1570535874}
   - component: {fileID: 1570535875}
+  - component: {fileID: 1570535876}
   m_Layer: 0
   m_Name: AiBall
   m_TagString: AiBall
@@ -53063,7 +53101,7 @@ Transform:
   - {fileID: 852846922}
   - {fileID: 1536283684303657026}
   m_Father: {fileID: 1146569821}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!96 &1570535868
 TrailRenderer:
@@ -53270,9 +53308,6 @@ MonoBehaviour:
   fire: {fileID: 852846924}
   ballBounce: {fileID: 8300000, guid: 30645f3aee2e5da4aa240094992e6412, type: 3}
   fireBall: {fileID: 8300000, guid: b485a744ad289bc4fa50aaa47e43b96a, type: 3}
-  rayPos: {fileID: 1584184991}
-  rayRange: 2
-  aiKnife: {fileID: 1920393867}
 --- !u!95 &1570535875
 Animator:
   serializedVersion: 4
@@ -53293,6 +53328,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1570535876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570535866}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 952a02de4bddf9e4295d31351c4b71e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayPos: {fileID: 1584184991}
+  rayRange: 3
+  aiKnife: {fileID: 1920393867}
 --- !u!1 &1578262919
 GameObject:
   m_ObjectHideFlags: 0
@@ -60986,9 +61036,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1920393866}
   - component: {fileID: 1920393867}
+  - component: {fileID: 1920393868}
   m_Layer: 0
   m_Name: KnifeAi
-  m_TagString: Untagged
+  m_TagString: AiMain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61022,7 +61073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa2ba120b014ccb4eb6411ea8d89b780, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireRate1: 1.33
+  fireRate1: 18
   knifemat:
   - {fileID: 2590846551577548752, guid: ae40720f519f4f64195e0f751715326b, type: 3}
   - {fileID: 2590846551577548752, guid: a00675575a4f3454fb338b03c71504e1, type: 3}
@@ -61040,6 +61091,19 @@ MonoBehaviour:
   aicolor: 0
   Knife: {fileID: 2590846551577548752, guid: b1df1881c2835ee4ea799456e4a9c975, type: 3}
   knifeThrow: {fileID: 8300000, guid: 60f11383c193e3244ba00919fcebedd6, type: 3}
+--- !u!65 &1920393868
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920393865}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1, z: 1}
+  m_Center: {x: 1.15, y: 0, z: 0}
 --- !u!1 &1921868400
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,7 +16,7 @@ public class WinScript : MonoBehaviour
     public AiScript aiKnife;
     private Color _blue;
     private MeshRenderer water;
-    public GameObject text, target;
+    public GameObject text, target, aiTarget;
     public GameObject lostPanel;
     public bool islevelcompleted;
     public bool isLost = false;
@@ -50,53 +50,9 @@ public class WinScript : MonoBehaviour
 
         }
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        if(isLost == false && other.CompareTag("Knife"))
-        {
-            rayball.enabled = false;
-            playerKnife.enabled = false;
-            FindObjectOfType<KnifeScript>().counterText.SetActive(false);
-
-            islevelcompleted = true;
-              stopwatercolor();
-  FindObjectOfType<KnifeScript>().combo.SetActive(false);
-
-
-
-            aiKnife.enabled = false;
-            lvl.SetActive(false);
-            blast.SetActive(true);
-            winText.SetActive(true);
-            StartCoroutine(winJump());
-            Destroy(text);
-            Destroy(target);
-        }
-
-        if (other.CompareTag("AiKnife"))
-        {
-            isLost = true;
-            aiKnife.enabled = false;
-            StartCoroutine(ballOff());
-            rayball.enabled = false;
-        }
-
-        if (isLost == true && other.CompareTag("Knife"))
-        {
-            rayball.enabled = false;
-            playerKnife.enabled = false;
-            aiKnife.enabled = false;
-            lvl.SetActive(false);
-            FindObjectOfType<KnifeScript>().combo.SetActive(false);
-            retry.SetActive(false);
-            Destroy(text);
-            Destroy(target);
-            StartCoroutine(gameLost());        
-        }
-    }
 
     IEnumerator winJump()
-    { 
+    {
         yield return new WaitForSeconds(3.5f);
         newBall.SetActive(true);
         newBall.transform.DOJump(jumpPos.position, 2, 1, 1, false);
@@ -120,4 +76,50 @@ public class WinScript : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         aiNewObj.SetActive(false);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(isLost == false && other.CompareTag("Knife"))
+        {
+            rayball.enabled = false;
+            playerKnife.enabled = false;
+            FindObjectOfType<KnifeScript>().counterText.SetActive(false);
+
+            islevelcompleted = true;
+              stopwatercolor();
+  FindObjectOfType<KnifeScript>().combo.SetActive(false);
+            aiKnife.enabled = false;
+            lvl.SetActive(false);
+            blast.SetActive(true);
+            winText.SetActive(true);
+            StartCoroutine(winJump());
+            Destroy(text);
+            Destroy(target);
+        }
+
+
+        if (isLost == true && other.CompareTag("Knife"))
+        {
+            rayball.enabled = false;
+            playerKnife.enabled = false;
+            aiKnife.enabled = false;
+            lvl.SetActive(false);
+            FindObjectOfType<KnifeScript>().combo.SetActive(false);
+            retry.SetActive(false);
+            Destroy(text);
+            Destroy(target);
+            StartCoroutine(gameLost());        
+        }
+
+
+        if (other.CompareTag("AiKnife"))
+        {
+            isLost = true;
+            aiKnife.enabled = false;
+            aiTarget.SetActive(false);
+            StartCoroutine(ballOff());
+            rayball.enabled = false;
+        }
+    }
+
 }

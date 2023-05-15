@@ -365,6 +365,7 @@ public class ButtonManager : MonoBehaviour
     {
         ispresed = true;
         yield return new WaitForSeconds(2f);
+        ballRay.enabled = true;
         if (!isbelowlevel5)
         {
 

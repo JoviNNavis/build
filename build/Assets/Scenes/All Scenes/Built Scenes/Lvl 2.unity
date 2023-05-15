@@ -33557,6 +33557,7 @@ MonoBehaviour:
   aiKnife: {fileID: 1920393867}
   text: {fileID: 730479464}
   target: {fileID: 1357686245}
+  aiTarget: {fileID: 920293312}
   lostPanel: {fileID: 1628282492}
   islevelcompleted: 0
   isLost: 0
