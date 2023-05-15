@@ -378,7 +378,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rayPos: {fileID: 2505090812861208680}
-  rayRange: 2
+  rayRange: 3
   aiKnife: {fileID: 0}
 --- !u!65 &2947035025323316656
 BoxCollider:

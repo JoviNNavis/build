@@ -75,9 +75,10 @@ public class WinScript : MonoBehaviour
 
         if (other.CompareTag("AiKnife"))
         {
-            rayball.enabled = false;
             isLost = true;
             aiKnife.enabled = false;
+            StartCoroutine(ballOff());
+            rayball.enabled = false;
         }
 
         if (isLost == true && other.CompareTag("Knife"))
@@ -112,5 +113,11 @@ public class WinScript : MonoBehaviour
         yield return new WaitForSeconds(1f);
         aiNewObj.SetActive(false);
         lostPanel.SetActive(true);
+    }
+
+    IEnumerator ballOff()
+    {
+        yield return new WaitForSeconds(0.5f);
+        aiNewObj.SetActive(false);
     }
 }
