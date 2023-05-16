@@ -41,6 +41,8 @@ public class CoinCollectScript : MonoBehaviour
 
             cashScript.cashValue += 1;
 
+            BounsCoinCollect.coinValue += 1;
+
             Destroy(this.gameObject, 0.5f);
         }
 
