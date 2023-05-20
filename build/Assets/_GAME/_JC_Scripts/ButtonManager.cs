@@ -7,7 +7,11 @@ using DG.Tweening;
 
 public class ButtonManager : MonoBehaviour
 {
-   public KnifeScript1 playerKnife;
+    private int currSceneIndex;
+
+    private int loadSceneIndex;
+
+    public KnifeScript1 playerKnife;
 
     public KnifeScript knifePlayer2;
     public KnifeScriptSword knifeplayerrr;
@@ -52,6 +56,7 @@ public class ButtonManager : MonoBehaviour
 
     void Start()
     {
+
         BeforeSkybox = RenderSettings.skybox;
         isstart = false;
         settingsbutton = GameObject.FindGameObjectWithTag("sb");
@@ -92,6 +97,8 @@ public class ButtonManager : MonoBehaviour
         settingsbutton.SetActive(false);
         button.gameObject.SetActive(false);
         StartCoroutine(playButton1());
+        currSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        PlayerPrefs.SetInt("SavedScene", currSceneIndex);
     }
 
     public void gameStart2()  //lvl 2
@@ -102,6 +109,8 @@ public class ButtonManager : MonoBehaviour
         settingsbutton.SetActive(false);
         button.gameObject.SetActive(true);
         StartCoroutine(playButton2());
+        currSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        PlayerPrefs.SetInt("SavedScene", currSceneIndex);
     }
 
     public void gameStart11()   // lvl 3 to lvl 5
@@ -112,6 +121,8 @@ public class ButtonManager : MonoBehaviour
         cam.SetActive(false);
         button.gameObject.SetActive(false);
         StartCoroutine(playButton11());
+        currSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        PlayerPrefs.SetInt("SavedScene", currSceneIndex);
     }
 
     public void gameStart3()  //bonus lvl
@@ -121,6 +132,8 @@ public class ButtonManager : MonoBehaviour
         cam.SetActive(false);
         button.gameObject.SetActive(false);
         StartCoroutine(playButton1());
+        currSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        PlayerPrefs.SetInt("SavedScene", currSceneIndex);
     }
 
     public void gameStart4()   // lvl 7
@@ -133,6 +146,8 @@ public class ButtonManager : MonoBehaviour
         button.gameObject.SetActive(true);
         StartCoroutine(playButton2());
         isstart = true;
+        currSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        PlayerPrefs.SetInt("SavedScene", currSceneIndex);
     }
 
     public void gameStart5()   // lvl 8 to lvl 10
@@ -145,8 +160,9 @@ public class ButtonManager : MonoBehaviour
         SculptPanel.gameObject.SetActive(false);
         ispresed = true;
         isstart = true;
-
         StartCoroutine(playButton11());
+        currSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        PlayerPrefs.SetInt("SavedScene", currSceneIndex);
     }
 
     public void Bonus()
@@ -236,6 +252,13 @@ public class ButtonManager : MonoBehaviour
     {
         SoundManger.soundctrl.playClip(tapSound);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+        loadSceneIndex = PlayerPrefs.GetInt("SavedScene");
+        
+        if (loadSceneIndex > 0)
+            SceneManager.LoadScene(loadSceneIndex);
+        else
+            return;
     }
 
     public void KnifeSkin()

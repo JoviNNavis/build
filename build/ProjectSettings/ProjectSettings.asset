@@ -788,7 +788,7 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: DREAMTECK_SPLINES
+    Android: DREAMTECK_SPLINES;MOREMOUNTAINS_NICEVIBRATIONS
     Standalone: DREAMTECK_SPLINES
     iPhone: DREAMTECK_SPLINES;MOREMOUNTAINS_NICEVIBRATIONS
   additionalCompilerArguments: {}

@@ -44,6 +44,8 @@ public class CoinCollectScript : MonoBehaviour
             BounsCoinCollect.coinValue += 1;
 
             Destroy(this.gameObject, 0.5f);
+
+            Debug.Log("KNIFE HIT BALL");
         }
 
         if(other.CompareTag("Open"))
