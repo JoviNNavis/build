@@ -210,7 +210,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 500573944}
         m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
-        m_MethodName: gameStart4
+        m_MethodName: gameStart2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -36599,7 +36599,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2000, y: 5000}
+  m_SizeDelta: {x: 6833, y: 10721}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1414541401
 MonoBehaviour:
@@ -44607,7 +44607,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2248.3, y: 4792.3}
+  m_SizeDelta: {x: 8235, y: 9418}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1608923990
 MonoBehaviour:
@@ -45658,7 +45658,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1935.9, y: 4286}
+  m_SizeDelta: {x: 10289, y: 11333}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1675501851
 MonoBehaviour:
@@ -59260,7 +59260,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1914.5, y: 3850}
+  m_SizeDelta: {x: 7194, y: 8915}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2075794828
 MonoBehaviour:
@@ -82384,7 +82384,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2248.3, y: 4792.3}
+  m_SizeDelta: {x: 7549, y: 8520}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3045309385865498226
 CanvasRenderer:
@@ -93036,7 +93036,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1947.04, y: 3855}
+  m_SizeDelta: {x: 8592, y: 8958}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4879302393041063591
 GameObject:
@@ -113938,7 +113938,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1914.5, y: 3850}
+  m_SizeDelta: {x: 7028, y: 9801}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7732494707604390382
 MonoBehaviour:
