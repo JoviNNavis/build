@@ -210,7 +210,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2590846551577548752}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.4291115, y: 0.4915629, z: 0.74861413}
@@ -231,7 +231,6 @@ MonoBehaviour:
   tower: {fileID: 0}
   drops: {fileID: 19894390, guid: 38b76b2af38b4a449ace8addd62210de, type: 3}
   plane: {fileID: 3982792686158755893}
-  anim: {fileID: 5191856023588644577}
   hit: {fileID: 8300000, guid: 60f11383c193e3244ba00919fcebedd6, type: 3}
   bonusBallHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
 --- !u!135 &699753498705485528
