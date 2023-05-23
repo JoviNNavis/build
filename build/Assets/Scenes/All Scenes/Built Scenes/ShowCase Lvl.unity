@@ -10759,6 +10759,8 @@ MonoBehaviour:
   playerKnife: {fileID: 0}
   knifePlayer2: {fileID: 0}
   knifeplayerrr: {fileID: 0}
+  ballRay: {fileID: 0}
+  ishaptic: 0
   isaicolor: 0
   changecolor: 0
   ai: {fileID: 0}
@@ -10783,16 +10785,27 @@ MonoBehaviour:
   isbelowlevel5: 0
   newPanel1: {fileID: 1131354427}
   newPanel2: {fileID: 0}
+  isstart: 0
   arrow: {fileID: 0}
   oldImg: {fileID: 0}
   newImg: {fileID: 0}
   alert: {fileID: 5394808298348086435}
   defaultScroll: {fileID: 5342236111654838445}
   VIPScroll: {fileID: 5342236111493542479}
+  settingsbutton: {fileID: 0}
   uiBar: {fileID: 1631125392}
   Room: {fileID: 2044407825}
   ShowCase: {fileID: 1631125392}
   Dirlight: {fileID: 905726311}
+  tapSound: {fileID: 0}
+  Plysounds: {fileID: 0}
+  Aisounds: {fileID: 0}
+  settingPanel: {fileID: 0}
+  hapticON: {fileID: 0}
+  hapticOFF: {fileID: 0}
+  soundON: {fileID: 0}
+  soundOFF: {fileID: 0}
+  retryButton: {fileID: 0}
 --- !u!4 &2146273392
 Transform:
   m_ObjectHideFlags: 0
@@ -13677,7 +13690,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2146273391}
         m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
-        m_MethodName: nextLvl
+        m_MethodName: lvlUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
