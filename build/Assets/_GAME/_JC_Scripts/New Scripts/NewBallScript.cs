@@ -33,8 +33,8 @@ public class NewBallScript : MonoBehaviour
     int num,max;
     void Start()
     {
-      
-
+        Debug.Log(GameData.GetCurrentScene() + " Was Current Scene");
+        Debug.Log(PlayerPrefs.GetInt("SavedScene") + " Was Current Scene");
         if (level <= 4)
         {
             abovelevel5 = false;

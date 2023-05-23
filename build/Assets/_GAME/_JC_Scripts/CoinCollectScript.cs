@@ -44,7 +44,7 @@ public class CoinCollectScript : MonoBehaviour
             BounsCoinCollect.coinValue += 1;
 
             Destroy(this.gameObject, 0.5f);
-
+            GameData.SetCoins(cashScript.cashValue);
             Debug.Log("KNIFE HIT BALL");
         }
 
@@ -55,7 +55,7 @@ public class CoinCollectScript : MonoBehaviour
             transform.DORotate(new Vector3(1, 1, 0.5f), 0.5f).SetDelay(delay + 0.5f).SetEase(Ease.Flash);
 
             cashScript.cashValue += 5;
-
+            GameData.SetCoins(cashScript.cashValue);
             Destroy(this.gameObject, 1f);
         }
     }

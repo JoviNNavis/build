@@ -70,7 +70,7 @@ public class CoinScript : MonoBehaviour
         SoundManger.soundctrl.playClip(coinCollect);
 
         cashScript.cashValue += CoinValue;
-
+        GameData.SetCoins(cashScript.cashValue);
         CoinValue += 10;
     }
 

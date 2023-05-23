@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/SplashScreen.unity
+    guid: 4f729858307e4e14b9b3b9d1cc3e9ac3
+  - enabled: 1
     path: Assets/Scenes/All Scenes/Built Scenes/Lvl 1.unity
     guid: 50455d85cf00cab45bc1cb1df0aca226
   - enabled: 1
@@ -21,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/All Scenes/Built Scenes/Lvl 5.unity
     guid: 17e50d23017d36d40a002b449ac93650
   - enabled: 1
-    path: Assets/Scenes/All Scenes/Built Scenes/Bonus Lvl 1.unity
+    path: Assets/Scenes/All Scenes/Built Scenes/Lvl 6.unity
     guid: 6e780f40009fc5b479c4fc305c928c51
   - enabled: 1
     path: Assets/Scenes/All Scenes/Built Scenes/PreSct Lvl 1.unity

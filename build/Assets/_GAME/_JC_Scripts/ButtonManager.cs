@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
@@ -60,6 +59,7 @@ public class ButtonManager : MonoBehaviour
         BeforeSkybox = RenderSettings.skybox;
         isstart = false;
         settingsbutton = GameObject.FindGameObjectWithTag("sb");
+        //nextLvl();
         hapticOff();
     }
 
@@ -97,8 +97,9 @@ public class ButtonManager : MonoBehaviour
         settingsbutton.SetActive(false);
         button.gameObject.SetActive(false);
         StartCoroutine(playButton1());
-        currSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
-        PlayerPrefs.SetInt("SavedScene", currSceneIndex);
+     //   currSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+       // PlayerPrefs.SetInt("SavedScene", currSceneIndex);
+      //  GameData.SetCurrentScene(currSceneIndex);
     }
 
     public void gameStart2()  //lvl 2
@@ -109,8 +110,9 @@ public class ButtonManager : MonoBehaviour
         settingsbutton.SetActive(false);
         button.gameObject.SetActive(true);
         StartCoroutine(playButton2());
-        currSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
-        PlayerPrefs.SetInt("SavedScene", currSceneIndex);
+       // currSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+       // PlayerPrefs.SetInt("SavedScene", currSceneIndex);
+      //  GameData.SetCurrentScene(currSceneIndex);
     }
 
     public void gameStart11()   // lvl 3 to lvl 5
@@ -121,8 +123,9 @@ public class ButtonManager : MonoBehaviour
         cam.SetActive(false);
         button.gameObject.SetActive(false);
         StartCoroutine(playButton11());
-        currSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
-        PlayerPrefs.SetInt("SavedScene", currSceneIndex);
+      //  currSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+      //  GameData.SetCurrentScene(currSceneIndex);
+        //PlayerPrefs.SetInt("SavedScene", currSceneIndex);
     }
 
     public void gameStart3()  //bonus lvl
@@ -132,8 +135,9 @@ public class ButtonManager : MonoBehaviour
         cam.SetActive(false);
         button.gameObject.SetActive(false);
         StartCoroutine(playButton1());
-        currSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
-        PlayerPrefs.SetInt("SavedScene", currSceneIndex);
+       // currSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+    //    PlayerPrefs.SetInt("SavedScene", currSceneIndex);
+     //   GameData.SetCurrentScene(currSceneIndex);
     }
 
     public void gameStart4()   // lvl 7
@@ -146,8 +150,9 @@ public class ButtonManager : MonoBehaviour
         button.gameObject.SetActive(true);
         StartCoroutine(playButton2());
         isstart = true;
-        currSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
-        PlayerPrefs.SetInt("SavedScene", currSceneIndex);
+       // currSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        //PlayerPrefs.SetInt("SavedScene", currSceneIndex);
+      //  GameData.SetCurrentScene(currSceneIndex);
     }
 
     public void gameStart5()   // lvl 8 to lvl 10
@@ -161,8 +166,9 @@ public class ButtonManager : MonoBehaviour
         ispresed = true;
         isstart = true;
         StartCoroutine(playButton11());
-        currSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
-        PlayerPrefs.SetInt("SavedScene", currSceneIndex);
+       // currSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        //PlayerPrefs.SetInt("SavedScene", currSceneIndex);
+      //  GameData.SetCurrentScene(currSceneIndex);
     }
 
     public void Bonus()
@@ -184,7 +190,7 @@ public class ButtonManager : MonoBehaviour
     public void Restart()
     {
         SoundManger.soundctrl.playClip(tapSound);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
+        SceneManager.LoadScene(Application.loadedLevelName);
     }
 
     public void BounsLvl()
@@ -223,6 +229,8 @@ public class ButtonManager : MonoBehaviour
         rewardPanel.SetActive(false);
         cashScript.cashValue += 1050;
         countdownPanel.SetActive(true);
+        GameData.SetCoins(cashScript.cashValue);
+        
     }
 
     public void ExtraRewardx3()
@@ -231,6 +239,7 @@ public class ButtonManager : MonoBehaviour
         rewardPanel.SetActive(false);
         cashScript.cashValue += 1575;
         countdownPanel.SetActive(true);
+        GameData.SetCoins(cashScript.cashValue);
     }
 
     public void ExtraRewardx5()
@@ -239,6 +248,7 @@ public class ButtonManager : MonoBehaviour
         rewardPanel.SetActive(false);
         cashScript.cashValue += 2625;
         countdownPanel.SetActive(true);
+        GameData.SetCoins(cashScript.cashValue);
     }
 
     public void ExtraChest()
@@ -251,14 +261,21 @@ public class ButtonManager : MonoBehaviour
     public void nextLvl()
     {
         SoundManger.soundctrl.playClip(tapSound);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+       /* SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
         loadSceneIndex = PlayerPrefs.GetInt("SavedScene");
         
         if (loadSceneIndex > 0)
             SceneManager.LoadScene(loadSceneIndex);
         else
-            return;
+            return;*/
+
+        GameData.SetCurrentScene(GameData.GetCurrentScene()+1);
+        if (GameData.GetCurrentScene() >= 11)
+        {
+            GameData.SetCurrentScene(1);
+        }
+        Application.LoadLevel("Lvl " + GameData.GetCurrentScene());
     }
 
     public void KnifeSkin()
@@ -393,6 +410,8 @@ public class ButtonManager : MonoBehaviour
         rewardPanel.SetActive(false);
         cashScript.cashValue += BounsCoinCollect.coinValue * 2;
         countdownPanel.SetActive(true);
+        GameData.SetCoins(cashScript.cashValue);
+
     }
 
     public void bonusDouble3()
@@ -401,6 +420,7 @@ public class ButtonManager : MonoBehaviour
         rewardPanel.SetActive(false);
         cashScript.cashValue += BounsCoinCollect.coinValue * 3;
         countdownPanel.SetActive(true);
+        GameData.SetCoins(cashScript.cashValue);
     }
 
     public void bonusDouble5()
@@ -409,6 +429,7 @@ public class ButtonManager : MonoBehaviour
         rewardPanel.SetActive(false);
         cashScript.cashValue += BounsCoinCollect.coinValue * 5;
         countdownPanel.SetActive(true);
+        GameData.SetCoins(cashScript.cashValue);
     }
 
     public void bonusNext()
@@ -416,6 +437,7 @@ public class ButtonManager : MonoBehaviour
         SoundManger.soundctrl.playClip(tapSound);
         cashScript.cashValue += 500;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        GameData.SetCoins(cashScript.cashValue);
     }
 
     IEnumerator playButton1()

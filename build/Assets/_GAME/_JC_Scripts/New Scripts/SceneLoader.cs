@@ -11,11 +11,14 @@ public class SceneLoader : MonoBehaviour
 
     void Start()
     {
-        
+        //if (loadSceneIndex != 0)
+        //    SceneManager.LoadScene(loadSceneIndex);
     }
 
     void Update()
     {
+
+        Debug.LogWarning(loadSceneIndex);
         currSceneIndex = SceneManager.GetActiveScene().buildIndex;
         PlayerPrefs.SetInt("SavedScene", currSceneIndex);
 
