@@ -214,8 +214,7 @@ public class ButtonManager : MonoBehaviour
     }
 
     public void newOk()
-    {
-        SoundManger.soundctrl.playClip(tapSound);
+    { 
         newPanel2.SetActive(false);
         newPanel2.transform.DOScale(new Vector3(0, 0, 0), 0.1f);
         arrow.SetActive(true);
@@ -277,6 +276,13 @@ public class ButtonManager : MonoBehaviour
         }
         Application.LoadLevel("Lvl " + GameData.GetCurrentScene());
     }
+
+    public void lvlUp()
+    {
+        //SoundManger.soundctrl.playClip(tapSound);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
 
     public void KnifeSkin()
     {

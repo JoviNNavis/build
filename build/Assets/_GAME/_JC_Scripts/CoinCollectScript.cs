@@ -52,7 +52,7 @@ public class CoinCollectScript : MonoBehaviour
         {
             transform.DOMove(endPos.position, 1f, false).SetEase(Ease.InOutSine);
 
-            transform.DORotate(new Vector3(1, 1, 0.5f), 0.5f).SetDelay(delay + 0.5f).SetEase(Ease.Flash);
+            transform.DORotate(new Vector3(1, 1, 0.5f), 0.35f).SetDelay(delay + 0.5f).SetEase(Ease.Flash);
 
             cashScript.cashValue += 5;
             GameData.SetCoins(cashScript.cashValue);
