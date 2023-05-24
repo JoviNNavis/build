@@ -43560,6 +43560,7 @@ Transform:
   - {fileID: 6142326191146845830}
   - {fileID: 305892835617035304}
   - {fileID: 6286742280017209229}
+  - {fileID: 4508465864441171535}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -68087,6 +68088,23 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: a0b5f77a73da34b4aa3402decf70e1c7, type: 2}
   meshFilter: {fileID: 4555098450180513708}
   meshRenderer: {fileID: 3070602235638873036}
+--- !u!1 &1200499331251362243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4508465864441171535}
+  - component: {fileID: 4508465864441171532}
+  m_Layer: 0
+  m_Name: SceneManager 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1296110567539150214
 GameObject:
   m_ObjectHideFlags: 0
@@ -84656,7 +84674,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 1003}
+  m_AnchoredPosition: {x: 0, y: 860}
   m_SizeDelta: {x: 3092.8, y: 873}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3822904456714097337
@@ -87449,6 +87467,46 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4508465864441171532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200499331251362243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee7e967204432ac4fb4480f4381fa237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RewardPanel: {fileID: 364440461}
+  nxtLvlPanel: {fileID: 1628282493}
+  LostPanel: {fileID: 3822904456169106449}
+  selectionPanel: {fileID: 1205800476}
+  ChestLostPanel: {fileID: 4174893738625215275}
+  valueX1: 415
+  valueY1: 1000
+  valueX2: 145
+  valueY2: 300
+  valueX3: 195
+  valueY3: 300
+  valueX4: 195
+  valueY4: 265
+--- !u!4 &4508465864441171535
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200499331251362243}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1377557762}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4555098450180513708
 MeshFilter:
   m_ObjectHideFlags: 0
