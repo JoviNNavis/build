@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.14021131, g: 0.7094693, b: 0.9917381, a: 1}
+  m_IndirectSpecularColor: {r: 0.1402113, g: 0.7094693, b: 0.9917381, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2519,7 +2519,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1360056039}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -21193,7 +21193,7 @@ RectTransform:
   - {fileID: 1462537525}
   - {fileID: 7079047159132038691}
   m_Father: {fileID: 1360056039}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -35050,7 +35050,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1360056039}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -37721,9 +37721,9 @@ RectTransform:
   m_Children:
   - {fileID: 1813663}
   - {fileID: 8687757199264756118}
-  - {fileID: 127480849}
   - {fileID: 811027090}
   - {fileID: 1205800476}
+  - {fileID: 127480849}
   - {fileID: 1877131779}
   - {fileID: 525053812}
   - {fileID: 2084560538}
@@ -87169,6 +87169,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee7e967204432ac4fb4480f4381fa237, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lvl1: 0
+  winPanelLvl1: {fileID: 0}
+  blueBg: {fileID: 0}
+  nxtButton: {fileID: 0}
+  currvalue1: 0
+  currvalue2: 0
+  newvalue1: 0
+  newvalue2: 0
   RewardPanel: {fileID: 364440461}
   nxtLvlPanel: {fileID: 1628282493}
   LostPanel: {fileID: 5634819622248250100}
@@ -87182,6 +87190,16 @@ MonoBehaviour:
   valueY3: 300
   valueX4: 195
   valueY4: 265
+  valueX5: 0
+  valueY5: 0
+  valueX6: 0
+  valueY6: 0
+  valueX7: 0
+  valueY7: 0
+  valueX8: 0
+  valueY8: 0
+  valueX9: 0
+  valueY9: 0
 --- !u!1 &6925268110375636818
 GameObject:
   m_ObjectHideFlags: 0
