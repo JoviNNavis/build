@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1402113, g: 0.7094693, b: 0.9917381, a: 1}
+  m_IndirectSpecularColor: {r: 0.14021131, g: 0.7094693, b: 0.9917381, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -53894,6 +53894,7 @@ MonoBehaviour:
   knife: {fileID: 0}
   knife1: {fileID: 280337304}
   isOver: 0
+  missKniePanel: {fileID: 979982418}
   losePanel: {fileID: 268112907}
   Balls:
   - {fileID: 2114267205929314212}

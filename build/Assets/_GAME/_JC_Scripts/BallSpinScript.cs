@@ -9,6 +9,7 @@ public class BallSpinScript : MonoBehaviour
     public newKnifeScript1 knife1;
     public bool isOver= false;
     bool islevelbelow5;
+    public GameObject missKniePanel;
     public GameObject losePanel;
 
     public List<Transform> Balls ;
@@ -115,7 +116,10 @@ public class BallSpinScript : MonoBehaviour
 
     IEnumerator lose()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.75f);
+        missKniePanel.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        Destroy(missKniePanel);
         losePanel.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         this.enabled = false;

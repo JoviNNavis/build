@@ -27,7 +27,7 @@ public class SpinBall : MonoBehaviour
                 MMVibrationManager.Haptic(HapticTypes.Failure);
                 Debug.LogError("vibe");
             }
-            MissedKnife.knifeValue += 1;
+            //MissedKnife.knifeValue += 1;
             ball.Balls.Remove(transform);
             Destroy(other.gameObject);
             ball.isOver = true;
