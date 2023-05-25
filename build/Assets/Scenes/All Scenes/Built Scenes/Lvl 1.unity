@@ -6469,10 +6469,10 @@ RectTransform:
   m_Father: {fileID: 1360056039}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 4156}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &525053813
 AudioSource:
@@ -42348,8 +42348,8 @@ MonoBehaviour:
   winPanelLvl1: {fileID: 525053812}
   blueBg: {fileID: 849538446}
   nxtButton: {fileID: 149192792}
-  currvalue1: 1225
-  currvalue2: -1361
+  currvalue1: 900
+  currvalue2: -980
   newvalue1: 1025
   newvalue2: -1094
   RewardPanel: {fileID: 0}

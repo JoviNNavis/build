@@ -118,24 +118,25 @@ public class ResolutionAdjuster : MonoBehaviour
                 nxtButton.transform.localPosition = new Vector3(transform.localPosition.x, newvalue2, transform.localPosition.z);
             }
 
-            else if(Camera.main.aspect == 0.5633803f || Camera.main.aspect == 0.5622189f || Camera.main.aspect == 0.5625f)
+            if(Camera.main.aspect == 0.5633803f || Camera.main.aspect == 0.5622189f || Camera.main.aspect == 0.5625f)
             {
                 winPanelLvl1.transform.localScale = new Vector3(0.85f, 0.85f, 0.85f);
             }
 
-            else if (Camera.main.aspect == 0.4620536f || Camera.main.aspect == 0.4615385f || Camera.main.aspect == 0.4618227f || Camera.main.aspect == 0.4620853f || Camera.main.aspect == 0.462203f)
-            {
-                winPanelLvl1.transform.localScale = new Vector3(1f, 1f, 1f);
-                blueBg.transform.localPosition = new Vector3(transform.localPosition.x, currvalue1, transform.localPosition.z);
-                nxtButton.transform.localPosition = new Vector3(transform.localPosition.x, currvalue2, transform.localPosition.z);
+            //else if (Camera.main.aspect == 0.4620536f || Camera.main.aspect == 0.4615385f || Camera.main.aspect == 0.4618227f || Camera.main.aspect == 0.4620853f || Camera.main.aspect == 0.462203f)
+            //{
+            //    winPanelLvl1.transform.localScale = new Vector3(1f, 1f, 1f);
+            //    blueBg.transform.localPosition = new Vector3(transform.localPosition.x, currvalue1, transform.localPosition.z);
+            //    nxtButton.transform.localPosition = new Vector3(transform.localPosition.x, currvalue2, transform.localPosition.z);
 
-            }
-            else
-            {
-                winPanelLvl1.transform.localScale = new Vector3(1f, 1f, 1f);
-                blueBg.transform.localPosition = new Vector3(transform.localPosition.x, currvalue1, transform.localPosition.z);
-                nxtButton.transform.localPosition = new Vector3(transform.localPosition.x, currvalue2, transform.localPosition.z);
-            }
+            //}
+
+            //else
+            //{
+            //    winPanelLvl1.transform.localScale = new Vector3(1f, 1f, 1f);
+            //    blueBg.transform.localPosition = new Vector3(transform.localPosition.x, currvalue1, transform.localPosition.z);
+            //    nxtButton.transform.localPosition = new Vector3(transform.localPosition.x, currvalue2, transform.localPosition.z);
+            //}
 
         }
     }
