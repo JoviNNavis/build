@@ -44,7 +44,7 @@ public class ResolutionAdjuster : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(Camera.main.aspect);
+        //Debug.Log(Camera.main.aspect);
 
         #region
         //if(Camera.main.aspect < 0.5f)

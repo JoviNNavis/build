@@ -49,6 +49,7 @@ public class KnifePrefabScript : MonoBehaviour
         if (other.gameObject.CompareTag("AfterBall"))
         {
             SoundManger.soundctrl.playClip(bonusBallHit);
+            //MissedKnife.knifeValue += 1;
             other.transform.SetParent(this.transform, true);
             transform.DOJump(new Vector3(10, 10, 10), 5, 1, 4);
             transform.position -= new Vector3(0f, 0, 0);

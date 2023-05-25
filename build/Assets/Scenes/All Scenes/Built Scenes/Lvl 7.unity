@@ -210,7 +210,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 500573944}
         m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
-        m_MethodName: gameStart2
+        m_MethodName: gameStart4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -60145,6 +60145,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee7e967204432ac4fb4480f4381fa237, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lvl1: 0
+  winPanelLvl1: {fileID: 0}
+  blueBg: {fileID: 0}
+  nxtButton: {fileID: 0}
+  currvalue1: 0
+  currvalue2: 0
+  newvalue1: 0
+  newvalue2: 0
   RewardPanel: {fileID: 364440461}
   nxtLvlPanel: {fileID: 1628282493}
   LostPanel: {fileID: 7732494707446415903}
@@ -60158,6 +60166,16 @@ MonoBehaviour:
   valueY3: 300
   valueX4: 195
   valueY4: 265
+  valueX5: 0
+  valueY5: 0
+  valueX6: 0
+  valueY6: 0
+  valueX7: 0
+  valueY7: 0
+  valueX8: 0
+  valueY8: 0
+  valueX9: 0
+  valueY9: 0
 --- !u!4 &683735899458649034
 Transform:
   m_ObjectHideFlags: 0
