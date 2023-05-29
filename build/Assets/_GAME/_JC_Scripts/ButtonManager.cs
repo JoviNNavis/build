@@ -66,27 +66,27 @@ public class ButtonManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isbelowlevel5)
-        {
-            if (isstart)
-            {
-                if (mid.isskin)
-                {
-                    knifePlayer2.enabled = false;
-                    knifeplayerrr.enabled = true;
+        //if (!isbelowlevel5)
+        //{
+        //    if (isstart)
+        //    {
+        //        if (mid.isskin)
+        //        {
+        //            knifePlayer2.enabled = false;
+        //            knifeplayerrr.enabled = true;
 
-                }
-                else
-                {
-                    knifeplayerrr.enabled = false;
-                    knifePlayer2.enabled = true;
-                }
-            }
-        }
-        else
-        {
-            return;
-        }
+        //        }
+        //        else
+        //        {
+        //            knifeplayerrr.enabled = false;
+        //            knifePlayer2.enabled = true;
+        //        }
+        //    }
+        //}
+        //else
+        //{
+        //    return;
+        //}
     }
 
     public void gameStart1()  //lvl 1
@@ -292,7 +292,8 @@ public class ButtonManager : MonoBehaviour
         Dirlight.transform.rotation = Quaternion.Euler(50, -30, 0);
         ShowCase.SetActive(false);
         button.SetActive(false);
-
+        Plysounds.volume = 0;
+        Aisounds.volume = 0;
     }
 
     public void defaultKnife()
@@ -312,6 +313,7 @@ public class ButtonManager : MonoBehaviour
     public void consoleButton()
     {
         SoundManger.soundctrl.playClip(tapSound);
+        SculptPanel.SetActive(true);
         knifeSkniPanel.SetActive(false);
         Room.SetActive(false);
         uiBar.SetActive(true);
@@ -319,6 +321,8 @@ public class ButtonManager : MonoBehaviour
         ShowCase.SetActive(false);
         Dirlight.transform.rotation = Quaternion.Euler(50, -30, 0);
         newButton.SetActive(true);
+        Plysounds.volume = 1;
+        Aisounds.volume = .5f;
     }
 
     public void EnableSculptRoom()
@@ -331,7 +335,8 @@ public class ButtonManager : MonoBehaviour
         ShowCase.SetActive(false);
         knifeSkniPanel.SetActive(false);
         newButton.SetActive(false);
-
+        Plysounds.volume = 0;
+        Aisounds.volume = 0;
     }
 
     public void statueRoom()
@@ -344,7 +349,9 @@ public class ButtonManager : MonoBehaviour
         Room.SetActive(false);
         knifeSkniPanel.SetActive(false);
         newButton.SetActive(false);
-       // SceneManager.LoadScene(8);
+        Plysounds.volume = 0;
+        Aisounds.volume = 0;
+        // SceneManager.LoadScene(8);
     }
     public void knieskin(bool isclicked)
     {
@@ -352,6 +359,7 @@ public class ButtonManager : MonoBehaviour
 
         if (mid.isskin)
         {
+            StartCoroutine(panelDis());
             countdownpanel_ad.SetActive(true);
 
         }
@@ -405,7 +413,7 @@ public class ButtonManager : MonoBehaviour
     public void soundOff()
     {
         Plysounds.volume = 1;
-        Aisounds.volume = 1;
+        Aisounds.volume = 0.5f;
         soundOFF.SetActive(false);
         soundON.SetActive(true);
     }
@@ -506,10 +514,10 @@ public class ButtonManager : MonoBehaviour
         }
         else
         {
-            knifePlayer2.enabled = true;
+            //knifePlayer2.enabled = true;
         }
 
-
+        knifePlayer2.enabled = true;
         ai.enabled = true;
        
     }
@@ -518,8 +526,15 @@ public class ButtonManager : MonoBehaviour
     {
         yield return new WaitForSeconds(2.25f);
         bonusKnife.enabled = true;
-        up.enabled = true;
+        up.enabled = true;  
         //playButon.SetActive(true);
+    }
+
+    IEnumerator panelDis()
+    {
+        SculptPanel.SetActive(false);
+        yield return new WaitForSeconds(5);
+        SculptPanel.SetActive(true);
     }
 
 }
