@@ -16,7 +16,7 @@ public class WinScript : MonoBehaviour
     public AiScript aiKnife;
     private Color _blue;
     private MeshRenderer water;
-    public GameObject text, target, aiTarget;
+    public GameObject text, target, aiTarget, comboText;
     public GameObject lostPanel;
     public bool islevelcompleted;
     public bool isLost = false;
@@ -94,6 +94,7 @@ public class WinScript : MonoBehaviour
             winText.SetActive(true);
             StartCoroutine(winJump());
             Destroy(text);
+            Destroy(comboText);
             Destroy(target);
             rayball.enabled = false;
         }

@@ -17931,6 +17931,7 @@ MonoBehaviour:
   text: {fileID: 1033613528}
   target: {fileID: 1357686245}
   aiTarget: {fileID: 920293312}
+  comboText: {fileID: 1369740687}
   lostPanel: {fileID: 7732494707446415902}
   islevelcompleted: 0
   isLost: 0

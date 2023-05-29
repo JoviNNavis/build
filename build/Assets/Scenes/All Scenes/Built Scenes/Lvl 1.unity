@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1402113, g: 0.7094693, b: 0.9917381, a: 1}
+  m_IndirectSpecularColor: {r: 0.14021131, g: 0.7094693, b: 0.9917381, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9600,6 +9600,7 @@ MonoBehaviour:
   retry: {fileID: 127480848}
   target: {fileID: 1357686245}
   text: {fileID: 43587914}
+  comboText: {fileID: 2282955359136919960}
   playerKnife: {fileID: 1817783779}
 --- !u!1 &847938248
 GameObject:
@@ -27769,7 +27770,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 168.99994, y: -223.14185}
+  m_AnchoredPosition: {x: 169, y: -223.14209}
   m_SizeDelta: {x: 270, y: 270}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5596165700408731438
