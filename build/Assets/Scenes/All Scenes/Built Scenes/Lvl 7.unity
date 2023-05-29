@@ -60877,7 +60877,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 985168633705316089}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d29fbb5dc1abec74d9a3f854e971e9ec, type: 3}
   m_Name: 
@@ -60993,6 +60993,7 @@ GameObject:
   - component: {fileID: 985168633705316085}
   - component: {fileID: 985168633705316039}
   - component: {fileID: 985168633705316092}
+  - component: {fileID: 985168633705316093}
   m_Layer: 0
   m_Name: CubePath
   m_TagString: Untagged
@@ -61043,6 +61044,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam1: {fileID: 605208150}
   cam2: {fileID: 1408766777}
+--- !u!114 &985168633705316093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985168633705316089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 284728077f7d73c49b4419f6be8a5be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Knifes: []
+  knife1: {fileID: 1817783779}
+  KnifePlayer: {fileID: 1817783777}
+  swordKnife: {fileID: 1817783780}
+  newBall: {fileID: 1099632229340496901, guid: 04f308397b4939541bb1ffb6fb113c53, type: 3}
+  newBallPos: {fileID: 1538187924}
+  puntured_ball: {fileID: 2682916870070428379, guid: fce0511da48a6214f924aa6851e6e800,
+    type: 3}
+  playerCrownSlider: {fileID: 4118225339579481922}
+  playerImg: {fileID: 50878900}
+  lessValue: 0.015
+  ballPunture: {fileID: 8300000, guid: b485a744ad289bc4fa50aaa47e43b96a, type: 3}
+  emptyObj: {fileID: 1732502739}
 --- !u!33 &985168633771144361
 MeshFilter:
   m_ObjectHideFlags: 0
