@@ -494,7 +494,7 @@ public class ButtonManager : MonoBehaviour
     IEnumerator playButton2()
     {
         ispresed = true;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(5f);
         ballRay.enabled = true;
         if (!isbelowlevel5)
         {
