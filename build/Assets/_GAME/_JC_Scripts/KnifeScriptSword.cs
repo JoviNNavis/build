@@ -24,7 +24,8 @@ public class KnifeScriptSword : MonoBehaviour
     public Image playerImg;
     public bool playerchangecolor;
     public float fillValue;
-
+    public GameObject combo;
+    public TMPro.TextMeshProUGUI _text;
     public GameObject counterText;
 
     public AudioClip knifeThrow;
@@ -102,8 +103,8 @@ public class KnifeScriptSword : MonoBehaviour
                 {
                 
                 GameObject _knife = Instantiate(sword, new Vector3(2.4f, transform.localPosition.y, transform.localPosition.z), Quaternion.identity);
-
-                    FindObjectOfType<FailScript1>().Knifes.Add(_knife.gameObject.transform);
+                combo.SetActive(false);
+                FindObjectOfType<FailScript1>().Knifes.Add(_knife.gameObject.transform);
 
                     transform.position += new Vector3(0, 0.7f, 0);
                     newBallPos.transform.position += new Vector3(0, 0.7f, 0);

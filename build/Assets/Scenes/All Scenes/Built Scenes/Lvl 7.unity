@@ -46845,6 +46845,8 @@ MonoBehaviour:
   playerImg: {fileID: 50878900}
   playerchangecolor: 0
   fillValue: 0.015
+  combo: {fileID: 1369740687}
+  _text: {fileID: 0}
   counterText: {fileID: 1033613528}
   knifeThrow: {fileID: 8300000, guid: 60f11383c193e3244ba00919fcebedd6, type: 3}
 --- !u!1 &1828264437

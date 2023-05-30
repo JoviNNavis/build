@@ -493,7 +493,8 @@ public class ButtonManager : MonoBehaviour
 
     IEnumerator playButton2()
     {
-        yield return new WaitForSeconds(5.5f);
+        ispresed = true;
+        yield return new WaitForSeconds(2f);
         ballRay.enabled = true;
         if (!isbelowlevel5)
         {
@@ -514,10 +515,10 @@ public class ButtonManager : MonoBehaviour
         }
         else
         {
-            //knifePlayer2.enabled = true;
+            knifePlayer2.enabled = true;
         }
 
-        knifePlayer2.enabled = true;
+    //    knifePlayer2.enabled = true;
         ai.enabled = true;
        
     }

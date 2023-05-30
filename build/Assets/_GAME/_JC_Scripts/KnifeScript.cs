@@ -26,7 +26,7 @@ public class KnifeScript : MonoBehaviour
     public float fillValue;
     public GameObject combo;
     public GameObject counterText;
-  public  int combovalue;
+    public  int combovalue;
     public AudioClip knifeThrow;
     public TMPro.TextMeshProUGUI _text;
     void Start()
