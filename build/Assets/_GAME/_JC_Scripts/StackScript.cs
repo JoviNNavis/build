@@ -10,6 +10,8 @@ public class StackScript : MonoBehaviour
     public GameObject stacks;
 
     public AudioClip knifeHit;
+
+    public StackCounterScript stackCount;
     void Start()
     {
         
@@ -27,6 +29,10 @@ public class StackScript : MonoBehaviour
     {
         if (other.gameObject.tag == "Knife")
         {
+            for(int i = 0;  i < stackCount.stacks.Count; i++)
+            {        
+                stackCount.stacks.Remove(transform);
+            }
             SoundManger.soundctrl.playClip(knifeHit);
             Instantiate(blast, transform.position, Quaternion.Euler(-90, 0, 0));
             //stacks.transform.localPosition -= new Vector3(0, 0.5f, 0);

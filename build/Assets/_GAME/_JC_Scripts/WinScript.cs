@@ -131,7 +131,8 @@ public class WinScript : MonoBehaviour
         if(other.CompareTag("Ball"))
         {
             Destroy(other.gameObject, 0.1f);
-            Instantiate(ball, ballPos.transform.position, Quaternion.identity);
+            GameObject neBall = Instantiate(ball, ballPos.transform.position, Quaternion.identity);
+            Destroy(neBall, 2f);
         }
     }
 

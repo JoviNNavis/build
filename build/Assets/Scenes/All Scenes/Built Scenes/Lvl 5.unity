@@ -626,6 +626,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &25542838
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1647,6 +1648,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: 1040ff1be7f6ecb4086a15e0d8f29e9c, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &102589847
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2457,6 +2459,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: 1040ff1be7f6ecb4086a15e0d8f29e9c, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &125126638
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2835,6 +2838,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &136021638
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2966,6 +2970,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: 1040ff1be7f6ecb4086a15e0d8f29e9c, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &139468717
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3676,6 +3681,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: 1040ff1be7f6ecb4086a15e0d8f29e9c, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &184650731
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4007,6 +4013,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &214004674
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4252,6 +4259,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &215796299
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4763,6 +4771,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &244710616
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5336,6 +5345,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: 1040ff1be7f6ecb4086a15e0d8f29e9c, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &287068865
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11096,6 +11106,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &355278957
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11578,6 +11589,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: 1040ff1be7f6ecb4086a15e0d8f29e9c, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &372013896
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11709,6 +11721,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &376242217
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12470,6 +12483,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &394020359
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13052,6 +13066,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 431842323}
+  - component: {fileID: 431842324}
   m_Layer: 0
   m_Name: Stacks
   m_TagString: Untagged
@@ -13126,6 +13141,69 @@ Transform:
   m_Father: {fileID: 150396150}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &431842324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431842322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88075fbd9ccfce041b10c7def12df7a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stacks:
+  - {fileID: 547279671}
+  - {fileID: 136021633}
+  - {fileID: 139468712}
+  - {fileID: 1828264438}
+  - {fileID: 102589842}
+  - {fileID: 25542833}
+  - {fileID: 674860700}
+  - {fileID: 215796294}
+  - {fileID: 1880027708}
+  - {fileID: 526831219}
+  - {fileID: 950246482}
+  - {fileID: 355278952}
+  - {fileID: 1367851022}
+  - {fileID: 1457399697}
+  - {fileID: 1380973983}
+  - {fileID: 667706447}
+  - {fileID: 184650726}
+  - {fileID: 1253692803}
+  - {fileID: 372013891}
+  - {fileID: 1436495813}
+  - {fileID: 722296479}
+  - {fileID: 1340237153}
+  - {fileID: 1077962252}
+  - {fileID: 376242212}
+  - {fileID: 1468424636}
+  - {fileID: 1944034902}
+  - {fileID: 1954832363}
+  - {fileID: 1499662634}
+  - {fileID: 1314735130}
+  - {fileID: 214004669}
+  - {fileID: 125126633}
+  - {fileID: 1027952007}
+  - {fileID: 610058326}
+  - {fileID: 1000735538}
+  - {fileID: 443813826}
+  - {fileID: 1762525650}
+  - {fileID: 2058135858}
+  - {fileID: 244710611}
+  - {fileID: 287068860}
+  - {fileID: 868486820}
+  - {fileID: 1451514153}
+  - {fileID: 843430513}
+  - {fileID: 1207738561}
+  - {fileID: 1176789028}
+  - {fileID: 1520943185}
+  - {fileID: 394020354}
+  - {fileID: 542384567}
+  - {fileID: 1644145684}
+  - {fileID: 1443066541}
+  - {fileID: 2092528834}
 --- !u!1 &443813825
 GameObject:
   m_ObjectHideFlags: 0
@@ -13227,6 +13305,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: 1040ff1be7f6ecb4086a15e0d8f29e9c, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &443813831
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15254,6 +15333,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &526831224
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15385,6 +15465,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: 1040ff1be7f6ecb4086a15e0d8f29e9c, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &542384572
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15516,6 +15597,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: 1040ff1be7f6ecb4086a15e0d8f29e9c, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &547279676
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16457,6 +16539,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: 1040ff1be7f6ecb4086a15e0d8f29e9c, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &610058331
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18532,6 +18615,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &667706452
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19119,6 +19203,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: 1040ff1be7f6ecb4086a15e0d8f29e9c, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &674860705
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20143,6 +20228,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: 1040ff1be7f6ecb4086a15e0d8f29e9c, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &722296484
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22808,6 +22894,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &843430518
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23204,6 +23291,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &868486825
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25543,6 +25631,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: 1040ff1be7f6ecb4086a15e0d8f29e9c, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &950246487
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31430,6 +31519,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &1000735543
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32004,6 +32094,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &1027952012
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32857,6 +32948,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: 1040ff1be7f6ecb4086a15e0d8f29e9c, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &1077962257
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -34602,6 +34694,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &1176789033
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -35395,6 +35488,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: 1040ff1be7f6ecb4086a15e0d8f29e9c, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &1207738566
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -36247,6 +36341,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &1253692808
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -36782,6 +36877,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: 1040ff1be7f6ecb4086a15e0d8f29e9c, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &1314735135
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -37238,6 +37334,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &1340237158
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -38067,6 +38164,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: 1040ff1be7f6ecb4086a15e0d8f29e9c, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &1367851027
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -38278,6 +38376,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: 1040ff1be7f6ecb4086a15e0d8f29e9c, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &1380973988
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -39549,6 +39648,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &1436495818
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -39680,6 +39780,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: 1040ff1be7f6ecb4086a15e0d8f29e9c, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &1443066546
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -40098,6 +40199,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: 1040ff1be7f6ecb4086a15e0d8f29e9c, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &1451514158
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -40309,6 +40411,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &1457399702
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -40521,6 +40624,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: 1040ff1be7f6ecb4086a15e0d8f29e9c, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &1468424641
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -41649,6 +41753,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &1499662639
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -46945,6 +47050,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: 1040ff1be7f6ecb4086a15e0d8f29e9c, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &1520943190
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -49946,6 +50052,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &1644145689
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -51766,6 +51873,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &1762525655
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -52358,6 +52466,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &1828264443
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -53152,6 +53261,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: 1040ff1be7f6ecb4086a15e0d8f29e9c, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &1880027713
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -54318,6 +54428,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &1944034907
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -54563,6 +54674,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: 1040ff1be7f6ecb4086a15e0d8f29e9c, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &1954832368
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -56476,6 +56588,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: 1040ff1be7f6ecb4086a15e0d8f29e9c, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &2058135863
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -57138,6 +57251,7 @@ MonoBehaviour:
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
+  stackCount: {fileID: 431842324}
 --- !u!54 &2092528839
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -88012,6 +88126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca32657bc0d8c96429a41d9d6454c10e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stackCounter: {fileID: 431842324}
 --- !u!222 &7048907844021648767
 CanvasRenderer:
   m_ObjectHideFlags: 0

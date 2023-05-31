@@ -7,6 +7,8 @@ public class MissedKnife : MonoBehaviour
 {
     public static int knifeValue = 0;
 
+    public StackCounterScript stackCounter;
+
     Text knifeText;
 
     void Start()
@@ -17,6 +19,8 @@ public class MissedKnife : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        knifeText.text = " " + knifeValue + " " + "Knife"; 
+        knifeText.text = " " + knifeValue + " " + "Knife";
+
+        knifeValue = stackCounter.stacks.Count;
     }
 }
