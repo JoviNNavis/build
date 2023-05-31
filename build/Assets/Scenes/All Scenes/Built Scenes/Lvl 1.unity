@@ -1208,8 +1208,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 43.391182, z: 1.5}
-  m_Center: {x: 0, y: 21.695591, z: 0}
+  m_Size: {x: 1.5, y: 43.31851, z: 1.5}
+  m_Center: {x: 0, y: 21.55281, z: 0}
 --- !u!54 &96920350
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1240,7 +1240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Knifes: []
   knife1: {fileID: 1817783779}
-  counter: {fileID: 0}
+  counter: {fileID: 1913933325}
   KnifePlayer: {fileID: 1817783777}
   newBall: {fileID: 1099632229340496901, guid: 04f308397b4939541bb1ffb6fb113c53, type: 3}
   newBallPos: {fileID: 630835570}
@@ -9602,6 +9602,8 @@ MonoBehaviour:
   text: {fileID: 43587914}
   comboText: {fileID: 2282955359136919960}
   playerKnife: {fileID: 1817783779}
+  ball: {fileID: 1099632229340496901, guid: 04f308397b4939541bb1ffb6fb113c53, type: 3}
+  ballPos: {fileID: 630835570}
 --- !u!1 &847938248
 GameObject:
   m_ObjectHideFlags: 0
@@ -21604,7 +21606,7 @@ MonoBehaviour:
   fireTime1: 2
   nextfireRate1: 2
   newBallPos: {fileID: 0}
-  AiPalce: {fileID: 0}
+  aiSlider: {fileID: 0}
   rndclr: 0
   rankValue: 0
   aicolor: 0
@@ -42340,7 +42342,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6792863810578019185}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee7e967204432ac4fb4480f4381fa237, type: 3}
   m_Name: 
@@ -42349,33 +42351,14 @@ MonoBehaviour:
   winPanelLvl1: {fileID: 525053812}
   blueBg: {fileID: 849538446}
   nxtButton: {fileID: 149192792}
-  currvalue1: 900
-  currvalue2: -980
-  newvalue1: 1025
-  newvalue2: -1094
   RewardPanel: {fileID: 0}
   nxtLvlPanel: {fileID: 0}
   LostPanel: {fileID: 0}
   selectionPanel: {fileID: 0}
   ChestLostPanel: {fileID: 0}
-  valueX1: 0
-  valueY1: 0
-  valueX2: 0
-  valueY2: 0
-  valueX3: 0
-  valueY3: 0
-  valueX4: 0
-  valueY4: 0
-  valueX5: 0
-  valueY5: 0
-  valueX6: 0
-  valueY6: 0
-  valueX7: 0
-  valueY7: 0
-  valueX8: 0
-  valueY8: 0
-  valueX9: 0
-  valueY9: 0
+  promax: 0
+  se: 0
+  ipad: 0
 --- !u!199 &8208014982958167407
 ParticleSystemRenderer:
   serializedVersion: 6

@@ -10,6 +10,10 @@ public class WinScript1 : MonoBehaviour
     
     public KnifeScript1 playerKnife;
 
+    public GameObject ball;
+
+    public Transform ballPos;
+
     void Start()
     {
         
@@ -36,6 +40,12 @@ public class WinScript1 : MonoBehaviour
             text.SetActive(false);
             Destroy(target);
             Destroy(comboText);
+        }
+
+        if(other.CompareTag("Ball"))
+        {
+            Destroy(other.gameObject, 0.1f);
+            Instantiate(ball, ballPos.transform.position, Quaternion.identity);
         }
     }
 }
