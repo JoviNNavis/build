@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.56378007, g: 0.18715121, b: 0.7930456, a: 1}
+  m_IndirectSpecularColor: {r: 0.5638572, g: 0.18723431, b: 0.79310197, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7703,6 +7703,7 @@ GameObject:
   - component: {fileID: 705507995}
   - component: {fileID: 705507994}
   - component: {fileID: 705507996}
+  - component: {fileID: 705507997}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -7807,6 +7808,30 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!114 &705507997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705507993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee7e967204432ac4fb4480f4381fa237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lvl1: 0
+  winPanelLvl1: {fileID: 0}
+  blueBg: {fileID: 0}
+  nxtButton: {fileID: 0}
+  RewardPanel: {fileID: 2324779175909874804}
+  nxtLvlPanel: {fileID: 2324779174643902852}
+  LostPanel: {fileID: 2324779174643902852}
+  selectionPanel: {fileID: 2324779174643902852}
+  ChestLostPanel: {fileID: 469792609}
+  promax: 0
+  se: 0
+  ipad: 0
 --- !u!1 &717334238
 GameObject:
   m_ObjectHideFlags: 0
