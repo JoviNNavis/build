@@ -17,7 +17,9 @@ public class AiFailScript : MonoBehaviour
     public GameObject newBall;
     public Transform newBallPos;
 
-    public GameObject aiUiPos;
+    public Slider aiSlider;
+
+    public float rankValue;
 
     public AudioClip ballPuncture;
 
@@ -90,17 +92,16 @@ public class AiFailScript : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         Debug.Log("1");
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.03f, false).OnComplete(knifeRemove);
-        aiUiPos.transform.position -= new Vector3(7.8f, 0, 0);
+        aiSlider.value -= rankValue;
         Knifeai.transform.position -= new Vector3(0, 0.7f, 0);
         newBallPos.transform.position -= new Vector3(0, 0.7f, 0);
         yield return new WaitForSeconds(0.45f);
         Debug.Log("2");
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.03f, false).OnComplete(knifeRemove);
-        aiUiPos.transform.position -= new Vector3(7.8f, 0, 0);
+        aiSlider.value -= rankValue;
         Knifeai.transform.position -= new Vector3(0, 0.7f, 0);
         newBallPos.transform.position -= new Vector3(0, 0.7f, 0);
-        yield return new WaitForSeconds(0.4f);
-        
+        yield return new WaitForSeconds(0.4f);     
         GameObject oldBall = Instantiate(newBall, newBallPos.position, Quaternion.identity);
         oldBall.transform.SetParent(emptyObj);
         ai.enabled = true;
@@ -112,13 +113,13 @@ public class AiFailScript : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         Debug.Log("1");
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.03f, false).OnComplete(knifeRemove);
-        aiUiPos.transform.position -= new Vector3(7.8f, 0, 0);
+        aiSlider.value -= rankValue;
         Knifeai.transform.position -= new Vector3(0, 0.7f, 0);
         newBallPos.transform.position -= new Vector3(0, 0.7f, 0);
         yield return new WaitForSeconds(0.45f);
         Debug.Log("2");
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.03f, false).OnComplete(knifeRemove);
-        aiUiPos.transform.position -= new Vector3(7.8f, 0, 0);
+        aiSlider.value -= rankValue;
         Knifeai.transform.position -= new Vector3(0, 0.7f, 0);
         newBallPos.transform.position -= new Vector3(0, 0.7f, 0);
         yield return new WaitForSeconds(0.45f);
@@ -126,7 +127,7 @@ public class AiFailScript : MonoBehaviour
         Knifes.ElementAt(Knifes.Count - 1).gameObject.SetActive(false);
         Knifes.RemoveAt(Knifes.Count - 1);
         Debug.Log("3");
-        aiUiPos.transform.position -= new Vector3(7.8f, 0, 0);
+        aiSlider.value -= rankValue;
         Knifeai.transform.position -= new Vector3(0, 0.7f, 0);
         newBallPos.transform.position -= new Vector3(0, 0.7f, 0);
         yield return new WaitForSeconds(0.4f);  
@@ -140,19 +141,19 @@ public class AiFailScript : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         Debug.Log("1");
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.03f, false).OnComplete(knifeRemove);
-        aiUiPos.transform.position -= new Vector3(7.8f, 0, 0);
+        aiSlider.value -= rankValue;
         Knifeai.transform.position -= new Vector3(0, 0.7f, 0);
         yield return new WaitForSeconds(0.45f);
         Debug.Log("2");
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.03f, false).OnComplete(knifeRemove);
-        aiUiPos.transform.position -= new Vector3(7.8f, 0, 0);
+        aiSlider.value -= rankValue;
         Knifeai.transform.position -= new Vector3(0, 0.7f, 0);
         yield return new WaitForSeconds(0.45f);
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.03f, false);
         Knifes.ElementAt(Knifes.Count - 1).gameObject.SetActive(false);
         Knifes.RemoveAt(Knifes.Count - 1);
         Debug.Log("3");
-        aiUiPos.transform.position -= new Vector3(7.8f, 0, 0);
+        aiSlider.value -= rankValue;
         Knifeai.transform.position -= new Vector3(0, 0.7f, 0);
         yield return new WaitForSeconds(0.4f);
         ai.enabled = true;

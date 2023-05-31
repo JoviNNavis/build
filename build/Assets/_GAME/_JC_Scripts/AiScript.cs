@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AiScript : MonoBehaviour
 {
@@ -10,8 +11,8 @@ public class AiScript : MonoBehaviour
     [SerializeField]private float nextfireRate1;
 
     public Transform newBallPos;
-   // public bool isaicolor;
-    public GameObject AiPalce;
+    // public bool isaicolor;
+    public Slider aiSlider;
    public int rndclr;
     public float rankValue;
    public bool aicolor;
@@ -70,7 +71,7 @@ public class AiScript : MonoBehaviour
                 transform.position += new Vector3(0, 0.7f, 0);
                 newBallPos.transform.position += new Vector3(0, 0.7f, 0);
                 transform.rotation = Quaternion.Euler(90, 0, 0);
-                AiPalce.transform.position += new Vector3(rankValue, 0, 0);
+                aiSlider.value += rankValue;
                 //fireTime1 = 0;
                 if (rndclr >= knifemat.Length)
                 {
@@ -84,11 +85,10 @@ public class AiScript : MonoBehaviour
                 GameObject aiobject = Instantiate(Knife, transform.position, Quaternion.Euler(0, 180, 0));
                 FindObjectOfType<AiFailScript>().Knifes.Add(aiobject.gameObject.transform);
                 fireRate1 = 18f;
-
+                aiSlider.value += rankValue;
                 transform.position += new Vector3(0, 0.7f, 0);
                 newBallPos.transform.position += new Vector3(0, 0.7f, 0);
                 transform.rotation = Quaternion.Euler(90, 0, 0);
-                AiPalce.transform.position += new Vector3(rankValue, 0, 0);
                 fireTime1 = 0;
             }
         }
