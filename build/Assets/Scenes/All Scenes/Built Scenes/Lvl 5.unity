@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.14021131, g: 0.7094693, b: 0.9917381, a: 1}
+  m_IndirectSpecularColor: {r: 0.1402113, g: 0.7094693, b: 0.9917381, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -19578,6 +19578,7 @@ GameObject:
   - component: {fileID: 705507995}
   - component: {fileID: 705507994}
   - component: {fileID: 705507996}
+  - component: {fileID: 705507997}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -19682,6 +19683,30 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!114 &705507997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705507993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee7e967204432ac4fb4480f4381fa237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lvl1: 0
+  winPanelLvl1: {fileID: 0}
+  blueBg: {fileID: 0}
+  nxtButton: {fileID: 0}
+  RewardPanel: {fileID: 364440461}
+  nxtLvlPanel: {fileID: 1628282493}
+  LostPanel: {fileID: 5634819622248250100}
+  selectionPanel: {fileID: 2741648863911847991}
+  ChestLostPanel: {fileID: 2741648863911847991}
+  promax: 0
+  se: 0
+  ipad: 0
 --- !u!1 &711464823
 GameObject:
   m_ObjectHideFlags: 0
@@ -87176,33 +87201,14 @@ MonoBehaviour:
   winPanelLvl1: {fileID: 0}
   blueBg: {fileID: 0}
   nxtButton: {fileID: 0}
-  currvalue1: 0
-  currvalue2: 0
-  newvalue1: 0
-  newvalue2: 0
   RewardPanel: {fileID: 364440461}
   nxtLvlPanel: {fileID: 1628282493}
   LostPanel: {fileID: 5634819622248250100}
   selectionPanel: {fileID: 1205800476}
   ChestLostPanel: {fileID: 2741648863911847991}
-  valueX1: 415
-  valueY1: 1000
-  valueX2: 145
-  valueY2: 300
-  valueX3: 195
-  valueY3: 300
-  valueX4: 195
-  valueY4: 265
-  valueX5: 0
-  valueY5: 0
-  valueX6: 0
-  valueY6: 0
-  valueX7: 0
-  valueY7: 0
-  valueX8: 0
-  valueY8: 0
-  valueX9: 0
-  valueY9: 0
+  promax: 0
+  se: 0
+  ipad: 0
 --- !u!1 &6925268110375636818
 GameObject:
   m_ObjectHideFlags: 0

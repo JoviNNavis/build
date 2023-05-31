@@ -12,40 +12,22 @@ public class ResolutionAdjuster : MonoBehaviour
 
     public GameObject blueBg, nxtButton;
 
-    public float currvalue1, currvalue2;
-
-    public float newvalue1, newvalue2;
-    
     public RectTransform RewardPanel, nxtLvlPanel, LostPanel, selectionPanel, ChestLostPanel;
 
-    public float valueX1, valueY1;  //iphone se
-
-    public float valueX2, valueY2;  //iphone se 2gen
-
-    public float valueX3, valueY3;  //iphone mini, 11, 11 pro, 11 pro max, 12 pro, 12 pro max 
-
-    public float valueX4, valueY4;  //ipad pro 9.7
-
-    public float valueX5, valueY5;  //ipad 8th gen
-
-    public float valueX6, valueY6;  //ipad 4th gen
-
-    public float valueX7, valueY7;  //ipad pro 10.5
-
-    public float valueX8, valueY8;  //ipad pro 11 
-
-    public float valueX9, valueY9;  //ipad 12.9 
+    public float promax, se, ipad;
 
 
     private void Start()
     {
-        
+        promax = 1;
+        se = 0.9f;
+        ipad = 0.85f;
     }
 
     private void Update()
     {
-        //Debug.Log(Camera.main.aspect);
 
+        screenadjuster();
         #region
         //if(Camera.main.aspect < 0.5f)
         //{
@@ -108,36 +90,113 @@ public class ResolutionAdjuster : MonoBehaviour
         //    ChestLostPanel.transform.localScale = new Vector3(1, 0.9f, 0);
         //}
         #endregion
+        #region   commenting
 
-        if(lvl1)
+        /* if(lvl1)
+         {
+             if(Camera.main.aspect == 0.75f || Camera.main.aspect == 0.749634f  || Camera.main.aspect == 0.6949152f || Camera.main.aspect == 0.6984925f)
+             {
+                 winPanelLvl1.transform.localScale = new Vector3(0.9f, 0.9f, 0.9f);
+                 blueBg.transform.localPosition = new Vector3(transform.localPosition.x, newvalue1, transform.localPosition.z);
+                 nxtButton.transform.localPosition = new Vector3(transform.localPosition.x, newvalue2, transform.localPosition.z);
+             }
+
+             if(Camera.main.aspect == 0.5633803f || Camera.main.aspect == 0.5622189f || Camera.main.aspect == 0.5625f)
+             {
+                 winPanelLvl1.transform.localScale = new Vector3(0.85f, 0.85f, 0.85f);
+             }
+
+             //else if (Camera.main.aspect == 0.4620536f || Camera.main.aspect == 0.4615385f || Camera.main.aspect == 0.4618227f || Camera.main.aspect == 0.4620853f || Camera.main.aspect == 0.462203f)
+             //{
+             //    winPanelLvl1.transform.localScale = new Vector3(1f, 1f, 1f);
+             //    blueBg.transform.localPosition = new Vector3(transform.localPosition.x, currvalue1, transform.localPosition.z);
+             //    nxtButton.transform.localPosition = new Vector3(transform.localPosition.x, currvalue2, transform.localPosition.z);
+
+             //}
+
+             //else
+             //{
+             //    winPanelLvl1.transform.localScale = new Vector3(1f, 1f, 1f);
+             //    blueBg.transform.localPosition = new Vector3(transform.localPosition.x, currvalue1, transform.localPosition.z);
+             //    nxtButton.transform.localPosition = new Vector3(transform.localPosition.x, currvalue2, transform.localPosition.z);
+             //}
+
+         }*/
+        #endregion
+    }
+    public void screenadjuster()
+    {
+        if((Camera.main.aspect >0.45)&&(Camera.main.aspect < 0.47))
         {
-            if(Camera.main.aspect == 0.75f || Camera.main.aspect == 0.749634f  || Camera.main.aspect == 0.6949152f || Camera.main.aspect == 0.6984925f)
-            {
-                winPanelLvl1.transform.localScale = new Vector3(0.9f, 0.9f, 0.9f);
-                blueBg.transform.localPosition = new Vector3(transform.localPosition.x, newvalue1, transform.localPosition.z);
-                nxtButton.transform.localPosition = new Vector3(transform.localPosition.x, newvalue2, transform.localPosition.z);
-            }
+            RewardPanel.transform.localScale = new Vector3(promax, promax, promax);
+            nxtLvlPanel.transform.localScale = new Vector3(promax, promax, promax);
+            ChestLostPanel.transform.localScale = new Vector3(promax, promax, promax);
+            selectionPanel.transform.localScale = new Vector3(promax, promax, promax);
+            LostPanel.transform.localScale = new Vector3(promax, promax, promax);
 
-            if(Camera.main.aspect == 0.5633803f || Camera.main.aspect == 0.5622189f || Camera.main.aspect == 0.5625f)
-            {
-                winPanelLvl1.transform.localScale = new Vector3(0.85f, 0.85f, 0.85f);
-            }
 
-            //else if (Camera.main.aspect == 0.4620536f || Camera.main.aspect == 0.4615385f || Camera.main.aspect == 0.4618227f || Camera.main.aspect == 0.4620853f || Camera.main.aspect == 0.462203f)
-            //{
-            //    winPanelLvl1.transform.localScale = new Vector3(1f, 1f, 1f);
-            //    blueBg.transform.localPosition = new Vector3(transform.localPosition.x, currvalue1, transform.localPosition.z);
-            //    nxtButton.transform.localPosition = new Vector3(transform.localPosition.x, currvalue2, transform.localPosition.z);
+            RewardPanel.transform.localPosition = new Vector3(0, 0, 0);
+            nxtLvlPanel.transform.localPosition = new Vector3(0, 0, 0);
+            ChestLostPanel.transform.localPosition = new Vector3(0, 0, 0);
+            selectionPanel.transform.localPosition = new Vector3(0, 0, 0);
+            LostPanel.transform.localPosition = new Vector3(0, 0, 0);
 
-            //}
-
-            //else
-            //{
-            //    winPanelLvl1.transform.localScale = new Vector3(1f, 1f, 1f);
-            //    blueBg.transform.localPosition = new Vector3(transform.localPosition.x, currvalue1, transform.localPosition.z);
-            //    nxtButton.transform.localPosition = new Vector3(transform.localPosition.x, currvalue2, transform.localPosition.z);
-            //}
 
         }
+        if ((Camera.main.aspect > 0.55) && (Camera.main.aspect < 0.57))
+        {
+            Debug.LogError("se all versions,8 plus");
+            RewardPanel.transform.localScale = new Vector3(se, se, se);
+            nxtLvlPanel.transform.localScale = new Vector3(se, se, se);
+            ChestLostPanel.transform.localScale = new Vector3(se, se, se);
+            selectionPanel.transform.localScale = new Vector3(se, se, se);
+            LostPanel.transform.localScale = new Vector3(se, se, se);
+
+
+            RewardPanel.transform.localPosition = new Vector3(0, 0, 0);
+            nxtLvlPanel.transform.localPosition = new Vector3(0, 0, 0);
+            ChestLostPanel.transform.localPosition = new Vector3(0, 0, 0);
+            selectionPanel.transform.localPosition = new Vector3(0, 0, 0);
+            LostPanel.transform.localPosition = new Vector3(0, 0, 0);
+        }
+        if ((Camera.main.aspect > 0.68) && (Camera.main.aspect < 0.70))
+        {
+            Debug.LogError("ipad 4th gen , 11 inche3s");
+            RewardPanel.transform.localScale = new Vector3(ipad, ipad, ipad);
+            nxtLvlPanel.transform.localScale = new Vector3(ipad, ipad, ipad);
+            ChestLostPanel.transform.localScale = new Vector3(ipad, ipad, ipad);
+            selectionPanel.transform.localScale = new Vector3(ipad, ipad, ipad);
+            LostPanel.transform.localScale = new Vector3(ipad, ipad, ipad);
+
+
+            RewardPanel.transform.localPosition = new Vector3(0, 250, 0);
+            nxtLvlPanel.transform.localPosition = new Vector3(0, 250, 0);
+            ChestLostPanel.transform.localPosition = new Vector3(0, 250, 0);
+            selectionPanel.transform.localPosition = new Vector3(0, 250, 0);
+            LostPanel.transform.localPosition = new Vector3(0, 250, 0);
+        }
+        if (Camera.main.aspect >= 0.75)
+        {
+            Debug.LogError("ipad 4th gen , 11 inche3s");
+            RewardPanel.transform.localScale = new Vector3(ipad, ipad, ipad);
+            nxtLvlPanel.transform.localScale = new Vector3(ipad, ipad, ipad);
+            ChestLostPanel.transform.localScale = new Vector3(ipad, ipad, ipad);
+            selectionPanel.transform.localScale = new Vector3(ipad, ipad, ipad);
+            LostPanel.transform.localScale = new Vector3(ipad, ipad, ipad);
+
+
+            RewardPanel.transform.localPosition = new Vector3(0, 222, 0);
+            nxtLvlPanel.transform.localPosition = new Vector3(0, 222, 0);
+            ChestLostPanel.transform.localPosition = new Vector3(0, 222, 0);
+            selectionPanel.transform.localPosition = new Vector3(0, 222, 0);
+            LostPanel.transform.localPosition = new Vector3(0, 222, 0);
+            Debug.LogError("ipad all versions");
+
+        }
+
+    }
+    private void FixedUpdate()
+    {
+
     }
 }
