@@ -17966,6 +17966,8 @@ MonoBehaviour:
   rayball: {fileID: 1570535876}
   playerNewObj: {fileID: 1732502738}
   aiNewObj: {fileID: 1402953573}
+  ball: {fileID: 1099632229340496901, guid: 04f308397b4939541bb1ffb6fb113c53, type: 3}
+  ballPos: {fileID: 1538187924}
 --- !u!54 &837195052
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -61038,8 +61040,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.7568027, y: 44.408443, z: 1.5}
-  m_Center: {x: 0.37159866, y: 21.868235, z: 0}
+  m_Size: {x: 0.7568027, y: 43.709507, z: 1.5}
+  m_Center: {x: 0.37159866, y: 21.55, z: 0}
 --- !u!114 &985168633705316092
 MonoBehaviour:
   m_ObjectHideFlags: 0

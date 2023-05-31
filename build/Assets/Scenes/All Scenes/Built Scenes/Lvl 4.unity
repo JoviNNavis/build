@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1402113, g: 0.7094693, b: 0.9917381, a: 1}
+  m_IndirectSpecularColor: {r: 0.14021131, g: 0.7094693, b: 0.9917381, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -24860,6 +24860,8 @@ MonoBehaviour:
   rayball: {fileID: 1570535876}
   playerNewObj: {fileID: 290051485}
   aiNewObj: {fileID: 894370651}
+  ball: {fileID: 1099632229340496901, guid: 04f308397b4939541bb1ffb6fb113c53, type: 3}
+  ballPos: {fileID: 291665116}
 --- !u!54 &837195052
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -53688,7 +53690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rayPos: {fileID: 1584184991}
-  rayRange: 3
+  rayRange: 2
   aiKnife: {fileID: 1920393867}
 --- !u!1 &1572233873
 GameObject:
@@ -93984,8 +93986,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.58521533, y: 94.36719, z: 1.5}
-  m_Center: {x: 0.45, y: 47.183594, z: 0}
+  m_Size: {x: 0.58521533, y: 94.092026, z: 1.5}
+  m_Center: {x: 0.45, y: 47, z: 0}
 --- !u!54 &8077495833353074171
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -29,6 +29,10 @@ public class WinScript : MonoBehaviour
 
     public GameObject playerNewObj, aiNewObj;
 
+    public GameObject ball;
+
+    public Transform ballPos;
+
     void Start()
     {
         water = FindObjectOfType<ButtonManager>().water;
@@ -87,7 +91,7 @@ public class WinScript : MonoBehaviour
 
             islevelcompleted = true;
               stopwatercolor();
-  FindObjectOfType<KnifeScript>().combo.SetActive(false);
+            FindObjectOfType<KnifeScript>().combo.SetActive(false);
             aiKnife.enabled = false;
             lvl.SetActive(false);
             blast.SetActive(true);
@@ -122,6 +126,12 @@ public class WinScript : MonoBehaviour
             aiTarget.SetActive(false);
             StartCoroutine(ballOff());
             rayball.enabled = false;
+        }
+
+        if(other.CompareTag("Ball"))
+        {
+            Destroy(other.gameObject, 0.1f);
+            Instantiate(ball, ballPos.transform.position, Quaternion.identity);
         }
     }
 

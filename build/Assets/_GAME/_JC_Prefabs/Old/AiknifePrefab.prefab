@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 8362010284299625765}
   - component: {fileID: 3556681406992602373}
   - component: {fileID: 2442131372671701298}
-  - component: {fileID: 5097694667403805890}
+  - component: {fileID: 2920989573627902711}
   m_Layer: 0
   m_Name: Collider
   m_TagString: End
@@ -184,7 +184,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &5097694667403805890
+--- !u!114 &2920989573627902711
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -193,7 +193,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2899988264808368394}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1f9e99f2f8b1764496c1e62eb6e7eaf, type: 3}
+  m_Script: {fileID: 11500000, guid: 03d3265a1a72226479edaabeb8304dfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6447887427413798797
