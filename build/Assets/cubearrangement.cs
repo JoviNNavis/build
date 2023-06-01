@@ -8,6 +8,10 @@ public class cubearrangement : MonoBehaviour
    
     void Start()
     {
+        for (int i = 0; i < cubes.Count; i++)
+        {
+            cubes[i].transform.position = new Vector3(0, cubes[i].transform.position.y + 0.7f, 0);
+        }
 
 
     }
@@ -15,9 +19,6 @@ public class cubearrangement : MonoBehaviour
 
     void Update()
     {
-        for (int i = 1; i < cubes.Count; i++)
-        {
-            cubes[i].transform.position += new Vector3(0, 0.7f, 0);
-        }
+
     }
 }
