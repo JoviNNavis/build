@@ -26,7 +26,7 @@ public class ResolutionAdjuster : MonoBehaviour
 
     private void Update()
     {
-
+       // Debug.Log(Camera.main.aspect);
         screenadjuster();
         #region
         //if(Camera.main.aspect < 0.5f)
@@ -175,7 +175,7 @@ public class ResolutionAdjuster : MonoBehaviour
             selectionPanel.transform.localPosition = new Vector3(0, 250, 0);
             LostPanel.transform.localPosition = new Vector3(0, 250, 0);
         }
-        if (Camera.main.aspect >= 0.75)
+        if (Camera.main.aspect >= 0.74)
         {
             Debug.LogError("ipad 4th gen , 11 inche3s");
             RewardPanel.transform.localScale = new Vector3(ipad, ipad, ipad);
