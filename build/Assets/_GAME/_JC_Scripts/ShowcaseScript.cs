@@ -14,6 +14,12 @@ public class ShowcaseScript : MonoBehaviour
     public GameObject panelNew;
     public GameObject downbar;
     public Button _bear;
+
+    public GameObject settingsPanel;
+
+    public GameObject hapticON, hapticOFF;
+
+    public GameObject soundON, soundOFF;
     void Start()
     {
         downbar.SetActive(false);
@@ -72,6 +78,40 @@ public class ShowcaseScript : MonoBehaviour
     {
         panelNew.SetActive(false);
         blackscreen.SetActive(false);
+    }
+
+    public void openSettings()
+    {
+        settingsPanel.SetActive(true);
+    }
+
+    public void closeSettings()
+    {
+        settingsPanel.SetActive(false);
+    }
+
+    public void hapticon()
+    {
+        hapticOFF.SetActive(false);
+        hapticON.SetActive(true);
+    }
+
+    public void hapticoff()
+    {
+        hapticOFF.SetActive(true);
+        hapticON.SetActive(false);
+    }
+
+    public void soundcon()
+    {
+        soundOFF.SetActive(false);
+        soundON.SetActive(true);
+    }
+
+    public void soundcoff()
+    {
+        soundOFF.SetActive(true);
+        soundON.SetActive(false);
     }
 
     IEnumerator bearDisable()
