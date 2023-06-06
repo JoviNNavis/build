@@ -121,7 +121,7 @@ public class NewFailScript : MonoBehaviour
             GameObject pball =   Instantiate(puntured_ball,collision.transform.position + new Vector3(0.3f, 0, 0), Quaternion.Euler(0,-0, 0));
             
             SoundManger.soundctrl.playClip(ballPunture);
-            knife1.enabled = false;
+            //knife1.enabled = false;
             swordKnife.enabled = false;
             Destroy(collision.gameObject, 0.1f);
             Destroy(pball, 0.12f);
@@ -134,7 +134,7 @@ public class NewFailScript : MonoBehaviour
         {
             GameObject pball  = Instantiate(puntured_ball, collision.transform.position, Quaternion.Euler(0, -0, 0));
             SoundManger.soundctrl.playClip(ballPunture);
-            knife1.enabled = false;
+            //knife1.enabled = false;
             swordKnife.enabled = false;
             Destroy(collision.gameObject, 0.1f);
             Destroy(pball, 0.12f);
@@ -146,7 +146,7 @@ public class NewFailScript : MonoBehaviour
         {
             GameObject pball = Instantiate(puntured_ball, collision.transform.position, Quaternion.Euler(0, -0, 0));
             SoundManger.soundctrl.playClip(ballPunture);
-            knife1.enabled = false;
+            //knife1.enabled = false;
             swordKnife.enabled = false;
             Destroy(collision.gameObject, 0.1f);
             Destroy(pball, 0.12f);
@@ -160,7 +160,7 @@ public class NewFailScript : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.08f, false).OnComplete(knifeRemove);
         yield return new WaitForSeconds(0.5f);
-        knife1.enabled = true;
+        //knife1.enabled = true;
         swordKnife.enabled = true;
         GameObject oldBall =  Instantiate(newBall, newBallPos.position, Quaternion.identity);
         oldBall.transform.SetParent(emptyObj, true);
@@ -181,7 +181,7 @@ public class NewFailScript : MonoBehaviour
         KnifePlayer.transform.position -= new Vector3(0, 0.7f, 0);
         newBallPos.transform.position -= new Vector3(0, 0.7f, 0);
         yield return new WaitForSeconds(0.5f);
-        knife1.enabled = true;
+        //knife1.enabled = true;
         swordKnife.enabled = true;
         GameObject oldBall = Instantiate(newBall, newBallPos.position, Quaternion.identity);
         oldBall.transform.SetParent(emptyObj, true);
@@ -208,7 +208,7 @@ public class NewFailScript : MonoBehaviour
         KnifePlayer.transform.position -= new Vector3(0, 0.7f, 0);
         newBallPos.transform.position -= new Vector3(0, 0.7f, 0);
         yield return new WaitForSeconds(0.5f);
-        knife1.enabled = true;
+       // knife1.enabled = true;
         swordKnife.enabled = true;
         GameObject oldBall = Instantiate(newBall, newBallPos.position, Quaternion.identity);
         oldBall.transform.SetParent(emptyObj, true);
