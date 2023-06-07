@@ -40,7 +40,6 @@ public class StackScript : MonoBehaviour
             if (FindObjectOfType<ButtonManager>().ishaptic)
             {
                 MMVibrationManager.Haptic(HapticTypes.Success);
-                Debug.LogError("vibe");
             }
             Destroy(other.gameObject);
             Destroy(this.gameObject, 0.1f);

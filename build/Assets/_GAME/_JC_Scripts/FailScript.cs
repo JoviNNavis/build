@@ -90,7 +90,6 @@ public class FailScript : MonoBehaviour
             if (FindObjectOfType<ButtonManager>().ishaptic)
             {
                 MMVibrationManager.Haptic(HapticTypes.SoftImpact);
-                Debug.LogError("vibe");
             }
 
         }
@@ -104,7 +103,6 @@ public class FailScript : MonoBehaviour
 
             knife1.enabled = false;
             StartCoroutine(knifeR1());
-            Debug.Log("touched");
         }
         if (collision.gameObject.tag == "Ball" && Knifes.Count == 2)
         {
@@ -116,7 +114,6 @@ public class FailScript : MonoBehaviour
 
             knife1.enabled = false;
             StartCoroutine(knifeR2());
-            Debug.Log("touched");
 
         }
 
@@ -130,7 +127,6 @@ public class FailScript : MonoBehaviour
 
             knife1.enabled = false;
             StartCoroutine(knifeR3());
-            Debug.Log("touched");
 
         }
     }

@@ -126,7 +126,6 @@ public class NewFailScript : MonoBehaviour
             Destroy(collision.gameObject, 0.1f);
             Destroy(pball, 0.12f);
             StartCoroutine(knifeR1());
-            Debug.Log("touched");
 
         }
 
@@ -138,7 +137,6 @@ public class NewFailScript : MonoBehaviour
             swordKnife.enabled = false;
             Destroy(collision.gameObject, 0.1f);
             Destroy(pball, 0.12f);
-            Debug.Log("touched");
             StartCoroutine(knifeR2());
         }
 
@@ -151,7 +149,6 @@ public class NewFailScript : MonoBehaviour
             Destroy(collision.gameObject, 0.1f);
             Destroy(pball, 0.12f);
             StartCoroutine(knifeR3());
-            Debug.Log("touched");
 
         }
     }
@@ -217,13 +214,11 @@ public class NewFailScript : MonoBehaviour
     IEnumerator knifeR4()
     {
         yield return new WaitForSeconds(0.2f);
-        Debug.Log("1");
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.03f, false).OnComplete(knifeRemove);
         playerImg.fillAmount -= lessValue;
         playerCrownSlider.value -= lessValue;
         KnifePlayer.transform.position -= new Vector3(0, 0.7f, 0);
         yield return new WaitForSeconds(0.1f);
-        Debug.Log("2");
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.03f, false).OnComplete(knifeRemove);
         playerImg.fillAmount -= lessValue;
         playerCrownSlider.value -= lessValue;
@@ -232,7 +227,6 @@ public class NewFailScript : MonoBehaviour
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.01f, false);
         Knifes.ElementAt(Knifes.Count - 1).gameObject.SetActive(false);
         Knifes.RemoveAt(Knifes.Count - 1);
-        Debug.Log("3");
         playerImg.fillAmount -= lessValue;
         playerCrownSlider.value -= lessValue;
         KnifePlayer.transform.position -= new Vector3(0, 0.7f, 0);
