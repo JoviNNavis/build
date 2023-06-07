@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96934862f910ea142bb749845cb61cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 35
+  speed: 50
   tower: {fileID: 0}
   drops: {fileID: 19894390, guid: 4cd7d9c6cec4b104c8573cc5b11a900d, type: 3}
   plane: {fileID: 0}
