@@ -19,7 +19,7 @@ public class Cubes : MonoBehaviour
     void Start()
     {
         noofcubes = FindObjectOfType<box_Sculpting>().cubeposes.Count;
-        cube = GetComponent <MeshRenderer>();
+    
         health = 100;
         cube.material = before;
        

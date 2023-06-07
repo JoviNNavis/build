@@ -145,7 +145,7 @@ public class ResolutionAdjuster : MonoBehaviour
         }
         if ((Camera.main.aspect > 0.55) && (Camera.main.aspect < 0.57))
         {
-            Debug.LogError("se all versions,8 plus");
+          // Debug.LogError("se all versions,8 plus");
             RewardPanel.transform.localScale = new Vector3(se, se, se);
             nxtLvlPanel.transform.localScale = new Vector3(se, se, se);
             ChestLostPanel.transform.localScale = new Vector3(se, se, se);
@@ -161,7 +161,7 @@ public class ResolutionAdjuster : MonoBehaviour
         }
         if ((Camera.main.aspect > 0.68) && (Camera.main.aspect < 0.70))
         {
-            Debug.LogError("ipad 4th gen , 11 inche3s");
+          //  Debug.LogError("ipad 4th gen , 11 inche3s");
             RewardPanel.transform.localScale = new Vector3(ipad, ipad, ipad);
             nxtLvlPanel.transform.localScale = new Vector3(ipad, ipad, ipad);
             ChestLostPanel.transform.localScale = new Vector3(ipad, ipad, ipad);
@@ -177,7 +177,7 @@ public class ResolutionAdjuster : MonoBehaviour
         }
         if (Camera.main.aspect >= 0.74)
         {
-            Debug.LogError("ipad 4th gen , 11 inche3s");
+          //  Debug.LogError("ipad 4th gen , 11 inche3s");
             RewardPanel.transform.localScale = new Vector3(ipad, ipad, ipad);
             nxtLvlPanel.transform.localScale = new Vector3(ipad, ipad, ipad);
             ChestLostPanel.transform.localScale = new Vector3(ipad, ipad, ipad);
@@ -190,7 +190,7 @@ public class ResolutionAdjuster : MonoBehaviour
             ChestLostPanel.transform.localPosition = new Vector3(0, 222, 0);
             selectionPanel.transform.localPosition = new Vector3(0, 222, 0);
             LostPanel.transform.localPosition = new Vector3(0, 222, 0);
-            Debug.LogError("ipad all versions");
+       //     Debug.LogError("ipad all versions");
 
         }
 

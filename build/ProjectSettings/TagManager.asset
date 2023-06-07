@@ -19,6 +19,20 @@ TagManager:
   - AiPref
   - KnifePref
   - sb
+  - TopRightBlocks
+  - TopLeftBlocks
+  - DownLeftBlocks
+  - DownRightBlocks
+  - uibuttons
+  - Weapon
+  - front
+  - right
+  - 'left '
+  - back
+  - TopFront
+  - TopBack
+  - DownFront
+  - DownBack
   layers:
   - Default
   - TransparentFX
