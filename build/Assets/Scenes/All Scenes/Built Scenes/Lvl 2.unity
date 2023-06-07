@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1402113, g: 0.7094693, b: 0.9917381, a: 1}
+  m_IndirectSpecularColor: {r: 0.14021131, g: 0.7094693, b: 0.9917381, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9906,8 +9906,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1362}
-  m_SizeDelta: {x: 671.8, y: 140.4}
+  m_AnchoredPosition: {x: 0, y: -1540}
+  m_SizeDelta: {x: 893.6, y: 279.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &223956588
 MonoBehaviour:
@@ -9957,6 +9957,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
         m_MethodName: Lose
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 268112907}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10958,7 +10970,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce57ee739be6fc54c88513845f165d33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireRate: 3.3
+  fireRate: 3.8
   level: 0
   fireTime: 0
   nextfireRate: 1
@@ -34004,7 +34016,7 @@ MonoBehaviour:
   rayball: {fileID: 1570535877}
   playerNewObj: {fileID: 2011276400}
   aiNewObj: {fileID: 527990809}
-  ball: {fileID: 1099632229340496901, guid: 04f308397b4939541bb1ffb6fb113c53, type: 3}
+  ball: {fileID: 1099632229340496901, guid: 421da167e7877cb42b653898303c03de, type: 3}
   ballPos: {fileID: 1538187924}
 --- !u!54 &837195052
 Rigidbody:
@@ -42417,7 +42429,7 @@ MonoBehaviour:
   Knifes: []
   knife1: {fileID: 1817783779}
   KnifePlayer: {fileID: 1817783777}
-  newBall: {fileID: 1099632229340496901, guid: 04f308397b4939541bb1ffb6fb113c53, type: 3}
+  newBall: {fileID: 1099632229340496901, guid: 421da167e7877cb42b653898303c03de, type: 3}
   newBallPos: {fileID: 1538187924}
   puntured_ball: {fileID: 2682916870070428379, guid: fce0511da48a6214f924aa6851e6e800,
     type: 3}
