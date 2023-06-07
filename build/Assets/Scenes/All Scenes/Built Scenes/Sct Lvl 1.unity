@@ -3807,7 +3807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  cube: {fileID: 684211106}
+  cube: {fileID: 857091082}
   before: {fileID: 2100000, guid: 4b9c1accde3a0fb498d4fb2873f9b439, type: 2}
   after: {fileID: 2100000, guid: f7b14aaabcc983a42881b83d2ccd135b, type: 2}
   direction: 1
