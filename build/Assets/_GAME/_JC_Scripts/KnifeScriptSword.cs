@@ -89,7 +89,8 @@ public class KnifeScriptSword : MonoBehaviour
                 
                 _knife = Instantiate(sword, new Vector3(2.4f, transform.localPosition.y, transform.localPosition.z), Quaternion.identity);
                     FindObjectOfType<NewFailScript>().Knifes.Add(_knife.gameObject.transform);
-                    randcolors++;
+                knifeCounter.knifeCountValue += 1;
+                randcolors++;
                     transform.position += new Vector3(0, 0.7f, 0);
                     newBallPos.transform.position += new Vector3(0, 0.7f, 0);
                     transform.rotation = Quaternion.Euler(90, -180, 0);
@@ -105,8 +106,8 @@ public class KnifeScriptSword : MonoBehaviour
                 GameObject _knife = Instantiate(sword, new Vector3(2.4f, transform.localPosition.y, transform.localPosition.z), Quaternion.identity);
                 combo.SetActive(false);
                 FindObjectOfType<NewFailScript>().Knifes.Add(_knife.gameObject.transform);
-
-                    transform.position += new Vector3(0, 0.7f, 0);
+                knifeCounter.knifeCountValue += 1;
+                transform.position += new Vector3(0, 0.7f, 0);
                     newBallPos.transform.position += new Vector3(0, 0.7f, 0);
                     transform.rotation = Quaternion.Euler(90, -180, 0);
                     playerImg.fillAmount += fillValue;

@@ -86,7 +86,7 @@ public class FailScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "Knife")
         {
-            knifeCounter.knifeCountValue += 1;
+           
             if (FindObjectOfType<ButtonManager>().ishaptic)
             {
                 MMVibrationManager.Haptic(HapticTypes.SoftImpact);

@@ -14,7 +14,7 @@ public class ButtonManager : MonoBehaviour
 
     public KnifeScript knifePlayer2;
     public KnifeScriptSword knifeplayerrr;
-
+    
     public RayBall ballRay;
     public bool ishaptic;
     public bool isaicolor;

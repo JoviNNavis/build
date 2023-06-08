@@ -26,7 +26,7 @@ public class NewFailScript : MonoBehaviour
     public Image playerImg;
 
     public float lessValue;
-
+    public int cou;
     public AudioClip ballPunture;
 
     public Transform emptyObj;
@@ -39,6 +39,7 @@ public class NewFailScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        cou = knifeCounter.knifeCountValue;
         if (Input.GetKeyDown(KeyCode.G) && Knifes.Count == 1)
         {
             //knifeRemove();

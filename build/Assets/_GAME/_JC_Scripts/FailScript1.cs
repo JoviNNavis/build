@@ -25,7 +25,7 @@ public class FailScript1 : MonoBehaviour
     public float lessValue;
 
     public AudioClip ballPunture;
-
+    public int cou;
     public Transform emptyObj;
 
     void Start()
@@ -36,6 +36,7 @@ public class FailScript1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        cou = knifeCounter.knifeCountValue;
         if (Input.GetKeyDown(KeyCode.G) && Knifes.Count == 1)
         {
             //knifeRemove();
@@ -105,7 +106,7 @@ public class FailScript1 : MonoBehaviour
     {
         if (collision.gameObject.tag == "Knife")
         {
-            knifeCounter.knifeCountValue += 1;
+
             if (FindObjectOfType<ButtonManager>().ishaptic)
             {
                 MMVibrationManager.Haptic(HapticTypes.SoftImpact);
