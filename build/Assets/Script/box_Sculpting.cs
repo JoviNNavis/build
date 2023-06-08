@@ -22,6 +22,8 @@ public class box_Sculpting : MonoBehaviour
     public float time;
     public Animator knife;
     public Animator sword;
+    public Collider _knife;
+    public Collider _sword;
     bool _isautomatic;
 [SerializeField]   private float incval;
     public ParticleSystem falling;
@@ -68,6 +70,16 @@ public class box_Sculpting : MonoBehaviour
         yield return new WaitForSeconds(0.80f);
         knife.enabled = false;
         sword.enabled = false;
+
+
+    }
+    IEnumerator _knifeanim()
+    {
+        _knife.enabled = false;
+        _sword.enabled = false;
+        yield return new WaitForSeconds(0.3f);
+        _knife.enabled = true;
+        _sword.enabled = true;
 
 
     }
@@ -127,8 +139,8 @@ public class box_Sculpting : MonoBehaviour
                         FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(1.3f, 0.5f, 0.5f), 5, 1, 0.3f, false);
                         FindObjectOfType<clicks>().knife.transform.DOLocalRotate(new Vector3(19.7071342f, 219.14183f, 342.294434f), 0.2f, RotateMode.Fast);
                         FindObjectOfType<clicks>().sword.transform.DOLocalRotate(new Vector3(19.7071342f, 219.14183f, 342.294434f), 0.2f, RotateMode.Fast);
-
-
+                        filbar.fillAmount += 0.0625f;
+                        StartCoroutine(_knifeanim());
                         money_coincount += 20;
                         moneyText.text = money_coincount.ToString();
                     }
@@ -138,8 +150,10 @@ public class box_Sculpting : MonoBehaviour
                         FindObjectOfType<clicks>().sword.transform.DOLocalRotate(new Vector3(19.7071419f, 314.762787f, 342.294434f), 0.2f, RotateMode.Fast);
                         FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(0, 0.6f, -1.5f), 5, 1, 0.3f, false);
                         FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(0, 0.6f, -1.5f), 5, 1, 0.3f, false);
-
+                        StartCoroutine(_knifeanim());
                         money_coincount += 20;
+                        filbar.fillAmount += 0.0625f;
+
                         moneyText.text = money_coincount.ToString();
                     }
                     if (target.tag == "TopBack")
@@ -149,8 +163,10 @@ public class box_Sculpting : MonoBehaviour
 
                         FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(0, 0.6f, 1.5f), 5, 1, 0.3f, false);
                         FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(0, 0.6f, 1.5f), 5, 1, 0.3f, false);
-
+                        StartCoroutine(_knifeanim());
                         money_coincount += 20;
+                        filbar.fillAmount += 0.0625f;
+
                         moneyText.text = money_coincount.ToString();
                     }
                     if (target.tag == "DownFront")
@@ -158,10 +174,11 @@ public class box_Sculpting : MonoBehaviour
                         FindObjectOfType<clicks>().knife.transform.DOLocalRotate(new Vector3(351.164124f, 317.431671f, 9.10415077f), 0.2f, RotateMode.Fast);
                         FindObjectOfType<clicks>().sword.transform.DOLocalRotate(new Vector3(351.164124f, 317.431671f, 9.10415077f), 0.2f, RotateMode.Fast);
 
-                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(0, -0.6f, -1.5f), 5, 1, 0.3f, false);
-                        FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(0, -0.6f, -1.5f), 5, 1, 0.3f, false);
+                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(0, -0, -1.5f), 5, 1, 0.3f, false);
+                        FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(0, -0, -1.5f), 5, 1, 0.3f, false);
+                        filbar.fillAmount += 0.0625f;
 
-
+                        StartCoroutine(_knifeanim());
                         money_coincount += 20;
                         moneyText.text = money_coincount.ToString();
 
@@ -171,10 +188,11 @@ public class box_Sculpting : MonoBehaviour
                         FindObjectOfType<clicks>().knife.transform.DOLocalRotate(new Vector3(351.164124f, 129.584412f, 9.10415268f), 0.2f, RotateMode.Fast);
                         FindObjectOfType<clicks>().sword.transform.DOLocalRotate(new Vector3(351.164124f, 129.584412f, 9.10415268f), 0.2f, RotateMode.Fast);
 
-                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(0, -0.6f, 1.5f), 5, 1, 0.3f, false);
-                        FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(0, -0.6f, 1.5f), 5, 1, 0.3f, false);
+                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(0, -0f, 1.5f), 5, 1, 0.3f, false);
+                        FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.position + new Vector3(0, -0f, 1.5f), 5, 1, 0.3f, false);
+                        filbar.fillAmount += 0.0625f;
 
-
+                        StartCoroutine(_knifeanim());
                         money_coincount += 20;
                         moneyText.text = money_coincount.ToString();
                     }
@@ -192,6 +210,8 @@ public class box_Sculpting : MonoBehaviour
                         FindObjectOfType<clicks>().sword.transform.DOLocalRotate(new Vector3(19.7071419f, 12.5f, 342.294434f), 0.2f, RotateMode.Fast);
 
                         // FindObjectOfType<clicks>().sword.transform.DOLocalRotate(new Vector3(-0, 0, -25), 0.2f, RotateMode.Fast);
+                        StartCoroutine(_knifeanim());
+                        filbar.fillAmount += 0.0625f;
 
                         money_coincount += 20;
                         moneyText.text = money_coincount.ToString();
@@ -209,8 +229,10 @@ public class box_Sculpting : MonoBehaviour
                         FindObjectOfType<clicks>().sword.transform.DOLocalRotate(new Vector3(14.7361107f, 236.080597f, 347.400208f), 0.2f, RotateMode.Fast);
 
                         //FindObjectOfType<clicks>().sword.transform.DOLocalRotate(new Vector3(-0, -150, 25), 0.2f, RotateMode.Fast);
-
+                        StartCoroutine(_knifeanim());
                         money_coincount += 20;
+                        filbar.fillAmount += 0.0625f;
+
                         moneyText.text = money_coincount.ToString();
                     }
                        if (target.tag == "DownLeftBlocks")
@@ -223,9 +245,10 @@ public class box_Sculpting : MonoBehaviour
 
                         FindObjectOfType<clicks>().knife.transform.DOLocalRotate(new Vector3(13.3320484f, 19.1664238f, 5.41082191f), 0.2f, RotateMode.Fast);
                         FindObjectOfType<clicks>().sword.transform.DOLocalRotate(new Vector3(13.3320484f, 19.1664238f, 5.41082191f), 0.2f, RotateMode.Fast);
-
+                        StartCoroutine(_knifeanim());
 
                         //  FindObjectOfType<clicks>().sword.transform.DOLocalRotate(new Vector3(-0, -0, 25), 0.2f, RotateMode.Fast);
+                        filbar.fillAmount += 0.0625f;
 
                         money_coincount += 20;
                         moneyText.text = money_coincount.ToString();

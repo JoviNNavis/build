@@ -31,7 +31,7 @@ public class Cubes : MonoBehaviour
             Debug.LogError("Touched");
             health -= FindObjectOfType<clicks>().knifepower;
             Instantiate(FindObjectOfType<box_Sculpting>().falling, gameObject.transform.position + new Vector3(0, 0, 0), Quaternion.identity);
-            FindObjectOfType<box_Sculpting>().filbar.fillAmount +=  0.0625f;
+           // FindObjectOfType<box_Sculpting>().filbar.fillAmount +=  0.0625f;
         }
     }
         //public bool Rotate_knife()
