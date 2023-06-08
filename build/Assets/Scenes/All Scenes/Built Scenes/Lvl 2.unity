@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.14021131, g: 0.7094693, b: 0.9917381, a: 1}
+  m_IndirectSpecularColor: {r: 0.1402113, g: 0.7094693, b: 0.9917381, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -42429,14 +42429,17 @@ MonoBehaviour:
   Knifes: []
   knife1: {fileID: 1817783779}
   KnifePlayer: {fileID: 1817783777}
+  skybox: {fileID: 0}
   newBall: {fileID: 1099632229340496901, guid: 421da167e7877cb42b653898303c03de, type: 3}
   newBallPos: {fileID: 1538187924}
   puntured_ball: {fileID: 2682916870070428379, guid: fce0511da48a6214f924aa6851e6e800,
     type: 3}
+  combo: {fileID: 2140267583}
   playerCrownSlider: {fileID: 4702823989241186775}
   playerImg: {fileID: 50878900}
   lessValue: 0.01335
   ballPunture: {fileID: 8300000, guid: b485a744ad289bc4fa50aaa47e43b96a, type: 3}
+  cou: 0
   emptyObj: {fileID: 2011276401}
 --- !u!65 &980489074
 BoxCollider:
@@ -66163,7 +66166,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level1: 0
-  ischangecolor: 0
   fireRate: 14
   knifemat:
   - {fileID: 2590846551577548752, guid: 432ea40104c93d245a2a68ef34a2259b, type: 3}
@@ -69100,14 +69102,17 @@ MonoBehaviour:
   Knifes: []
   knife1: {fileID: 1817783779}
   KnifePlayer: {fileID: 1817783777}
+  skybox: {fileID: 0}
   newBall: {fileID: 2857406669346811751, guid: cbdaac8ee8426b3469b5c062c5869c93, type: 3}
   newBallPos: {fileID: 1538187924}
   puntured_ball: {fileID: 2682916870070428379, guid: fce0511da48a6214f924aa6851e6e800,
     type: 3}
+  combo: {fileID: 0}
   playerCrownSlider: {fileID: 0}
   playerImg: {fileID: 50878900}
   lessValue: 0
   ballPunture: {fileID: 0}
+  cou: 0
   emptyObj: {fileID: 0}
 --- !u!114 &1999366249
 MonoBehaviour:

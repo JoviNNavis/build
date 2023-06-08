@@ -33,6 +33,7 @@ TagManager:
   - TopBack
   - DownFront
   - DownBack
+  - combo
   layers:
   - Default
   - TransparentFX

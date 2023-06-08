@@ -19,7 +19,7 @@ public class FailScript : MonoBehaviour
     public GameObject newBall;
     public Transform newBallPos;
     public GameObject puntured_ball;
-
+    public GameObject combo;
     public Image playerImg;
 
     public AudioClip ballPunture;
@@ -27,6 +27,7 @@ public class FailScript : MonoBehaviour
     void Start()
     {
         //Knifes.Add(gameObject.transform);
+       
     }
 
     // Update is called once per frame
@@ -97,6 +98,7 @@ public class FailScript : MonoBehaviour
         {
             SoundManger.soundctrl.playClip(ballPunture);
             GameObject pball =   Instantiate(puntured_ball, collision.transform.position+ new Vector3(0.3f, 0, 0), Quaternion.Euler(0, -270, 0));
+            combo.SetActive(false);
 
             Destroy(collision.gameObject, 0.2f);
             Destroy(pball, 0.22f);
@@ -111,6 +113,7 @@ public class FailScript : MonoBehaviour
         {
             SoundManger.soundctrl.playClip(ballPunture);
             GameObject pball = Instantiate(puntured_ball, collision.transform.position+new Vector3(0.3f,0,0), Quaternion.Euler(0, -270, 0));
+            combo.SetActive(false);
 
             Destroy(collision.gameObject, 0.2f);
            Destroy(pball, 0.22f);
@@ -129,7 +132,8 @@ public class FailScript : MonoBehaviour
 
             Destroy(collision.gameObject, 0.2f);
             Destroy(pball, 0.22f);
-       
+            combo.SetActive(false);
+
 
             RenderSettings.skybox = skybox;
             RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;

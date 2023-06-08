@@ -61048,7 +61048,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level1: 0
-  ischangecolor: 0
   fireRate: 14
   knifemat:
   - {fileID: 2590846551577548752, guid: 61b1b12c781ad70428b541ac13762c38, type: 3}
@@ -69190,13 +69189,16 @@ MonoBehaviour:
   Knifes: []
   knife1: {fileID: 1817783779}
   KnifePlayer: {fileID: 1817783777}
+  skybox: {fileID: 0}
   newBall: {fileID: 2857406669346811751, guid: cbdaac8ee8426b3469b5c062c5869c93, type: 3}
   newBallPos: {fileID: 752006272}
   puntured_ball: {fileID: 0}
+  combo: {fileID: 0}
   playerCrownSlider: {fileID: 0}
   playerImg: {fileID: 1569328974}
   lessValue: 0
   ballPunture: {fileID: 0}
+  cou: 0
   emptyObj: {fileID: 0}
 --- !u!1 &71928137487969568
 GameObject:
@@ -99525,14 +99527,17 @@ MonoBehaviour:
   Knifes: []
   knife1: {fileID: 1817783779}
   KnifePlayer: {fileID: 1817783777}
+  skybox: {fileID: 0}
   newBall: {fileID: 1099632229340496901, guid: 04f308397b4939541bb1ffb6fb113c53, type: 3}
   newBallPos: {fileID: 752006272}
   puntured_ball: {fileID: 2682916870070428379, guid: fce0511da48a6214f924aa6851e6e800,
     type: 3}
+  combo: {fileID: 888342065}
   playerCrownSlider: {fileID: 7079047159132038688}
   playerImg: {fileID: 1569328974}
   lessValue: 0.011
   ballPunture: {fileID: 8300000, guid: b485a744ad289bc4fa50aaa47e43b96a, type: 3}
+  cou: 0
   emptyObj: {fileID: 1362658044}
 --- !u!4 &7233003352761415724
 Transform:

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.14021131, g: 0.7094693, b: 0.9917381, a: 1}
+  m_IndirectSpecularColor: {r: 0.1402113, g: 0.7094693, b: 0.9917381, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1242,10 +1242,12 @@ MonoBehaviour:
   knife1: {fileID: 1817783779}
   counter: {fileID: 1913933325}
   KnifePlayer: {fileID: 1817783777}
+  skybox: {fileID: 0}
   newBall: {fileID: 1099632229340496901, guid: 04f308397b4939541bb1ffb6fb113c53, type: 3}
   newBallPos: {fileID: 630835570}
   puntured_ball: {fileID: 2682916870070428379, guid: fce0511da48a6214f924aa6851e6e800,
     type: 3}
+  combo: {fileID: 2282955359136919960}
   playerImg: {fileID: 540431832}
   ballPunture: {fileID: 8300000, guid: b485a744ad289bc4fa50aaa47e43b96a, type: 3}
 --- !u!114 &96920352
@@ -7168,10 +7170,12 @@ MonoBehaviour:
   knife1: {fileID: 1817783779}
   counter: {fileID: 0}
   KnifePlayer: {fileID: 1817783777}
+  skybox: {fileID: 0}
   newBall: {fileID: 2857406669346811751, guid: cbdaac8ee8426b3469b5c062c5869c93, type: 3}
   newBallPos: {fileID: 630835570}
   puntured_ball: {fileID: 2682916870070428379, guid: fce0511da48a6214f924aa6851e6e800,
     type: 3}
+  combo: {fileID: 0}
   playerImg: {fileID: 540431832}
   ballPunture: {fileID: 0}
 --- !u!65 &552973700
@@ -7203,10 +7207,12 @@ MonoBehaviour:
   knife1: {fileID: 1817783779}
   counter: {fileID: 0}
   KnifePlayer: {fileID: 1817783777}
+  skybox: {fileID: 0}
   newBall: {fileID: 2857406669346811751, guid: cbdaac8ee8426b3469b5c062c5869c93, type: 3}
   newBallPos: {fileID: 630835570}
   puntured_ball: {fileID: 2682916870070428379, guid: fce0511da48a6214f924aa6851e6e800,
     type: 3}
+  combo: {fileID: 0}
   playerImg: {fileID: 540431832}
   ballPunture: {fileID: 0}
 --- !u!1 &561174473
@@ -20328,7 +20334,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e23062c33e03f0f4ab8ffa34705bf43e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ischangecolor: 0
   fireRate: 10
   knifemat:
   - {fileID: 2590846551577548752, guid: 432ea40104c93d245a2a68ef34a2259b, type: 3}
