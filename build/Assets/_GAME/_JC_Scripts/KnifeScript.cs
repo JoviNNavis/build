@@ -89,7 +89,7 @@ public class KnifeScript : MonoBehaviour
                
                 _knife = Instantiate(knifemat[randcolors], new Vector3(2.4f, transform.localPosition.y, transform.localPosition.z), Quaternion.identity);
                     FindObjectOfType<FailScript1>().Knifes.Add(_knife.gameObject.transform);
-                knifeCounter.knifeCountValue += 1;
+              //  knifeCounter.knifeCountValue = FindObjectOfType<FailScript>().Knifes.Count;
                 randcolors++;
                     transform.position += new Vector3(0, 0.7f, 0);
                     newBallPos.transform.position += new Vector3(0, 0.7f, 0);

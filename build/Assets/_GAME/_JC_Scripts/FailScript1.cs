@@ -154,7 +154,7 @@ public class FailScript1 : MonoBehaviour
             SoundManger.soundctrl.playClip(ballPunture);
             knife1.enabled = false;
             Destroy(collision.gameObject, 0.1f);
-            KnifeScript.ischangecolor = false;
+           
             combo.SetActive(false);
 
 
@@ -162,7 +162,7 @@ public class FailScript1 : MonoBehaviour
             RenderSettings.skybox = skybox;
             RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
             Debug.Log("touched");
-
+            StartCoroutine(knifeR3());
         }
     }
     IEnumerator knifeR1()
