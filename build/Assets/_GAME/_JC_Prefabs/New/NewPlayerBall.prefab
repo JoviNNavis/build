@@ -375,7 +375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combovalue: 0
-  islevel1: 1
+  islevel1: 0
 --- !u!1001 &1099632229232092732
 PrefabInstance:
   m_ObjectHideFlags: 0

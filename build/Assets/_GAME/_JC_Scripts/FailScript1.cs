@@ -14,7 +14,7 @@ public class FailScript1 : MonoBehaviour
     public KnifeScript knife1;
  //   public GameObject puntured_ball;
     public GameObject KnifePlayer;
-
+    public Material skybox;
     public GameObject newBall;
     public Transform newBallPos;
     public GameObject puntured_ball;
@@ -31,6 +31,7 @@ public class FailScript1 : MonoBehaviour
     void Start()
     {
         //Knifes.Add(gameObject.transform);
+        skybox = RenderSettings.skybox;
     }
 
     // Update is called once per frame
@@ -123,6 +124,9 @@ public class FailScript1 : MonoBehaviour
             Destroy(collision.gameObject, 0.1f);
             Destroy(pball, 0.12f);
             StartCoroutine(knifeR1());
+            RenderSettings.skybox =  skybox;
+            RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
+            FindObjectOfType<KnifeScript>().combo.SetActive(false);
             Debug.Log("touched");
 
         }
@@ -134,6 +138,11 @@ public class FailScript1 : MonoBehaviour
             knife1.enabled = false;
             Destroy(collision.gameObject, 0.1f);
             Destroy(pball, 0.12f);
+            RenderSettings.skybox = skybox;
+            RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
+            FindObjectOfType<KnifeScript>().combo.SetActive(false);
+      
+            
             Debug.Log("touched");
             StartCoroutine(knifeR2());
         }
@@ -144,8 +153,10 @@ public class FailScript1 : MonoBehaviour
             SoundManger.soundctrl.playClip(ballPunture);
             knife1.enabled = false;
             Destroy(collision.gameObject, 0.1f);
+            KnifeScript.ischangecolor = false;
             Destroy(pball, 0.12f);
-            StartCoroutine(knifeR3());
+            RenderSettings.skybox = skybox;
+            RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
             Debug.Log("touched");
 
         }

@@ -9,7 +9,7 @@ public class KnifeScript : MonoBehaviour
     private bool isTouch;
     public bool level1;
     private bool isRelease = false;
-  public  bool ischangecolor;
+  public static  bool ischangecolor;
     public float fireRate;
     public GameObject[] knifemat;
     [SerializeField] private float fireTime;
