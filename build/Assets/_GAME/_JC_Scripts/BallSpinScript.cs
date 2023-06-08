@@ -15,7 +15,7 @@ public class BallSpinScript : MonoBehaviour
     public List<Transform> Balls ;
     public List<Animator> ANIMBalls;
 
-    float timer = 0;
+   public float timer = 0;
     void Start()
     {
         for (int i = 0; i < ANIMBalls.Count; i++)
@@ -63,7 +63,7 @@ public class BallSpinScript : MonoBehaviour
             if (timer > 28)
             {
                 transform.Rotate(0, 1.5f, 0);
-
+                timer = 0;
                 for (int i = 0; i < Balls.Count; i++)
                 {
                //     Balls[i].transform.Rotate(0, 2f, 0);
@@ -103,7 +103,7 @@ public class BallSpinScript : MonoBehaviour
             if (timer > 28)
             {
                 transform.Rotate(0, 1.5f, 0);
-
+                timer = 0;
                 for (int i = 0; i < Balls.Count; i++)
                 {
               //      Balls[i].transform.Rotate(0, 1f, 0);
