@@ -277,7 +277,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 297.00024, y: -0.00012207031}
+  m_AnchoredPosition: {x: 414.1, y: -0.00012207031}
   m_SizeDelta: {x: 117, y: 21.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &39906346
@@ -1293,12 +1293,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.18
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1899,10 +1899,10 @@ RectTransform:
   m_Father: {fileID: 180982270}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -596.56}
-  m_SizeDelta: {x: 0, y: 337.3}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 512.59}
+  m_SizeDelta: {x: 1464, y: 337.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &413652584
 MonoBehaviour:
@@ -3226,7 +3226,6 @@ GameObject:
   - component: {fileID: 705507995}
   - component: {fileID: 705507994}
   - component: {fileID: 705507996}
-  - component: {fileID: 705507997}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -3331,30 +3330,6 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
---- !u!114 &705507997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 705507993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee7e967204432ac4fb4480f4381fa237, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lvl1: 0
-  winPanelLvl1: {fileID: 0}
-  blueBg: {fileID: 0}
-  nxtButton: {fileID: 0}
-  RewardPanel: {fileID: 0}
-  nxtLvlPanel: {fileID: 0}
-  LostPanel: {fileID: 0}
-  selectionPanel: {fileID: 0}
-  ChestLostPanel: {fileID: 0}
-  promax: 0
-  se: 0
-  ipad: 0
 --- !u!1 &748136808
 GameObject:
   m_ObjectHideFlags: 0
@@ -4039,7 +4014,7 @@ RectTransform:
   m_GameObject: {fileID: 897969778}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 311}
-  m_LocalScale: {x: 28.118052, y: 69.069115, z: 1}
+  m_LocalScale: {x: 34.08189, y: 83.71867, z: 1.2121}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 881977935012794984}
@@ -5831,7 +5806,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -282.99976, y: -12.000488}
+  m_AnchoredPosition: {x: -380.8, y: -12.000488}
   m_SizeDelta: {x: 117, y: 21.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1289880010
@@ -6951,6 +6926,8 @@ MonoBehaviour:
   time: 0
   knife: {fileID: 3469287837170341976}
   sword: {fileID: 3469287836953394966}
+  _knife: {fileID: 1611446089}
+  _sword: {fileID: 925846700}
   incval: 0.0625
   falling: {fileID: 217981686804197473, guid: 6c8f7791698591e44810b677c7293f69, type: 3}
   positions: []
@@ -9776,7 +9753,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.03100586, y: 0.22375488}
+  m_AnchoredPosition: {x: -0.03100586, y: 0.22387695}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &881977934837881069
