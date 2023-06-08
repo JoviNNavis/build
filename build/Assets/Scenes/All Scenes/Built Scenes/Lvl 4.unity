@@ -93910,7 +93910,7 @@ MonoBehaviour:
   Knifes: []
   knife1: {fileID: 1817783779}
   KnifePlayer: {fileID: 1817783777}
-  newBall: {fileID: 1099632229340496901, guid: 04f308397b4939541bb1ffb6fb113c53, type: 3}
+  newBall: {fileID: 1099632229340496901, guid: 421da167e7877cb42b653898303c03de, type: 3}
   newBallPos: {fileID: 291665116}
   puntured_ball: {fileID: 2682916870070428379, guid: fce0511da48a6214f924aa6851e6e800,
     type: 3}
@@ -115269,8 +115269,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.4540224, y: 2.8547897, z: 2.1039248}
-  m_Center: {x: 0.065569006, y: 0.0074739926, z: 0.03939148}
+  m_Size: {x: 2.4540224, y: 2.4204185, z: 2.1039248}
+  m_Center: {x: 0.065569006, y: 0.22465773, z: 0.03939148}
 --- !u!54 &9077725551304427917
 Rigidbody:
   m_ObjectHideFlags: 0
