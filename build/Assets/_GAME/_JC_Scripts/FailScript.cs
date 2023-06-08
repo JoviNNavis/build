@@ -100,7 +100,7 @@ public class FailScript : MonoBehaviour
 
             Destroy(collision.gameObject, 0.2f);
             Destroy(pball, 0.22f);
-               FindObjectOfType<KnifeScript>().combo.SetActive(false);
+            
 
             RenderSettings.skybox = skybox;
             RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
@@ -114,8 +114,7 @@ public class FailScript : MonoBehaviour
 
             Destroy(collision.gameObject, 0.2f);
            Destroy(pball, 0.22f);
-            FindObjectOfType<KnifeScript>().combo.SetActive(false);
-
+         
             RenderSettings.skybox = skybox;
             RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
             knife1.enabled = false;
@@ -130,7 +129,7 @@ public class FailScript : MonoBehaviour
 
             Destroy(collision.gameObject, 0.2f);
             Destroy(pball, 0.22f);
-            FindObjectOfType<KnifeScript>().combo.SetActive(false);
+       
 
             RenderSettings.skybox = skybox;
             RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;

@@ -126,7 +126,7 @@ public class FailScript1 : MonoBehaviour
             StartCoroutine(knifeR1());
             RenderSettings.skybox =  skybox;
             RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
-            FindObjectOfType<KnifeScript>().combo.SetActive(false);
+     
             Debug.Log("touched");
 
         }
@@ -140,7 +140,7 @@ public class FailScript1 : MonoBehaviour
             Destroy(pball, 0.12f);
             RenderSettings.skybox = skybox;
             RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
-            FindObjectOfType<KnifeScript>().combo.SetActive(false);
+  
       
             
             Debug.Log("touched");
@@ -154,6 +154,8 @@ public class FailScript1 : MonoBehaviour
             knife1.enabled = false;
             Destroy(collision.gameObject, 0.1f);
             KnifeScript.ischangecolor = false;
+      
+
             Destroy(pball, 0.12f);
             RenderSettings.skybox = skybox;
             RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
