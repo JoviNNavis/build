@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
-
+using MoreMountains.NiceVibrations;
 public class Cubes : MonoBehaviour
 {
     public int health;
@@ -28,6 +28,12 @@ public class Cubes : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Weapon"))
         {
+
+            if (FindObjectOfType<ButtonManager>().ishaptic)
+            {
+                MMVibrationManager.Haptic(HapticTypes.SoftImpact);
+                Debug.LogWarning("haptics");
+            }
             Debug.LogError("Touched");
             health -= FindObjectOfType<clicks>().knifepower;
             Instantiate(FindObjectOfType<box_Sculpting>().falling, gameObject.transform.position + new Vector3(0, 0, 0), Quaternion.identity);
