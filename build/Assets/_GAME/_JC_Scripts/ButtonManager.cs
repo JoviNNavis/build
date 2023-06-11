@@ -292,6 +292,7 @@ public class ButtonManager : MonoBehaviour
         Dirlight.transform.rotation = Quaternion.Euler(50, -30, 0);
         ShowCase.SetActive(false);
         button.SetActive(false);
+        RenderSettings.fog = false;
         Plysounds.volume = 0;
         Aisounds.volume = 0;
     }
@@ -316,6 +317,7 @@ public class ButtonManager : MonoBehaviour
         SculptPanel.SetActive(true);
         knifeSkniPanel.SetActive(false);
         Room.SetActive(false);
+        RenderSettings.fog = true;
         uiBar.SetActive(true);
         cam.gameObject.SetActive(true);
         ShowCase.SetActive(false);
@@ -336,6 +338,7 @@ public class ButtonManager : MonoBehaviour
         knifeSkniPanel.SetActive(false);
         newButton.SetActive(false);
         Plysounds.volume = 0;
+        RenderSettings.fog = false;
         Aisounds.volume = 0;
     }
 
@@ -348,6 +351,7 @@ public class ButtonManager : MonoBehaviour
         ShowCase.SetActive(true);
         Room.SetActive(false);
         knifeSkniPanel.SetActive(false);
+        RenderSettings.fog = false;
         newButton.SetActive(false);
         Plysounds.volume = 0;
         Aisounds.volume = 0;
