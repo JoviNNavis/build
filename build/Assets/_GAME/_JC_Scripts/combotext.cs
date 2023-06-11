@@ -17,26 +17,7 @@ public class combotext : MonoBehaviour
         if (collision.gameObject.CompareTag("Knife"))
         {
     
-            if(islevel1)
-            {
-                if (FindObjectOfType<Ballpowerup>().time < 0.5f)
-                {
-                    FindObjectOfType<KnifeScript1>().combo.SetActive(true);
-                    combovalue++;
-
-                }
-                else
-                {
-                    knifeCounter.knifeCountValue = knifeCounter.knifeCountValue * combovalue;
-
-                    FindObjectOfType<KnifeScript1>().combo.SetActive(false);
-                    combovalue = 1;
-
-                }
-            }
-            else
-            {
-                    if (FindObjectOfType<Ballpowerup>().time < 0.5f)
+     if (FindObjectOfType<Ballpowerup>().time < 0.5f)
                     {
                         FindObjectOfType<KnifeScript>().combo.SetActive(true);
                         combovalue++;
@@ -53,25 +34,15 @@ public class combotext : MonoBehaviour
                 
             }
         }
-    }
+    
     // Update is called once per frame
     void Update()
     {
-        if (islevel1)
-        {
-            FindObjectOfType<KnifeScript1>()._text.text = combovalue.ToString();
-        }
-        else
-        {
+   
+          
+     
             FindObjectOfType<KnifeScript>()._text.text = combovalue.ToString();
-        }
-        if (SceneManager.GetActiveScene().buildIndex == 1)
-        {
-            islevel1 = true;
-        }
-        else
-        {
-            islevel1 = false;
-        }
+        
+
     }
 }

@@ -1243,7 +1243,7 @@ MonoBehaviour:
   counter: {fileID: 1913933325}
   KnifePlayer: {fileID: 1817783777}
   skybox: {fileID: 0}
-  newBall: {fileID: 1099632229340496901, guid: 04f308397b4939541bb1ffb6fb113c53, type: 3}
+  newBall: {fileID: 1099632229340496901, guid: aca6f18d609a1c64988ca72d37c9ba6f, type: 3}
   newBallPos: {fileID: 630835570}
   puntured_ball: {fileID: 2682916870070428379, guid: fce0511da48a6214f924aa6851e6e800,
     type: 3}
@@ -10296,11 +10296,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 872044067}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3f981b7d0bbcb24f9dfe1399db97f26, type: 3}
+  m_Script: {fileID: 11500000, guid: 21c98e17ac90a6a43a9958b959f5ff38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   combovalue: 0
-  islevel1: 1
+  islevel1: 0
 --- !u!1 &891609105
 GameObject:
   m_ObjectHideFlags: 0
