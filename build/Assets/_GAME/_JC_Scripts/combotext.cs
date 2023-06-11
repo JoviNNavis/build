@@ -65,7 +65,7 @@ public class combotext : MonoBehaviour
         {
             FindObjectOfType<KnifeScript>()._text.text = combovalue.ToString();
         }
-        if (SceneManager.GetActiveScene().buildIndex == 0)
+        if (SceneManager.GetActiveScene().buildIndex == 1)
         {
             islevel1 = true;
         }
