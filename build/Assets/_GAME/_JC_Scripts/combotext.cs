@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class combotext : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class combotext : MonoBehaviour
     void Start()
     {
         combovalue = 1 ;
-       
+
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -64,6 +65,13 @@ public class combotext : MonoBehaviour
         {
             FindObjectOfType<KnifeScript>()._text.text = combovalue.ToString();
         }
-
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            islevel1 = true;
+        }
+        else
+        {
+            islevel1 = false;
+        }
     }
 }
