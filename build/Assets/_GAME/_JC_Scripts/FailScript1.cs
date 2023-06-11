@@ -111,6 +111,7 @@ public class FailScript1 : MonoBehaviour
             if (FindObjectOfType<ButtonManager>().ishaptic)
             {
                 MMVibrationManager.Haptic(HapticTypes.SoftImpact);
+                Debug.LogWarning("greenknife");
             }
             //          Knifes.Add(collision.transform);
         }

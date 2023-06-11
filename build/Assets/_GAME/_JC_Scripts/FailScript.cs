@@ -27,7 +27,7 @@ public class FailScript : MonoBehaviour
     void Start()
     {
         //Knifes.Add(gameObject.transform);
-       
+        skybox = RenderSettings.skybox;
     }
 
     // Update is called once per frame
