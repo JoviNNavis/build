@@ -17,7 +17,8 @@ public class NewFailScript : MonoBehaviour
     public GameObject KnifePlayer;
 
     public KnifeScriptSword swordKnife;
-
+    public Material skybox;
+    public GameObject combo;
     public GameObject newBall;
     public Transform newBallPos;
     public GameObject puntured_ball;
@@ -34,6 +35,8 @@ public class NewFailScript : MonoBehaviour
     void Start()
     {
         //Knifes.Add(gameObject.transform);
+        skybox = RenderSettings.skybox;
+
     }
 
     // Update is called once per frame
@@ -124,6 +127,10 @@ public class NewFailScript : MonoBehaviour
             
             SoundManger.soundctrl.playClip(ballPunture);
             //knife1.enabled = false;
+            RenderSettings.skybox = skybox;
+            RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
+            combo.SetActive(false);
+
             swordKnife.enabled = false;
             Destroy(collision.gameObject, 0.1f);
             Destroy(pball, 0.12f);
@@ -136,6 +143,10 @@ public class NewFailScript : MonoBehaviour
             GameObject pball  = Instantiate(puntured_ball, collision.transform.position, Quaternion.Euler(0, -0, 0));
             SoundManger.soundctrl.playClip(ballPunture);
             //knife1.enabled = false;
+            RenderSettings.skybox = skybox;
+            RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
+            combo.SetActive(false);
+
             swordKnife.enabled = false;
             Destroy(collision.gameObject, 0.1f);
             Destroy(pball, 0.12f);
@@ -147,6 +158,10 @@ public class NewFailScript : MonoBehaviour
             GameObject pball = Instantiate(puntured_ball, collision.transform.position, Quaternion.Euler(0, -0, 0));
             SoundManger.soundctrl.playClip(ballPunture);
             //knife1.enabled = false;
+            RenderSettings.skybox = skybox;
+            RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
+            combo.SetActive(false);
+
             swordKnife.enabled = false;
             Destroy(collision.gameObject, 0.1f);
             Destroy(pball, 0.12f);

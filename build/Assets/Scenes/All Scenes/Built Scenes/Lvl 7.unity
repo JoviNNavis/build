@@ -61191,6 +61191,8 @@ MonoBehaviour:
   knife1: {fileID: 1817783779}
   KnifePlayer: {fileID: 1817783777}
   swordKnife: {fileID: 1817783780}
+  skybox: {fileID: 0}
+  combo: {fileID: 1369740687}
   newBall: {fileID: 1099632229340496901, guid: 04f308397b4939541bb1ffb6fb113c53, type: 3}
   newBallPos: {fileID: 1538187924}
   puntured_ball: {fileID: 2682916870070428379, guid: fce0511da48a6214f924aa6851e6e800,
