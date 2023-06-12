@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1402113, g: 0.7094693, b: 0.9917381, a: 1}
+  m_IndirectSpecularColor: {r: 0.14021131, g: 0.7094693, b: 0.9917381, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1250,6 +1250,8 @@ MonoBehaviour:
   combo: {fileID: 2282955359136919960}
   playerImg: {fileID: 540431832}
   ballPunture: {fileID: 8300000, guid: b485a744ad289bc4fa50aaa47e43b96a, type: 3}
+  winValue: 61
+  winCubeCollider: {fileID: 837195048}
 --- !u!114 &96920352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7178,6 +7180,8 @@ MonoBehaviour:
   combo: {fileID: 0}
   playerImg: {fileID: 540431832}
   ballPunture: {fileID: 0}
+  winValue: 0
+  winCubeCollider: {fileID: 0}
 --- !u!65 &552973700
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7215,6 +7219,8 @@ MonoBehaviour:
   combo: {fileID: 0}
   playerImg: {fileID: 540431832}
   ballPunture: {fileID: 0}
+  winValue: 0
+  winCubeCollider: {fileID: 0}
 --- !u!1 &561174473
 GameObject:
   m_ObjectHideFlags: 0
@@ -9520,8 +9526,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.529842, z: 1}
-  m_Center: {x: 0, y: 0.2350792, z: 0}
+  m_Size: {x: 1, y: 0.8636172, z: 1}
+  m_Center: {x: 0, y: 0.06819163, z: 0}
 --- !u!23 &837195049
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9610,6 +9616,7 @@ MonoBehaviour:
   playerKnife: {fileID: 1817783779}
   ball: {fileID: 1099632229340496901, guid: 04f308397b4939541bb1ffb6fb113c53, type: 3}
   ballPos: {fileID: 630835570}
+  fail: {fileID: 96920351}
 --- !u!1 &847938248
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,6 +14,10 @@ public class WinScript1 : MonoBehaviour
 
     public Transform ballPos;
 
+    public FailScript fail;
+
+
+
     void Start()
     {
         
@@ -42,7 +46,7 @@ public class WinScript1 : MonoBehaviour
             Destroy(comboText);
         }
 
-        if(other.CompareTag("Ball"))
+        if(other.CompareTag("Ball") && fail.Knifes.Count > fail.winValue)
         {
             Destroy(other.gameObject, 0.1f);
             Instantiate(ball, ballPos.transform.position, Quaternion.identity);

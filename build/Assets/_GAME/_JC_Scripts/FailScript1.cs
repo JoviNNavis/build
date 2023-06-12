@@ -28,6 +28,12 @@ public class FailScript1 : MonoBehaviour
     public int cou;
     public Transform emptyObj;
 
+    public bool BelowLevel5;
+
+    public float winValue;
+
+    public BoxCollider winCubeCollider;
+
     void Start()
     {
         //Knifes.Add(gameObject.transform);
@@ -37,6 +43,15 @@ public class FailScript1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+            if (Knifes.Count >= winValue)
+            {
+                winCubeCollider.enabled = true;
+            }
+            else
+            {
+                winCubeCollider.enabled = false;
+            } 
+
         cou = knifeCounter.knifeCountValue;
         if (Input.GetKeyDown(KeyCode.G) && Knifes.Count == 1)
         {

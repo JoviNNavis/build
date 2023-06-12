@@ -33,6 +33,12 @@ public class WinScript : MonoBehaviour
 
     public Transform ballPos;
 
+    public bool BelowLevel5;
+
+    public FailScript1 fail;
+
+    public NewFailScript newFail;
+
     void Start()
     {
         water = FindObjectOfType<ButtonManager>().water;
@@ -87,7 +93,7 @@ public class WinScript : MonoBehaviour
         {
             
             playerKnife.enabled = false;
-            FindObjectOfType<KnifeScript>().counterText.SetActive(false);
+            //FindObjectOfType<KnifeScript>().counterText.SetActive(false);
 
             islevelcompleted = true;
               stopwatercolor();
@@ -128,12 +134,30 @@ public class WinScript : MonoBehaviour
             rayball.enabled = false;
         }
 
-        if(other.CompareTag("Ball"))
+        if(BelowLevel5)
         {
-            Destroy(other.gameObject, 0.1f);
-            GameObject neBall = Instantiate(ball, ballPos.transform.position, Quaternion.identity);
-            Destroy(neBall, 2f);
+            if (other.CompareTag("Ball") && fail.Knifes.Count > fail.winValue)
+            {
+
+                Destroy(other.gameObject, 0.1f);
+                GameObject neBall = Instantiate(ball, ballPos.transform.position, Quaternion.identity);
+                Destroy(neBall, 2f);
+            }
         }
+
+        else if(newFail.isSkinEnabled)
+        {
+            if (other.CompareTag("Ball") && newFail.Knifes.Count > newFail.winValue)
+            {
+
+                Destroy(other.gameObject, 0.1f);
+                GameObject neBall = Instantiate(ball, ballPos.transform.position, Quaternion.identity);
+                Destroy(neBall, 2f);
+            }
+        }
+    
+              
+        
     }
 
 }

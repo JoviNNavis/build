@@ -32,6 +32,12 @@ public class NewFailScript : MonoBehaviour
 
     public Transform emptyObj;
 
+    public bool isSkinEnabled;
+
+    public float winValue;
+
+    public BoxCollider winCudeCollider;
+
     void Start()
     {
         //Knifes.Add(gameObject.transform);
@@ -43,6 +49,27 @@ public class NewFailScript : MonoBehaviour
     void Update()
     {
         cou = knifeCounter.knifeCountValue;
+        if(isSkinEnabled)
+        {
+            if (Knifes.Count >= winValue)
+            {
+                winCudeCollider.enabled = true;
+            }
+            else
+            {
+                winCudeCollider.enabled = false;
+            }
+        }
+
+        //if(Knifes.Count >= winValue)
+        //{
+        //   winCudeCollider.enabled = true;
+        //}
+        //else
+        //{
+        //    winCudeCollider.enabled = false;
+        //}
+
         if (Input.GetKeyDown(KeyCode.G) && Knifes.Count == 1)
         {
             //knifeRemove();

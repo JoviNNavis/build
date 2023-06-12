@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1402113, g: 0.7094693, b: 0.9917381, a: 1}
+  m_IndirectSpecularColor: {r: 0.14021131, g: 0.7094693, b: 0.9917381, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -24948,6 +24948,9 @@ MonoBehaviour:
   aiNewObj: {fileID: 894370651}
   ball: {fileID: 1099632229340496901, guid: 04f308397b4939541bb1ffb6fb113c53, type: 3}
   ballPos: {fileID: 291665116}
+  BelowLevel5: 1
+  fail: {fileID: 8077495833353074164}
+  newFail: {fileID: 0}
 --- !u!54 &837195052
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -93921,6 +93924,9 @@ MonoBehaviour:
   ballPunture: {fileID: 8300000, guid: b485a744ad289bc4fa50aaa47e43b96a, type: 3}
   cou: 0
   emptyObj: {fileID: 290051486}
+  BelowLevel5: 0
+  winValue: 134
+  winCubeCollider: {fileID: 837195048}
 --- !u!1 &8077495833353074168
 GameObject:
   m_ObjectHideFlags: 0
@@ -109532,6 +109538,9 @@ MonoBehaviour:
   ballPunture: {fileID: 0}
   cou: 0
   emptyObj: {fileID: 0}
+  BelowLevel5: 0
+  winValue: 0
+  winCubeCollider: {fileID: 0}
 --- !u!1 &8978664900938315446
 GameObject:
   m_ObjectHideFlags: 0

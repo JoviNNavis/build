@@ -13168,6 +13168,7 @@ MonoBehaviour:
   soundON: {fileID: 5875917508297976225}
   soundOFF: {fileID: 5875917509985680439}
   retryButton: {fileID: 127480848}
+  newFail: {fileID: 985168633705316093}
 --- !u!1 &508017724
 GameObject:
   m_ObjectHideFlags: 0
@@ -18179,7 +18180,7 @@ MonoBehaviour:
   text: {fileID: 1033613528}
   target: {fileID: 1357686245}
   aiTarget: {fileID: 920293312}
-  comboText: {fileID: 0}
+  comboText: {fileID: 178998297}
   lostPanel: {fileID: 7732494707446415902}
   islevelcompleted: 0
   isLost: 0
@@ -18190,6 +18191,9 @@ MonoBehaviour:
   aiNewObj: {fileID: 1402953573}
   ball: {fileID: 1099632229340496901, guid: 04f308397b4939541bb1ffb6fb113c53, type: 3}
   ballPos: {fileID: 1538187924}
+  BelowLevel5: 0
+  fail: {fileID: 985168633705316085}
+  newFail: {fileID: 985168633705316093}
 --- !u!54 &837195052
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -58533,6 +58537,9 @@ MonoBehaviour:
   ballPunture: {fileID: 0}
   cou: 0
   emptyObj: {fileID: 0}
+  BelowLevel5: 0
+  winValue: 0
+  winCubeCollider: {fileID: 0}
 --- !u!1 &2007699977
 GameObject:
   m_ObjectHideFlags: 0
@@ -61030,6 +61037,9 @@ MonoBehaviour:
   ballPunture: {fileID: 8300000, guid: b485a744ad289bc4fa50aaa47e43b96a, type: 3}
   cou: 0
   emptyObj: {fileID: 1732502739}
+  BelowLevel5: 0
+  winValue: 62
+  winCubeCollider: {fileID: 837195048}
 --- !u!4 &985168633705316088
 Transform:
   m_ObjectHideFlags: 0
@@ -61208,6 +61218,9 @@ MonoBehaviour:
   cou: 0
   ballPunture: {fileID: 8300000, guid: b485a744ad289bc4fa50aaa47e43b96a, type: 3}
   emptyObj: {fileID: 1732502739}
+  isSkinEnabled: 0
+  winValue: 62
+  winCudeCollider: {fileID: 837195048}
 --- !u!33 &985168633771144361
 MeshFilter:
   m_ObjectHideFlags: 0

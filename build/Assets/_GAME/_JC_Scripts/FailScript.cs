@@ -24,6 +24,10 @@ public class FailScript : MonoBehaviour
 
     public AudioClip ballPunture;
 
+    public float winValue;
+
+    public BoxCollider winCubeCollider;
+
     void Start()
     {
         //Knifes.Add(gameObject.transform);
@@ -37,6 +41,15 @@ public class FailScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.G))
         {
    
+        }
+
+        if(Knifes.Count >= winValue)
+        {
+            winCubeCollider.enabled = true;
+        }
+        else
+        {
+            winCubeCollider.enabled = false;
         }
 
         //for(int i = 0; i < Knifes.Count; i++)

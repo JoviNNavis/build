@@ -53,6 +53,8 @@ public class ButtonManager : MonoBehaviour
 
     public GameObject retryButton;
 
+    public NewFailScript newFail;
+
     void Start()
     {
 
@@ -360,7 +362,7 @@ public class ButtonManager : MonoBehaviour
     public void knieskin(bool isclicked)
     {
         mid.isskin = isclicked;
-
+        newFail.isSkinEnabled = true;
         if (mid.isskin)
         {
             StartCoroutine(panelDis());
