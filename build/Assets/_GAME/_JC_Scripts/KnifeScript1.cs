@@ -53,9 +53,10 @@ public class KnifeScript1 : MonoBehaviour
             if (touch.phase == TouchPhase.Began)
             {
                 isTouch = true;
- 
+            countText.SetActive(true);
+
             }
-         
+
             if (touch.phase == TouchPhase.Ended)
             {
                 StartCoroutine(txtDisable());

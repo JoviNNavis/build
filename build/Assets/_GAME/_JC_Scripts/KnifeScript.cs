@@ -58,7 +58,7 @@ public class KnifeScript : MonoBehaviour
 
             if (touch.phase == TouchPhase.Began)
             {
-                
+                counterText.SetActive(true);
                 isTouch = true;
             }
             if (touch.phase == TouchPhase.Ended)

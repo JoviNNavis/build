@@ -84,7 +84,7 @@ public class newKnifeScript : MonoBehaviour
         {
             if (mid.isskin)
             {
-                fireRate = 3.4f;
+                fireRate = 3f;
                 Instantiate(sword, new Vector3(xpos, spanwPosy, transform.localPosition.z), Quaternion.Euler(-90, 0, 0));
 
             }
