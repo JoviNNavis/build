@@ -16306,11 +16306,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 837195046}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.69025207, z: 1}
-  m_Center: {x: 0, y: 0.15487356, z: 0}
+  m_Size: {x: 1, y: 0.86800665, z: 1}
+  m_Center: {x: 0, y: 0.06599628, z: 0}
 --- !u!1 &843430512
 GameObject:
   m_ObjectHideFlags: 0
@@ -35420,6 +35420,7 @@ MonoBehaviour:
   camAnim: {fileID: 1228945780}
   ballBounce: {fileID: 8300000, guid: 30645f3aee2e5da4aa240094992e6412, type: 3}
   fireBall: {fileID: 8300000, guid: faf8ca3c1e73dd04a8ccd54d82e5e9e6, type: 3}
+  ispower: 0
   _blue: {r: 0, g: 0, b: 0, a: 0}
   purple: {r: 0, g: 0, b: 0, a: 0}
   abovelevel5: 1
@@ -57565,7 +57566,6 @@ MonoBehaviour:
   emptyObj: {fileID: 1732502739}
   BelowLevel5: 0
   winValue: 62
-  winCubeCollider: {fileID: 0}
 --- !u!4 &985168633705316088
 Transform:
   m_ObjectHideFlags: 0
@@ -57745,7 +57745,7 @@ MonoBehaviour:
   ballPunture: {fileID: 8300000, guid: b485a744ad289bc4fa50aaa47e43b96a, type: 3}
   emptyObj: {fileID: 1732502739}
   isSkinEnabled: 0
-  winValue: 62
+  winValue: 63
   winCudeCollider: {fileID: 837195053}
 --- !u!33 &985168633771144361
 MeshFilter:
