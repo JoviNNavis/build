@@ -97,7 +97,7 @@ public class WinScript : MonoBehaviour
 
             islevelcompleted = true;
               stopwatercolor();
-            FindObjectOfType<KnifeScript>().combo.SetActive(false);
+            //FindObjectOfType<KnifeScript>().combo.SetActive(false);
             aiKnife.enabled = false;
             lvl.SetActive(false);
             blast.SetActive(true);
@@ -116,7 +116,7 @@ public class WinScript : MonoBehaviour
             playerKnife.enabled = false;
             aiKnife.enabled = false;
             lvl.SetActive(false);
-            FindObjectOfType<KnifeScript>().combo.SetActive(false);
+            //FindObjectOfType<KnifeScript>().combo.SetActive(false);
             retry.SetActive(false);
             Destroy(text);
             Destroy(target);
@@ -145,7 +145,19 @@ public class WinScript : MonoBehaviour
             }
         }
 
-        else if(newFail.isSkinEnabled)
+        if(!BelowLevel5)
+        {
+            if (other.CompareTag("Ball") && fail.Knifes.Count > fail.winValue)
+            {
+
+                Destroy(other.gameObject, 0.1f);
+                GameObject neBall = Instantiate(ball, ballPos.transform.position, Quaternion.identity);
+                Destroy(neBall, 2f);
+            }
+        }
+        
+
+        if (newFail.isSkinEnabled)
         {
             if (other.CompareTag("Ball") && newFail.Knifes.Count > newFail.winValue)
             {

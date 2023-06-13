@@ -9,7 +9,7 @@ public class KnifePrefabScript : MonoBehaviour
     public float speed;
     private Rigidbody rb;
     public Transform tower;
-    public ParticleSystem drops;
+    public GameObject drops;
     public GameObject plane;
     //public Animator anim;
     public AudioClip hit, bonusBallHit;
@@ -37,8 +37,8 @@ public class KnifePrefabScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Block") || other.gameObject.CompareTag("Finish"))
         {
-            Instantiate(drops, other.transform.position+ new Vector3(1,0,-0.4f), Quaternion.Euler(0, -270, 0));
-            
+            GameObject effects = Instantiate(drops, other.transform.position+ new Vector3(1,0,-0.4f), Quaternion.Euler(0, -270, 0));
+            Destroy(effects, 0.15f);
             //Instantiate(plane, other.transform.position+new  Vector3(0.77f, -0.1f, -0.15f), Quaternion.Euler(0, -90, 0));
             plane.SetActive(true);
             transform.position = new Vector3(-0.581f, transform.localPosition.y, transform.localPosition.z);
