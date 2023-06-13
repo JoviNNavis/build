@@ -145,7 +145,7 @@ public class WinScript : MonoBehaviour
             }
         }
 
-        if(!BelowLevel5)
+        if(!BelowLevel5 && !newFail.isSkinEnabled)
         {
             if (other.CompareTag("Ball") && fail.Knifes.Count > fail.winValue)
             {
