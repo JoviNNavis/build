@@ -49,7 +49,7 @@ public class NewFailScript : MonoBehaviour
     void Update()
     {
         cou = knifeCounter.knifeCountValue;
-        if(isSkinEnabled)
+        if (isSkinEnabled)
         {
             if (Knifes.Count >= winValue)
             {
