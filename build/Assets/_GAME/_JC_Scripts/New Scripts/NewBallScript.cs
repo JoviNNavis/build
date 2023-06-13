@@ -21,11 +21,11 @@ public class NewBallScript : MonoBehaviour
 
     public Animator camAnim;
 
-    public AudioClip ballBounce, fireBall; 
+    public AudioClip ballBounce, fireBall;
 
     //public KnifeScript knife;
-  //  public KnifeScriptSword sword;
-
+    //  public KnifeScriptSword sword;
+    public bool ispower;
     private MeshRenderer _knife;
   public   Color _blue;
   public Color purple;

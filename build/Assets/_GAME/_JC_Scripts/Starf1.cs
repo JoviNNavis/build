@@ -53,10 +53,11 @@ public class Starf1 : MonoBehaviour
 
 
             if(inpowermode)
-                {
+             {
+
                 meshCol.enabled = false;
             }
-            if (!inpowermode)
+        else  if (!inpowermode)
             {
                 FindObjectOfType<FailScript1>().failed();
                 meshCol.enabled = false;

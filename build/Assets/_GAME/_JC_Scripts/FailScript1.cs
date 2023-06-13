@@ -32,7 +32,7 @@ public class FailScript1 : MonoBehaviour
 
     public float winValue;
 
-    public BoxCollider winCubeCollider;
+
 
     void Start()
     {
@@ -43,14 +43,6 @@ public class FailScript1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {    
-            if (Knifes.Count >= winValue)
-            {
-                winCubeCollider.enabled = true;
-            }
-            else
-            {
-                winCubeCollider.enabled = false;
-            }
            
 
         cou = knifeCounter.knifeCountValue;
