@@ -57745,7 +57745,7 @@ MonoBehaviour:
   ballPunture: {fileID: 8300000, guid: b485a744ad289bc4fa50aaa47e43b96a, type: 3}
   emptyObj: {fileID: 1732502739}
   isSkinEnabled: 0
-  winValue: 63
+  winValue: 62
   winCudeCollider: {fileID: 837195053}
 --- !u!33 &985168633771144361
 MeshFilter:
