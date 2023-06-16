@@ -32,6 +32,10 @@ public class FailScript1 : MonoBehaviour
 
     public float winValue;
 
+    public float timer;
+
+    public KnifeScript knifescript;
+
 
 
     void Start()
@@ -43,6 +47,14 @@ public class FailScript1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {    
+        if(timer >= 0.01f && knifescript.ischangecolor == false)
+        {
+            knifescript.NewEffect = true;
+        }
+        else
+        {
+            knifescript.NewEffect = false;
+        }
            
 
         cou = knifeCounter.knifeCountValue;

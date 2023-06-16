@@ -43,7 +43,7 @@ public class FailScript : MonoBehaviour
     {
         //Debug.Log(timer);
 
-        if(timer >= 0.15f && knifeScript.ischangecolor == false)
+        if(timer >= 0.05f && knifeScript.ischangecolor == false)
         {
             knifeScript.newEffect = true;
         }

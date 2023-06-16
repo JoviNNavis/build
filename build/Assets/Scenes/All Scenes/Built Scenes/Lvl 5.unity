@@ -17694,6 +17694,7 @@ MonoBehaviour:
   soundON: {fileID: 8447885068214109375}
   soundOFF: {fileID: 8447885066726691113}
   retryButton: {fileID: 127480848}
+  newFail: {fileID: 0}
 --- !u!1 &503350027
 GameObject:
   m_ObjectHideFlags: 0
@@ -48267,6 +48268,7 @@ MonoBehaviour:
   camAnim: {fileID: 1228945780}
   ballBounce: {fileID: 8300000, guid: 30645f3aee2e5da4aa240094992e6412, type: 3}
   fireBall: {fileID: 8300000, guid: faf8ca3c1e73dd04a8ccd54d82e5e9e6, type: 3}
+  ispower: 0
   _blue: {r: 0, g: 0, b: 0, a: 0}
   purple: {r: 0, g: 0, b: 0, a: 0}
   abovelevel5: 0
@@ -61036,6 +61038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level1: 0
+  ischangecolor: 0
   fireRate: 14
   knifemat:
   - {fileID: 2590846551577548752, guid: 61b1b12c781ad70428b541ac13762c38, type: 3}
@@ -61049,6 +61052,8 @@ MonoBehaviour:
   nextfireRate: 1
   totalblocks: 0
   knife: {fileID: 2590846551577548752, guid: 432ea40104c93d245a2a68ef34a2259b, type: 3}
+  newKnife: {fileID: 2590846551577548752, guid: 5052a4cff82fd2146be17153f9a872e0,
+    type: 3}
   playerCrownSlider: {fileID: 7079047159132038688}
   newBallPos: {fileID: 752006272}
   playerImg: {fileID: 1569328974}
@@ -61059,6 +61064,8 @@ MonoBehaviour:
   combovalue: 0
   knifeThrow: {fileID: 8300000, guid: 60f11383c193e3244ba00919fcebedd6, type: 3}
   _text: {fileID: 888342064}
+  fail1: {fileID: 7233003352761415713}
+  NewEffect: 0
 --- !u!1 &1819497016
 GameObject:
   m_ObjectHideFlags: 0
@@ -69191,7 +69198,8 @@ MonoBehaviour:
   emptyObj: {fileID: 0}
   BelowLevel5: 0
   winValue: 0
-  winCubeCollider: {fileID: 0}
+  timer: 0
+  knifescript: {fileID: 0}
 --- !u!1 &71928137487969568
 GameObject:
   m_ObjectHideFlags: 0
@@ -99553,7 +99561,8 @@ MonoBehaviour:
   emptyObj: {fileID: 1362658044}
   BelowLevel5: 0
   winValue: 92
-  winCubeCollider: {fileID: 837195048}
+  timer: 0
+  knifescript: {fileID: 1817783779}
 --- !u!4 &7233003352761415724
 Transform:
   m_ObjectHideFlags: 0

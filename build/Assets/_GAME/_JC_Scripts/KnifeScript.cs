@@ -9,13 +9,13 @@ public class KnifeScript : MonoBehaviour
     private bool isTouch;
     public bool level1;
     private bool isRelease = false;
-  public static  bool ischangecolor;
+    public bool ischangecolor;
     public float fireRate;
     public GameObject[] knifemat;
     [SerializeField] private float fireTime;
     [SerializeField] private float nextfireRate;
     public int totalblocks;
-    public GameObject knife;
+    public GameObject knife, newKnife;
     public Slider playerCrownSlider;
     int rand;
     int randcolors;
@@ -29,6 +29,11 @@ public class KnifeScript : MonoBehaviour
     public  int combovalue;
     public AudioClip knifeThrow;
     public TMPro.TextMeshProUGUI _text;
+
+    public FailScript1 fail1;
+
+    public bool NewEffect;
+
     void Start()
     {
         combovalue = 1;
@@ -82,11 +87,12 @@ public class KnifeScript : MonoBehaviour
         counterText.SetActive(true);
         if (fireTime >= nextfireRate)
         {
+            fail1.timer += Time.deltaTime;
             SoundManger.soundctrl.playClip(knifeThrow);
             if (ischangecolor)
                 {
-        
-               
+
+                NewEffect = false;
                 _knife = Instantiate(knifemat[randcolors], new Vector3(2.4f, transform.localPosition.y, transform.localPosition.z), Quaternion.identity);
                     FindObjectOfType<FailScript1>().Knifes.Add(_knife.gameObject.transform);
                 knifeCounter.knifeCountValue = FindObjectOfType<FailScript1>().Knifes.Count;
@@ -104,7 +110,30 @@ public class KnifeScript : MonoBehaviour
                         randcolors = 0;
                     }
                 }
-                else
+
+            if(NewEffect && !ischangecolor)
+            {
+                combo.SetActive(false);
+
+                GameObject _knife = Instantiate(newKnife, new Vector3(2.4f, transform.localPosition.y, transform.localPosition.z), Quaternion.identity);
+
+                FindObjectOfType<FailScript1>().Knifes.Add(_knife.gameObject.transform);
+
+                fireRate = 14;
+
+                knifeCounter.knifeCountValue = FindObjectOfType<FailScript1>().Knifes.Count;
+
+
+                combovalue = 1;
+                transform.position += new Vector3(0, 0.7f, 0);
+                newBallPos.transform.position += new Vector3(0, 0.7f, 0);
+                transform.rotation = Quaternion.Euler(90, -180, 0);
+                playerImg.fillAmount += fillValue;
+                playerCrownSlider.value += fillValue;
+                //PlayerRank.transform.position += new Vector3(rankValue, 0, 0);
+                fireTime = 0;
+            }
+                if(!NewEffect && !ischangecolor)
                 {
                 combo.SetActive(false);
                 
@@ -134,6 +163,7 @@ public class KnifeScript : MonoBehaviour
     IEnumerator txtDisable()
     {
         yield return new WaitForSeconds(0.75f);
+        fail1.timer = 0;
         //counterText.SetActive(false);
     }
 
