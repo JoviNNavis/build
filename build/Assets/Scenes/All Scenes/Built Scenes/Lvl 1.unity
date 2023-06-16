@@ -1252,6 +1252,8 @@ MonoBehaviour:
   ballPunture: {fileID: 8300000, guid: b485a744ad289bc4fa50aaa47e43b96a, type: 3}
   winValue: 61
   winCubeCollider: {fileID: 837195048}
+  timer: 0
+  knifeScript: {fileID: 1817783779}
 --- !u!114 &96920352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6146,6 +6148,7 @@ MonoBehaviour:
   soundON: {fileID: 4042120761765903190}
   soundOFF: {fileID: 4042120762497265344}
   retryButton: {fileID: 127480848}
+  newFail: {fileID: 0}
 --- !u!1 &511800750
 GameObject:
   m_ObjectHideFlags: 0
@@ -7182,6 +7185,8 @@ MonoBehaviour:
   ballPunture: {fileID: 0}
   winValue: 0
   winCubeCollider: {fileID: 0}
+  timer: 0
+  knifeScript: {fileID: 0}
 --- !u!65 &552973700
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7221,6 +7226,8 @@ MonoBehaviour:
   ballPunture: {fileID: 0}
   winValue: 0
   winCubeCollider: {fileID: 0}
+  timer: 0
+  knifeScript: {fileID: 0}
 --- !u!1 &561174473
 GameObject:
   m_ObjectHideFlags: 0
@@ -10271,6 +10278,7 @@ MonoBehaviour:
   camAnim: {fileID: 1228945780}
   ballBounce: {fileID: 8300000, guid: 30645f3aee2e5da4aa240094992e6412, type: 3}
   fireBall: {fileID: 8300000, guid: faf8ca3c1e73dd04a8ccd54d82e5e9e6, type: 3}
+  ispower: 0
   _blue: {r: 0, g: 0, b: 0, a: 0}
   purple: {r: 0, g: 0, b: 0, a: 0}
   abovelevel5: 0
@@ -20341,6 +20349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e23062c33e03f0f4ab8ffa34705bf43e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ischangecolor: 0
   fireRate: 10
   knifemat:
   - {fileID: 2590846551577548752, guid: 432ea40104c93d245a2a68ef34a2259b, type: 3}
@@ -20354,6 +20363,8 @@ MonoBehaviour:
   nextfireRate: 1
   newBallPos: {fileID: 630835570}
   knife: {fileID: 2590846551577548752, guid: 432ea40104c93d245a2a68ef34a2259b, type: 3}
+  newknife: {fileID: 2590846551577548752, guid: 5052a4cff82fd2146be17153f9a872e0,
+    type: 3}
   PlayerRank: {fileID: 540431830}
   combo: {fileID: 2282955359136919960}
   playerImg: {fileID: 540431832}
@@ -20361,6 +20372,8 @@ MonoBehaviour:
   countText: {fileID: 43587914}
   _text: {fileID: 2282955359347602637}
   hit: {fileID: 8300000, guid: 60f11383c193e3244ba00919fcebedd6, type: 3}
+  failScript: {fileID: 96920351}
+  newEffect: 0
 --- !u!1 &1829948359
 GameObject:
   m_ObjectHideFlags: 0

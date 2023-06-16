@@ -28,6 +28,10 @@ public class FailScript : MonoBehaviour
 
     public BoxCollider winCubeCollider;
 
+    public float timer;
+
+    public KnifeScript1 knifeScript;
+
     void Start()
     {
         //Knifes.Add(gameObject.transform);
@@ -37,6 +41,16 @@ public class FailScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Debug.Log(timer);
+
+        if(timer >= 0.15f && knifeScript.ischangecolor == false)
+        {
+            knifeScript.newEffect = true;
+        }
+        else
+        {
+            knifeScript.newEffect = false;
+        }
 
         if (Input.GetKeyDown(KeyCode.G))
         {
@@ -99,8 +113,7 @@ public class FailScript : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Knife")
-        {
-           
+        {                 
             if (FindObjectOfType<ButtonManager>().ishaptic)
             {
                 MMVibrationManager.Haptic(HapticTypes.SoftImpact);

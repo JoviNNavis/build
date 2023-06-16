@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1079879568917017465}
   - component: {fileID: 3465414534775636260}
   m_Layer: 0
-  m_Name: KnifePrefab og 1
+  m_Name: KnifePrefab og 2
   m_TagString: Knife
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68,9 +68,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 75
   tower: {fileID: 0}
-  drops: {fileID: 3168713932256354187, guid: 03b14ba5411574644b76a454c9ac302a, type: 3}
-  newDrops: {fileID: 3168713932256354187, guid: 242ef5c18410a6e4fbe21f0290d74aa8,
-    type: 3}
+  drops: {fileID: 3168713932256354187, guid: 242ef5c18410a6e4fbe21f0290d74aa8, type: 3}
   plane: {fileID: 3982792686158755893}
   hit: {fileID: 8300000, guid: 60f11383c193e3244ba00919fcebedd6, type: 3}
   bonusBallHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
