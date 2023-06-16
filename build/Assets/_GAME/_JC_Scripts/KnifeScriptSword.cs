@@ -9,13 +9,13 @@ public class KnifeScriptSword : MonoBehaviour
     private bool isTouch;
     public bool level1;
     private bool isRelease = false;
-  public  bool ischangecolor;
+    public bool ischangecolor;
     public float fireRate;
 
     [SerializeField] private float fireTime;
     [SerializeField] private float nextfireRate;
     public int totalblocks;
-    public GameObject sword;
+    public GameObject sword, newSword;
     public Slider playerCrownSlider;
     int rand;
     int randcolors;
@@ -29,6 +29,10 @@ public class KnifeScriptSword : MonoBehaviour
     public GameObject counterText;
 
     public AudioClip knifeThrow;
+
+    public bool NewEffect;
+
+    public NewFailScript failNew;
 
     void Start()
     {
@@ -83,10 +87,11 @@ public class KnifeScriptSword : MonoBehaviour
         counterText.SetActive(true);
         if (fireTime >= nextfireRate)
         {
+            failNew.timer += Time.deltaTime;
             SoundManger.soundctrl.playClip(knifeThrow);
             if (ischangecolor)
                 {
-                
+                NewEffect = false;
                 _knife = Instantiate(sword, new Vector3(2.4f, transform.localPosition.y, transform.localPosition.z), Quaternion.identity);
                     FindObjectOfType<NewFailScript>().Knifes.Add(_knife.gameObject.transform);
                 knifeCounter.knifeCountValue += 1;
@@ -100,7 +105,22 @@ public class KnifeScriptSword : MonoBehaviour
                     fireTime = 0;
                   
                 }
-                else
+
+            if(NewEffect && !ischangecolor)
+            {
+                GameObject _knife = Instantiate(newSword, new Vector3(2.4f, transform.localPosition.y, transform.localPosition.z), Quaternion.identity);
+                combo.SetActive(false);
+                FindObjectOfType<NewFailScript>().Knifes.Add(_knife.gameObject.transform);
+                knifeCounter.knifeCountValue += 1;
+                transform.position += new Vector3(0, 0.7f, 0);
+                newBallPos.transform.position += new Vector3(0, 0.7f, 0);
+                transform.rotation = Quaternion.Euler(90, -180, 0);
+                playerImg.fillAmount += fillValue;
+                playerCrownSlider.value += fillValue;
+                //PlayerRank.transform.position += new Vector3(rankValue, 0, 0);
+                fireTime = 0;
+            }
+                if(!NewEffect && !ischangecolor)
                 {
                 
                 GameObject _knife = Instantiate(sword, new Vector3(2.4f, transform.localPosition.y, transform.localPosition.z), Quaternion.identity);
@@ -122,7 +142,8 @@ public class KnifeScriptSword : MonoBehaviour
 
     IEnumerator txtDisable()
     {
-        yield return new WaitForSeconds(0.55f);
+        yield return new WaitForSeconds(0.75f);
+        failNew.timer = 0;
         //counterText.SetActive(false);
     }
 

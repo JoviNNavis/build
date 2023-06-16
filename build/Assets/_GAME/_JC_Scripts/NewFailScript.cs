@@ -38,6 +38,10 @@ public class NewFailScript : MonoBehaviour
 
     public BoxCollider winCudeCollider;
 
+    public float timer;
+
+    public KnifeScriptSword knifeSword;
+
     void Start()
     {
         //Knifes.Add(gameObject.transform);
@@ -48,6 +52,15 @@ public class NewFailScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(timer >= 0.01f && knifeSword.ischangecolor == false)
+        {
+            knifeSword.NewEffect = true;
+        }
+        else
+        {
+            knifeSword.NewEffect = false;
+        }
+
         cou = knifeCounter.knifeCountValue;
         if (isSkinEnabled)
         {

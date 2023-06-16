@@ -43593,6 +43593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level1: 0
+  ischangecolor: 0
   fireRate: 14
   knifemat:
   - {fileID: 2590846551577548752, guid: 61b1b12c781ad70428b541ac13762c38, type: 3}
@@ -43606,6 +43607,8 @@ MonoBehaviour:
   nextfireRate: 1
   totalblocks: 0
   knife: {fileID: 2590846551577548752, guid: 432ea40104c93d245a2a68ef34a2259b, type: 3}
+  newKnife: {fileID: 2590846551577548752, guid: 5052a4cff82fd2146be17153f9a872e0,
+    type: 3}
   playerCrownSlider: {fileID: 4118225339579481922}
   newBallPos: {fileID: 1538187924}
   playerImg: {fileID: 50878900}
@@ -43616,6 +43619,8 @@ MonoBehaviour:
   combovalue: 0
   knifeThrow: {fileID: 8300000, guid: 60f11383c193e3244ba00919fcebedd6, type: 3}
   _text: {fileID: 1439403985}
+  fail1: {fileID: 985168633705316085}
+  NewEffect: 0
 --- !u!114 &1817783780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43635,6 +43640,8 @@ MonoBehaviour:
   nextfireRate: 0
   totalblocks: 0
   sword: {fileID: 2590846551577548752, guid: 737c61e8dffc7374287ba61ebd073272, type: 3}
+  newSword: {fileID: 2590846551577548752, guid: f6b5ecb5e0024a04e990c8bdd4659cfc,
+    type: 3}
   playerCrownSlider: {fileID: 4118225339579481922}
   newBallPos: {fileID: 1538187924}
   playerImg: {fileID: 50878900}
@@ -43644,6 +43651,8 @@ MonoBehaviour:
   _text: {fileID: 1439403985}
   counterText: {fileID: 1033613528}
   knifeThrow: {fileID: 8300000, guid: 60f11383c193e3244ba00919fcebedd6, type: 3}
+  NewEffect: 0
+  failNew: {fileID: 985168633705316093}
 --- !u!1 &1828264437
 GameObject:
   m_ObjectHideFlags: 0
@@ -57566,6 +57575,8 @@ MonoBehaviour:
   emptyObj: {fileID: 1732502739}
   BelowLevel5: 0
   winValue: 62
+  timer: 0
+  knifescript: {fileID: 1817783779}
 --- !u!4 &985168633705316088
 Transform:
   m_ObjectHideFlags: 0
@@ -57747,6 +57758,8 @@ MonoBehaviour:
   isSkinEnabled: 0
   winValue: 62
   winCudeCollider: {fileID: 837195053}
+  timer: 0
+  knifeSword: {fileID: 1817783780}
 --- !u!33 &985168633771144361
 MeshFilter:
   m_ObjectHideFlags: 0
