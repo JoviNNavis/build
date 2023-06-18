@@ -172,6 +172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   cube: {fileID: 857091082}
+  inte: 0
   before: {fileID: 2100000, guid: 4b9c1accde3a0fb498d4fb2873f9b439, type: 2}
   after: {fileID: 2100000, guid: f7b14aaabcc983a42881b83d2ccd135b, type: 2}
   direction: 1
@@ -570,6 +571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   cube: {fileID: 91987993}
+  inte: 0
   before: {fileID: 2100000, guid: a5230785e5f7c7d46a77820cc5e750a2, type: 2}
   after: {fileID: 2100000, guid: 9ba982670616aca48bcaab803bdc35d3, type: 2}
   direction: 0
@@ -742,6 +744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   cube: {fileID: 559395544}
+  inte: 0
   before: {fileID: 2100000, guid: 4b9c1accde3a0fb498d4fb2873f9b439, type: 2}
   after: {fileID: 2100000, guid: f7b14aaabcc983a42881b83d2ccd135b, type: 2}
   direction: 1
@@ -2427,6 +2430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   cube: {fileID: 559395544}
+  inte: 0
   before: {fileID: 2100000, guid: a5230785e5f7c7d46a77820cc5e750a2, type: 2}
   after: {fileID: 2100000, guid: f7b14aaabcc983a42881b83d2ccd135b, type: 2}
   direction: 1
@@ -2600,6 +2604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   cube: {fileID: 684211106}
+  inte: 0
   before: {fileID: 2100000, guid: a5230785e5f7c7d46a77820cc5e750a2, type: 2}
   after: {fileID: 2100000, guid: f7b14aaabcc983a42881b83d2ccd135b, type: 2}
   direction: 1
@@ -2683,7 +2688,7 @@ PrefabInstance:
     - target: {fileID: 6254061111450155249, guid: 7369077158f83274bb31605e8f3d0a78,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6254061111450155249, guid: 7369077158f83274bb31605e8f3d0a78,
         type: 3}
@@ -2817,6 +2822,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   cube: {fileID: 1776433893}
+  inte: 0
   before: {fileID: 2100000, guid: 855ba013df80fb9498d14426759a69a0, type: 2}
   after: {fileID: 2100000, guid: f7b14aaabcc983a42881b83d2ccd135b, type: 2}
   direction: 1
@@ -3069,6 +3075,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   cube: {fileID: 684211106}
+  inte: 0
   before: {fileID: 2100000, guid: a5230785e5f7c7d46a77820cc5e750a2, type: 2}
   after: {fileID: 2100000, guid: f7b14aaabcc983a42881b83d2ccd135b, type: 2}
   direction: 1
@@ -3784,6 +3791,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   cube: {fileID: 857091082}
+  inte: 0
   before: {fileID: 2100000, guid: 4b9c1accde3a0fb498d4fb2873f9b439, type: 2}
   after: {fileID: 2100000, guid: f7b14aaabcc983a42881b83d2ccd135b, type: 2}
   direction: 1
@@ -3903,6 +3911,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   cube: {fileID: 857364636}
+  inte: 0
   before: {fileID: 2100000, guid: 4b9c1accde3a0fb498d4fb2873f9b439, type: 2}
   after: {fileID: 2100000, guid: f7b14aaabcc983a42881b83d2ccd135b, type: 2}
   direction: 0
@@ -4458,6 +4467,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   cube: {fileID: 954277524}
+  inte: 0
   before: {fileID: 2100000, guid: 855ba013df80fb9498d14426759a69a0, type: 2}
   after: {fileID: 2100000, guid: f7b14aaabcc983a42881b83d2ccd135b, type: 2}
   direction: 0
@@ -5291,6 +5301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   cube: {fileID: 91987993}
+  inte: 0
   before: {fileID: 2100000, guid: a5230785e5f7c7d46a77820cc5e750a2, type: 2}
   after: {fileID: 2100000, guid: 9ba982670616aca48bcaab803bdc35d3, type: 2}
   direction: 0
@@ -5408,6 +5419,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   cube: {fileID: 857364636}
+  inte: 0
   before: {fileID: 2100000, guid: 4b9c1accde3a0fb498d4fb2873f9b439, type: 2}
   after: {fileID: 2100000, guid: f7b14aaabcc983a42881b83d2ccd135b, type: 2}
   direction: 0
@@ -5525,6 +5537,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   cube: {fileID: 91987993}
+  inte: 0
   before: {fileID: 2100000, guid: a5230785e5f7c7d46a77820cc5e750a2, type: 2}
   after: {fileID: 2100000, guid: 9ba982670616aca48bcaab803bdc35d3, type: 2}
   direction: 0
@@ -6017,6 +6030,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   cube: {fileID: 1776433893}
+  inte: 0
   before: {fileID: 2100000, guid: 855ba013df80fb9498d14426759a69a0, type: 2}
   after: {fileID: 2100000, guid: f7b14aaabcc983a42881b83d2ccd135b, type: 2}
   direction: 1
@@ -6334,6 +6348,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   cube: {fileID: 1345298550}
+  inte: 0
   before: {fileID: 2100000, guid: 4b9c1accde3a0fb498d4fb2873f9b439, type: 2}
   after: {fileID: 2100000, guid: f7b14aaabcc983a42881b83d2ccd135b, type: 2}
   direction: 0
@@ -6574,6 +6589,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   cube: {fileID: 1345298550}
+  inte: 0
   before: {fileID: 2100000, guid: 4b9c1accde3a0fb498d4fb2873f9b439, type: 2}
   after: {fileID: 2100000, guid: f7b14aaabcc983a42881b83d2ccd135b, type: 2}
   direction: 0
@@ -6931,6 +6947,7 @@ MonoBehaviour:
   _sword: {fileID: 925846700}
   incval: 0.0625
   falling: {fileID: 217981686804197473, guid: 6c8f7791698591e44810b677c7293f69, type: 3}
+  blast: {fileID: 4034580811027648694, guid: 7ff82b07c1d02b44383cb395dc2fe1e5, type: 3}
   positions: []
   mesh: {fileID: 0}
   cubeposes:
@@ -7074,6 +7091,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   cube: {fileID: 857364636}
+  inte: 0
   before: {fileID: 2100000, guid: 4b9c1accde3a0fb498d4fb2873f9b439, type: 2}
   after: {fileID: 2100000, guid: f7b14aaabcc983a42881b83d2ccd135b, type: 2}
   direction: 0
@@ -7516,6 +7534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   cube: {fileID: 857091082}
+  inte: 0
   before: {fileID: 2100000, guid: 4b9c1accde3a0fb498d4fb2873f9b439, type: 2}
   after: {fileID: 2100000, guid: f7b14aaabcc983a42881b83d2ccd135b, type: 2}
   direction: 1
@@ -7633,6 +7652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   cube: {fileID: 684211106}
+  inte: 0
   before: {fileID: 2100000, guid: a5230785e5f7c7d46a77820cc5e750a2, type: 2}
   after: {fileID: 2100000, guid: f7b14aaabcc983a42881b83d2ccd135b, type: 2}
   direction: 1
@@ -7750,6 +7770,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   cube: {fileID: 1345298550}
+  inte: 0
   before: {fileID: 2100000, guid: 4b9c1accde3a0fb498d4fb2873f9b439, type: 2}
   after: {fileID: 2100000, guid: f7b14aaabcc983a42881b83d2ccd135b, type: 2}
   direction: 0
@@ -7932,6 +7953,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   cube: {fileID: 1776433893}
+  inte: 0
   before: {fileID: 2100000, guid: 855ba013df80fb9498d14426759a69a0, type: 2}
   after: {fileID: 2100000, guid: f7b14aaabcc983a42881b83d2ccd135b, type: 2}
   direction: 1
@@ -7986,6 +8008,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   cube: {fileID: 559395544}
+  inte: 0
   before: {fileID: 2100000, guid: 4b9c1accde3a0fb498d4fb2873f9b439, type: 2}
   after: {fileID: 2100000, guid: f7b14aaabcc983a42881b83d2ccd135b, type: 2}
   direction: 1
@@ -8377,6 +8400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   cube: {fileID: 954277524}
+  inte: 0
   before: {fileID: 2100000, guid: 855ba013df80fb9498d14426759a69a0, type: 2}
   after: {fileID: 2100000, guid: f7b14aaabcc983a42881b83d2ccd135b, type: 2}
   direction: 0
@@ -8857,6 +8881,7 @@ MonoBehaviour:
   soundON: {fileID: 1215369175996048954}
   soundOFF: {fileID: 1215369177730970540}
   retryButton: {fileID: 0}
+  newFail: {fileID: 0}
 --- !u!4 &2108150814
 Transform:
   m_ObjectHideFlags: 0
@@ -8921,6 +8946,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   cube: {fileID: 954277524}
+  inte: 0
   before: {fileID: 2100000, guid: 855ba013df80fb9498d14426759a69a0, type: 2}
   after: {fileID: 2100000, guid: f7b14aaabcc983a42881b83d2ccd135b, type: 2}
   direction: 0
@@ -13054,7 +13080,7 @@ PrefabInstance:
     - target: {fileID: 6254061111450155249, guid: 7369077158f83274bb31605e8f3d0a78,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6254061111450155249, guid: 7369077158f83274bb31605e8f3d0a78,
         type: 3}

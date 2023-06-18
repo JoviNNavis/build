@@ -7,6 +7,7 @@ public class Cubes : MonoBehaviour
 {
     public int health;
     public MeshRenderer cube;
+    public float inte;
     public Material before, after;
     public enum placement
     {
@@ -15,11 +16,11 @@ public class Cubes : MonoBehaviour
     };
     public placement direction;
     public bool isright, isleft;
-    float noofcubes;
+    public  int noofcubes;
     void Start()
     {
-        noofcubes = FindObjectOfType<box_Sculpting>().cubeposes.Count;
-    
+   
+        inte = 0.125f;
         health = 100;
         cube.material = before;
        
@@ -36,8 +37,7 @@ public class Cubes : MonoBehaviour
             }
             Debug.LogError("Touched");
             health -= FindObjectOfType<clicks>().knifepower;
-            Instantiate(FindObjectOfType<box_Sculpting>().falling, gameObject.transform.position + new Vector3(0, 0, 0), Quaternion.identity);
-           // FindObjectOfType<box_Sculpting>().filbar.fillAmount +=  0.0625f;
+           FindObjectOfType<box_Sculpting>().filbar.fillAmount +=  0.0625f;
         }
     }
         //public bool Rotate_knife()
@@ -68,16 +68,18 @@ public class Cubes : MonoBehaviour
 
         void Update()
         {
-    
+        noofcubes = FindObjectOfType<box_Sculpting>().cubeposes.Count;
         if (health <= 50) {
                 cube.material = after;
             }
             if (health <= 0)
             {
-                Destroy(this.gameObject,0.3f);
+                Destroy(this.gameObject,0.0f);
                 FindObjectOfType<box_Sculpting>().cubeposes.Remove(this.gameObject.transform);
-          //  FindObjectOfType<box_Sculpting>().filbar.fillAmount = 1 / noofcubes;
+          FindObjectOfType<box_Sculpting>().filbar.fillAmount += inte;
+            Instantiate(FindObjectOfType<box_Sculpting>().falling, gameObject.transform.position + new Vector3(0, 0, 0), Quaternion.identity);
+            Instantiate(FindObjectOfType<box_Sculpting>().blast, gameObject.transform.position + new Vector3(0, 0, 0), Quaternion.identity);
 
         }
-        }
+    }
     }
