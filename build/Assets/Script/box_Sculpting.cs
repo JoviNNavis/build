@@ -116,12 +116,7 @@ public class box_Sculpting : MonoBehaviour
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-         if(FindObjectOfType<box_Sculpting>().cubeposes.Count == 0)
-            {
-                FindObjectOfType<clicks>().bear.enabled = true;
-             
-                StartCoroutine(win());
-            }
+       
 
             RaycastHit hit;
 
@@ -337,8 +332,15 @@ public class box_Sculpting : MonoBehaviour
         if(cubeposes.Count == 0){
             Destroy(image);
         }
-       // filbar.fillAmount = 1 / cubeposes.Count;
-        if(cubeposes == null)
+
+        if (FindObjectOfType<box_Sculpting>().cubeposes.Count == 0)
+        {
+            FindObjectOfType<clicks>().bear.enabled = true;
+
+            StartCoroutine(win());
+        }
+        // filbar.fillAmount = 1 / cubeposes.Count;
+        if (cubeposes == null)
         {
             cubeposes.Clear();
         }
