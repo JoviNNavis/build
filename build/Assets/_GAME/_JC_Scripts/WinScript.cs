@@ -77,8 +77,10 @@ public class WinScript : MonoBehaviour
     IEnumerator gameLost()
     {
         yield return new WaitForSeconds(1f);
-        aiNewObj.SetActive(false);
+        playerNewObj.SetActive(false);
         lostPanel.SetActive(true);
+        aiNewObj.SetActive(false);
+
     }
 
     IEnumerator ballOff()
@@ -118,10 +120,11 @@ public class WinScript : MonoBehaviour
             lvl.SetActive(false);
             //FindObjectOfType<KnifeScript>().combo.SetActive(false);
             retry.SetActive(false);
-            Destroy(text);
-            Destroy(target);
             StartCoroutine(gameLost());
             rayball.enabled = false;
+            Destroy(text);
+            Destroy(target);
+            
         }
 
 
@@ -131,6 +134,7 @@ public class WinScript : MonoBehaviour
             aiKnife.enabled = false;
             aiTarget.SetActive(false);
             StartCoroutine(ballOff());
+            Destroy(aiNewObj, 0.5f);
             rayball.enabled = false;
         }
 

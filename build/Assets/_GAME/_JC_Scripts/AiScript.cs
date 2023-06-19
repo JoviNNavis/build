@@ -16,7 +16,7 @@ public class AiScript : MonoBehaviour
    public int rndclr;
     public float rankValue;
    public bool aicolor;
-    public GameObject Knife;
+    public GameObject Knife, newKnife;
 
     public AudioClip knifeThrow;
 
@@ -65,7 +65,7 @@ public class AiScript : MonoBehaviour
 
                 GameObject aiobject = Instantiate(knifemat[rndclr], transform.position, Quaternion.Euler(0, 180, 0));
                 FindObjectOfType<AiFailScript>().Knifes.Add(aiobject.gameObject.transform);
-                fireRate1 = 22f;
+                fireRate1 = 20f;
                 rndclr++;
                 fireTime1 = 0.05f;
                 transform.position += new Vector3(0, 0.7f, 0);
@@ -91,6 +91,15 @@ public class AiScript : MonoBehaviour
                 transform.rotation = Quaternion.Euler(90, 0, 0);
                 fireTime1 = 0;
             }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Finish"))
+        {
+            newKnife.SetActive(true);
+            this.gameObject.SetActive(false);
         }
     }
 }
