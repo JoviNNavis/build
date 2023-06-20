@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.14021131, g: 0.7094693, b: 0.9917381, a: 1}
+  m_IndirectSpecularColor: {r: 0.1402113, g: 0.7094693, b: 0.9917381, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -51681,7 +51681,6 @@ Transform:
   - {fileID: 1335947317}
   - {fileID: 8439624627800960980}
   - {fileID: 1594530162}
-  - {fileID: 3770342933721666673}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -80123,23 +80122,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1903541553344480253
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3770342933721666673}
-  - component: {fileID: 3770342933721666674}
-  m_Layer: 0
-  m_Name: SceneManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!4 &1953491274706411162
 Transform:
   m_ObjectHideFlags: 0
@@ -97436,45 +97418,6 @@ Transform:
   m_Father: {fileID: 793911721777649733}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -94.1, z: 0}
---- !u!4 &3770342933721666673
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1903541553344480253}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1377557762}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3770342933721666674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1903541553344480253}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee7e967204432ac4fb4480f4381fa237, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lvl1: 0
-  winPanelLvl1: {fileID: 0}
-  blueBg: {fileID: 0}
-  nxtButton: {fileID: 0}
-  RewardPanel: {fileID: 364440461}
-  nxtLvlPanel: {fileID: 666366020344013537}
-  LostPanel: {fileID: 1628282493}
-  selectionPanel: {fileID: 138320297}
-  ChestLostPanel: {fileID: 268112908}
-  promax: 0
-  se: 0
-  ipad: 0
 --- !u!4 &3815072109889280219
 Transform:
   m_ObjectHideFlags: 0
