@@ -43804,6 +43804,8 @@ MonoBehaviour:
   sword: {fileID: 2590846551577548752, guid: 737c61e8dffc7374287ba61ebd073272, type: 3}
   newSword: {fileID: 2590846551577548752, guid: f6b5ecb5e0024a04e990c8bdd4659cfc,
     type: 3}
+  powerupSword: {fileID: 2590846551577548752, guid: 9b20a2578885afe45b11b7cfd904d347,
+    type: 3}
   playerCrownSlider: {fileID: 4118225339579481922}
   newBallPos: {fileID: 1538187924}
   playerImg: {fileID: 50878900}

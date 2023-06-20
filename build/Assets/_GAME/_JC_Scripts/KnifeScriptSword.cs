@@ -15,7 +15,7 @@ public class KnifeScriptSword : MonoBehaviour
     [SerializeField] private float fireTime;
     [SerializeField] private float nextfireRate;
     public int totalblocks;
-    public GameObject sword, newSword;
+    public GameObject sword, newSword, powerupSword;
     public Slider playerCrownSlider;
     int rand;
     int randcolors;
@@ -92,7 +92,7 @@ public class KnifeScriptSword : MonoBehaviour
             if (ischangecolor)
                 {
                 NewEffect = false;
-                _knife = Instantiate(sword, new Vector3(2.4f, transform.localPosition.y, transform.localPosition.z), Quaternion.identity);
+                _knife = Instantiate(powerupSword, new Vector3(2.4f, transform.localPosition.y, transform.localPosition.z), Quaternion.identity);
                     FindObjectOfType<NewFailScript>().Knifes.Add(_knife.gameObject.transform);
                 knifeCounter.knifeCountValue += 1;
                 randcolors++;
