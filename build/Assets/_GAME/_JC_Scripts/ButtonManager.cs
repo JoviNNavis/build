@@ -184,9 +184,12 @@ public class ButtonManager : MonoBehaviour
     public void noThanks()
     {
         SoundManger.soundctrl.playClip(tapSound);
-        rewardPanel.SetActive(false);
+        //rewardPanel.SetActive(false);
         levelPanel.SetActive(true);
-        ChestlosePanel.SetActive(false);
+      //  ChestlosePanel.SetActive(false);
+        Destroy(ChestlosePanel);
+        Destroy(rewardPanel);
+
     }
 
     public void Restart()
@@ -198,7 +201,9 @@ public class ButtonManager : MonoBehaviour
     public void BounsLvl()
     {
         SoundManger.soundctrl.playClip(tapSound);
-        levelPanel.SetActive(false);
+    //    levelPanel.SetActive(false);
+        Destroy(levelPanel);
+
         chestPanel.SetActive(true);
     }
 
@@ -211,7 +216,8 @@ public class ButtonManager : MonoBehaviour
     public void Lose()
     {
         SoundManger.soundctrl.playClip(tapSound);
-        ChestlosePanel.SetActive(false);
+        Destroy(ChestlosePanel);
+   //     ChestlosePanel.SetActive(false);
         levelPanel.SetActive(true);
     }
 
