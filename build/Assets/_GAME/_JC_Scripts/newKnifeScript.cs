@@ -23,8 +23,17 @@ public class newKnifeScript : MonoBehaviour
     public GameObject before_knife, after_Knife;
     void Start()
     {
-        xpos = gameObject.transform.position.x - 2f;
-       
+        if (mid.isskin)
+        {
+            xpos = gameObject.transform.position.x - 3f;
+
+        }
+        else
+        {
+            xpos = gameObject.transform.position.x - 2f;
+
+        }
+
     }
 
     // Update is called once per frame
@@ -84,7 +93,7 @@ public class newKnifeScript : MonoBehaviour
         {
             if (mid.isskin)
             {
-                fireRate = 3f;
+                fireRate = 3.5f;
                 Instantiate(sword, new Vector3(xpos, spanwPosy, transform.localPosition.z), Quaternion.Euler(-90, 0, 0));
 
             }
