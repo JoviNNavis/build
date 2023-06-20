@@ -8,11 +8,13 @@ public class Starf1 : MonoBehaviour
     public MeshCollider meshCol;
     public MeshRenderer spike;
     public FailScript1 failS;
+    public GameObject after;
     public Starf1 sript;
     public bool inpowermode;
    public bool touched;
     void Start()
     {
+        after.SetActive(false);
         sript = this;
         touched = false;
         meshCol = GetComponent<MeshCollider>();
@@ -56,12 +58,15 @@ public class Starf1 : MonoBehaviour
              {
 
                 meshCol.enabled = false;
+                after.SetActive(true);
             }
         else  if (!inpowermode)
             {
                 FindObjectOfType<FailScript1>().failed();
                 meshCol.enabled = false;
                 spike.enabled = false;
+                after.SetActive(true);
+
             }
 
         }
