@@ -5,13 +5,14 @@ using UnityEngine;
 public class SpikeScript : MonoBehaviour
 {
     public BonusKnifeScript knife;
-   
-
+    public GameObject afterspike;
+    public MeshRenderer mesh;
     public Animator anim;
 
     void Start()
     {
-        
+        afterspike.SetActive(false);
+        mesh = GetComponent<MeshRenderer>();
     }
 
     // Update is called once per frame
@@ -26,6 +27,10 @@ public class SpikeScript : MonoBehaviour
         {
             Destroy(other.gameObject);
             StartCoroutine(knifeDisable());
+            mesh.enabled = false;
+        afterspike.SetActive(true);
+
+           
         }
     }
 
