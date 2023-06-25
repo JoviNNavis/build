@@ -278,10 +278,10 @@ public class ButtonManager : MonoBehaviour
             return;*/
 
         GameData.SetCurrentScene(GameData.GetCurrentScene()+1);
-        //if (GameData.GetCurrentScene() >= 11)
-        //{
-        //    GameData.SetCurrentScene(1);
-        //}
+        if (GameData.GetCurrentScene() >= 11)
+        {
+            GameData.SetCurrentScene(1);
+        }
         Application.LoadLevel("Lvl " + GameData.GetCurrentScene());
     }
 
