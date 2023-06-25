@@ -170,6 +170,7 @@ public class NewFailScript : MonoBehaviour
             RenderSettings.skybox = skybox;
             RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
             combo.SetActive(false);
+            FindObjectOfType<KnifeScriptSword>().counterText.SetActive(false);
 
             swordKnife.enabled = false;
             Destroy(collision.gameObject, 0.1f);
@@ -186,6 +187,7 @@ public class NewFailScript : MonoBehaviour
             RenderSettings.skybox = skybox;
             RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
             combo.SetActive(false);
+            FindObjectOfType<KnifeScriptSword>().counterText.SetActive(false);
 
             swordKnife.enabled = false;
             Destroy(collision.gameObject, 0.1f);
@@ -201,6 +203,7 @@ public class NewFailScript : MonoBehaviour
             RenderSettings.skybox = skybox;
             RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
             combo.SetActive(false);
+            FindObjectOfType<KnifeScriptSword>().counterText.SetActive(false);
 
             swordKnife.enabled = false;
             Destroy(collision.gameObject, 0.1f);

@@ -52,7 +52,7 @@ public class KnifeScriptSword : MonoBehaviour
             Shooting();
             
         }
-        else
+        else 
         {
             StartCoroutine(txtDisable());
         }
@@ -81,7 +81,8 @@ public class KnifeScriptSword : MonoBehaviour
 
     void Shooting()
     {
-       
+            failNew.timer += Time.deltaTime;
+
         fireTime += Time.deltaTime;
         nextfireRate = 1 / fireRate;
         counterText.SetActive(true);
@@ -109,6 +110,7 @@ public class KnifeScriptSword : MonoBehaviour
             if(NewEffect && !ischangecolor)
             {
                 GameObject _knife = Instantiate(newSword, new Vector3(2.4f, transform.localPosition.y, transform.localPosition.z), Quaternion.identity);
+              
                 combo.SetActive(false);
                 FindObjectOfType<NewFailScript>().Knifes.Add(_knife.gameObject.transform);
                 knifeCounter.knifeCountValue += 1;
@@ -119,6 +121,7 @@ public class KnifeScriptSword : MonoBehaviour
                 playerCrownSlider.value += fillValue;
                 //PlayerRank.transform.position += new Vector3(rankValue, 0, 0);
                 fireTime = 0;
+              
             }
                 if(!NewEffect && !ischangecolor)
                 {
@@ -142,9 +145,13 @@ public class KnifeScriptSword : MonoBehaviour
 
     IEnumerator txtDisable()
     {
+
+        
         yield return new WaitForSeconds(0.75f);
         failNew.timer = 0;
-        //counterText.SetActive(false);
+        counterText.SetActive(false);
+    
+      
     }
 
 }

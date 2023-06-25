@@ -169,11 +169,11 @@ public class ResolutionAdjuster : MonoBehaviour
             LostPanel.transform.localScale = new Vector3(ipad, ipad, ipad);
 
 
-            RewardPanel.transform.localPosition = new Vector3(0, 250, 0);
-            nxtLvlPanel.transform.localPosition = new Vector3(0, 250, 0);
-            ChestLostPanel.transform.localPosition = new Vector3(0, 250, 0);
-            selectionPanel.transform.localPosition = new Vector3(0, 250, 0);
-            LostPanel.transform.localPosition = new Vector3(0, 250, 0);
+            RewardPanel.transform.localPosition = new Vector3(0, 0, 0);
+            nxtLvlPanel.transform.localPosition = new Vector3(0, 0, 0);
+            ChestLostPanel.transform.localPosition = new Vector3(0, 0, 0);
+            selectionPanel.transform.localPosition = new Vector3(0, 0, 0);
+            LostPanel.transform.localPosition = new Vector3(0, 0, 0);
         }
         if (Camera.main.aspect >= 0.74)
         {
@@ -185,11 +185,11 @@ public class ResolutionAdjuster : MonoBehaviour
             LostPanel.transform.localScale = new Vector3(ipad, ipad, ipad);
 
 
-            RewardPanel.transform.localPosition = new Vector3(0, 222, 0);
-            nxtLvlPanel.transform.localPosition = new Vector3(0, 222, 0);
-            ChestLostPanel.transform.localPosition = new Vector3(0, 222, 0);
-            selectionPanel.transform.localPosition = new Vector3(0, 222, 0);
-            LostPanel.transform.localPosition = new Vector3(0, 222, 0);
+            RewardPanel.transform.localPosition = new Vector3(0, 0, 0);
+            nxtLvlPanel.transform.localPosition = new Vector3(0, 0, 0);
+            ChestLostPanel.transform.localPosition = new Vector3(0, 0, 0);
+            selectionPanel.transform.localPosition = new Vector3(0, 0, 0);
+            LostPanel.transform.localPosition = new Vector3(0, 0, 0);
        //     Debug.LogError("ipad all versions");
 
         }

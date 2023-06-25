@@ -4,7 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 public class test : MonoBehaviour
 {
-
+    public GameObject cube;
     void Start()
     {
         
@@ -16,12 +16,20 @@ public class test : MonoBehaviour
             Debug.LogWarning("Bsll");
         }
     }
+
+
+    IEnumerator text()
+    {
+        cube.SetActive(true);
+        yield return new WaitForSeconds(1);
+        cube.SetActive(false);
+    }
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetMouseButtonDown(0))
         {
-            transform.DORotate(new Vector3(0, 0, -6), 0.25f, RotateMode.FastBeyond360);
+            StartCoroutine(text());
         }
     }
 }

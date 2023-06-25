@@ -95,7 +95,9 @@ public class KnifeScript : MonoBehaviour
                 NewEffect = false;
                 _knife = Instantiate(knifemat[randcolors], new Vector3(2.4f, transform.localPosition.y, transform.localPosition.z), Quaternion.identity);
                     FindObjectOfType<FailScript1>().Knifes.Add(_knife.gameObject.transform);
-                knifeCounter.knifeCountValue = FindObjectOfType<FailScript1>().Knifes.Count;
+                //      knifeCounter.knifeCountValue = FindObjectOfType<FailScript1>().Knifes.Count;
+                      knifeCounter.knifeCountValue += 1;
+
                 randcolors++;
                     transform.position += new Vector3(0, 0.7f, 0);
                     newBallPos.transform.position += new Vector3(0, 0.7f, 0);
@@ -121,8 +123,8 @@ public class KnifeScript : MonoBehaviour
 
                 fireRate = 14;
 
-                knifeCounter.knifeCountValue = FindObjectOfType<FailScript1>().Knifes.Count;
-
+                // knifeCounter.knifeCountValue = FindObjectOfType<FailScript1>().Knifes.Count;
+                knifeCounter.knifeCountValue += 1;
 
                 combovalue = 1;
                 transform.position += new Vector3(0, 0.7f, 0);
@@ -143,7 +145,8 @@ public class KnifeScript : MonoBehaviour
               
                 fireRate = 14;
 
-                knifeCounter.knifeCountValue = FindObjectOfType<FailScript1>().Knifes.Count;
+                // knifeCounter.knifeCountValue = FindObjectOfType<FailScript1>().Knifes.Count;
+                knifeCounter.knifeCountValue += 1;
 
 
                 combovalue = 1;
@@ -162,9 +165,9 @@ public class KnifeScript : MonoBehaviour
 
     IEnumerator txtDisable()
     {
-        yield return new WaitForSeconds(0.75f);
+        yield return new WaitForSeconds(1);
         fail1.timer = 0;
-        //counterText.SetActive(false);
+        counterText.SetActive(false);
     }
 
 }
