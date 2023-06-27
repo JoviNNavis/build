@@ -146,7 +146,7 @@ public class NewBallScript : MonoBehaviour
                 }
                 powerup_mode = true;
                 RenderSettings.skybox = skybox2;
-                RenderSettings.fogColor = FindObjectOfType<ColorScript>().after_fog;
+                //RenderSettings.fogColor = FindObjectOfType<ColorScript>().after_fog;
                 FindObjectOfType<ColorScript>().spikemat.color = FindObjectOfType<ColorScript>().aftercolor;
                 _fire.Play();
                 if (!abovelevel5)
@@ -176,7 +176,7 @@ public class NewBallScript : MonoBehaviour
 
                 water.material.SetColor("_BaseColor", _blue);
                 changecolor = false;
-              //  RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
+                RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
                 FindObjectOfType<ColorScript>().spikemat.color = FindObjectOfType<ColorScript>().beforecolor;
 
                 Rb.AddForce(transform.up * upForce, ForceMode.Force);
