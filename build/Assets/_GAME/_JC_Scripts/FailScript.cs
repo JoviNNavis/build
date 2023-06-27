@@ -131,7 +131,7 @@ public class FailScript : MonoBehaviour
             
 
             RenderSettings.skybox = skybox;
-            RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
+           // RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
             knife1.enabled = false;
             StartCoroutine(knifeR1());
         }

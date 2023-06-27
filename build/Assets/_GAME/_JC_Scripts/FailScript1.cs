@@ -183,7 +183,7 @@ public class FailScript1 : MonoBehaviour
 
             Destroy(pball, 0.12f);
             RenderSettings.skybox = skybox;
-            RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
+          //  RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
             Debug.Log("touched");
             StartCoroutine(knifeR3());
         }
