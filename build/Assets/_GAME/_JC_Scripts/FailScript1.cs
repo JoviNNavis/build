@@ -146,7 +146,7 @@ public class FailScript1 : MonoBehaviour
             Destroy(pball, 0.12f);
             StartCoroutine(knifeR1());
             RenderSettings.skybox =  skybox;
-           // RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
+            RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
             combo.SetActive(false);
             FindObjectOfType<KnifeScript>().counterText.SetActive(false);
             Debug.Log("touched");
@@ -161,7 +161,7 @@ public class FailScript1 : MonoBehaviour
             Destroy(collision.gameObject, 0.1f);
             Destroy(pball, 0.12f);
             RenderSettings.skybox = skybox;
-          //  RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
+          RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
             combo.SetActive(false);
             FindObjectOfType<KnifeScript>().counterText.SetActive(false);
 
@@ -183,7 +183,7 @@ public class FailScript1 : MonoBehaviour
 
             Destroy(pball, 0.12f);
             RenderSettings.skybox = skybox;
-          //  RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
+           RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
             Debug.Log("touched");
             StartCoroutine(knifeR3());
         }

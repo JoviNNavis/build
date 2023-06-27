@@ -146,7 +146,7 @@ public class NewBallScript : MonoBehaviour
                 }
                 powerup_mode = true;
                 RenderSettings.skybox = skybox2;
-                //RenderSettings.fogColor = FindObjectOfType<ColorScript>().after_fog;
+                RenderSettings.fogColor = FindObjectOfType<ColorScript>().after_fog;
                 FindObjectOfType<ColorScript>().spikemat.color = FindObjectOfType<ColorScript>().aftercolor;
                 _fire.Play();
                 if (!abovelevel5)

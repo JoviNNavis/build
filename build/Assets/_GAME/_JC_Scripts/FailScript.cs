@@ -131,7 +131,7 @@ public class FailScript : MonoBehaviour
             
 
             RenderSettings.skybox = skybox;
-           // RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
+            RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
             knife1.enabled = false;
             StartCoroutine(knifeR1());
         }
@@ -145,7 +145,7 @@ public class FailScript : MonoBehaviour
            Destroy(pball, 0.22f);
          
             RenderSettings.skybox = skybox;
-           // RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
+            RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
             knife1.enabled = false;
             StartCoroutine(knifeR2());
 
@@ -162,7 +162,7 @@ public class FailScript : MonoBehaviour
 
 
             RenderSettings.skybox = skybox;
-         //   RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
+            RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
             knife1.enabled = false;
             StartCoroutine(knifeR3());
 
