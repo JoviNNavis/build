@@ -168,7 +168,7 @@ public class NewFailScript : MonoBehaviour
             SoundManger.soundctrl.playClip(ballPunture);
             //knife1.enabled = false;
             RenderSettings.skybox = skybox;
-            RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
+          //  RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
             combo.SetActive(false);
             FindObjectOfType<KnifeScriptSword>().counterText.SetActive(false);
 
@@ -185,7 +185,7 @@ public class NewFailScript : MonoBehaviour
             SoundManger.soundctrl.playClip(ballPunture);
             //knife1.enabled = false;
             RenderSettings.skybox = skybox;
-            RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
+           // RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
             combo.SetActive(false);
             FindObjectOfType<KnifeScriptSword>().counterText.SetActive(false);
 
