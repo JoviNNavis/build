@@ -22,7 +22,7 @@ public class ColorScript : MonoBehaviour
     void Start()
     {
         fog = new Color32(207, 207, 207, 255);
-        after_fog = new Color32(207, 145, 249, 255);
+        after_fog = new Color32(165, 148, 255, 206);
         up_color_level5 = new Color32(185, 99, 34, 255);
         down_color_level5 = new Color32(223, 144, 82, 255);
         up_color_level1 = new Color32(180, 180, 180, 255);
