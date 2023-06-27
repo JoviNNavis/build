@@ -176,7 +176,7 @@ public class NewBallScript : MonoBehaviour
 
                 water.material.SetColor("_BaseColor", _blue);
                 changecolor = false;
-                RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
+              //  RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
                 FindObjectOfType<ColorScript>().spikemat.color = FindObjectOfType<ColorScript>().beforecolor;
 
                 Rb.AddForce(transform.up * upForce, ForceMode.Force);

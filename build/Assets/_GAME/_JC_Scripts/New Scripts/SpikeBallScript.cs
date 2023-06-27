@@ -63,7 +63,7 @@ public class SpikeBallScript : MonoBehaviour
                 SoundManger.soundctrl.playClip(fireBallbounce);
                 camAnim.SetBool("Move", true);
                 FindObjectOfType<ButtonManager>().changecolor = true;
-                RenderSettings.fogColor = FindObjectOfType<ColorScript>().after_fog;
+                //RenderSettings.fogColor = FindObjectOfType<ColorScript>().after_fog;
                 FindObjectOfType<Starf1>().inpowermode = true;
 
                 float _newUpforce = upForce + 150;
