@@ -57,7 +57,7 @@ public class SpikeBallScript : MonoBehaviour
     {
 
         _coll.enabled = false;
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.5f);
         _coll.enabled = true;
         //  Rb.useGravity = true;
     }
