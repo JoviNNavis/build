@@ -12,7 +12,7 @@ public class SpikeBallScript : MonoBehaviour
     public Material skybox2;
     public TrailRenderer tail;
     private Rigidbody Rb;
-
+    public Collider _coll;
     public Animator camAnim;
 
     public AudioClip ballBounce, fireBallbounce;
@@ -22,7 +22,7 @@ public class SpikeBallScript : MonoBehaviour
         RenderSettings.skybox = skybox;
         RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;
         RenderSettings.fogColor = new Color32(207,207,207,255);
-
+        _coll = GetComponent<Collider>();
 
 
         Rb = GetComponent<Rigidbody>();
@@ -53,7 +53,14 @@ public class SpikeBallScript : MonoBehaviour
             Rb.AddForce(transform.up * upForce);
         }
     }
+    IEnumerator colliders()
+    {
 
+        _coll.enabled = false;
+        yield return new WaitForSeconds(0.3f);
+        _coll.enabled = true;
+        //  Rb.useGravity = true;
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Knife"))
@@ -65,7 +72,7 @@ public class SpikeBallScript : MonoBehaviour
                 FindObjectOfType<ButtonManager>().changecolor = true;
                 RenderSettings.fogColor = FindObjectOfType<ColorScript>().after_fog;
                 FindObjectOfType<Starf1>().inpowermode = true;
-
+                StartCoroutine(colliders());
                 float _newUpforce = upForce + 150;
                 Rb.AddForce(transform.up * _newUpforce, ForceMode.Force);
                 powerup_mode = true;
@@ -82,7 +89,7 @@ public class SpikeBallScript : MonoBehaviour
                 _fire.Pause();
                 _fire.Clear();
                 FindObjectOfType<Starf1>().inpowermode = false;
-
+                StartCoroutine(colliders());
                 camAnim.SetBool("Move", false);
                 powerup_mode = false;
                 FindObjectOfType<ButtonManager>().changecolor = false;
