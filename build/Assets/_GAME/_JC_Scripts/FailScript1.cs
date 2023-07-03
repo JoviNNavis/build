@@ -25,6 +25,10 @@ public class FailScript1 : MonoBehaviour
     public float lessValue;
 
     public AudioClip ballPunture;
+
+    public AudioClip knifeHit;
+    public AudioClip knifeBack;
+
     public int cou;
     public Transform emptyObj;
 
@@ -192,6 +196,7 @@ public class FailScript1 : MonoBehaviour
     {
         yield return new WaitForSeconds(0.2f);
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.08f, false).OnComplete(knifeRemove);
+        SoundManger.soundctrl.playClip(knifeHit);
         yield return new WaitForSeconds(0.5f);
         knife1.enabled = true;
         GameObject oldBall =  Instantiate(newBall, newBallPos.position, Quaternion.identity);
@@ -202,12 +207,14 @@ public class FailScript1 : MonoBehaviour
     {
         yield return new WaitForSeconds(0.2f);
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.08f, false).OnComplete(knifeRemove);
+        SoundManger.soundctrl.playClip(knifeHit);
         playerImg.fillAmount -= lessValue;
         playerCrownSlider.value -= lessValue;
         KnifePlayer.transform.position -= new Vector3(0, 0.7f, 0);
         newBallPos.transform.position -= new Vector3(0, 0.7f, 0);
         yield return new WaitForSeconds(0.1f);
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.08f, false).OnComplete(knifeRemove);
+        SoundManger.soundctrl.playClip(knifeHit);
         playerImg.fillAmount -= lessValue;
         playerCrownSlider.value -= lessValue;
         KnifePlayer.transform.position -= new Vector3(0, 0.7f, 0);
@@ -222,6 +229,7 @@ public class FailScript1 : MonoBehaviour
     {
         yield return new WaitForSeconds(0.2f);
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.08f, false).OnComplete(knifeRemove);
+        SoundManger.soundctrl.playClip(knifeBack);
         playerImg.fillAmount -= lessValue;
         playerCrownSlider.value -= lessValue;
         KnifePlayer.transform.position -= new Vector3(0, 0.7f, 0);

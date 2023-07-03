@@ -1250,6 +1250,8 @@ MonoBehaviour:
   combo: {fileID: 2282955359136919960}
   playerImg: {fileID: 540431832}
   ballPunture: {fileID: 8300000, guid: b485a744ad289bc4fa50aaa47e43b96a, type: 3}
+  knifeHit: {fileID: 8300000, guid: 60f11383c193e3244ba00919fcebedd6, type: 3}
+  knifeBack: {fileID: 8300000, guid: 4515f4d3dfd4f1241a6986e47287d9a7, type: 3}
   winValue: 61
   winCubeCollider: {fileID: 837195048}
   timer: 0
@@ -7184,6 +7186,8 @@ MonoBehaviour:
   combo: {fileID: 0}
   playerImg: {fileID: 540431832}
   ballPunture: {fileID: 0}
+  knifeHit: {fileID: 0}
+  knifeBack: {fileID: 0}
   winValue: 0
   winCubeCollider: {fileID: 0}
   timer: 0
@@ -7225,6 +7229,8 @@ MonoBehaviour:
   combo: {fileID: 0}
   playerImg: {fileID: 540431832}
   ballPunture: {fileID: 0}
+  knifeHit: {fileID: 0}
+  knifeBack: {fileID: 0}
   winValue: 0
   winCubeCollider: {fileID: 0}
   timer: 0
@@ -10276,6 +10282,7 @@ MonoBehaviour:
   islevelcompleted: 0
   changecolor: 0
   tail: {fileID: 872044070}
+  _coll: {fileID: 0}
   camAnim: {fileID: 1228945780}
   ballBounce: {fileID: 8300000, guid: 30645f3aee2e5da4aa240094992e6412, type: 3}
   fireBall: {fileID: 8300000, guid: faf8ca3c1e73dd04a8ccd54d82e5e9e6, type: 3}
