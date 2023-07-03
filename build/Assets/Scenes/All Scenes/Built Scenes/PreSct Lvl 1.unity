@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.14021131, g: 0.7094693, b: 0.9917381, a: 1}
+  m_IndirectSpecularColor: {r: 0.1402113, g: 0.7094693, b: 0.9917381, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -601,6 +601,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &25542838
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1272,6 +1273,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &102589847
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1720,6 +1722,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &125126638
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2097,6 +2100,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &136021638
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2296,6 +2300,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &139468717
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2641,6 +2646,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &184650731
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3024,6 +3030,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &214004674
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3154,6 +3161,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &215796299
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3630,6 +3638,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &244710616
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3978,6 +3987,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &287068865
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9681,11 +9691,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 587781869}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 261.7358, y: -4.779}
+  m_AnchoredPosition: {x: 261.7358, y: 26}
   m_SizeDelta: {x: 71.295, y: 124.747}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &354418909
@@ -9840,6 +9850,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &355278957
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10291,6 +10302,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &372013896
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10459,6 +10471,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &376242217
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10877,6 +10890,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &394020359
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11558,6 +11572,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &443813831
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11958,6 +11973,7 @@ MonoBehaviour:
   soundON: {fileID: 0}
   soundOFF: {fileID: 0}
   retryButton: {fileID: 0}
+  newFail: {fileID: 0}
 --- !u!1 &508017724
 GameObject:
   m_ObjectHideFlags: 0
@@ -12533,6 +12549,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &526831224
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12663,6 +12680,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &542384572
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12793,6 +12811,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &547279676
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13089,7 +13108,6 @@ GameObject:
   m_Component:
   - component: {fileID: 587781869}
   - component: {fileID: 587781871}
-  - component: {fileID: 587781870}
   m_Layer: 5
   m_Name: Console
   m_TagString: uibuttons
@@ -13106,50 +13124,19 @@ RectTransform:
   m_GameObject: {fileID: 587781868}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.15, y: 1.15, z: 1.15}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 1.2494793, y: 1.1891084, z: 1.269025}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2113400641}
-  - {fileID: 1174011540}
   - {fileID: 354418908}
   m_Father: {fileID: 212066013}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -343, y: -80}
+  m_AnchoredPosition: {x: -288, y: -109}
   m_SizeDelta: {x: 380.8, y: 354.59998}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &587781870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 587781868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7ea5a59ac658f1a4db6c9d5f2e77fbca, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &587781871
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13480,16 +13467,16 @@ RectTransform:
   m_GameObject: {fileID: 607764559}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6944878, y: 0.8927315, z: 0.83206}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1879804015}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 0.4717992}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 216, y: 216}
+  m_AnchoredPosition: {x: -3.8939, y: 1}
+  m_SizeDelta: {x: 237.6707, y: 212.4202}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &607764561
 MonoBehaviour:
@@ -13504,7 +13491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8509804, g: 0.8509804, b: 0.8509804, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -13757,6 +13744,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &610058331
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14420,6 +14408,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &667706452
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14550,6 +14539,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &674860705
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15108,6 +15098,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &722296484
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16001,6 +15992,7 @@ MonoBehaviour:
   text: {fileID: 0}
   target: {fileID: 0}
   aiTarget: {fileID: 0}
+  comboText: {fileID: 0}
   lostPanel: {fileID: 0}
   islevelcompleted: 0
   isLost: 0
@@ -16009,6 +16001,11 @@ MonoBehaviour:
   rayball: {fileID: 0}
   playerNewObj: {fileID: 0}
   aiNewObj: {fileID: 0}
+  ball: {fileID: 0}
+  ballPos: {fileID: 0}
+  BelowLevel5: 0
+  fail: {fileID: 0}
+  newFail: {fileID: 0}
 --- !u!54 &837195052
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16139,6 +16136,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &843430518
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16572,6 +16570,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &868486825
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17600,6 +17599,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &950246487
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22976,6 +22976,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &1000735543
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23483,6 +23484,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &1027952012
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23916,6 +23918,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &1077962257
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24804,7 +24807,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1166371220}
   - component: {fileID: 1166371223}
-  - component: {fileID: 1166371222}
   m_Layer: 5
   m_Name: Knife skin button
   m_TagString: uibuttons
@@ -24821,7 +24823,7 @@ RectTransform:
   m_GameObject: {fileID: 1166371219}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.19, y: 1.19, z: 1.19}
+  m_LocalScale: {x: 1.2528322, y: 1.19, z: 1.19}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 334370800}
@@ -24832,39 +24834,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 108, y: -80}
+  m_AnchoredPosition: {x: 156, y: -106}
   m_SizeDelta: {x: 380.8, y: 354.59998}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1166371222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1166371219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7ea5a59ac658f1a4db6c9d5f2e77fbca, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1166371223
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24987,82 +24959,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.50000006
   m_Center: {x: -0.0000038146973, y: 0.0000076293945, z: 0}
---- !u!1 &1174011539
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1174011540}
-  - component: {fileID: 1174011542}
-  - component: {fileID: 1174011541}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1174011540
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1174011539}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2550085, y: 1.2550085, z: 1.2550085}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 587781869}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 216, y: 216}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1174011541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1174011539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8639a377c42d63142a0b3a9e766a0313, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1174011542
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1174011539}
-  m_CullTransparentMesh: 1
 --- !u!1 &1176789027
 GameObject:
   m_ObjectHideFlags: 0
@@ -25177,6 +25073,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &1176789033
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25680,6 +25577,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &1207738566
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25978,6 +25876,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &1253692808
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26479,6 +26378,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &1314735135
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26837,6 +26737,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &1340237158
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27403,6 +27304,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &1367851027
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27607,6 +27509,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &1380973988
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28256,6 +28159,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &1436495818
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28386,6 +28290,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &1443066546
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28592,6 +28497,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &1451514158
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28802,6 +28708,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &1457399702
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29013,6 +28920,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &1468424641
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29244,6 +29152,7 @@ MonoBehaviour:
   knife: {fileID: 0}
   knife1: {fileID: 0}
   isOver: 0
+  missKniePanel: {fileID: 0}
   losePanel: {fileID: 0}
   Balls: []
   ANIMBalls: []
@@ -29598,6 +29507,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &1499662639
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29624,7 +29534,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1502361412}
   - component: {fileID: 1502361414}
-  - component: {fileID: 1502361413}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -29641,7 +29550,7 @@ RectTransform:
   m_GameObject: {fileID: 1502361411}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.274, y: 1.274, z: 1.274}
+  m_LocalScale: {x: 1.2420737, y: 1.1606778, z: 1.274}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1763529511}
@@ -29652,36 +29561,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.000061035156, y: 0.000010412354}
   m_SizeDelta: {x: 216, y: 216}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1502361413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1502361411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 338553565373c37408f24e14ab2c1df2, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1502361414
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -34703,6 +34582,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &1520943190
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -36008,6 +35888,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &1644145689
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -36605,6 +36486,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &1762525655
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -36631,7 +36513,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1763529511}
   - component: {fileID: 1763529513}
-  - component: {fileID: 1763529512}
   m_Layer: 5
   m_Name: Tool
   m_TagString: uibuttons
@@ -36648,8 +36529,8 @@ RectTransform:
   m_GameObject: {fileID: 1763529510}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.19, y: 1.19, z: 1.19}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 1.2653657, y: 1.219512, z: 1.219512}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 861781894}
   - {fileID: 1502361412}
@@ -36658,39 +36539,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 245.00003, y: -80}
+  m_AnchoredPosition: {x: 261, y: -108}
   m_SizeDelta: {x: 380.8, y: 354.59998}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1763529512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1763529510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7ea5a59ac658f1a4db6c9d5f2e77fbca, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1763529513
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -37029,6 +36880,7 @@ MonoBehaviour:
   nextfireRate: 1
   totalblocks: 0
   knife: {fileID: 2590846551577548752, guid: 39cb3fbf5d4a3204193067cfa5a9c73b, type: 3}
+  newKnife: {fileID: 0}
   playerCrownSlider: {fileID: 0}
   newBallPos: {fileID: 1538187924}
   playerImg: {fileID: 50878900}
@@ -37039,6 +36891,8 @@ MonoBehaviour:
   combovalue: 0
   knifeThrow: {fileID: 0}
   _text: {fileID: 0}
+  fail1: {fileID: 0}
+  NewEffect: 0
 --- !u!1 &1828264437
 GameObject:
   m_ObjectHideFlags: 0
@@ -37153,6 +37007,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &1828264443
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -37411,7 +37266,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1879804015}
   - component: {fileID: 1879804017}
-  - component: {fileID: 1879804016}
   m_Layer: 5
   m_Name: Lock
   m_TagString: uibuttons
@@ -37429,7 +37283,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.19, y: 1.19, z: 1.19}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 119250985}
   - {fileID: 607764560}
@@ -37439,39 +37293,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -213, y: -80}
+  m_AnchoredPosition: {x: -183, y: -111}
   m_SizeDelta: {x: 380.80005, y: 354.59998}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1879804016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1879804014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7ea5a59ac658f1a4db6c9d5f2e77fbca, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1879804017
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -37594,6 +37418,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &1880027713
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -37620,7 +37445,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1889442378}
   - component: {fileID: 1889442380}
-  - component: {fileID: 1889442379}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -37648,36 +37472,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 206, y: 206}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1889442379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1889442377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 31d46f33a5434c44f80a34fc3be708f4, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1889442380
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -37897,11 +37691,12 @@ MonoBehaviour:
   fireTime1: 2
   nextfireRate1: 2
   newBallPos: {fileID: 0}
-  AiPalce: {fileID: 349829554}
+  aiSlider: {fileID: 0}
   rndclr: 0
   rankValue: 12.5
   aicolor: 0
   Knife: {fileID: 2590846551577548752, guid: b1df1881c2835ee4ea799456e4a9c975, type: 3}
+  newKnife: {fileID: 0}
   knifeThrow: {fileID: 0}
 --- !u!1 &1925368877
 GameObject:
@@ -38309,6 +38104,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &1944034907
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -38439,6 +38235,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &1954832368
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -38816,14 +38613,21 @@ MonoBehaviour:
   Knifes: []
   knife1: {fileID: 1817783779}
   KnifePlayer: {fileID: 1817783777}
+  skybox: {fileID: 0}
   newBall: {fileID: 2857406669346811751, guid: cbdaac8ee8426b3469b5c062c5869c93, type: 3}
   newBallPos: {fileID: 1538187924}
   puntured_ball: {fileID: 0}
+  combo: {fileID: 0}
   playerCrownSlider: {fileID: 0}
   playerImg: {fileID: 50878900}
   lessValue: 0
   ballPunture: {fileID: 0}
+  cou: 0
   emptyObj: {fileID: 0}
+  BelowLevel5: 0
+  winValue: 0
+  timer: 0
+  knifescript: {fileID: 0}
 --- !u!1 &2007718616
 GameObject:
   m_ObjectHideFlags: 0
@@ -39399,6 +39203,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &2058135863
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -39718,6 +39523,7 @@ MonoBehaviour:
   blast: {fileID: 0}
   stacks: {fileID: 431842322}
   knifeHit: {fileID: 0}
+  stackCount: {fileID: 0}
 --- !u!54 &2092528839
 Rigidbody:
   m_ObjectHideFlags: 0
