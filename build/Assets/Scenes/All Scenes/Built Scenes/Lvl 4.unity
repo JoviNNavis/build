@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1402113, g: 0.7094693, b: 0.9917381, a: 1}
+  m_IndirectSpecularColor: {r: 0.14021131, g: 0.7094693, b: 0.9917381, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -94036,6 +94036,8 @@ MonoBehaviour:
   playerImg: {fileID: 1029748663}
   lessValue: 0.0074
   ballPunture: {fileID: 8300000, guid: b485a744ad289bc4fa50aaa47e43b96a, type: 3}
+  knifeHit: {fileID: 8300000, guid: 60f11383c193e3244ba00919fcebedd6, type: 3}
+  knifeBack: {fileID: 8300000, guid: 4515f4d3dfd4f1241a6986e47287d9a7, type: 3}
   cou: 0
   emptyObj: {fileID: 290051486}
   BelowLevel5: 0
@@ -109651,6 +109653,8 @@ MonoBehaviour:
   playerImg: {fileID: 1029748663}
   lessValue: 0
   ballPunture: {fileID: 0}
+  knifeHit: {fileID: 0}
+  knifeBack: {fileID: 0}
   cou: 0
   emptyObj: {fileID: 0}
   BelowLevel5: 0

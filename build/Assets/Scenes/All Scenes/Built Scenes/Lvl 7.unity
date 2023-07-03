@@ -57697,6 +57697,8 @@ MonoBehaviour:
   playerImg: {fileID: 50878900}
   lessValue: 0.015
   ballPunture: {fileID: 8300000, guid: b485a744ad289bc4fa50aaa47e43b96a, type: 3}
+  knifeHit: {fileID: 8300000, guid: 60f11383c193e3244ba00919fcebedd6, type: 3}
+  knifeBack: {fileID: 8300000, guid: 4515f4d3dfd4f1241a6986e47287d9a7, type: 3}
   cou: 0
   emptyObj: {fileID: 1732502739}
   BelowLevel5: 0
