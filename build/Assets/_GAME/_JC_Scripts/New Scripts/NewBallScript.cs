@@ -65,7 +65,7 @@ public class NewBallScript : MonoBehaviour
     void Update()
     {
         skyboxbefore = FindObjectOfType<ButtonManager>().BeforeSkybox;
-        if (level <= 4)
+        if (level <= 5)
         {
             abovelevel5 = false;
         }
@@ -110,7 +110,7 @@ public class NewBallScript : MonoBehaviour
     {
 
         _coll.enabled = false;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
         _coll.enabled = true;
         //  Rb.useGravity = true;
     }
