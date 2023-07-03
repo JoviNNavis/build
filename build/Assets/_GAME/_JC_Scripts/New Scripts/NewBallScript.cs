@@ -18,7 +18,7 @@ public class NewBallScript : MonoBehaviour
     public bool changecolor;
     public TrailRenderer tail;
     private Rigidbody Rb;
-
+    public Collider _coll;
     public Animator camAnim;
 
     public AudioClip ballBounce, fireBall;
@@ -35,6 +35,7 @@ public class NewBallScript : MonoBehaviour
     {
         Debug.Log(GameData.GetCurrentScene() + " Was Current Scene");
         Debug.Log(PlayerPrefs.GetInt("SavedScene") + " Was Current Scene");
+        _coll = GetComponent<Collider>();
         if (level <= 4)
         {
             abovelevel5 = false;
@@ -105,18 +106,18 @@ public class NewBallScript : MonoBehaviour
 
         }
     }
-    //IEnumerator animations()
-    //{
-      
-    //  //  Rb.useGravity = false;
-    //    yield return new WaitForSeconds(0.3f);
+    IEnumerator colliders()
+    {
 
-    //  //  Rb.useGravity = true;
-    //}
+        _coll.enabled = false;
+        yield return new WaitForSeconds(0.5f);
+        _coll.enabled = true;
+        //  Rb.useGravity = true;
+    }
 
     //IEnumerator poweranimations()
     //{
-     
+
     //   // Rb.useGravity = false;
     //    yield return new WaitForSeconds(0.4f);
 
@@ -136,7 +137,7 @@ public class NewBallScript : MonoBehaviour
                 float _newUpforce = upForce + 200;
        
              
-              //  StartCoroutine(poweranimations());
+              StartCoroutine(colliders());
 
               Rb.AddForce(transform.up * _newUpforce, ForceMode.Force);
                
@@ -173,6 +174,7 @@ public class NewBallScript : MonoBehaviour
                 }
            
                 RenderSettings.skybox = skyboxbefore;
+                StartCoroutine(colliders());
 
                 water.material.SetColor("_BaseColor", _blue);
                 changecolor = false;
