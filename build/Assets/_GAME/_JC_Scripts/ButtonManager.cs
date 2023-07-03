@@ -54,7 +54,7 @@ public class ButtonManager : MonoBehaviour
     public GameObject retryButton;
 
     public NewFailScript newFail;
-
+    public Animator text;
     void Start()
     {
 

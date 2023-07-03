@@ -31,7 +31,7 @@ public class KnifeScriptSword : MonoBehaviour
     public AudioClip knifeThrow;
 
     public bool NewEffect;
-
+    public float animtime;
     public NewFailScript failNew;
 
     void Start()
@@ -42,30 +42,57 @@ public class KnifeScriptSword : MonoBehaviour
 
     void Update()
     {
-       
+        Animator anim = FindObjectOfType<ButtonManager>().text;
         ischangecolor = FindObjectOfType<ButtonManager>().changecolor;
        
         transform.Rotate(3f, 0, 0);
         playerchangecolor = FindObjectOfType<ButtonManager>().changecolor;
-        if (Input.GetMouseButton(1))
+        if (Input.GetMouseButtonDown(1))
         {
-            Shooting();
-            
+            counterText.SetActive(true);
         }
-        else 
+        else if(Input.GetMouseButtonUp(1))
         {
             StartCoroutine(txtDisable());
         }
-
-        if (Input.touchCount > 0)
+        if (Input.GetMouseButton(1))
         {
-            Touch touch = Input.GetTouch(0);
+            Shooting();
+            //animtime += Time.deltaTime;
+            //animtime = 0;
+            //if (animtime >= 3)
+            //{
+            //    anim.enabled = false;
+            //    animtime = 0;
+            //}
+            //else if (animtime < 3)
+            //{
+            //    anim.enabled = false;
+            //}
 
-            if (touch.phase == TouchPhase.Began)
-            {
-                
-                isTouch = true;
-            }
+
+
+        }
+
+
+        Touch touch = Input.GetTouch(0);
+        animtime += Time.deltaTime;
+        animtime = 0;
+        if (touch.phase == TouchPhase.Began)
+        {
+
+            isTouch = true;
+            //if (animtime >= 3)
+            //{
+            //    anim.enabled = false;
+            //    animtime = 0;
+            //}
+            //else if (animtime < 3)
+            //{
+            //    anim.enabled = false;
+            //}
+
+
             if (touch.phase == TouchPhase.Ended)
             {
                 StartCoroutine(txtDisable());
@@ -147,7 +174,7 @@ public class KnifeScriptSword : MonoBehaviour
     {
 
         
-        yield return new WaitForSeconds(0.75f);
+        yield return new WaitForSeconds(2.5f);
         failNew.timer = 0;
         counterText.SetActive(false);
     

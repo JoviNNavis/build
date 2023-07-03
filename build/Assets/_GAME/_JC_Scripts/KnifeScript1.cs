@@ -28,7 +28,7 @@ public class KnifeScript1 : MonoBehaviour
     public AudioClip hit;
 
     public FailScript failScript;
-
+    public float animtime;
     public bool newEffect;
 
     void Start()
@@ -40,28 +40,59 @@ public class KnifeScript1 : MonoBehaviour
     void Update()
     {
         ischangecolor = FindObjectOfType<ButtonManager>().changecolor;
+        Animator anim = FindObjectOfType<ButtonManager>().text;
         transform.Rotate(3f, 0, 0);
-        if (Input.GetMouseButton(0))
+
+       
+        if (Input.GetMouseButtonDown(1))
         {
-            failScript.timer += Time.deltaTime;
             countText.SetActive(true);
-            Shooting();
         }
-        else
+        else if (Input.GetMouseButtonUp(1))
         {
             StartCoroutine(txtDisable());
         }
-
-        if (Input.touchCount > 0)
+        if (Input.GetMouseButton(0))
         {
-            Touch touch = Input.GetTouch(0);
 
-            if (touch.phase == TouchPhase.Began)
-            {
-                isTouch = true;
+            //animtime += Time.deltaTime;
+            //animtime = 0;
+            //if (animtime >= 3)
+            //{
+            //    anim.enabled = false;
+            //    animtime = 0;
+            //}
+            //else if (animtime < 3)
+            //{
+            //    anim.enabled = false;
+            //}
+
+            failScript.timer += Time.deltaTime;
+           anim.enabled = true;
+
             countText.SetActive(true);
+            Shooting();
+        }
 
-            }
+
+        Touch touch = Input.GetTouch(0);
+        animtime += Time.deltaTime;
+        animtime = 0;
+        if (touch.phase == TouchPhase.Began)
+        {
+
+            isTouch = true;
+            //if (animtime >= 3)
+            //{
+            //    anim.enabled = false;
+            //    animtime = 0;
+            //}
+            //else if (animtime < 3)
+            //{
+            //    anim.enabled = false;
+            //}
+
+
 
             if (touch.phase == TouchPhase.Ended)
             {
@@ -136,7 +167,7 @@ public class KnifeScript1 : MonoBehaviour
 
     IEnumerator txtDisable()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2.5f);
         failScript.timer = 0;
         countText.SetActive(false);
     }
