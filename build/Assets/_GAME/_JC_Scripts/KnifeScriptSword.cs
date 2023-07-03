@@ -174,7 +174,7 @@ public class KnifeScriptSword : MonoBehaviour
     {
 
         
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(1.75f);
         failNew.timer = 0;
         counterText.SetActive(false);
     
