@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.14021131, g: 0.7094693, b: 0.9917381, a: 1}
+  m_IndirectSpecularColor: {r: 0.1402113, g: 0.7094693, b: 0.9917381, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -44146,7 +44146,7 @@ RectTransform:
   m_GameObject: {fileID: 1044208826}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.66725, y: 0.24464786, z: 0.66725}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 364440461}
@@ -44154,8 +44154,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -459}
-  m_SizeDelta: {x: 2320, y: 1487}
+  m_AnchoredPosition: {x: 0, y: -481}
+  m_SizeDelta: {x: 2320, y: 1448}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1044208828
 MonoBehaviour:
@@ -54843,6 +54843,7 @@ MonoBehaviour:
   islevelcompleted: 0
   changecolor: 0
   tail: {fileID: 1486550696}
+  _coll: {fileID: 0}
   camAnim: {fileID: 1228945780}
   ballBounce: {fileID: 8300000, guid: 30645f3aee2e5da4aa240094992e6412, type: 3}
   fireBall: {fileID: 8300000, guid: faf8ca3c1e73dd04a8ccd54d82e5e9e6, type: 3}
