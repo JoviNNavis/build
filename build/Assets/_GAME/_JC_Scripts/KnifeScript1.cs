@@ -44,11 +44,11 @@ public class KnifeScript1 : MonoBehaviour
         transform.Rotate(3f, 0, 0);
 
        
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(0))
         {
             countText.SetActive(true);
         }
-        else if (Input.GetMouseButtonUp(1))
+        else if (Input.GetMouseButtonUp(0))
         {
             StartCoroutine(txtDisable());
         }
@@ -68,8 +68,7 @@ public class KnifeScript1 : MonoBehaviour
             //}
 
             failScript.timer += Time.deltaTime;
-           anim.enabled = true;
-
+          
             countText.SetActive(true);
             Shooting();
         }
