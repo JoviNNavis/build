@@ -74,36 +74,39 @@ public class KnifeScriptSword : MonoBehaviour
 
         }
 
-
-        Touch touch = Input.GetTouch(0);
-        animtime += Time.deltaTime;
-        animtime = 0;
-        if (touch.phase == TouchPhase.Began)
+        if(Input.touchCount > 0)
         {
-
-            isTouch = true;
-            //if (animtime >= 3)
-            //{
-            //    anim.enabled = false;
-            //    animtime = 0;
-            //}
-            //else if (animtime < 3)
-            //{
-            //    anim.enabled = false;
-            //}
-
-
-            if (touch.phase == TouchPhase.Ended)
+            Touch touch = Input.GetTouch(0);
+            animtime += Time.deltaTime;
+            animtime = 0;
+            if (touch.phase == TouchPhase.Began)
             {
-                StartCoroutine(txtDisable());
-                isTouch = false;
-            }
 
-            if (isTouch)
-            {         
-                Shooting();
+                isTouch = true;
+                //if (animtime >= 3)
+                //{
+                //    anim.enabled = false;
+                //    animtime = 0;
+                //}
+                //else if (animtime < 3)
+                //{
+                //    anim.enabled = false;
+                //}
+
+
+                if (touch.phase == TouchPhase.Ended)
+                {
+                    StartCoroutine(txtDisable());
+                    isTouch = false;
+                }
+
+                if (isTouch)
+                {
+                    Shooting();
+                }
             }
         }
+        
     }
 
     void Shooting()

@@ -3748,7 +3748,7 @@ MonoBehaviour:
   sword: {fileID: 2590846551577548752, guid: 97308d58724492947a58ac453fd0181a, type: 3}
   knifeCountText: {fileID: 1925368879}
   knifeCount: 50
-  spanwPosy: 43.4
+  spanwPosy: 43.3
   before_knife: {fileID: 601645289}
   after_Knife: {fileID: 6461745233948240225}
 --- !u!1 &284185179
@@ -11158,7 +11158,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &431842323
 Transform:
   m_ObjectHideFlags: 0
@@ -12214,6 +12214,7 @@ MonoBehaviour:
   soundOFF: {fileID: 5875917509985680439}
   retryButton: {fileID: 127480848}
   newFail: {fileID: 985168633705316093}
+  text: {fileID: 0}
 --- !u!1 &508017724
 GameObject:
   m_ObjectHideFlags: 0
@@ -43782,6 +43783,7 @@ MonoBehaviour:
   knifeThrow: {fileID: 8300000, guid: 60f11383c193e3244ba00919fcebedd6, type: 3}
   _text: {fileID: 1439403985}
   fail1: {fileID: 985168633705316085}
+  animtime: 0
   NewEffect: 0
 --- !u!114 &1817783780
 MonoBehaviour:
@@ -43816,6 +43818,7 @@ MonoBehaviour:
   counterText: {fileID: 1033613528}
   knifeThrow: {fileID: 8300000, guid: 60f11383c193e3244ba00919fcebedd6, type: 3}
   NewEffect: 0
+  animtime: 0
   failNew: {fileID: 985168633705316093}
 --- !u!1 &1828264437
 GameObject:
@@ -57882,6 +57885,8 @@ MonoBehaviour:
   lessValue: 0.015
   cou: 0
   ballPunture: {fileID: 8300000, guid: b485a744ad289bc4fa50aaa47e43b96a, type: 3}
+  knifeHit: {fileID: 8300000, guid: 60f11383c193e3244ba00919fcebedd6, type: 3}
+  knifeBack: {fileID: 8300000, guid: 4515f4d3dfd4f1241a6986e47287d9a7, type: 3}
   emptyObj: {fileID: 1732502739}
   isSkinEnabled: 0
   winValue: 62

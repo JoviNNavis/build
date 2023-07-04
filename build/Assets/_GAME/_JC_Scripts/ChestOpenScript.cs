@@ -24,16 +24,16 @@ public class ChestOpenScript : MonoBehaviour
 
 
 
-        if (mid.isskin)
-        {
-            transform.localPosition = new Vector3(0, 25.3540001f, 0);
+        //if (mid.isskin)
+        //{
+        //    transform.localPosition = new Vector3(0, 26f, 0);
 
-        }
-        else
-        {
-            transform.localPosition = new Vector3(0, 26f, 0);
+        //}
+        //else
+        //{
+        //    transform.localPosition = new Vector3(0, 26f, 0);
 
-        }
+        //}
         glow.transform.Rotate(0, 0, 1);
         if(Input.GetKey(KeyCode.E))
         {

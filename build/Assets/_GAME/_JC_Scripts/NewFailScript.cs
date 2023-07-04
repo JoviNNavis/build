@@ -30,6 +30,10 @@ public class NewFailScript : MonoBehaviour
     public int cou;
     public AudioClip ballPunture;
 
+    public AudioClip knifeHit;
+
+    public AudioClip knifeBack;
+
     public Transform emptyObj;
 
     public bool isSkinEnabled;
@@ -216,6 +220,7 @@ public class NewFailScript : MonoBehaviour
     {
         yield return new WaitForSeconds(0.2f);
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.08f, false).OnComplete(knifeRemove);
+        SoundManger.soundctrl.playClip(knifeHit);
         yield return new WaitForSeconds(0.5f);
         //knife1.enabled = true;
         swordKnife.enabled = true;
@@ -227,12 +232,14 @@ public class NewFailScript : MonoBehaviour
     {
         yield return new WaitForSeconds(0.2f);
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.08f, false).OnComplete(knifeRemove);
+        SoundManger.soundctrl.playClip(knifeHit);
         playerImg.fillAmount -= lessValue;
         playerCrownSlider.value -= lessValue;
         KnifePlayer.transform.position -= new Vector3(0, 0.7f, 0);
         newBallPos.transform.position -= new Vector3(0, 0.7f, 0);
         yield return new WaitForSeconds(0.1f);
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.08f, false).OnComplete(knifeRemove);
+        SoundManger.soundctrl.playClip(knifeHit);
         playerImg.fillAmount -= lessValue;
         playerCrownSlider.value -= lessValue;
         KnifePlayer.transform.position -= new Vector3(0, 0.7f, 0);
@@ -248,6 +255,7 @@ public class NewFailScript : MonoBehaviour
     {
         yield return new WaitForSeconds(0.2f);
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.08f, false).OnComplete(knifeRemove);
+        SoundManger.soundctrl.playClip(knifeBack);
         playerImg.fillAmount -= lessValue;
         playerCrownSlider.value -= lessValue;
         KnifePlayer.transform.position -= new Vector3(0, 0.7f, 0);
@@ -275,6 +283,7 @@ public class NewFailScript : MonoBehaviour
     {
         yield return new WaitForSeconds(0.2f);
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.03f, false).OnComplete(knifeRemove);
+        SoundManger.soundctrl.playClip(knifeBack);
         playerImg.fillAmount -= lessValue;
         playerCrownSlider.value -= lessValue;
         KnifePlayer.transform.position -= new Vector3(0, 0.7f, 0);
