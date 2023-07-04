@@ -275,9 +275,16 @@ public class ButtonManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-
+    public void KnifeSkinshoase()
+    {
+        
+       
+        knifeSkniPanel.SetActive(true);
+       
+    }
     public void KnifeSkin()
     {
+       
         SoundManger.soundctrl.playClip(tapSound);
         alert.changeColor();
         knifeSkniPanel.SetActive(true);
