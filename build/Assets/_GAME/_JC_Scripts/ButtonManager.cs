@@ -68,23 +68,7 @@ public class ButtonManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (!isbelowlevel5)
-        //{
-        //    if (isstart)
-        //    {
-        //        if (mid.isskin)
-        //        {
-        //            knifePlayer2.enabled = false;
-        //            knifeplayerrr.enabled = true;
-
-        //        }
-        //        else
-        //        {
-        //            knifeplayerrr.enabled = false;
-        //            knifePlayer2.enabled = true;
-        //        }
-        //    }
-        //}
+        FindObjectOfType<newKnifeScript>().skin();
         //else
         //{
         //    return;
@@ -287,7 +271,7 @@ public class ButtonManager : MonoBehaviour
 
     public void lvlUp()
     {
-        //SoundManger.soundctrl.playClip(tapSound);
+      
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

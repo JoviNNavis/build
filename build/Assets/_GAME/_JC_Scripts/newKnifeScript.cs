@@ -35,11 +35,8 @@ public class newKnifeScript : MonoBehaviour
         }
 
     }
-
-    // Update is called once per frame
-    void Update()
+    public void skin()
     {
-
         if (mid.isskin)
         {
             after_Knife.SetActive(true);
@@ -50,6 +47,12 @@ public class newKnifeScript : MonoBehaviour
             after_Knife.SetActive(false);
             before_knife.SetActive(true);
         }
+    }
+    // Update is called once per frame
+    void Update()
+    {
+        skin();
+       
         knifeCountText.text = "" + knifeCount;
         if(knifeCount == 0)
         {
