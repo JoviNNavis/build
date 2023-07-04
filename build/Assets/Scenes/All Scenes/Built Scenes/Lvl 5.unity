@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.14021131, g: 0.7094693, b: 0.9917381, a: 1}
+  m_IndirectSpecularColor: {r: 0.1402113, g: 0.7094693, b: 0.9917381, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -17695,6 +17695,7 @@ MonoBehaviour:
   soundOFF: {fileID: 8447885066726691113}
   retryButton: {fileID: 127480848}
   newFail: {fileID: 0}
+  text: {fileID: 0}
 --- !u!1 &503350027
 GameObject:
   m_ObjectHideFlags: 0
@@ -47960,8 +47961,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1482162622}
-  m_LocalRotation: {x: 0, y: 0.5600611, z: 0, w: 0.82845134}
-  m_LocalPosition: {x: 0, y: 0, z: 0.024}
+  m_LocalRotation: {x: 0, y: -0.0055853687, z: 0, w: 0.99998444}
+  m_LocalPosition: {x: -0.014, y: 0, z: 0.026}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -47975,7 +47976,7 @@ Transform:
   - {fileID: 837692342}
   m_Father: {fileID: 150396150}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: -651.88, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -720.64, z: 0}
 --- !u!114 &1482162624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56712,7 +56713,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 66d5915007be4ce45b5df7006e4b96f7,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.090407334
+      value: 0.09423156
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66d5915007be4ce45b5df7006e4b96f7,
         type: 3}
@@ -56722,7 +56723,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 66d5915007be4ce45b5df7006e4b96f7,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.09014883
+      value: 0.09378183
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66d5915007be4ce45b5df7006e4b96f7,
         type: 3}
@@ -61269,6 +61270,7 @@ MonoBehaviour:
   knifeThrow: {fileID: 8300000, guid: 60f11383c193e3244ba00919fcebedd6, type: 3}
   _text: {fileID: 888342064}
   fail1: {fileID: 7233003352761415713}
+  animtime: 0
   NewEffect: 0
 --- !u!1 &1819497016
 GameObject:
