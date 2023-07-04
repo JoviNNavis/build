@@ -58,18 +58,7 @@ public class KnifeScriptSword : MonoBehaviour
         if (Input.GetMouseButton(1))
         {
             Shooting();
-            //animtime += Time.deltaTime;
-            //animtime = 0;
-            //if (animtime >= 3)
-            //{
-            //    anim.enabled = false;
-            //    animtime = 0;
-            //}
-            //else if (animtime < 3)
-            //{
-            //    anim.enabled = false;
-            //}
-
+         
 
 
         }
@@ -82,28 +71,22 @@ public class KnifeScriptSword : MonoBehaviour
             if (touch.phase == TouchPhase.Began)
             {
 
+
+
                 isTouch = true;
-                //if (animtime >= 3)
-                //{
-                //    anim.enabled = false;
-                //    animtime = 0;
-                //}
-                //else if (animtime < 3)
-                //{
-                //    anim.enabled = false;
-                //}
+               
 
+                
+            }
+            if (touch.phase == TouchPhase.Ended)
+            {
+                StartCoroutine(txtDisable());
+                isTouch = false;
+            }
 
-                if (touch.phase == TouchPhase.Ended)
-                {
-                    StartCoroutine(txtDisable());
-                    isTouch = false;
-                }
-
-                if (isTouch)
-                {
-                    Shooting();
-                }
+            if (isTouch)
+            {
+                Shooting();
             }
         }
         
