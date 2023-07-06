@@ -19748,6 +19748,7 @@ MonoBehaviour:
   soundOFF: {fileID: 4901170418643049887}
   retryButton: {fileID: 127480848}
   newFail: {fileID: 0}
+  text: {fileID: 0}
 --- !u!1 &511541167
 GameObject:
   m_ObjectHideFlags: 0
@@ -20512,10 +20513,10 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.75
+  m_Time: 0.2
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.3
+    widthMultiplier: 0.4
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -20530,7 +20531,7 @@ TrailRenderer:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 0
+        value: 0.2695694
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -22698,7 +22699,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 620067323}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.328, y: 1.73, z: -0.167}
+  m_LocalPosition: {x: 0.328, y: 1.73, z: -0.1389}
   m_LocalScale: {x: 0.07, y: 1.5, z: 0.07}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -22840,10 +22841,10 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.75
+  m_Time: 0.2
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.3
+    widthMultiplier: 0.4
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -22858,7 +22859,7 @@ TrailRenderer:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 0
+        value: 0.26957107
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -22935,7 +22936,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624861572}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.351, y: 1.73, z: 0.084}
+  m_LocalPosition: {x: 0.351, y: 1.73, z: 0.07}
   m_LocalScale: {x: 0.07, y: 1.5, z: 0.07}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -28169,7 +28170,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 909800084}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.329, y: 1.73, z: 0.168}
+  m_LocalPosition: {x: 0.329, y: 1.73, z: 0.1392}
   m_LocalScale: {x: 0.07, y: 1.5, z: 0.07}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -28311,10 +28312,10 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.75
+  m_Time: 0.2
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.3
+    widthMultiplier: 0.4
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -28329,7 +28330,7 @@ TrailRenderer:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 0
+        value: 0.2695694
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -29871,7 +29872,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 968450845}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.351, y: 1.73, z: -0.082}
+  m_LocalPosition: {x: 0.351, y: 1.73, z: -0.0704}
   m_LocalScale: {x: 0.07, y: 1.5, z: 0.07}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -39401,10 +39402,10 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.75
+  m_Time: 0.2
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.3
+    widthMultiplier: 0.4
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -39419,7 +39420,7 @@ TrailRenderer:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 0
+        value: 0.22608948
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -59065,6 +59066,7 @@ MonoBehaviour:
   knifeThrow: {fileID: 8300000, guid: 60f11383c193e3244ba00919fcebedd6, type: 3}
   _text: {fileID: 1510261342}
   fail1: {fileID: 95841336}
+  animtime: 0
   NewEffect: 0
 --- !u!1 &1821929972
 GameObject:
@@ -63531,10 +63533,10 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.75
+  m_Time: 0.2
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.3
+    widthMultiplier: 0.4
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -63549,7 +63551,7 @@ TrailRenderer:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 0
+        value: 0.21739197
         inSlope: 0
         outSlope: 0
         tangentMode: 0
