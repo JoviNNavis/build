@@ -132,6 +132,7 @@ public class AiFailScript : MonoBehaviour
 
     IEnumerator knifeR4()
     {
+        ai.enabled = false;
         yield return new WaitForSeconds(0.5f);
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.03f, false).OnComplete(knifeRemove);
         aiSlider.value -= rankValue;

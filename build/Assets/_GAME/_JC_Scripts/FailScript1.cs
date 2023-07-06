@@ -254,6 +254,7 @@ public class FailScript1 : MonoBehaviour
 
     IEnumerator knifeR4()
     {
+        knife1.enabled = false;
         yield return new WaitForSeconds(0.2f);
         Debug.Log("1");
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.03f, false).OnComplete(knifeRemove);
