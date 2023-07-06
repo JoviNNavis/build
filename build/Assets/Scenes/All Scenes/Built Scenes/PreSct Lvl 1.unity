@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1402113, g: 0.7094693, b: 0.9917381, a: 1}
+  m_IndirectSpecularColor: {r: 0.14021131, g: 0.7094693, b: 0.9917381, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11974,6 +11974,7 @@ MonoBehaviour:
   soundOFF: {fileID: 0}
   retryButton: {fileID: 0}
   newFail: {fileID: 0}
+  text: {fileID: 0}
 --- !u!1 &508017724
 GameObject:
   m_ObjectHideFlags: 0
@@ -36892,6 +36893,7 @@ MonoBehaviour:
   knifeThrow: {fileID: 0}
   _text: {fileID: 0}
   fail1: {fileID: 0}
+  animtime: 0
   NewEffect: 0
 --- !u!1 &1828264437
 GameObject:
@@ -37160,7 +37162,7 @@ RectTransform:
   m_GameObject: {fileID: 1871831496}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.172694, y: 1.172694, z: 1.172694}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 212066013}
@@ -37193,17 +37195,17 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 61752de5e7b24b746908e6e69e189afa, type: 3}
-    m_FontSize: 200
-    m_FontStyle: 0
+    m_FontSize: 190
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 200
+    m_MaxSize: 216
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
-    m_LineSpacing: 1
+    m_LineSpacing: 1.125
   m_Text: 'SCULPTING
 
     STUDIO
@@ -38622,6 +38624,8 @@ MonoBehaviour:
   playerImg: {fileID: 50878900}
   lessValue: 0
   ballPunture: {fileID: 0}
+  knifeHit: {fileID: 0}
+  knifeBack: {fileID: 0}
   cou: 0
   emptyObj: {fileID: 0}
   BelowLevel5: 0
