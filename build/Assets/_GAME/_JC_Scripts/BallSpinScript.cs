@@ -50,7 +50,7 @@ public class BallSpinScript : MonoBehaviour
                 }
             }
 
-            if (timer >= 4 && timer <= 7.8)
+            if (timer >= 4 && timer <= 8.8)
             {
                 transform.Rotate(0, -1.5f, 0);
 
@@ -60,7 +60,7 @@ public class BallSpinScript : MonoBehaviour
                 }
             }
 
-            if (timer >= 8 && timer <= 11.8)
+            if (timer >= 9 && timer <= 14.8)
             {
                 transform.Rotate(0, 1.5f, 0);
 
@@ -70,7 +70,7 @@ public class BallSpinScript : MonoBehaviour
                 }
             }
 
-            if (timer >= 12 && timer <= 15.8)
+            if (timer >= 15 && timer <= 20.8)
             {
                 transform.Rotate(0, -1.5f, 0);
 
@@ -81,7 +81,7 @@ public class BallSpinScript : MonoBehaviour
             }
 
 
-            if (timer >= 16 && timer <= 19.8)
+            if (timer >= 21 && timer <= 23.8)
             {
                 transform.Rotate(0, 1.5f, 0);
 
@@ -91,7 +91,7 @@ public class BallSpinScript : MonoBehaviour
                 }
             }
 
-            if (timer >= 20 && timer <= 23.8)
+            if (timer >= 24 && timer <= 29.8)
             {
                 transform.Rotate(0, -1.5f, 0);
 
@@ -101,7 +101,7 @@ public class BallSpinScript : MonoBehaviour
                 }
             }
 
-            if (timer >= 24 && timer <= 27.8)
+            if (timer >= 30 && timer <= 33.8)
             {
                 transform.Rotate(0, 1.5f, 0);
 
@@ -111,7 +111,7 @@ public class BallSpinScript : MonoBehaviour
                 }
             }
 
-            if (timer >= 28 && timer <= 31.8)
+            if (timer >= 34 && timer <= 37.8)
             {
                 transform.Rotate(0, -1.5f, 0);
 
@@ -121,7 +121,7 @@ public class BallSpinScript : MonoBehaviour
                 }
             }
 
-            if (timer >= 32 && timer <= 35.8)
+            if (timer >= 38 && timer <= 43.8)
             {
                 transform.Rotate(0, 1.5f, 0);
 
@@ -131,7 +131,7 @@ public class BallSpinScript : MonoBehaviour
                 }
             }
 
-            if (timer >= 36 && timer <= 39.8)
+            if (timer >= 44 && timer <= 49.8)
             {
                 transform.Rotate(0, -1.5f, 0);
 
@@ -141,7 +141,7 @@ public class BallSpinScript : MonoBehaviour
                 }
             }
 
-            if (timer > 40)
+            if (timer > 50)
             {
                 transform.Rotate(0, 1.5f, 0);
 
@@ -171,7 +171,7 @@ public class BallSpinScript : MonoBehaviour
                 }
             }
 
-            if (timer >= 4 && timer <= 7.8)
+            if (timer >= 4 && timer <= 8.8)
             {
                 transform.Rotate(0, -1.5f, 0);
 
@@ -181,7 +181,7 @@ public class BallSpinScript : MonoBehaviour
                 }
             }
 
-            if (timer >= 8 && timer <= 11.8)
+            if (timer >= 9 && timer <= 14.8)
             {
                 transform.Rotate(0, 1.5f, 0);
 
@@ -191,7 +191,7 @@ public class BallSpinScript : MonoBehaviour
                 }
             }
 
-            if (timer >= 12 && timer <= 15.8)
+            if (timer >= 15 && timer <= 20.8)
             {
                 transform.Rotate(0, -1.5f, 0);
 
@@ -201,7 +201,8 @@ public class BallSpinScript : MonoBehaviour
                 }
             }
 
-            if (timer >= 16 && timer <= 19.8)
+
+            if (timer >= 21 && timer <= 23.8)
             {
                 transform.Rotate(0, 1.5f, 0);
 
@@ -211,7 +212,7 @@ public class BallSpinScript : MonoBehaviour
                 }
             }
 
-            if (timer >= 20 && timer <= 23.8)
+            if (timer >= 24 && timer <= 29.8)
             {
                 transform.Rotate(0, -1.5f, 0);
 
@@ -221,7 +222,7 @@ public class BallSpinScript : MonoBehaviour
                 }
             }
 
-            if (timer >= 24 && timer <= 27.8)
+            if (timer >= 30 && timer <= 33.8)
             {
                 transform.Rotate(0, 1.5f, 0);
 
@@ -231,7 +232,7 @@ public class BallSpinScript : MonoBehaviour
                 }
             }
 
-            if (timer >= 28 && timer <= 31.8)
+            if (timer >= 34 && timer <= 37.8)
             {
                 transform.Rotate(0, -1.5f, 0);
 
@@ -241,7 +242,7 @@ public class BallSpinScript : MonoBehaviour
                 }
             }
 
-            if (timer >= 32 && timer <= 35.8)
+            if (timer >= 38 && timer <= 43.8)
             {
                 transform.Rotate(0, 1.5f, 0);
 
@@ -251,7 +252,7 @@ public class BallSpinScript : MonoBehaviour
                 }
             }
 
-            if (timer >= 36 && timer <= 39.8)
+            if (timer >= 44 && timer <= 49.8)
             {
                 transform.Rotate(0, -1.5f, 0);
 
@@ -261,7 +262,7 @@ public class BallSpinScript : MonoBehaviour
                 }
             }
 
-            if (timer > 40)
+            if (timer > 50)
             {
                 transform.Rotate(0, 1.5f, 0);
 
@@ -270,10 +271,8 @@ public class BallSpinScript : MonoBehaviour
                     //     Balls[i].transform.Rotate(0, 2f, 0);
                 }
             }
-
         }
     }
-
     IEnumerator lose()
     {
         yield return new WaitForSeconds(0.75f);
