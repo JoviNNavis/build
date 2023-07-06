@@ -74,7 +74,7 @@ public class Cubes : MonoBehaviour
             }
             if (health <= 0)
             {
-                Destroy(this.gameObject,0.0f);
+                Destroy(this.gameObject);
                 FindObjectOfType<box_Sculpting>().cubeposes.Remove(this.gameObject.transform);
           FindObjectOfType<box_Sculpting>().filbar.fillAmount += inte;
             Instantiate(FindObjectOfType<box_Sculpting>().falling, gameObject.transform.position + new Vector3(0, 0, 0), Quaternion.identity);
