@@ -40,33 +40,74 @@ public class BallSpinScript : MonoBehaviour
 
             timer += 1 * Time.deltaTime;
 
-            if (timer >= 0 && timer <= 12.8)
+            if (timer >= 0 && timer <= 3.8)
             {
                 transform.Rotate(0, 1.5f, 0);
 
                 for (int i = 0; i < Balls.Count; i++)
                 {
-                 //   Balls[i].transform.Rotate(0, 2f, 0);
+                    //   Balls[i].transform.Rotate(0, 2f, 0);
                 }
             }
 
-            if (timer >= 13 && timer <= 27.8)
+            if (timer >= 4 && timer <= 7.8)
             {
                 transform.Rotate(0, -1.5f, 0);
 
                 for (int i = 0; i < Balls.Count; i++)
                 {
-                //    Balls[i].transform.Rotate(0, -2f, 0);
+                    //    Balls[i].transform.Rotate(0, -2f, 0);
                 }
             }
 
-            if (timer > 28)
+            if (timer >= 8 && timer <= 11.8)
             {
                 transform.Rotate(0, 1.5f, 0);
 
                 for (int i = 0; i < Balls.Count; i++)
                 {
-               //     Balls[i].transform.Rotate(0, 2f, 0);
+                    //     Balls[i].transform.Rotate(0, 2f, 0);
+                }
+            }
+
+            if (timer >= 12 && timer <= 15.8)
+            {
+                transform.Rotate(0, -1.5f, 0);
+
+                for (int i = 0; i < Balls.Count; i++)
+                {
+                    //     Balls[i].transform.Rotate(0, 2f, 0);
+                }
+            }
+
+
+            if (timer >= 16 && timer <= 19.8)
+            {
+                transform.Rotate(0, 1.5f, 0);
+
+                for (int i = 0; i < Balls.Count; i++)
+                {
+                    //     Balls[i].transform.Rotate(0, 2f, 0);
+                }
+            }
+
+            if (timer >= 20 && timer <= 23.8)
+            {
+                transform.Rotate(0, -1.5f, 0);
+
+                for (int i = 0; i < Balls.Count; i++)
+                {
+                    //     Balls[i].transform.Rotate(0, 2f, 0);
+                }
+            }
+
+            if (timer > 24)
+            {
+                transform.Rotate(0, 1.5f, 0);
+
+                for (int i = 0; i < Balls.Count; i++)
+                {
+                    //     Balls[i].transform.Rotate(0, 2f, 0);
                 }
             }
         }
@@ -80,38 +121,77 @@ public class BallSpinScript : MonoBehaviour
 
             timer += 1 * Time.deltaTime;
 
-            if (timer >= 0 && timer <= 12.8)
+            if (timer >= 0 && timer <= 3.8)
             {
                 transform.Rotate(0, 1.5f, 0);
 
                 for (int i = 0; i < Balls.Count; i++)
                 {
-                 //   Balls[i].transform.Rotate(0, 1f, 0);
+                    //   Balls[i].transform.Rotate(0, 2f, 0);
                 }
             }
 
-            if (timer >= 13 && timer <= 27.8)
+            if (timer >= 4 && timer <= 7.8)
             {
                 transform.Rotate(0, -1.5f, 0);
 
                 for (int i = 0; i < Balls.Count; i++)
                 {
-                   // Balls[i].transform.Rotate(0, -1f, 0);
+                    //    Balls[i].transform.Rotate(0, -2f, 0);
                 }
             }
 
-            if (timer > 28)
+            if (timer >= 8 && timer <= 11.8)
             {
                 transform.Rotate(0, 1.5f, 0);
 
                 for (int i = 0; i < Balls.Count; i++)
                 {
-              //      Balls[i].transform.Rotate(0, 1f, 0);
+                    //     Balls[i].transform.Rotate(0, 2f, 0);
                 }
             }
-        
-    }
 
+            if (timer >= 12 && timer <= 15.8)
+            {
+                transform.Rotate(0, -1.5f, 0);
+
+                for (int i = 0; i < Balls.Count; i++)
+                {
+                    //     Balls[i].transform.Rotate(0, 2f, 0);
+                }
+            }
+
+            if (timer >= 16 && timer <= 19.8)
+            {
+                transform.Rotate(0, 1.5f, 0);
+
+                for (int i = 0; i < Balls.Count; i++)
+                {
+                    //     Balls[i].transform.Rotate(0, 2f, 0);
+                }
+            }
+
+            if (timer >= 20 && timer <= 23.8)
+            {
+                transform.Rotate(0, -1.5f, 0);
+
+                for (int i = 0; i < Balls.Count; i++)
+                {
+                    //     Balls[i].transform.Rotate(0, 2f, 0);
+                }
+            }
+
+            if (timer > 24)
+            {
+                transform.Rotate(0, 1.5f, 0);
+
+                for (int i = 0; i < Balls.Count; i++)
+                {
+                    //     Balls[i].transform.Rotate(0, 2f, 0);
+                }
+            }
+
+        }
     }
 
     IEnumerator lose()
