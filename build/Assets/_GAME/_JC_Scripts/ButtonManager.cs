@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
 
@@ -55,6 +56,12 @@ public class ButtonManager : MonoBehaviour
 
     public NewFailScript newFail;
     public Animator text;
+
+    public Slider playerSlider;
+    public Image playerImage;
+
+    public float winValue;
+
     void Start()
     {
 
@@ -195,6 +202,8 @@ public class ButtonManager : MonoBehaviour
     {
         FindObjectOfType<KnifeScript>().plus15();
         StartCoroutine(panelDis());
+        playerSlider.value += winValue;
+        playerImage.fillAmount += winValue;
         countdownpanel_ad.SetActive(true);
         _15.SetActive(true);
     }

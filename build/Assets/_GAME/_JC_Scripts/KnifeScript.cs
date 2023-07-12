@@ -120,6 +120,7 @@ public class KnifeScript : MonoBehaviour
     {
         transform.position = new Vector3(5.01999998f, 10.6f, -0.0260000005f);
         _BallPos.transform.position = new Vector3(1.76999998f, 12.7700005f, 0.0869999975f);
+        newBallPos.transform.position = new Vector3(1.76999998f, 13.7700005f, 0.0869999975f);
         _camera.transform.position = new Vector3(7.10000038f, 11.4700003f, -13.1259995f);
     }
     void Shooting()
