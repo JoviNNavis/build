@@ -41,7 +41,7 @@ public class ShowcaseScript : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         oldImg.SetActive(false);
         newImg.SetActive(true);
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1f);
         arrow.SetActive(true);
     }
 
@@ -116,10 +116,10 @@ public class ShowcaseScript : MonoBehaviour
 
     IEnumerator bearDisable()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.0f);
         button.SetActive(false);
         img.SetActive(false);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         panelNew.SetActive(true);
     }
     IEnumerator countdownpnl()
