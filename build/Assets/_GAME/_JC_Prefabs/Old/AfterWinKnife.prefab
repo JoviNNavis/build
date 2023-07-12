@@ -152,6 +152,7 @@ MonoBehaviour:
   plane: {fileID: 0}
   hit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}
   bonusBallHit: {fileID: 8300000, guid: b485a744ad289bc4fa50aaa47e43b96a, type: 3}
+  isNew: 0
 --- !u!54 &9146111261655308705
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -179,8 +180,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.05941297, y: 0.05322085, z: 0.1265346}
-  m_Center: {x: 0.048047543, y: 0.017709997, z: -0.06969812}
+  m_Size: {x: 0.05941297, y: 0.05322085, z: 0.0688155}
+  m_Center: {x: 0.048047543, y: 0.017709997, z: -0.019040247}
 --- !u!1 &6447887427413798797
 GameObject:
   m_ObjectHideFlags: 0

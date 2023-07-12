@@ -6329,7 +6329,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 64}
   m_SizeDelta: {x: -1080, y: -2160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1131354429
@@ -11530,6 +11530,7 @@ MonoBehaviour:
   Room: {fileID: 2044407825}
   ShowCase: {fileID: 1631125392}
   Dirlight: {fileID: 905726311}
+  _15: {fileID: 0}
   tapSound: {fileID: 0}
   Plysounds: {fileID: 0}
   Aisounds: {fileID: 0}
@@ -11541,6 +11542,9 @@ MonoBehaviour:
   retryButton: {fileID: 0}
   newFail: {fileID: 0}
   text: {fileID: 0}
+  playerSlider: {fileID: 0}
+  playerImage: {fileID: 0}
+  winValue: 0
 --- !u!4 &2146273392
 Transform:
   m_ObjectHideFlags: 0
@@ -12674,7 +12678,7 @@ RectTransform:
   m_GameObject: {fileID: 1276870127746853847}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -17.982746}
-  m_LocalScale: {x: 0.708965, y: 1.1229599, z: 0.7402675}
+  m_LocalScale: {x: 0.708965, y: 1.0545043, z: 0.7402675}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 781840042}
@@ -12684,7 +12688,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.000012398, y: 421.02258}
+  m_AnchoredPosition: {x: 0.000012398, y: 465}
   m_SizeDelta: {x: 1690.2, y: 349.3315}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1276870127746853847

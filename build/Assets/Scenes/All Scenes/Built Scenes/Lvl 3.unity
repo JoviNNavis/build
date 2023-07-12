@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.14021131, g: 0.7094693, b: 0.9917381, a: 1}
+  m_IndirectSpecularColor: {r: 0.1402113, g: 0.7094693, b: 0.9917381, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -17670,7 +17670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.48235294, g: 0.48235294, b: 0.48235294, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -19738,6 +19738,7 @@ MonoBehaviour:
   Room: {fileID: 0}
   ShowCase: {fileID: 0}
   Dirlight: {fileID: 0}
+  _15: {fileID: 0}
   tapSound: {fileID: 8300000, guid: 6c501b5afbbaa0c409529fc19ab611c4, type: 3}
   Plysounds: {fileID: 9152866475247623641}
   Aisounds: {fileID: 48753345946317929}
@@ -19749,6 +19750,9 @@ MonoBehaviour:
   retryButton: {fileID: 127480848}
   newFail: {fileID: 0}
   text: {fileID: 0}
+  playerSlider: {fileID: 0}
+  playerImage: {fileID: 0}
+  winValue: 0
 --- !u!1 &511541167
 GameObject:
   m_ObjectHideFlags: 0
@@ -29323,7 +29327,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: b8cf5f71bbadcbc4b828727848e28fd5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -59057,6 +59061,7 @@ MonoBehaviour:
     type: 3}
   playerCrownSlider: {fileID: 7482594925982364654}
   newBallPos: {fileID: 1300608063}
+  _BallPos: {fileID: 0}
   playerImg: {fileID: 1611646442}
   playerchangecolor: 0
   fillValue: 0.0074
@@ -59065,6 +59070,7 @@ MonoBehaviour:
   combovalue: 0
   knifeThrow: {fileID: 8300000, guid: 60f11383c193e3244ba00919fcebedd6, type: 3}
   _text: {fileID: 1510261342}
+  _camera: {fileID: 0}
   fail1: {fileID: 95841336}
   animtime: 0
   NewEffect: 0
