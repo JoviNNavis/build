@@ -20,6 +20,8 @@ public class KnifeScript : MonoBehaviour
     int rand;
     int randcolors;
     public Transform newBallPos;
+    public Transform _BallPos;
+
     private GameObject _knife;
     public Image playerImg;
     public bool playerchangecolor;
@@ -29,7 +31,7 @@ public class KnifeScript : MonoBehaviour
     public  int combovalue;
     public AudioClip knifeThrow;
     public TMPro.TextMeshProUGUI _text;
-
+    public GameObject _camera;
     public FailScript1 fail1;
     public float animtime;
     public bool NewEffect;
@@ -37,6 +39,7 @@ public class KnifeScript : MonoBehaviour
     void Start()
     {
         combovalue = 1;
+        _camera = GameObject.FindGameObjectWithTag("cam3");
     }
 
 
@@ -113,7 +116,12 @@ public class KnifeScript : MonoBehaviour
             }
         }
     }
-
+    public void plus15()
+    {
+        transform.position = new Vector3(5.01999998f, 10.6f, -0.0260000005f);
+        _BallPos.transform.position = new Vector3(1.76999998f, 12.7700005f, 0.0869999975f);
+        _camera.transform.position = new Vector3(7.10000038f, 11.4700003f, -13.1259995f);
+    }
     void Shooting()
     {
        

@@ -42,7 +42,7 @@ public class ButtonManager : MonoBehaviour
     public GameObject uiBar, Room, ShowCase;
 
     public Transform Dirlight;
-
+    public GameObject _15;
     public AudioClip tapSound;
 
     public AudioSource Plysounds, Aisounds;
@@ -63,6 +63,7 @@ public class ButtonManager : MonoBehaviour
         settingsbutton = GameObject.FindGameObjectWithTag("sb");
         //nextLvl();
         hapticOff();
+        _15.SetActive(false);
     }
 
     // Update is called once per frame
@@ -190,7 +191,13 @@ public class ButtonManager : MonoBehaviour
 
         chestPanel.SetActive(true);
     }
-
+    public void plus15()
+    {
+        FindObjectOfType<KnifeScript>().plus15();
+        StartCoroutine(panelDis());
+        countdownpanel_ad.SetActive(true);
+        _15.SetActive(true);
+    }
     public void Ok()
     {
         SoundManger.soundctrl.playClip(tapSound);
