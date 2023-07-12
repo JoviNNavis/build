@@ -13,6 +13,8 @@ public class ShowcaseScript : MonoBehaviour
     public GameObject countdownpanel;
     public GameObject panelNew;
     public GameObject downbar;
+    public GameObject _arrow;
+
     public Button _bear;
 
     public GameObject settingsPanel;
@@ -23,6 +25,8 @@ public class ShowcaseScript : MonoBehaviour
     void Start()
     {
         downbar.SetActive(false);
+        _arrow.SetActive(false);
+
         StartCoroutine(startGame());
         _bear.interactable = false;
             }
@@ -41,6 +45,7 @@ public class ShowcaseScript : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         oldImg.SetActive(false);
         newImg.SetActive(true);
+        _arrow.SetActive(true);
         yield return new WaitForSeconds(1f);
         arrow.SetActive(true);
     }
@@ -52,6 +57,10 @@ public class ShowcaseScript : MonoBehaviour
         bearModel.SetActive(true);
         downbar.SetActive(true);
         cube.SetActive(true);
+        pillar.SetActive(true);
+        img1.SetActive(false);
+        cube.SetActive(true);
+        smoke.SetActive(true);
         pillar.SetActive(true);
         img1.SetActive(false);
        
@@ -71,13 +80,14 @@ public class ShowcaseScript : MonoBehaviour
         smoke.SetActive(true);
         pillar.SetActive(true);
         img1.SetActive(false);
-        _bear.interactable = true;
+ 
 
     }
     public void close()
     {
         panelNew.SetActive(false);
         blackscreen.SetActive(false);
+        _bear.interactable = true;
     }
 
     public void openSettings()

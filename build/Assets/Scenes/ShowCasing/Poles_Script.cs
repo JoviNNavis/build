@@ -28,10 +28,10 @@ public class Poles_Script : MonoBehaviour
         for (int i = 0; i < poles.Count; i++)
         {
             poles[i].transform.DOMoveY(0.77f, 0.1f, false);
-            yield return new WaitForSeconds(0.01f);
+            yield return new WaitForSeconds(0.001f);
             
             ROPES[i].SetActive(true);
-            yield return new WaitForSeconds(0.005f);
+            yield return new WaitForSeconds(0.0005f);
             ROPES[i].transform.DOLocalMoveY(0.5f, 0.1F, false);
 
         }
