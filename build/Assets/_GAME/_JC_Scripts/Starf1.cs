@@ -29,8 +29,8 @@ public class Starf1 : MonoBehaviour
     {
 
         touched = FindObjectOfType<ParentSpikesript>().spikehit;
-        
-       
+
+        inpowermode = FindObjectOfType<KnifeScript>().ischangecolor;
     }
     void changecolor()
     {

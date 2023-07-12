@@ -26,7 +26,7 @@ public class ParentSpikesript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Knife"))
         {
-
+           
             anim.enabled = false;
             mesh.material.DOColor(Color.gray, 0.3f);
             childcol.enabled = false;
