@@ -31667,7 +31667,7 @@ MonoBehaviour:
   anim2: {fileID: 1838010046444727597}
   knife: {fileID: 901638968}
   sword: {fileID: 6549153037941618414}
-  kniferot: {fileID: 4448792750924372204}
+  kniferot: {fileID: 1503960380}
   swordrot: {fileID: 4793937161438661046}
   waitTime: 1.6
   rotz: 0
@@ -50540,7 +50540,7 @@ MonoBehaviour:
   anim2: {fileID: 1838010047777488709}
   knife: {fileID: 87996765}
   sword: {fileID: 6549153038754505862}
-  kniferot: {fileID: 4448792750924372204}
+  kniferot: {fileID: 87996765}
   swordrot: {fileID: 4793937161438661046}
   waitTime: 1.6
   rotz: 0
@@ -56233,7 +56233,7 @@ MonoBehaviour:
   anim2: {fileID: 1838010046004042053}
   knife: {fileID: 1512654862}
   sword: {fileID: 6549153037509345926}
-  kniferot: {fileID: 4448792750924372204}
+  kniferot: {fileID: 1512654862}
   swordrot: {fileID: 4793937161438661046}
   waitTime: 1.6
   rotz: 0
@@ -62555,7 +62555,7 @@ MonoBehaviour:
   anim2: {fileID: 1838010046267230182}
   knife: {fileID: 120038452}
   sword: {fileID: 6549153037244062757}
-  kniferot: {fileID: 4448792750924372204}
+  kniferot: {fileID: 120038452}
   swordrot: {fileID: 4793937161438661046}
   waitTime: 1.6
   rotz: 0
