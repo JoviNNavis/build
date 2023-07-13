@@ -42,7 +42,7 @@ public class StackScript : MonoBehaviour
                 MMVibrationManager.Haptic(HapticTypes.Success);
             }
             Destroy(other.gameObject);
-            Destroy(this.gameObject,0.01f);
+            Destroy(this.gameObject, 0.1f);
         }
     }
 }
