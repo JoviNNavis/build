@@ -4855,7 +4855,7 @@ MonoBehaviour:
   sword: {fileID: 2590846551577548752, guid: 97308d58724492947a58ac453fd0181a, type: 3}
   knifeCountText: {fileID: 1925368879}
   knifeCount: 50
-  spanwPosy: 43.35
+  spanwPosy: 43.3
   before_knife: {fileID: 601645289}
   after_Knife: {fileID: 6461745233948240225}
 --- !u!1 &284185179
