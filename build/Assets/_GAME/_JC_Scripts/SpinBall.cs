@@ -29,7 +29,7 @@ public class SpinBall : MonoBehaviour
             }
             //MissedKnife.knifeValue += 1;
             ball.Balls.Remove(transform);
-            Destroy(other.gameObject);
+   //
             ball.isOver = true;
         }
     }
