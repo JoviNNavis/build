@@ -4855,7 +4855,7 @@ MonoBehaviour:
   sword: {fileID: 2590846551577548752, guid: 97308d58724492947a58ac453fd0181a, type: 3}
   knifeCountText: {fileID: 1925368879}
   knifeCount: 50
-  spanwPosy: 43.3
+  spanwPosy: 43.35
   before_knife: {fileID: 601645289}
   after_Knife: {fileID: 6461745233948240225}
 --- !u!1 &284185179
@@ -14562,7 +14562,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.50000006
+  m_Radius: 0.55
   m_Center: {x: 0, y: 0.0000076293945, z: 0}
 --- !u!114 &526551483
 MonoBehaviour:
@@ -16250,7 +16250,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.50000006
+  m_Radius: 0.55
   m_Center: {x: 0.0000019073486, y: 0.0000076293945, z: -0.00000023841858}
 --- !u!114 &620067329
 MonoBehaviour:
@@ -16521,7 +16521,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.50000006
+  m_Radius: 0.55
   m_Center: {x: 0, y: 0.0000076293945, z: 0}
 --- !u!114 &624861578
 MonoBehaviour:
@@ -18104,7 +18104,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.50000006
+  m_Radius: 0.55
   m_Center: {x: -0.0000019073486, y: 0.0000076293945, z: 0}
 --- !u!114 &713768575
 MonoBehaviour:
@@ -20697,7 +20697,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.50000006
+  m_Radius: 0.55
   m_Center: {x: 0.0000019073486, y: 0.0000076293945, z: -0.00000011920929}
 --- !u!114 &909800090
 MonoBehaviour:
@@ -26365,7 +26365,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.50000006
+  m_Radius: 0.55
   m_Center: {x: 0, y: 0.0000076293945, z: 0.00000011920929}
 --- !u!114 &968450851
 MonoBehaviour:
@@ -34550,7 +34550,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.50000006
+  m_Radius: 0.55
   m_Center: {x: -0.0000038146973, y: 0.0000076293945, z: 0}
 --- !u!114 &1168426567
 MonoBehaviour:
@@ -62911,7 +62911,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.55
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2007718620
 MeshRenderer:

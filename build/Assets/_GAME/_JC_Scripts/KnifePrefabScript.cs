@@ -51,11 +51,12 @@ public class KnifePrefabScript : MonoBehaviour
         if (other.gameObject.CompareTag("AfterBall"))
         {
             SoundManger.soundctrl.playClip(bonusBallHit);
+            speed = 0;
             other.transform.SetParent(this.transform, true);
             transform.DOJump(new Vector3(10, 10, 10), 5, 1, 4);
             transform.position -= new Vector3(0f, 0, 0);
-            Destroy(this.gameObject, 0.3f);
-            Destroy(other.gameObject, 0.5f);
+            Destroy(this.gameObject);
+            Destroy(other.gameObject, 0.3f);
         }
     }
 

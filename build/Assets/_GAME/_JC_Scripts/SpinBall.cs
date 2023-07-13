@@ -22,13 +22,14 @@ public class SpinBall : MonoBehaviour
     {
         if(other.CompareTag("Knife"))
         {
+            ball.Balls.Remove(transform);
             if (FindObjectOfType<ButtonManager>().ishaptic)
             {
                 MMVibrationManager.Haptic(HapticTypes.Failure);
                 Debug.LogError("vibe");
             }
             //MissedKnife.knifeValue += 1;
-            ball.Balls.Remove(transform);
+            
             Destroy(other.gameObject);
             ball.isOver = true;
         }
