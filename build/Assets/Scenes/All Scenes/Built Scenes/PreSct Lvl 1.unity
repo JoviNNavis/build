@@ -11963,6 +11963,7 @@ MonoBehaviour:
   Room: {fileID: 0}
   ShowCase: {fileID: 0}
   Dirlight: {fileID: 0}
+  _15: {fileID: 0}
   tapSound: {fileID: 8300000, guid: 6c616b999754bb544bb7e218c4f1edcd, type: 3}
   Plysounds: {fileID: 0}
   Aisounds: {fileID: 0}
@@ -11974,6 +11975,9 @@ MonoBehaviour:
   retryButton: {fileID: 0}
   newFail: {fileID: 0}
   text: {fileID: 0}
+  playerSlider: {fileID: 0}
+  playerImage: {fileID: 0}
+  winValue: 0
 --- !u!1 &508017724
 GameObject:
   m_ObjectHideFlags: 0
@@ -26080,15 +26084,15 @@ RectTransform:
   m_GameObject: {fileID: 1266268757}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -2.3482409}
-  m_LocalScale: {x: 1.2146685, y: 1.3735468, z: 1.3735468}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.98, y: 1.1081837, z: 1.1081837}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1360056039}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 208.81508, y: -1396}
+  m_AnchoredPosition: {x: 226, y: -1396}
   m_SizeDelta: {x: 178.3, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1266268759
@@ -36885,6 +36889,7 @@ MonoBehaviour:
   newKnife: {fileID: 0}
   playerCrownSlider: {fileID: 0}
   newBallPos: {fileID: 1538187924}
+  _BallPos: {fileID: 0}
   playerImg: {fileID: 50878900}
   playerchangecolor: 0
   fillValue: 0.032
@@ -36893,6 +36898,7 @@ MonoBehaviour:
   combovalue: 0
   knifeThrow: {fileID: 0}
   _text: {fileID: 0}
+  _camera: {fileID: 0}
   fail1: {fileID: 0}
   animtime: 0
   NewEffect: 0
