@@ -36,13 +36,13 @@ public class StackScript : MonoBehaviour
             SoundManger.soundctrl.playClip(knifeHit);
             Instantiate(blast, transform.position, Quaternion.Euler(-90, 0, 0));
             //stacks.transform.localPosition -= new Vector3(0, 0.5f, 0);
-            stacks.transform.DOLocalMoveY(stacks.transform.localPosition.y - 0.5f, 0.1f, false);
+            stacks.transform.DOLocalMoveY(stacks.transform.localPosition.y - 0.5f, 0f, false);
             if (FindObjectOfType<ButtonManager>().ishaptic)
             {
                 MMVibrationManager.Haptic(HapticTypes.Success);
             }
             Destroy(other.gameObject);
-            Destroy(this.gameObject, 0.1f);
+            Destroy(this.gameObject);
         }
     }
 }

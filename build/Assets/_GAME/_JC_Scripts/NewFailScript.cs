@@ -56,7 +56,7 @@ public class NewFailScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(timer >= 0.01f && knifeSword.ischangecolor == false)
+        if(timer >= 0.5f && knifeSword.ischangecolor == false)
         {
             knifeSword.NewEffect = true;
         }
