@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4636549740704178269}
   - component: {fileID: 1131831386939410043}
-  - component: {fileID: 2180310933059241171}
   m_Layer: 0
   m_Name: knifeOld5
   m_TagString: Knife
@@ -91,20 +90,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.000000002561137, y: 0.03333666, z: -0.000032615848}
     m_Extent: {x: 0.0031737199, y: 0.050480515, z: 0.009402424}
   m_DirtyAABB: 0
---- !u!64 &2180310933059241171
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1123286585290832123}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5500356946382714453, guid: b2921038dc0fa604689571e19d602c28, type: 3}
 --- !u!1 &1742284400884759748
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,8 +205,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.0620272, y: 0.056782342, z: 0.08314565}
-  m_Center: {x: 0.08812704, y: -0.030129332, z: 0.02183475}
+  m_Size: {x: 0.02634685, y: 0.05322085, z: 0.01771199}
+  m_Center: {x: 0.09044467, y: -0.030129332, z: 0.029506074}
 --- !u!1 &2747327511001776215
 GameObject:
   m_ObjectHideFlags: 0
