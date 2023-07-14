@@ -166,7 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 75
   tower: {fileID: 0}
-  drops: {fileID: 180954, guid: 38b76b2af38b4a449ace8addd62210de, type: 3}
+  drops: {fileID: 3168713932256354187, guid: 242ef5c18410a6e4fbe21f0290d74aa8, type: 3}
   plane: {fileID: 2011720142158365113}
   hit: {fileID: 8300000, guid: 60f11383c193e3244ba00919fcebedd6, type: 3}
   bonusBallHit: {fileID: 8300000, guid: bb75573bd14f30c458a81b7164c3322b, type: 3}

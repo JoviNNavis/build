@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1402113, g: 0.7094693, b: 0.9917381, a: 1}
+  m_IndirectSpecularColor: {r: 0.14021131, g: 0.7094693, b: 0.9917381, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -22232,7 +22232,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.50000006
+  m_Radius: 0.56
   m_Center: {x: 0, y: 0.0000076293945, z: 0}
 --- !u!54 &526551482
 Rigidbody:
@@ -22262,6 +22262,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e880cd90867dbdb44870ca4385e9bb0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  punctureBall: {fileID: 2682916870070428379, guid: f9ad8a3098afb7348b1b92320000bf99,
+    type: 3}
   ball: {fileID: 1482162624}
 --- !u!1 &526831218
 GameObject:
@@ -24894,7 +24896,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.50000006
+  m_Radius: 0.56
   m_Center: {x: 0.0000019073486, y: 0.0000076293945, z: -0.00000023841858}
 --- !u!54 &620067328
 Rigidbody:
@@ -24924,6 +24926,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e880cd90867dbdb44870ca4385e9bb0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  punctureBall: {fileID: 2682916870070428379, guid: f9ad8a3098afb7348b1b92320000bf99,
+    type: 3}
   ball: {fileID: 1482162624}
 --- !u!1 &624861572
 GameObject:
@@ -25023,7 +25027,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.50000006
+  m_Radius: 0.56
   m_Center: {x: 0, y: 0.0000076293945, z: 0}
 --- !u!54 &624861577
 Rigidbody:
@@ -25053,6 +25057,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e880cd90867dbdb44870ca4385e9bb0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  punctureBall: {fileID: 2682916870070428379, guid: f9ad8a3098afb7348b1b92320000bf99,
+    type: 3}
   ball: {fileID: 1482162624}
 --- !u!1 &629356711
 GameObject:
@@ -26640,7 +26646,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.50000006
+  m_Radius: 0.56
   m_Center: {x: -0.0000019073486, y: 0.0000076293945, z: 0}
 --- !u!54 &713768574
 Rigidbody:
@@ -26670,6 +26676,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e880cd90867dbdb44870ca4385e9bb0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  punctureBall: {fileID: 2682916870070428379, guid: f9ad8a3098afb7348b1b92320000bf99,
+    type: 3}
   ball: {fileID: 1482162624}
 --- !u!1 &716137081
 GameObject:
@@ -35951,7 +35959,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.50000006
+  m_Radius: 0.56
   m_Center: {x: 0.0000019073486, y: 0.0000076293945, z: -0.00000011920929}
 --- !u!54 &909800089
 Rigidbody:
@@ -35981,6 +35989,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e880cd90867dbdb44870ca4385e9bb0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  punctureBall: {fileID: 2682916870070428379, guid: f9ad8a3098afb7348b1b92320000bf99,
+    type: 3}
   ball: {fileID: 1482162624}
 --- !u!1 &920293312
 GameObject:
@@ -37456,7 +37466,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.50000006
+  m_Radius: 0.56
   m_Center: {x: 0, y: 0.0000076293945, z: 0.00000011920929}
 --- !u!54 &968450850
 Rigidbody:
@@ -37486,6 +37496,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e880cd90867dbdb44870ca4385e9bb0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  punctureBall: {fileID: 2682916870070428379, guid: f9ad8a3098afb7348b1b92320000bf99,
+    type: 3}
   ball: {fileID: 1482162624}
 --- !u!1 &978043308
 GameObject:
@@ -46818,7 +46830,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.50000006
+  m_Radius: 0.56
   m_Center: {x: -0.0000038146973, y: 0.0000076293945, z: 0}
 --- !u!54 &1168426566
 Rigidbody:
@@ -46848,6 +46860,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e880cd90867dbdb44870ca4385e9bb0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  punctureBall: {fileID: 2682916870070428379, guid: f9ad8a3098afb7348b1b92320000bf99,
+    type: 3}
   ball: {fileID: 1482162624}
 --- !u!1 &1176789027
 GameObject:
@@ -69586,7 +69600,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.56
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2007718620
 MeshRenderer:
@@ -69666,6 +69680,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e880cd90867dbdb44870ca4385e9bb0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  punctureBall: {fileID: 2682916870070428379, guid: f9ad8a3098afb7348b1b92320000bf99,
+    type: 3}
   ball: {fileID: 1482162624}
 --- !u!96 &2007718624
 TrailRenderer:

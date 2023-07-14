@@ -5,6 +5,7 @@ using MoreMountains.NiceVibrations;
 
 public class SpinBall : MonoBehaviour
 {
+    public GameObject punctureBall;
     public BallSpinScript ball;
 
     void Start()
@@ -22,6 +23,7 @@ public class SpinBall : MonoBehaviour
     {
         if(other.CompareTag("Knife"))
         {
+            Destroy(other.gameObject);
             ball.Balls.Remove(transform);
             if (FindObjectOfType<ButtonManager>().ishaptic)
             {
@@ -29,8 +31,8 @@ public class SpinBall : MonoBehaviour
                 Debug.LogError("vibe");
             }
             //MissedKnife.knifeValue += 1;
+            Instantiate(punctureBall, this.transform.position, Quaternion.Euler(0, 70, 0));
             
-            Destroy(other.gameObject);
             ball.isOver = true;
         }
     }

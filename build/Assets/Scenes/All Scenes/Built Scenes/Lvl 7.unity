@@ -14562,7 +14562,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.55
+  m_Radius: 0.56
   m_Center: {x: 0, y: 0.0000076293945, z: 0}
 --- !u!114 &526551483
 MonoBehaviour:
@@ -14576,6 +14576,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e880cd90867dbdb44870ca4385e9bb0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  punctureBall: {fileID: 2682916870070428379, guid: f9ad8a3098afb7348b1b92320000bf99,
+    type: 3}
   ball: {fileID: 1482162624}
 --- !u!96 &526551484
 TrailRenderer:
@@ -16250,7 +16252,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.55
+  m_Radius: 0.56
   m_Center: {x: 0.0000019073486, y: 0.0000076293945, z: -0.00000023841858}
 --- !u!114 &620067329
 MonoBehaviour:
@@ -16264,6 +16266,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e880cd90867dbdb44870ca4385e9bb0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  punctureBall: {fileID: 2682916870070428379, guid: f9ad8a3098afb7348b1b92320000bf99,
+    type: 3}
   ball: {fileID: 1482162624}
 --- !u!96 &620067330
 TrailRenderer:
@@ -16521,7 +16525,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.55
+  m_Radius: 0.56
   m_Center: {x: 0, y: 0.0000076293945, z: 0}
 --- !u!114 &624861578
 MonoBehaviour:
@@ -16535,6 +16539,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e880cd90867dbdb44870ca4385e9bb0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  punctureBall: {fileID: 2682916870070428379, guid: f9ad8a3098afb7348b1b92320000bf99,
+    type: 3}
   ball: {fileID: 1482162624}
 --- !u!96 &624861579
 TrailRenderer:
@@ -18104,7 +18110,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.55
+  m_Radius: 0.56
   m_Center: {x: -0.0000019073486, y: 0.0000076293945, z: 0}
 --- !u!114 &713768575
 MonoBehaviour:
@@ -18118,6 +18124,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e880cd90867dbdb44870ca4385e9bb0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  punctureBall: {fileID: 2682916870070428379, guid: f9ad8a3098afb7348b1b92320000bf99,
+    type: 3}
   ball: {fileID: 1482162624}
 --- !u!96 &713768576
 TrailRenderer:
@@ -20697,7 +20705,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.55
+  m_Radius: 0.56
   m_Center: {x: 0.0000019073486, y: 0.0000076293945, z: -0.00000011920929}
 --- !u!114 &909800090
 MonoBehaviour:
@@ -20711,6 +20719,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e880cd90867dbdb44870ca4385e9bb0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  punctureBall: {fileID: 2682916870070428379, guid: f9ad8a3098afb7348b1b92320000bf99,
+    type: 3}
   ball: {fileID: 1482162624}
 --- !u!96 &909800091
 TrailRenderer:
@@ -26365,7 +26375,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.55
+  m_Radius: 0.56
   m_Center: {x: 0, y: 0.0000076293945, z: 0.00000011920929}
 --- !u!114 &968450851
 MonoBehaviour:
@@ -26379,6 +26389,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e880cd90867dbdb44870ca4385e9bb0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  punctureBall: {fileID: 2682916870070428379, guid: f9ad8a3098afb7348b1b92320000bf99,
+    type: 3}
   ball: {fileID: 1482162624}
 --- !u!96 &968450852
 TrailRenderer:
@@ -34550,7 +34562,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.55
+  m_Radius: 0.56
   m_Center: {x: -0.0000038146973, y: 0.0000076293945, z: 0}
 --- !u!114 &1168426567
 MonoBehaviour:
@@ -34564,6 +34576,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e880cd90867dbdb44870ca4385e9bb0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  punctureBall: {fileID: 2682916870070428379, guid: f9ad8a3098afb7348b1b92320000bf99,
+    type: 3}
   ball: {fileID: 1482162624}
 --- !u!96 &1168426568
 TrailRenderer:
@@ -62911,7 +62925,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.55
+  m_Radius: 0.56
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2007718620
 MeshRenderer:
@@ -62975,6 +62989,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e880cd90867dbdb44870ca4385e9bb0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  punctureBall: {fileID: 2682916870070428379, guid: f9ad8a3098afb7348b1b92320000bf99,
+    type: 3}
   ball: {fileID: 1482162624}
 --- !u!96 &2007718623
 TrailRenderer:

@@ -28,9 +28,9 @@ public class KnifePrefabScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     
 
         transform.position -= new Vector3(0.7f, 0, 0) * speed * Time.deltaTime;
+
     }
   
 
@@ -56,7 +56,7 @@ public class KnifePrefabScript : MonoBehaviour
             transform.DOJump(new Vector3(10, 10, 10), 5, 1, 4);
             transform.position -= new Vector3(0f, 0, 0);
             Destroy(this.gameObject);
-            Destroy(other.gameObject, 0.1f);
+            Destroy(other.gameObject);
         }
     }
 
