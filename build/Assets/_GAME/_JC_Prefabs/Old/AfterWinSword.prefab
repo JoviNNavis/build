@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 2590846551577548755}
   - component: {fileID: 2590846551577548754}
   - component: {fileID: 9146111261655308705}
-  - component: {fileID: 6806598192031047537}
+  - component: {fileID: 5592487851702685350}
   m_Layer: 0
   m_Name: AfterWinSword
   m_TagString: Knife
@@ -209,8 +209,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!135 &6806598192031047537
-SphereCollider:
+--- !u!65 &5592487851702685350
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -220,8 +220,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.035
-  m_Center: {x: 0.08, y: -0.03, z: 0.035}
+  m_Size: {x: 0.0620272, y: 0.056782342, z: 0.08314565}
+  m_Center: {x: 0.08812704, y: -0.030129332, z: 0.02183475}
 --- !u!1 &2747327511001776215
 GameObject:
   m_ObjectHideFlags: 0

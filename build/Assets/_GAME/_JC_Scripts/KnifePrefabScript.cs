@@ -55,7 +55,7 @@ public class KnifePrefabScript : MonoBehaviour
             other.transform.SetParent(this.transform, true);
             transform.DOJump(new Vector3(10, 10, 10), 5, 1, 4);
             transform.position -= new Vector3(0f, 0, 0);
-            Destroy(this.gameObject);
+            Destroy(this.gameObject );
             Destroy(other.gameObject);
         }
     }
