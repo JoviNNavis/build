@@ -5,6 +5,8 @@ using UnityEngine;
 public class mid : MonoBehaviour
 {
     public static bool isskin;
+
+    public static bool lvl2Fail, lvl3Fail;
     void Start()
     {
         

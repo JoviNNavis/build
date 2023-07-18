@@ -25,7 +25,7 @@ public class ButtonManager : MonoBehaviour
     public MeshRenderer water;
     public GameObject cam, button, playButon, newButton;
     public bool isskin;
-    public GameObject rewardPanel, levelPanel, chestPanel, ChestlosePanel, countdownPanel,countdownpanel_ad, SculptPanel, knifeSkniPanel;
+    public GameObject rewardPanel, levelPanel, failedlevelPanel, winFailPanel, failWinPanel, newLevelPanel, chestPanel, ChestlosePanel, countdownPanel,countdownpanel_ad, SculptPanel, knifeSkniPanel;
     bool ispresed;
     public BonusKnifeScript bonusKnife;
     public GameObject pressbutton;
@@ -62,6 +62,8 @@ public class ButtonManager : MonoBehaviour
 
     public float winValue;
 
+    public BallSpinScript spinBall;
+
     void Start()
     {
 
@@ -76,7 +78,7 @@ public class ButtonManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        FindObjectOfType<newKnifeScript>().skin();
+        //FindObjectOfType<newKnifeScript>().skin();
         //else
         //{
         //    return;
@@ -173,15 +175,31 @@ public class ButtonManager : MonoBehaviour
         StartCoroutine(playButton3());
     }
 
-    public void noThanks()
+    public void noThankslvl2()
     {
         SoundManger.soundctrl.playClip(tapSound);
-        //rewardPanel.SetActive(false);
         levelPanel.SetActive(true);
-      //  ChestlosePanel.SetActive(false);
         Destroy(ChestlosePanel);
         Destroy(rewardPanel);
+    }
 
+    public void noThankslvl3()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if(mid.lvl2Fail == true)
+        {
+            failWinPanel.SetActive(true);
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == false)
+        {
+            levelPanel.SetActive(true);
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
     }
 
     public void Restart()
@@ -213,12 +231,37 @@ public class ButtonManager : MonoBehaviour
         newPanel1.SetActive(false);
     }
 
-    public void Lose()
+    public void loselvl2()
     {
         SoundManger.soundctrl.playClip(tapSound);
+        mid.lvl2Fail = true;
+        failedlevelPanel.SetActive(true);
         Destroy(ChestlosePanel);
-   //     ChestlosePanel.SetActive(false);
-        levelPanel.SetActive(true);
+    }
+
+    public void Loselvl3()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if(mid.lvl2Fail == true && mid.lvl3Fail == false)
+        {
+            failWinPanel.SetActive(true);
+            Destroy(ChestlosePanel);
+        }
+        
+        if(mid.lvl2Fail == true && mid.lvl3Fail == true)
+        {
+            failedlevelPanel.SetActive(true);
+            Destroy(ChestlosePanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == true)
+        {
+            winFailPanel.SetActive(true);
+            Destroy(ChestlosePanel);
+        }
+
+
     }
 
     public void newOk()
@@ -268,21 +311,21 @@ public class ButtonManager : MonoBehaviour
     public void nextLvl()
     {
         SoundManger.soundctrl.playClip(tapSound);
-       /* SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
-        loadSceneIndex = PlayerPrefs.GetInt("SavedScene");
+        /* loadSceneIndex = PlayerPrefs.GetInt("SavedScene");
         
         if (loadSceneIndex > 0)
             SceneManager.LoadScene(loadSceneIndex);
         else
             return;*/
 
-        GameData.SetCurrentScene(GameData.GetCurrentScene()+1);
-        if (GameData.GetCurrentScene() >= 11)
-        {
-            GameData.SetCurrentScene(1);
-        }
-        Application.LoadLevel("Lvl " + GameData.GetCurrentScene());
+        //GameData.SetCurrentScene(GameData.GetCurrentScene()+1);
+        //if (GameData.GetCurrentScene() >= 11)
+        //{
+        //    GameData.SetCurrentScene(1);
+        //}
+        //Application.LoadLevel("Lvl " + GameData.GetCurrentScene());
     }
 
     public void lvlUp()

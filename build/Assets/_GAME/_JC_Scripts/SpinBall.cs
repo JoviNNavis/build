@@ -23,6 +23,7 @@ public class SpinBall : MonoBehaviour
     {
         if(other.CompareTag("Knife"))
         {
+            mid.lvl3Fail = true;
             Destroy(other.gameObject);
             ball.Balls.Remove(transform);
             if (FindObjectOfType<ButtonManager>().ishaptic)

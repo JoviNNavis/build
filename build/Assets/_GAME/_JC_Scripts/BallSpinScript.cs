@@ -8,6 +8,7 @@ public class BallSpinScript : MonoBehaviour
     public newKnifeScript knife;
     public newKnifeScript1 knife1;
     public bool isOver= false;
+    public static bool istouch;
     bool islevelbelow5;
     public GameObject missKniePanel;
     public GameObject losePanel, newlosePanel;
@@ -28,6 +29,8 @@ public class BallSpinScript : MonoBehaviour
     void Update()
     {
         islevelbelow5 = FindObjectOfType<ButtonManager>().isbelowlevel5;
+
+        //istouch = isOver;
 
         if (!islevelbelow5)
         {
@@ -273,7 +276,7 @@ public class BallSpinScript : MonoBehaviour
             }
         }
 
-        chestlost(isOver);
+        //chestlost(isOver);
     }
 
     public void chestlost(bool isclicked)
@@ -301,6 +304,6 @@ public class BallSpinScript : MonoBehaviour
         Destroy(missKniePanel);
         losePanel.SetActive(true);
         yield return new WaitForSeconds(0.5f);
-        this.enabled = false;
+        //this.enabled = false;
     }
 }
