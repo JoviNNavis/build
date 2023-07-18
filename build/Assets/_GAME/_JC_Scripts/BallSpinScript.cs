@@ -10,7 +10,7 @@ public class BallSpinScript : MonoBehaviour
     public bool isOver= false;
     bool islevelbelow5;
     public GameObject missKniePanel;
-    public GameObject losePanel;
+    public GameObject losePanel, newlosePanel;
 
     public List<Transform> Balls ;
     public List<Animator> ANIMBalls;
@@ -272,7 +272,27 @@ public class BallSpinScript : MonoBehaviour
                 }
             }
         }
+
+        chestlost(isOver);
     }
+
+    public void chestlost(bool isclicked)
+    {
+        isclicked = isOver;
+
+        if(isclicked)
+        {
+            losePanel.SetActive(false);
+            newlosePanel.SetActive(true);
+        }
+        else
+        {
+            newlosePanel.SetActive(false);
+            losePanel.SetActive(true);
+            
+        }
+    }
+
     IEnumerator lose()
     {
         yield return new WaitForSeconds(0.75f);

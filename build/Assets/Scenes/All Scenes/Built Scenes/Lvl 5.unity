@@ -48012,6 +48012,7 @@ MonoBehaviour:
   isOver: 0
   missKniePanel: {fileID: 7048907842575209931}
   losePanel: {fileID: 2741648863911847984}
+  newlosePanel: {fileID: 0}
   Balls:
   - {fileID: 806035584941831295}
   - {fileID: 1525791611829202880}
@@ -93794,7 +93795,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -601177190, guid: 87e1122df5fbc0b43aee62c0ce045b85, type: 3}
+  m_Sprite: {fileID: -959853531, guid: c25b6b5181d2d1a468139c9d62bcc0f3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

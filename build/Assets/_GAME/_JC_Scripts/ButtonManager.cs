@@ -473,6 +473,7 @@ public class ButtonManager : MonoBehaviour
         GameData.SetCoins(cashScript.cashValue);
     }
 
+   
     IEnumerator playButton1()
     {
         yield return new WaitForSeconds(2f);
