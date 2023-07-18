@@ -20,6 +20,8 @@ public class ExtraReward : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        count1.color = new Color(0, 0, 0, 0);
+
         glow.transform.Rotate(0, 0, 0.5f);
 
         count1.text = "" + countValue.ToString("0");
