@@ -42,7 +42,7 @@ public class Poles_Script : MonoBehaviour
         for (int i = 0; i < _coins.Count; i++)
         {
             
-            yield return new WaitForSeconds(30);
+            yield return new WaitForSeconds(18);
             _coins[i].SetActive(true);
 
         }

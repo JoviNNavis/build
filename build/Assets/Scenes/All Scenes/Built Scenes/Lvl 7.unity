@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.007
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0023515928, g: 0.0044228756, b: 0.003907274, a: 0.007}
+  m_IndirectSpecularColor: {r: 0.0023516521, g: 0.004422882, b: 0.0039072437, a: 0.007}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14309,6 +14309,9 @@ MonoBehaviour:
   rewardPanel: {fileID: 364440460}
   levelPanel: {fileID: 1628282492}
   failedlevelPanel: {fileID: 1965741390}
+  winFailPanel: {fileID: 0}
+  failWinPanel: {fileID: 0}
+  newLevelPanel: {fileID: 0}
   chestPanel: {fileID: 0}
   ChestlosePanel: {fileID: 4879302394055608924}
   countdownPanel: {fileID: 3045309384772225469}
@@ -14348,6 +14351,7 @@ MonoBehaviour:
   playerSlider: {fileID: 4118225339579481922}
   playerImage: {fileID: 50878900}
   winValue: 0.25
+  spinBall: {fileID: 0}
 --- !u!1 &503448130
 GameObject:
   m_ObjectHideFlags: 0
@@ -18741,14 +18745,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.41069028, y: -0.21380287, z: 0.09969791, w: 0.88072824}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1749670956}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 50, y: -27.29, z: 0}
 --- !u!114 &705507996
 MonoBehaviour:
   m_ObjectHideFlags: 0
