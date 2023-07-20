@@ -17,7 +17,9 @@ public class WinScript : MonoBehaviour
     private Color _blue;
     private MeshRenderer water;
     public GameObject text, target, aiTarget, comboText;
-    public GameObject lostPanel;
+    public GameObject lostPanel, lostPanelwin_fail, lostPanelfail_win, lostPanelfail_fail;
+
+    public GameObject lostPanel1, lostPanel2, lostPanel3, lostPanel4, lostPanel5, lostPanel6, lostPanel7;
     public bool islevelcompleted;
     public bool isLost = false;
 
@@ -38,6 +40,13 @@ public class WinScript : MonoBehaviour
     public FailScript1 fail;
 
     public NewFailScript newFail;
+
+    public bool lvl3;
+
+    public bool lvl4;
+
+    public bool lvl5;
+
 
     void Start()
     {
@@ -80,6 +89,109 @@ public class WinScript : MonoBehaviour
         playerNewObj.SetActive(false);
         lostPanel.SetActive(true);
         aiNewObj.SetActive(false);
+    }
+
+    IEnumerator gameLostlvl3()
+    {
+        yield return new WaitForSeconds(1f);
+
+        if(mid.lvl2Fail == false || mid.lvl8fail == false)
+        {
+            playerNewObj.SetActive(false);
+            lostPanel.SetActive(true);
+            aiNewObj.SetActive(false);
+        }
+        if(mid.lvl2Fail == true || mid.lvl8fail == true)
+        {
+            playerNewObj.SetActive(false);
+            lostPanelfail_fail.SetActive(true);
+            aiNewObj.SetActive(false);
+        }
+
+    }
+
+    IEnumerator gameLostlvl4()
+    {
+        yield return new WaitForSeconds(1f);
+
+        if(mid.lvl2Fail == false && mid.lvl3Fail == false  || mid.lvl7fail == false && mid.lvl8fail == false)
+        {
+            playerNewObj.SetActive(false);     //win_win
+            lostPanel.SetActive(true);
+            aiNewObj.SetActive(false);
+        }
+        if (mid.lvl2Fail == false && mid.lvl3Fail == true || mid.lvl7fail == false && mid.lvl8fail == true)
+        {
+            playerNewObj.SetActive(false);
+            lostPanelwin_fail.SetActive(true);    //win_fail
+            aiNewObj.SetActive(false);
+        }
+        if (mid.lvl2Fail == true && mid.lvl3Fail == false || mid.lvl7fail == true && mid.lvl8fail == false)
+        {
+            playerNewObj.SetActive(false);
+            lostPanelfail_win.SetActive(true);    //fail_win
+            aiNewObj.SetActive(false);
+        }
+        if (mid.lvl2Fail == true && mid.lvl3Fail == true || mid.lvl7fail == true && mid.lvl8fail == true)
+        {
+            playerNewObj.SetActive(false);
+            lostPanelfail_fail.SetActive(true);    //fail_fail
+            aiNewObj.SetActive(false);
+        }
+    }
+
+    IEnumerator gameLostlvl5()
+    {
+        yield return new WaitForSeconds(1f);
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == false && lvl4Fail.lvl4fail == false || mid.lvl7fail == false && mid.lvl8fail == false && mid.lvl9fail == false)
+        {
+            playerNewObj.SetActive(false);     //win_win
+            lostPanel.SetActive(true);
+            aiNewObj.SetActive(false);
+        }
+        if (mid.lvl2Fail == true && mid.lvl3Fail == false && lvl4Fail.lvl4fail == false || mid.lvl7fail == true && mid.lvl8fail == false && mid.lvl9fail == false)
+        {
+            playerNewObj.SetActive(false);     //win_win
+            lostPanel1.SetActive(true);
+            aiNewObj.SetActive(false);
+        }
+        if (mid.lvl2Fail == false && mid.lvl3Fail == true && lvl4Fail.lvl4fail == false || mid.lvl7fail == false && mid.lvl8fail == true && mid.lvl9fail == false)
+        {
+            playerNewObj.SetActive(false);     //win_win
+            lostPanel2.SetActive(true);
+            aiNewObj.SetActive(false);
+        }
+        if (mid.lvl2Fail == false && mid.lvl3Fail == false && lvl4Fail.lvl4fail == true || mid.lvl7fail == false && mid.lvl8fail == false && mid.lvl9fail == true)
+        {
+            playerNewObj.SetActive(false);     //win_win
+            lostPanel3.SetActive(true);
+            aiNewObj.SetActive(false);
+        }
+        if (mid.lvl2Fail == true && mid.lvl3Fail == true && lvl4Fail.lvl4fail == true || mid.lvl7fail == true && mid.lvl8fail == true && mid.lvl9fail == true)
+        {
+            playerNewObj.SetActive(false);     //win_win
+            lostPanel4.SetActive(true);
+            aiNewObj.SetActive(false);
+        }
+        if (mid.lvl2Fail == false && mid.lvl3Fail == true && lvl4Fail.lvl4fail == true || mid.lvl7fail == false && mid.lvl8fail == true && mid.lvl9fail == true)
+        {
+            playerNewObj.SetActive(false);     //win_win
+            lostPanel5.SetActive(true);
+            aiNewObj.SetActive(false);
+        }
+        if (mid.lvl2Fail == true && mid.lvl3Fail == true && lvl4Fail.lvl4fail == false || mid.lvl7fail == true && mid.lvl8fail == true && mid.lvl9fail == false)
+        {
+            playerNewObj.SetActive(false);     //win_win
+            lostPanel6.SetActive(true);
+            aiNewObj.SetActive(false);
+        }
+        if (mid.lvl2Fail == true && mid.lvl3Fail == false && lvl4Fail.lvl4fail == true || mid.lvl7fail == true && mid.lvl8fail == false && mid.lvl9fail == true)
+        {
+            playerNewObj.SetActive(false);     //win_win
+            lostPanel7.SetActive(true);
+            aiNewObj.SetActive(false);
+        }
 
     }
 
@@ -111,10 +223,9 @@ public class WinScript : MonoBehaviour
             rayball.enabled = false;
         }
 
-
         if (isLost == true && other.CompareTag("Knife"))
         {
-            
+
             playerKnife.enabled = false;
             aiKnife.enabled = false;
             lvl.SetActive(false);
@@ -124,7 +235,52 @@ public class WinScript : MonoBehaviour
             rayball.enabled = false;
             Destroy(text);
             Destroy(target);
+
+        }
+
+        if (isLost == true && other.CompareTag("Knife") && lvl3 == true)
+        {
+
+            playerKnife.enabled = false;
+            aiKnife.enabled = false;
+            lvl.SetActive(false);
+            //FindObjectOfType<KnifeScript>().combo.SetActive(false);
+            retry.SetActive(false);
+            StartCoroutine(gameLostlvl3());
+            rayball.enabled = false;
+            Destroy(text);
+            Destroy(target);
+
+        }
+
+        if (isLost == true && other.CompareTag("Knife") && lvl4 == true)
+        {
             
+            playerKnife.enabled = false;
+            aiKnife.enabled = false;
+            lvl.SetActive(false);
+            //FindObjectOfType<KnifeScript>().combo.SetActive(false);
+            retry.SetActive(false);
+            StartCoroutine(gameLostlvl4());
+            rayball.enabled = false;
+            Destroy(text);
+            Destroy(target);
+            
+        }
+
+        if (isLost == true && other.CompareTag("Knife") && lvl5 == true)
+        {
+
+            playerKnife.enabled = false;
+            aiKnife.enabled = false;
+            lvl.SetActive(false);
+            //FindObjectOfType<KnifeScript>().combo.SetActive(false);
+            retry.SetActive(false);
+            StartCoroutine(gameLostlvl5());
+            rayball.enabled = false;
+            Destroy(text);
+            Destroy(target);
+
         }
 
 

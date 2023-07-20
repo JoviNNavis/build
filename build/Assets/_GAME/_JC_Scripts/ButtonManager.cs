@@ -26,6 +26,9 @@ public class ButtonManager : MonoBehaviour
     public GameObject cam, button, playButon, newButton;
     public bool isskin;
     public GameObject rewardPanel, levelPanel, failedlevelPanel, winFailPanel, failWinPanel, newLevelPanel, chestPanel, ChestlosePanel, OldcountdownPanel, NewcountdownPanel, countdownpanel_ad, SculptPanel, knifeSkniPanel;
+    
+    public GameObject newCountpanel2, newCountpanel3;
+
     public GameObject win_win_FailPanel, fail_win_FailPanel, win_fail_FailPanel, fail_fail_FailPanel;
 
     public GameObject f_w_w_winPanel, w_f_w_winPanel, w_w_f_winPanel, f_f_f_winPanel, 
@@ -71,6 +74,8 @@ public class ButtonManager : MonoBehaviour
     public float winValue;
 
     public BallSpinScript spinBall;
+
+    public GameObject adPanel1, adPanel2, adPanel3, adPanel4, adPanel5, adPanel6, adPanel7, adPanel8;
 
     void Start()
     {
@@ -793,6 +798,180 @@ public class ButtonManager : MonoBehaviour
         else
         {
             OldcountdownPanel.SetActive(true);
+            Destroy(ChestlosePanel);
+        }
+    }
+
+    public void ExtraChestlvl8()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl8fail == true)
+        {
+            NewcountdownPanel.SetActive(true);
+            Destroy(ChestlosePanel);
+        }
+        else
+        {
+            OldcountdownPanel.SetActive(true);
+            Destroy(ChestlosePanel);
+        }
+    }
+
+    public void ExtraChestlvl4()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if(mid.lvl2Fail == false && mid.lvl3Fail == false)
+        {
+            OldcountdownPanel.SetActive(true);    //win_win
+            Destroy(ChestlosePanel);
+        }
+        if(mid.lvl2Fail == false && mid.lvl3Fail == true)
+        {
+            NewcountdownPanel.SetActive(true);   //win_fail
+            Destroy(ChestlosePanel);
+        }
+        if (mid.lvl2Fail == true && mid.lvl3Fail == false)
+        {
+            newCountpanel2.SetActive(true);    //fail_win
+            Destroy(ChestlosePanel);
+        }
+        if (mid.lvl2Fail == true && mid.lvl3Fail == true)
+        {
+            newCountpanel3.SetActive(true);    //fail_fail
+            Destroy(ChestlosePanel);
+        }
+    }
+
+    public void ExtraChestlvl9()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl7fail == false && mid.lvl8fail == false)
+        {
+            OldcountdownPanel.SetActive(true);    //win_win
+            Destroy(ChestlosePanel);
+        }
+        if (mid.lvl7fail == false && mid.lvl8fail == true)
+        {
+            NewcountdownPanel.SetActive(true);   //win_fail
+            Destroy(ChestlosePanel);
+        }
+        if (mid.lvl7fail == true && mid.lvl8fail == false)
+        {
+            newCountpanel2.SetActive(true);    //fail_win
+            Destroy(ChestlosePanel);
+        }
+        if (mid.lvl7fail == true && mid.lvl8fail == true)
+        {
+            newCountpanel3.SetActive(true);    //fail_fail
+            Destroy(ChestlosePanel);
+        }
+    }
+
+    public void ExtraChestlvl5()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == false && lvl4Fail.lvl4fail == false && mid.lvl5fail == false)
+        {
+            adPanel1.SetActive(true);    //fail_fail
+            Destroy(ChestlosePanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == false && lvl4Fail.lvl4fail == false && mid.lvl5fail == false)
+        {
+            adPanel2.SetActive(true);    //fail_fail
+            Destroy(ChestlosePanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == true && lvl4Fail.lvl4fail == false && mid.lvl5fail == false)
+        {
+            adPanel3.SetActive(true);    //fail_fail
+            Destroy(ChestlosePanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == false && lvl4Fail.lvl4fail == true && mid.lvl5fail == false)
+        {
+            adPanel4.SetActive(true);    //fail_fail
+            Destroy(ChestlosePanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == true && lvl4Fail.lvl4fail == true && mid.lvl5fail == false)
+        {
+            adPanel5.SetActive(true);    //fail_fail
+            Destroy(ChestlosePanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == true && lvl4Fail.lvl4fail == true && mid.lvl5fail == false)
+        {
+            adPanel6.SetActive(true);    //fail_fail
+            Destroy(ChestlosePanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == true && lvl4Fail.lvl4fail == false && mid.lvl5fail == false)
+        {
+            adPanel7.SetActive(true);    //fail_fail
+            Destroy(ChestlosePanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == false && lvl4Fail.lvl4fail == true && mid.lvl5fail == false)
+        {
+            adPanel8.SetActive(true);    //fail_fail
+            Destroy(ChestlosePanel);
+        }
+    }
+
+    public void ExtraChestlvl10()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl7fail == false && mid.lvl8fail == false && mid.lvl9fail == false && mid.lvl10fail == false)
+        {
+            adPanel1.SetActive(true);    //fail_fail
+            Destroy(ChestlosePanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == false && mid.lvl9fail == false && mid.lvl10fail == false)
+        {
+            adPanel2.SetActive(true);    //fail_fail
+            Destroy(ChestlosePanel);
+        }
+
+        if (mid.lvl7fail == false && mid.lvl8fail == true && mid.lvl9fail == false && mid.lvl10fail == false)
+        {
+            adPanel3.SetActive(true);    //fail_fail
+            Destroy(ChestlosePanel);
+        }
+
+        if (mid.lvl7fail == false && mid.lvl8fail == false && mid.lvl9fail == true && mid.lvl10fail == false)
+        {
+            adPanel4.SetActive(true);    //fail_fail
+            Destroy(ChestlosePanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == true && mid.lvl9fail == true && mid.lvl10fail == false)
+        {
+            adPanel5.SetActive(true);    //fail_fail
+            Destroy(ChestlosePanel);
+        }
+
+        if (mid.lvl7fail == false && mid.lvl8fail == true && mid.lvl9fail == true && mid.lvl10fail == false)
+        {
+            adPanel6.SetActive(true);    //fail_fail
+            Destroy(ChestlosePanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == true && mid.lvl9fail == false && mid.lvl10fail == false)
+        {
+            adPanel7.SetActive(true);    //fail_fail
+            Destroy(ChestlosePanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == false && mid.lvl9fail == true && mid.lvl10fail == false)
+        {
+            adPanel8.SetActive(true);    //fail_fail
             Destroy(ChestlosePanel);
         }
     }
