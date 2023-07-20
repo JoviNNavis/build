@@ -22056,10 +22056,29 @@ MonoBehaviour:
   newLevelPanel: {fileID: 0}
   chestPanel: {fileID: 0}
   ChestlosePanel: {fileID: 268112907}
-  countdownPanel: {fileID: 461147659}
+  OldcountdownPanel: {fileID: 461147659}
+  NewcountdownPanel: {fileID: 0}
   countdownpanel_ad: {fileID: 0}
   SculptPanel: {fileID: 0}
   knifeSkniPanel: {fileID: 0}
+  win_win_FailPanel: {fileID: 0}
+  fail_win_FailPanel: {fileID: 0}
+  win_fail_FailPanel: {fileID: 0}
+  fail_fail_FailPanel: {fileID: 0}
+  f_w_w_winPanel: {fileID: 0}
+  w_f_w_winPanel: {fileID: 0}
+  w_w_f_winPanel: {fileID: 0}
+  f_f_f_winPanel: {fileID: 0}
+  w_f_f_winPanel: {fileID: 0}
+  f_f_w_winPanel: {fileID: 0}
+  f_w_f_winPanel: {fileID: 0}
+  w_w_w_failPanel: {fileID: 0}
+  f_w_w_failPanel: {fileID: 0}
+  w_f_w_failPanel: {fileID: 0}
+  w_w_f_failPanel: {fileID: 0}
+  w_f_f_failPanel: {fileID: 0}
+  f_f_w_failPanel: {fileID: 0}
+  f_w_f_failPanel: {fileID: 0}
   bonusKnife: {fileID: 0}
   pressbutton: {fileID: 0}
   up: {fileID: 0}
@@ -22939,6 +22958,9 @@ MonoBehaviour:
   punctureBall: {fileID: 2682916870070428379, guid: f9ad8a3098afb7348b1b92320000bf99,
     type: 3}
   ball: {fileID: 1482162624}
+  islvl3: 0
+  islvl4: 0
+  islvl5: 0
 --- !u!1 &526831218
 GameObject:
   m_ObjectHideFlags: 0
@@ -25680,6 +25702,9 @@ MonoBehaviour:
   punctureBall: {fileID: 2682916870070428379, guid: f9ad8a3098afb7348b1b92320000bf99,
     type: 3}
   ball: {fileID: 1482162624}
+  islvl3: 0
+  islvl4: 0
+  islvl5: 0
 --- !u!1 &624861572
 GameObject:
   m_ObjectHideFlags: 0
@@ -25811,6 +25836,9 @@ MonoBehaviour:
   punctureBall: {fileID: 2682916870070428379, guid: f9ad8a3098afb7348b1b92320000bf99,
     type: 3}
   ball: {fileID: 1482162624}
+  islvl3: 0
+  islvl4: 0
+  islvl5: 0
 --- !u!1 &629356711
 GameObject:
   m_ObjectHideFlags: 0
@@ -27430,6 +27458,9 @@ MonoBehaviour:
   punctureBall: {fileID: 2682916870070428379, guid: f9ad8a3098afb7348b1b92320000bf99,
     type: 3}
   ball: {fileID: 1482162624}
+  islvl3: 0
+  islvl4: 0
+  islvl5: 0
 --- !u!1 &716137081
 GameObject:
   m_ObjectHideFlags: 0
@@ -36979,6 +37010,9 @@ MonoBehaviour:
   punctureBall: {fileID: 2682916870070428379, guid: f9ad8a3098afb7348b1b92320000bf99,
     type: 3}
   ball: {fileID: 1482162624}
+  islvl3: 0
+  islvl4: 0
+  islvl5: 0
 --- !u!1 &920293312
 GameObject:
   m_ObjectHideFlags: 0
@@ -38486,6 +38520,9 @@ MonoBehaviour:
   punctureBall: {fileID: 2682916870070428379, guid: f9ad8a3098afb7348b1b92320000bf99,
     type: 3}
   ball: {fileID: 1482162624}
+  islvl3: 0
+  islvl4: 0
+  islvl5: 0
 --- !u!1 &978043308
 GameObject:
   m_ObjectHideFlags: 0
@@ -47850,6 +47887,9 @@ MonoBehaviour:
   punctureBall: {fileID: 2682916870070428379, guid: f9ad8a3098afb7348b1b92320000bf99,
     type: 3}
   ball: {fileID: 1482162624}
+  islvl3: 0
+  islvl4: 0
+  islvl5: 0
 --- !u!1 &1176789027
 GameObject:
   m_ObjectHideFlags: 0
@@ -67601,7 +67641,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809528513}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -19.89, y: 54.82, z: 1.89}
+  m_LocalPosition: {x: -19.89, y: 55.7, z: 2.27}
   m_LocalScale: {x: 25, y: 25, z: 25}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -71413,6 +71453,9 @@ MonoBehaviour:
   punctureBall: {fileID: 2682916870070428379, guid: f9ad8a3098afb7348b1b92320000bf99,
     type: 3}
   ball: {fileID: 1482162624}
+  islvl3: 0
+  islvl4: 0
+  islvl5: 0
 --- !u!96 &2007718624
 TrailRenderer:
   serializedVersion: 2

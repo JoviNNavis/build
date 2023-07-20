@@ -25,7 +25,15 @@ public class ButtonManager : MonoBehaviour
     public MeshRenderer water;
     public GameObject cam, button, playButon, newButton;
     public bool isskin;
-    public GameObject rewardPanel, levelPanel, failedlevelPanel, winFailPanel, failWinPanel, newLevelPanel, chestPanel, ChestlosePanel, countdownPanel,countdownpanel_ad, SculptPanel, knifeSkniPanel;
+    public GameObject rewardPanel, levelPanel, failedlevelPanel, winFailPanel, failWinPanel, newLevelPanel, chestPanel, ChestlosePanel, OldcountdownPanel, NewcountdownPanel, countdownpanel_ad, SculptPanel, knifeSkniPanel;
+    public GameObject win_win_FailPanel, fail_win_FailPanel, win_fail_FailPanel, fail_fail_FailPanel;
+
+    public GameObject f_w_w_winPanel, w_f_w_winPanel, w_w_f_winPanel, f_f_f_winPanel, 
+        w_f_f_winPanel, f_f_w_winPanel, f_w_f_winPanel;
+
+    public GameObject w_w_w_failPanel, f_w_w_failPanel, w_f_w_failPanel, w_w_f_failPanel,
+        w_f_f_failPanel, f_f_w_failPanel, f_w_f_failPanel;
+
     bool ispresed;
     public BonusKnifeScript bonusKnife;
     public GameObject pressbutton;
@@ -202,6 +210,237 @@ public class ButtonManager : MonoBehaviour
         }
     }
 
+    public void noThankslvl8()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl8fail == true)
+        {
+            failWinPanel.SetActive(true);
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl8fail == false)
+        {
+            levelPanel.SetActive(true);
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+    }
+
+    public void noThankslvl4()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == false && lvl4Fail.lvl4fail == false)
+        {
+            levelPanel.SetActive(true);            //win_win_win
+            Debug.Log("WIN_WIN_WIN");
+            Destroy(ChestlosePanel);            
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == true && lvl4Fail.lvl4fail == false)
+        {
+            winFailPanel.SetActive(true);         //win_fail_win
+            Debug.Log("WIN_FAIL_WIN");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == false && lvl4Fail.lvl4fail == false)
+        {
+            failWinPanel.SetActive(true);     //fail_win_win
+            Debug.Log("FAIL_WIN_WIN");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == true && lvl4Fail.lvl4fail == false)
+        {
+            newLevelPanel.SetActive(true);     //fail_fail_win
+            Debug.Log("FAIL_FAIL_WIN");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+    }
+
+    public void noThankslvl9()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl7fail == false && mid.lvl8fail == false && mid.lvl9fail == false)
+        {
+            levelPanel.SetActive(true);            //win_win_win
+            Debug.Log("WIN_WIN_WIN");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == false && mid.lvl8fail == true && mid.lvl9fail == false)
+        {
+            winFailPanel.SetActive(true);         //win_fail_win
+            Debug.Log("WIN_FAIL_WIN");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == false && mid.lvl9fail == false)
+        {
+            failWinPanel.SetActive(true);     //fail_win_win
+            Debug.Log("FAIL_WIN_WIN");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == true && mid.lvl9fail == false)
+        {
+            newLevelPanel.SetActive(true);     //fail_fail_win
+            Debug.Log("FAIL_FAIL_WIN");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+    }
+
+    public void noThankslvl5()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == false && lvl4Fail.lvl4fail == false && mid.lvl5fail == false)
+        {
+            levelPanel.SetActive(true);            //win_win_win_win
+            Debug.Log("WIN_WIN_WIN_WIN");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == false && lvl4Fail.lvl4fail == false && mid.lvl5fail == false)
+        {
+            f_w_w_winPanel.SetActive(true);         //fail_win_win_win
+            Debug.Log("FAIL_WIN_WIN_WIN");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == true && lvl4Fail.lvl4fail == false && mid.lvl5fail == false)
+        {
+            w_f_w_winPanel.SetActive(true);     //win_fail_win_win
+            Debug.Log("FAIL_WIN_WIN");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == false && lvl4Fail.lvl4fail == true && mid.lvl5fail == false)
+        {
+            w_w_f_winPanel.SetActive(true);     //win_win_fail_win
+            Debug.Log("WIN_WIN_FAIL_WIN");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == true && lvl4Fail.lvl4fail == true && mid.lvl5fail == false)
+        {
+            f_f_f_winPanel.SetActive(true);     //fail_fail_fail_win
+            Debug.Log("FAIL_FAIL_FAIL_WIN");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == true && lvl4Fail.lvl4fail == true && mid.lvl5fail == false)
+        {
+            w_f_f_winPanel.SetActive(true);     //win_fail_fail_win
+            Debug.Log("WIN_FAIL_FAIL_WIN");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == true && lvl4Fail.lvl4fail == false && mid.lvl5fail == false)
+        {
+            f_f_w_winPanel.SetActive(true);     //fail_fail_win_win
+            Debug.Log("FAIL_FAIL_WIN_WIN");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == false && lvl4Fail.lvl4fail == true && mid.lvl5fail == false)
+        {
+            f_w_f_winPanel.SetActive(true);     //fail_win_fail_win
+            Debug.Log("FAIL_WIN_FAIL_WIN");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+    }
+
+    public void noThankslvl10()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl7fail == false && mid.lvl8fail == false && mid.lvl9fail == false && mid.lvl10fail == false)
+        {
+            levelPanel.SetActive(true);            //win_win_win_win
+            Debug.Log("WIN_WIN_WIN_WIN");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == false && mid.lvl9fail == false && mid.lvl10fail == false)
+        {
+            f_w_w_winPanel.SetActive(true);         //fail_win_win_win
+            Debug.Log("FAIL_WIN_WIN_WIN");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == false && mid.lvl8fail == true && mid.lvl9fail == false && mid.lvl10fail == false)
+        {
+            w_f_w_winPanel.SetActive(true);     //win_fail_win_win
+            Debug.Log("FAIL_WIN_WIN");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == false && mid.lvl8fail == false && mid.lvl9fail == true && mid.lvl10fail == false)
+        {
+            w_w_f_winPanel.SetActive(true);     //win_win_fail_win
+            Debug.Log("WIN_WIN_FAIL_WIN");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == true && mid.lvl9fail == true && mid.lvl10fail == false)
+        {
+            f_f_f_winPanel.SetActive(true);     //fail_fail_fail_win
+            Debug.Log("FAIL_FAIL_FAIL_WIN");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == false && mid.lvl8fail == true && mid.lvl9fail == true && mid.lvl10fail == false)
+        {
+            w_f_f_winPanel.SetActive(true);     //win_fail_fail_win
+            Debug.Log("WIN_FAIL_FAIL_WIN");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == true && mid.lvl9fail == false && mid.lvl10fail == false)
+        {
+            f_f_w_winPanel.SetActive(true);     //fail_fail_win_win
+            Debug.Log("FAIL_FAIL_WIN_WIN");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == false && mid.lvl9fail == true && mid.lvl10fail == false)
+        {
+            f_w_f_winPanel.SetActive(true);     //fail_win_fail_win
+            Debug.Log("FAIL_WIN_FAIL_WIN");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+    }
+
     public void Restart()
     {
         SoundManger.soundctrl.playClip(tapSound);
@@ -239,6 +478,14 @@ public class ButtonManager : MonoBehaviour
         Destroy(ChestlosePanel);
     }
 
+    public void loselvl7()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+        mid.lvl7fail = true;
+        failedlevelPanel.SetActive(true);
+        Destroy(ChestlosePanel);
+    }
+
     public void Loselvl3()
     {
         SoundManger.soundctrl.playClip(tapSound);
@@ -260,8 +507,233 @@ public class ButtonManager : MonoBehaviour
             winFailPanel.SetActive(true);
             Destroy(ChestlosePanel);
         }
+    }
 
+    public void Loselvl8()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
 
+        if (mid.lvl7fail == true && mid.lvl8fail == false)
+        {
+            failWinPanel.SetActive(true);
+            Destroy(ChestlosePanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == true)
+        {
+            failedlevelPanel.SetActive(true);
+            Destroy(ChestlosePanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == true)
+        {
+            winFailPanel.SetActive(true);
+            Destroy(ChestlosePanel);
+        }
+    }
+
+    public void Loselvl4()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == false && lvl4Fail.lvl4fail == true)
+        {
+            win_win_FailPanel.SetActive(true);      //win_win_fail
+            Debug.Log("WIN_WIN_FAIL");
+            Destroy(ChestlosePanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == false && lvl4Fail.lvl4fail == true)
+        {
+            fail_win_FailPanel.SetActive(true);     //fail_win_fail
+            Debug.Log("FAIL_WIN_FAIL");
+            Destroy(ChestlosePanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == true && lvl4Fail.lvl4fail == true)
+        {
+            win_fail_FailPanel.SetActive(true);           //win_fail_fail
+            Debug.Log("WIN_FAIL_FAIL");
+            Destroy(ChestlosePanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == true && lvl4Fail.lvl4fail == true)
+        {
+            fail_fail_FailPanel.SetActive(true);           //fail_fail_fail
+            Debug.Log("FAIL_FAIL_FAIL");
+            Destroy(ChestlosePanel);
+        }
+    }
+
+    public void Loselvl9()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl7fail == false && mid.lvl8fail == false && mid.lvl9fail == true)
+        {
+            win_win_FailPanel.SetActive(true);      //win_win_fail
+            Debug.Log("WIN_WIN_FAIL");
+            Destroy(ChestlosePanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == false && mid.lvl9fail == true)
+        {
+            fail_win_FailPanel.SetActive(true);     //fail_win_fail
+            Debug.Log("FAIL_WIN_FAIL");
+            Destroy(ChestlosePanel);
+        }
+
+        if (mid.lvl7fail == false && mid.lvl8fail == true && mid.lvl9fail == true)
+        {
+            win_fail_FailPanel.SetActive(true);           //win_fail_fail
+            Debug.Log("WIN_FAIL_FAIL");
+            Destroy(ChestlosePanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == true && mid.lvl9fail == true)
+        {
+            fail_fail_FailPanel.SetActive(true);           //fail_fail_fail
+            Debug.Log("FAIL_FAIL_FAIL");
+            Destroy(ChestlosePanel);
+        }
+    }
+
+    public void Loselvl5()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == false && lvl4Fail.lvl4fail == false && mid.lvl5fail == true)
+        {
+            w_w_w_failPanel.SetActive(true);            //win_win_win_fail
+            Debug.Log("WIN_WIN_WIN_FAIL");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == false && lvl4Fail.lvl4fail == false && mid.lvl5fail == true)
+        {
+            f_w_w_failPanel.SetActive(true);         //fail_win_win_fail
+            Debug.Log("FAIL_WIN_WIN_FAIL");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == true && lvl4Fail.lvl4fail == false && mid.lvl5fail == true)
+        {
+            w_f_w_failPanel.SetActive(true);     //win_fail_win_fail
+            Debug.Log("FAIL_WIN_WIN_FAIL");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == false && lvl4Fail.lvl4fail == true && mid.lvl5fail == true)
+        {
+            w_w_f_failPanel.SetActive(true);     //win_win_fail_fail
+            Debug.Log("WIN_WIN_FAIL_FAIL");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == true && lvl4Fail.lvl4fail == true && mid.lvl5fail == true)
+        {
+            failedlevelPanel.SetActive(true);     //fail_fail_fail_fail
+            Debug.Log("FAIL_FAIL_FAIL_FAIL");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == true && lvl4Fail.lvl4fail == true && mid.lvl5fail == true)
+        {
+            w_f_f_failPanel.SetActive(true);     //win_fail_fail_fail
+            Debug.Log("WIN_FAIL_FAIL_FAIL");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == true && lvl4Fail.lvl4fail == false && mid.lvl5fail == true)
+        {
+            f_f_w_failPanel.SetActive(true);     //fail_fail_win_fail
+            Debug.Log("FAIL_FAIL_WIN_WIN");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == false && lvl4Fail.lvl4fail == true && mid.lvl5fail == true)
+        {
+            f_w_f_failPanel.SetActive(true);     //fail_win_fail_fail
+            Debug.Log("FAIL_WIN_FAIL_FAIL");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+    }
+
+    public void Loselvl10()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl7fail == false && mid.lvl8fail == false && mid.lvl9fail == false && mid.lvl10fail == true)
+        {
+            w_w_w_failPanel.SetActive(true);            //win_win_win_fail
+            Debug.Log("WIN_WIN_WIN_FAIL");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == false && mid.lvl9fail == false && mid.lvl10fail == true)
+        {
+            f_w_w_failPanel.SetActive(true);         //fail_win_win_fail
+            Debug.Log("FAIL_WIN_WIN_FAIL");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == false && mid.lvl8fail == true && mid.lvl9fail == false && mid.lvl10fail == true)
+        {
+            w_f_w_failPanel.SetActive(true);     //win_fail_win_fail
+            Debug.Log("FAIL_WIN_WIN_FAIL");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == false && mid.lvl8fail == false && mid.lvl9fail == true && mid.lvl10fail == true)
+        {
+            w_w_f_failPanel.SetActive(true);     //win_win_fail_fail
+            Debug.Log("WIN_WIN_FAIL_FAIL");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == true && mid.lvl9fail == true && mid.lvl10fail == true)
+        {
+            failedlevelPanel.SetActive(true);     //fail_fail_fail_fail
+            Debug.Log("FAIL_FAIL_FAIL_FAIL");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == false && mid.lvl8fail == true && mid.lvl9fail == true && mid.lvl10fail == true)
+        {
+            w_f_f_failPanel.SetActive(true);     //win_fail_fail_fail
+            Debug.Log("WIN_FAIL_FAIL_FAIL");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == true && mid.lvl9fail == false && mid.lvl10fail == true)
+        {
+            f_f_w_failPanel.SetActive(true);     //fail_fail_win_fail
+            Debug.Log("FAIL_FAIL_WIN_WIN");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == false && mid.lvl9fail == true && mid.lvl10fail == true)
+        {
+            f_w_f_failPanel.SetActive(true);     //fail_win_fail_fail
+            Debug.Log("FAIL_WIN_FAIL_FAIL");
+            Destroy(ChestlosePanel);
+            Destroy(rewardPanel);
+        }
     }
 
     public void newOk()
@@ -278,7 +750,7 @@ public class ButtonManager : MonoBehaviour
         SoundManger.soundctrl.playClip(tapSound);
         rewardPanel.SetActive(false);
         cashScript.cashValue += 1050;
-        countdownPanel.SetActive(true);
+        OldcountdownPanel.SetActive(true);
         GameData.SetCoins(cashScript.cashValue);
         
     }
@@ -288,7 +760,7 @@ public class ButtonManager : MonoBehaviour
         SoundManger.soundctrl.playClip(tapSound);
         rewardPanel.SetActive(false);
         cashScript.cashValue += 1575;
-        countdownPanel.SetActive(true);
+        OldcountdownPanel.SetActive(true);
         GameData.SetCoins(cashScript.cashValue);
     }
 
@@ -297,15 +769,32 @@ public class ButtonManager : MonoBehaviour
         SoundManger.soundctrl.playClip(tapSound);
         rewardPanel.SetActive(false);
         cashScript.cashValue += 2625;
-        countdownPanel.SetActive(true);
+        OldcountdownPanel.SetActive(true);
         GameData.SetCoins(cashScript.cashValue);
     }
 
     public void ExtraChest()
     {
         SoundManger.soundctrl.playClip(tapSound);
-        ChestlosePanel.SetActive(false);
-        countdownPanel.SetActive(true);
+        OldcountdownPanel.SetActive(true);
+        Destroy(ChestlosePanel);
+        
+    }
+
+    public void ExtraChestlvl3()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if(mid.lvl2Fail == true)
+        {
+            NewcountdownPanel.SetActive(true);
+            Destroy(ChestlosePanel);
+        }
+        else
+        {
+            OldcountdownPanel.SetActive(true);
+            Destroy(ChestlosePanel);
+        }
     }
 
     public void nextLvl()
@@ -485,7 +974,7 @@ public class ButtonManager : MonoBehaviour
         SoundManger.soundctrl.playClip(tapSound);
         rewardPanel.SetActive(false);
         cashScript.cashValue += BounsCoinCollect.coinValue * 2;
-        countdownPanel.SetActive(true);
+        OldcountdownPanel.SetActive(true);
         GameData.SetCoins(cashScript.cashValue);
 
     }
@@ -495,7 +984,7 @@ public class ButtonManager : MonoBehaviour
         SoundManger.soundctrl.playClip(tapSound);
         rewardPanel.SetActive(false);
         cashScript.cashValue += BounsCoinCollect.coinValue * 3;
-        countdownPanel.SetActive(true);
+        OldcountdownPanel.SetActive(true);
         GameData.SetCoins(cashScript.cashValue);
     }
 
@@ -504,7 +993,7 @@ public class ButtonManager : MonoBehaviour
         SoundManger.soundctrl.playClip(tapSound);
         rewardPanel.SetActive(false);
         cashScript.cashValue += BounsCoinCollect.coinValue * 5;
-        countdownPanel.SetActive(true);
+        OldcountdownPanel.SetActive(true);
         GameData.SetCoins(cashScript.cashValue);
     }
 
