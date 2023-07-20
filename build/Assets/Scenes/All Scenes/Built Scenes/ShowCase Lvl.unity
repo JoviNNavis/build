@@ -580,13 +580,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 77342052}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 2.212, y: 7.841, z: -3.988}
-  m_LocalScale: {x: 22.111868, y: 22.111866, z: 22.111866}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.01022077}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 439944057}
-  m_RootOrder: 4
+  m_Father: {fileID: 293597824}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &77342054
 MeshRenderer:
@@ -1568,7 +1568,13 @@ Transform:
   m_LocalPosition: {x: 2.212, y: 7.615, z: -3.988}
   m_LocalScale: {x: 22.111868, y: 22.111866, z: 22.111866}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 567522458}
+  - {fileID: 1602058479}
+  - {fileID: 77342053}
+  - {fileID: 1458359811}
+  - {fileID: 1034452768}
+  - {fileID: 1468110719}
   m_Father: {fileID: 439944057}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1641,6 +1647,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: ui_green_button, Assembly-CSharp
         m_MethodName: addcoins
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 293597823}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2276,12 +2294,6 @@ Transform:
   m_Children:
   - {fileID: 543450652717864705}
   - {fileID: 293597824}
-  - {fileID: 567522458}
-  - {fileID: 1602058479}
-  - {fileID: 77342053}
-  - {fileID: 1458359811}
-  - {fileID: 1034452768}
-  - {fileID: 1468110719}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3562,13 +3574,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 567522457}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 2.212, y: 7.687, z: -3.988}
-  m_LocalScale: {x: 22.111868, y: 22.111866, z: 22.111866}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.003256171}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 439944057}
-  m_RootOrder: 2
+  m_Father: {fileID: 293597824}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &567522459
 MeshRenderer:
@@ -5631,13 +5643,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1034452767}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 2.212, y: 8.02, z: -3.988}
-  m_LocalScale: {x: 22.111868, y: 22.111866, z: 22.111866}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.018315986}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 439944057}
-  m_RootOrder: 6
+  m_Father: {fileID: 293597824}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1034452769
 MeshRenderer:
@@ -8000,13 +8012,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458359810}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 2.212, y: 7.938, z: -3.988}
-  m_LocalScale: {x: 22.111868, y: 22.111866, z: 22.111866}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.014607559}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 439944057}
-  m_RootOrder: 5
+  m_Father: {fileID: 293597824}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1458359812
 MeshRenderer:
@@ -8083,13 +8095,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1468110718}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 2.212, y: 8.106, z: -3.988}
-  m_LocalScale: {x: 22.111868, y: 22.111866, z: 22.111866}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.022205278}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 439944057}
-  m_RootOrder: 7
+  m_Father: {fileID: 293597824}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1468110720
 MeshRenderer:
@@ -8570,13 +8582,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1602058478}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 2.212, y: 7.76, z: -3.988}
-  m_LocalScale: {x: 22.111868, y: 22.111866, z: 22.111866}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0065575847}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 439944057}
-  m_RootOrder: 3
+  m_Father: {fileID: 293597824}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1602058480
 MeshRenderer:
@@ -11506,6 +11518,10 @@ MonoBehaviour:
   isskin: 0
   rewardPanel: {fileID: 0}
   levelPanel: {fileID: 0}
+  failedlevelPanel: {fileID: 0}
+  winFailPanel: {fileID: 0}
+  failWinPanel: {fileID: 0}
+  newLevelPanel: {fileID: 0}
   chestPanel: {fileID: 0}
   ChestlosePanel: {fileID: 0}
   countdownPanel: {fileID: 0}
@@ -11545,6 +11561,7 @@ MonoBehaviour:
   playerSlider: {fileID: 0}
   playerImage: {fileID: 0}
   winValue: 0
+  spinBall: {fileID: 0}
 --- !u!4 &2146273392
 Transform:
   m_ObjectHideFlags: 0

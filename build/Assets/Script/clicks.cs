@@ -34,7 +34,7 @@ public class clicks : MonoBehaviour
 
         if (power == 0)
         {
-            Destroy(this.gameObject, 1f);
+            Destroy(this.gameObject, 0.5f);
         }
     }
  
