@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
+
 public class WinScript : MonoBehaviour
 {
     public GameObject blast, winText;
@@ -221,6 +222,7 @@ public class WinScript : MonoBehaviour
             Destroy(comboText);
             Destroy(target);
             rayball.enabled = false;
+          
         }
 
         if (isLost == true && other.CompareTag("Knife"))

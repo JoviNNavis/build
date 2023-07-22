@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d66bd4811b7f1ae41ae7cbfe1686befb, type: 3}
+  m_Name: AppCentral SDK Setting
+  m_EditorClassIdentifier: 
+  newSetting:
+    ShowVersionInfo: 0
+    ShowLogs: 1
+    UseAppCentralSDKPhase2: 0
+    GameIcon: {fileID: 21300000, guid: c5b4d0a1c303a224599da78a26fbdcf3, type: 3}
+    GameName: KnifeBounce3D
+    BundleID: com.justcrypto.knifebounce
+    IOSAppID: 6446150855
+    OverRide_URLTermsOfConditions: 0
+    URLTermsOfConditions: https://www.app-central.com/terms
+    OverRide_URLPrivacyPolicy: 0
+    URLPrivacyPolicy: https://www.app-central.com/privacy-policy
+    canUseAppsFlyer: 1
+    appsFlyer_devKey: cKCUQ38QmEpeatEyGr3CeV
+    appsFlyer_appID: 
+    canUseGameAnalytics: 1
+    gameAnalyticsIosGameKey: 0be201767936a59c974d285b1d8c11a6
+    gameAnalyticsIosSecretKey: 6c9cdaa4e7d6519a5049e0ce89647e46833f1365
+    levelInfos: []
+    canUseSmartLook: 1
+    SmartLookKey: 3f3df912e9b942a679e2c88848d85ba4bae8defd
+    UseRateUS: 0
+    UseFlightModePrompt: 0
+    Set_URL_scheme: 0
+    CurrentURl_Scheme: 
+    UseOneSignal: 0
+    OneSignalID: 
+    UseAppLovin: 0
+    AppLovinAppID: 
+    BannerAdId: 
+    BannerPosition: 0
+    AppOpenAdId: 
+    InterstitailAdId: 
+    RewardedAdId: 
+    maxAdapters: []
+    UseInApps: 0
+    videoClip: {fileID: 0}
+    AC_AllGamesAdFreeInAppID: 
+    AC_AllBundleAdfreeInAppID: 
+    DynamicSubscriptionInAppID: []
+    MidGameSubscriptionInAppID: []
+  isSDKPhase1FoldOut: 1
+  isSDKPhase2FoldOut: 1

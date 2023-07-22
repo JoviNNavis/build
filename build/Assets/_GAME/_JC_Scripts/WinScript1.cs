@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using AppCentralAPI;
 using DG.Tweening;
 
 public class WinScript1 : MonoBehaviour
@@ -43,7 +44,9 @@ public class WinScript1 : MonoBehaviour
             winText.SetActive(true);
             text.SetActive(false);
             Destroy(target);
+        
             Destroy(comboText);
+
         }
 
         if(other.CompareTag("Ball") && fail.Knifes.Count > fail.winValue)

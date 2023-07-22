@@ -60,9 +60,9 @@ public class Cubes : MonoBehaviour
         //    switch (placement)
         //    {
         //        case placement.left:
-        //            return FindObjectOfType<clicks>().knife.transform.DOLocalRotate(new Vector3(-0, 0, 18), 0.2f, RotateMode.Fast);
+        //            return FindObjectOfType<clicks>().knife.transform.DOLocalRotate(new Vector3(-0, 0, 18), rotate_time, RotateMode.Fast);
         //        case placement.right:
-        //            return FindObjectOfType<clicks>().knife.transform.DOLocalRotate(new Vector3(0, 0, 0), 0.2f, RotateMode.Fast);
+        //            return FindObjectOfType<clicks>().knife.transform.DOLocalRotate(new Vector3(0, 0, 0), rotate_time, RotateMode.Fast);
         //    }
         //}
 

@@ -1,0 +1,25 @@
+/* Class = "UILabel"; text = "{benefit_txt}, please allow {bright_data} to use your device's free resources and IP address to download {public_web_data} from the Internet while you are using {app_name}.\n\nNone of your personal information is collected, except your IP address."; ObjectID = "FCb-ZC-Cbk"; */
+"FCb-ZC-Cbk.text" = "{benefit_txt}, please allow {bright_data} to use your device's free resources and IP address to download {public_web_data} from the Internet while you are using {app_name}.\n\nNone of your personal information is collected, except your IP address.";
+/* Class = "UIButton"; normalTitle = "{disagree_txt}"; ObjectID = "Msr-xw-vDo"; */
+"Msr-xw-vDo.normalTitle" = "{disagree_txt}";
+/* Class = "UILabel"; text = "Secure
+ BrightData
+ cloud"; ObjectID = "YKn-t6-hEz"; */
+"YKn-t6-hEz.text" = "Beveiligde
+BrightData-cloud";
+/* Class = "UILabel"; text = "App Name"; ObjectID = "ezw-X2-yDf"; */
+"ezw-X2-yDf.text" = "App Name";
+/* Class = "UILabel"; text = "Public
+ website"; ObjectID = "gLF-0q-hlQ"; */
+"gLF-0q-hlQ.text" = "Openbare
+website";
+/* Class = "UILabel"; text = "Read Bright Data's {privacy_policy} and {end_user_license_agreement}"; ObjectID = "gzW-3M-0lr"; */
+"gzW-3M-0lr.text" = "Read Bright Data's {privacy_policy} and {end_user_license_agreement}";
+/* Class = "UILabel"; text = "Your participation is totally optional and you may opt out at any time."; ObjectID = "hST-Sb-hKJ"; */
+"hST-Sb-hKJ.text" = "Your participation is totally optional and you may opt out at any time.";
+/* Class = "UIButton"; normalTitle = "{agree_txt}"; ObjectID = "iU9-Dl-dvR"; */
+"iU9-Dl-dvR.normalTitle" = "{agree_txt}";
+/* Class = "UILabel"; text = "Your
+ device"; ObjectID = "tyA-OE-HAH"; */
+"tyA-OE-HAH.text" = "Je
+apparaat";

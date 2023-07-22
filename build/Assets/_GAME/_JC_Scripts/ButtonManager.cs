@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
+using AppCentralAPI;
 
 
 public class ButtonManager : MonoBehaviour
@@ -97,7 +98,10 @@ public class ButtonManager : MonoBehaviour
         //    return;
         //}
     }
-
+    public void appce()
+    {
+        AppCentral.StartPlay();
+    }
     public void gameStart1()  //lvl 1
     {
         SoundManger.soundctrl.playClip(tapSound);
@@ -105,6 +109,7 @@ public class ButtonManager : MonoBehaviour
         cam.SetActive(false);
         settingsbutton.SetActive(false);
         button.gameObject.SetActive(false);
+        appce();
         StartCoroutine(playButton1());
      //   currSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
        // PlayerPrefs.SetInt("SavedScene", currSceneIndex);
@@ -118,6 +123,7 @@ public class ButtonManager : MonoBehaviour
         cam.SetActive(false);
         settingsbutton.SetActive(false);
         button.gameObject.SetActive(true);
+        appce();
         StartCoroutine(playButton2());
        // currSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
        // PlayerPrefs.SetInt("SavedScene", currSceneIndex);
@@ -131,6 +137,8 @@ public class ButtonManager : MonoBehaviour
         settingsbutton.SetActive(false);
         cam.SetActive(false);
         button.gameObject.SetActive(false);
+        appce();
+
         StartCoroutine(playButton11());
       //  currSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
       //  GameData.SetCurrentScene(currSceneIndex);
@@ -143,6 +151,8 @@ public class ButtonManager : MonoBehaviour
         retryButton.SetActive(true);
         cam.SetActive(false);
         button.gameObject.SetActive(false);
+        appce();
+
         StartCoroutine(playButton1());
        // currSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
     //    PlayerPrefs.SetInt("SavedScene", currSceneIndex);
@@ -157,6 +167,8 @@ public class ButtonManager : MonoBehaviour
         cam.SetActive(false);
         SculptPanel.gameObject.SetActive(false);
         button.gameObject.SetActive(true);
+        appce();
+
         StartCoroutine(playButton2());
         isstart = true;
        // currSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
@@ -172,6 +184,8 @@ public class ButtonManager : MonoBehaviour
         settingsbutton.SetActive(false);
         button.gameObject.SetActive(false);
         SculptPanel.gameObject.SetActive(false);
+        appce();
+
         ispresed = true;
         isstart = true;
         StartCoroutine(playButton11());
@@ -449,6 +463,8 @@ public class ButtonManager : MonoBehaviour
     public void Restart()
     {
         SoundManger.soundctrl.playClip(tapSound);
+        AppCentral.SetLevelStartID(currSceneIndex);
+
         SceneManager.LoadScene(Application.loadedLevelName);
     }
 
@@ -980,7 +996,8 @@ public class ButtonManager : MonoBehaviour
     {
         SoundManger.soundctrl.playClip(tapSound);
        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-
+        AppCentral.SetLevelStartID(SceneManager.GetActiveScene().buildIndex + 1);
+        AppCentral.OnLevelComplete();
         /* loadSceneIndex = PlayerPrefs.GetInt("SavedScene");
         
         if (loadSceneIndex > 0)
@@ -988,12 +1005,12 @@ public class ButtonManager : MonoBehaviour
         else
             return;*/
 
-        //GameData.SetCurrentScene(GameData.GetCurrentScene()+1);
+        GameData.SetCurrentScene(GameData.GetCurrentScene() + 1);
         //if (GameData.GetCurrentScene() >= 11)
         //{
         //    GameData.SetCurrentScene(1);
         //}
-        //Application.LoadLevel("Lvl " + GameData.GetCurrentScene());
+        Application.LoadLevel("Lvl " + GameData.GetCurrentScene());
     }
 
     public void lvlUp()

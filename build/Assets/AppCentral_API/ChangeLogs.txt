@@ -1,0 +1,222 @@
+Version 0.2.5:---------------------------------------------------------------
+
+Changes for developers:
+- None
+
+
+New Features: 
+- None
+
+
+Fixes/Changes: 
+
+- Version number correction
+- Change teh startPlay() from PRIVATE to PUBLIC.
+
+
+
+
+
+Version 0.2.4:---------------------------------------------------------------
+
+Changes for developers:
+- None
+
+
+New Features: 
+
+1- AppOpen Ad Implemented.
+2- Theme Pixel Added.
+
+
+Fixes/Changes: 
+
+- The issue where the popup purchase doesn't show when the SetLevelStartID is set in the ShowInterstitialAdAtLevelCompletion's callback and a delay needs to be added.
+
+
+
+
+
+Version 0.2.3:---------------------------------------------------------------
+
+Changes for developers:
+- AppCentral.StartPlay() method depricated. Form now on need to call this method.
+- AppCentral.OnLevelComplete() should be call on every level complete.
+- Follow the Bright-SDK implentation from the AC-SDK DOC.
+
+
+New Features: 
+
+1- AppCentral.OnLevelComplete() method added.
+2- Bright-SDK implented.
+3- All SDKs Upgraded to latest avalible versins.
+
+
+Fixes/Changes: 
+
+- None
+
+
+Version 0.2.0:---------------------------------------------------------------
+
+Changes for developers:
+- None
+
+
+New Features: 
+
+1- RateUs Overload method added with the OnRateUsClose-Callback.
+
+
+Fixes/Changes: 
+
+1- Smartlook wasn't working due to missing initialization. Fixed.
+   issue raised up in verion 0.1.10
+
+
+
+
+Version 0.1.10:---------------------------------------------------------------
+
+Changes for developers:
+- None
+
+
+New Features: 
+
+1- Added AppToRate feature to the RATE_US implementation.
+2- Add the AC_SDK version to the API URL.
+3- Banner Pixels added.
+4- Now developers can ENABLE/DISABLE AC_SDK logs from the AC_SDK settings menu.
+
+
+Fixes/Changes: 
+
+1- "IsPurchaseProcessing" bool was never set back to "FALSE" due to not receiving callback from unity IAP, added a force reset feature. which will reset this bool to "FALSE" after 6 sec.
+2- More attributes added to paywall_pixels 
+	-presentationStyle
+	-buttonText
+    -descriptionText
+3- 	Revise the implementation of SHOW_LOCATION variable for DYNAMIC_PAYWALL. 
+	Now, dynamic paywall will look for all the locations in SHOW_LOCATION, and will show up on each location.
+
+
+
+
+Version 0.1.9:---------------------------------------------------------------
+
+Changes for developers:
+- None
+
+
+New Features: 
+- None
+
+
+Fixes/Changes: 
+
+1- Banner BG color set to transparent.
+2- Removed TIMESCALE=0 from "AppCentralPurchsePopUpController", which makes the application to stuck due to not receiving a callback sometimes.
+3- SMARTLOOK initialization moved from ATT_StatusUpdate Event to "onLoad" Event as it misses to record the first session due to early initialization before receiving responce from AC server.
+4- paywall pixel TYPE "Standerd" changes to "default".
+
+
+
+Version 0.1.8:---------------------------------------------------------------
+
+Changes for developers:
+1- If your project conitains multiple themes, and you are using "ThemeChangeEventReceiver" then please open up "OnthemeChange" script and make changes based on new methos we added. 
+	check "Remote theme switching" section of the documentation for more details.
+2- Now you can listen to "ShowInterstitalAdAtLevelCompletion" close event.
+	check "Show INTERSTITIAL Ads at Level Complete" section of the documentation for more details.
+
+
+
+New Features: 
+1- Added a variable "enableRecording" to the SMARTLOOK controller.
+2- Added a "CLOSE" callback to the "ShowInterstitalAdAtLevelCompletion()" method.
+
+
+Fixes/Changes: 
+
+1- All the dynamic paywall will be shown to both UnSUBSCRIBED/SUBSCRIBED user.
+2- pixelName = "dynamic_paywall_pixel" and type is set to each paywall type.
+3- "AppCentralThemeSwitchController" logic revised, and "ThemeChangeEventReceiver" also changed. 
+
+
+Version 0.1.7:---------------------------------------------------------------
+
+Changes for developers:
+- None.
+
+New Features: 
+- None.
+
+Fixes: 
+1- MidGame Paywall/Level Complete Ad: "ShowInterstitalAdAtLevelCompletion" method handles both the Midgame Paywall and Interstial Ad at level complete. depending on the perms from the server and your game.
+
+
+Version 0.1.6:---------------------------------------------------------------
+
+Changes for developers:
+1- Makesure to import the "In App Purchasing" package in you project as soon as you import the AC SDK unity package.
+2- DOC regarding midgame paywall updated.
+3- New* Listen to the paywall evenst OPEN/CLOSE/USER-SUBSCRIBED added to the DOC.
+
+
+New Features: 
+1- Add Paywall EVENTS for the developers to know about Paywall OPEN/CLOSE/USER-SUBSCRIBED.
+
+Fixes: 
+1- MidGame Paywall was directly linked to the Interstitial, So unliked them, DOC Updated
+2- After PopUpPurchase user automatically get Subscribed in EDITOR. Fixed
+3- paywall pixel names updated again.
+4- "The dynamic paywall - the terms and privacy policy links doesn't work": Hardwired both the links in the AppCentral Settings. Developer wouldn't be able to change it anymore.
+
+
+Version 0.1.5:---------------------------------------------------------------
+
+Changes for developers:
+None: Same implementatin as V0.1.4
+
+
+New Features: 
+None.
+
+Fixes: 
+1- Application Stuck a Loading: Since we move the onLoad event to After IAP initialization.
+	In that scenario, if the IAP is disabled then IAP initialization Event doesn't happen. So SDK stays stuck at that point.
+
+Version 0.1.4:---------------------------------------------------------------
+
+Changes for developers:
+None: Same implementatin as V0.1.3
+
+
+New Features: 
+1- Updated Appcentral API URL version from 3.6.4 to 4.0.0;
+
+Fixes: 
+1- Paywall Pixel names corrected.
+2- updated: aPI_Variables.idfa = "testing";
+3- Rewarded ad was not showing after user subscribed. Fixed.
+4- TMP shader missing issue: Added TMP required shader to The SDK.
+
+
+Version 0.1.3:---------------------------------------------------------------
+
+
+Changes for developers:
+None: Same implementatin as V0.1.2
+
+New Features: 
+1- Popup purchase.
+2- Added Two more Custom Dimensions to GA notifications settings. (notifications.Provisional and notifications.Ephemeral)
+3- GameAnalytics Build version will also get updated automatically to something like ( 2.9.7).
+4- Updated the URL to be compatible with ROBLOX.
+
+Fixes: 
+1- RateUs pixel issue fixed.
+2- Paywall Subscription Pixel issue is fixed.
+3- App Jump Issue fixed.
+

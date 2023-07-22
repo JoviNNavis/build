@@ -1,0 +1,11 @@
+framework module brdsdk {
+  umbrella header "brdsdk.h"
+
+  export *
+  module * { export * }
+}
+
+module brdsdk.Swift {
+    header "brdsdk-Swift.h"
+    requires objc
+}
