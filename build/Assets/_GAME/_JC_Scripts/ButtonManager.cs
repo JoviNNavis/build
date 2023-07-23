@@ -88,7 +88,12 @@ public class ButtonManager : MonoBehaviour
         {
             AppCentralGameAnalyticsEvents.SendLevelProgressionEvent(GameAnalyticsSDK.GAProgressionStatus.Start, Progresion01.bonus, Progresion02.@default, index);
         }
-       
+        else
+        {
+            AppCentralGameAnalyticsEvents.SendLevelProgressionEvent(GameAnalyticsSDK.GAProgressionStatus.Start, Progresion01.level, Progresion02.@default, index);
+
+        }
+
         isstart = false;
         settingsbutton = GameObject.FindGameObjectWithTag("sb");
         //nextLvl();
