@@ -9248,10 +9248,31 @@ MonoBehaviour:
   newLevelPanel: {fileID: 0}
   chestPanel: {fileID: 0}
   ChestlosePanel: {fileID: 0}
-  countdownPanel: {fileID: 0}
+  OldcountdownPanel: {fileID: 0}
+  NewcountdownPanel: {fileID: 0}
   countdownpanel_ad: {fileID: 0}
   SculptPanel: {fileID: 0}
   knifeSkniPanel: {fileID: 0}
+  newCountpanel2: {fileID: 0}
+  newCountpanel3: {fileID: 0}
+  win_win_FailPanel: {fileID: 0}
+  fail_win_FailPanel: {fileID: 0}
+  win_fail_FailPanel: {fileID: 0}
+  fail_fail_FailPanel: {fileID: 0}
+  f_w_w_winPanel: {fileID: 0}
+  w_f_w_winPanel: {fileID: 0}
+  w_w_f_winPanel: {fileID: 0}
+  f_f_f_winPanel: {fileID: 0}
+  w_f_f_winPanel: {fileID: 0}
+  f_f_w_winPanel: {fileID: 0}
+  f_w_f_winPanel: {fileID: 0}
+  w_w_w_failPanel: {fileID: 0}
+  f_w_w_failPanel: {fileID: 0}
+  w_f_w_failPanel: {fileID: 0}
+  w_w_f_failPanel: {fileID: 0}
+  w_f_f_failPanel: {fileID: 0}
+  f_f_w_failPanel: {fileID: 0}
+  f_w_f_failPanel: {fileID: 0}
   bonusKnife: {fileID: 0}
   pressbutton: {fileID: 0}
   up: {fileID: 0}
@@ -9286,6 +9307,14 @@ MonoBehaviour:
   playerImage: {fileID: 0}
   winValue: 0
   spinBall: {fileID: 0}
+  adPanel1: {fileID: 0}
+  adPanel2: {fileID: 0}
+  adPanel3: {fileID: 0}
+  adPanel4: {fileID: 0}
+  adPanel5: {fileID: 0}
+  adPanel6: {fileID: 0}
+  adPanel7: {fileID: 0}
+  adPanel8: {fileID: 0}
 --- !u!4 &2108150814
 Transform:
   m_ObjectHideFlags: 0

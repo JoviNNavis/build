@@ -9,7 +9,8 @@ using AppCentralAPI;
 public class ButtonManager : MonoBehaviour
 {
     private int currSceneIndex;
-
+    [SerializeField]
+   private int index;
     private int loadSceneIndex;
 
     public KnifeScript1 playerKnife;
@@ -80,8 +81,14 @@ public class ButtonManager : MonoBehaviour
 
     void Start()
     {
-
+        index = 0;
         BeforeSkybox = RenderSettings.skybox;
+
+        if(SceneManager.GetActiveScene().buildIndex ==6)
+        {
+            AppCentralGameAnalyticsEvents.SendLevelProgressionEvent(GameAnalyticsSDK.GAProgressionStatus.Start, Progresion01.bonus, Progresion02.@default, index);
+        }
+       
         isstart = false;
         settingsbutton = GameObject.FindGameObjectWithTag("sb");
         //nextLvl();
@@ -1004,7 +1011,7 @@ public class ButtonManager : MonoBehaviour
             SceneManager.LoadScene(loadSceneIndex);
         else
             return;*/
-
+        index += 1;
         GameData.SetCurrentScene(GameData.GetCurrentScene() + 1);
         //if (GameData.GetCurrentScene() >= 11)
         //{
