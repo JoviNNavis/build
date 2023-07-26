@@ -472,6 +472,123 @@ public class ButtonManager : MonoBehaviour
         }
     }
 
+    public void noThanksBonusLvl()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == false && lvl4Fail.lvl4fail == false && mid.lvl5fail == false)
+        {
+            levelPanel.SetActive(true);            //win_win_win_win done
+            Debug.Log("WIN_WIN_WIN_WIN");
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == false && lvl4Fail.lvl4fail == false && mid.lvl5fail == false)
+        {
+            f_w_w_winPanel.SetActive(true);         //fail_win_win_win done
+            Debug.Log("FAIL_WIN_WIN_WIN");
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == true && lvl4Fail.lvl4fail == false && mid.lvl5fail == false)
+        {
+            w_f_w_winPanel.SetActive(true);     //win_fail_win_win done
+            Debug.Log("FAIL_WIN_WIN");
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == false && lvl4Fail.lvl4fail == true && mid.lvl5fail == false)
+        {
+            w_w_f_winPanel.SetActive(true);     //win_win_fail_win done
+            Debug.Log("WIN_WIN_FAIL_WIN");
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == true && lvl4Fail.lvl4fail == true && mid.lvl5fail == false)
+        {
+            f_f_f_winPanel.SetActive(true);     //fail_fail_fail_win done
+            Debug.Log("FAIL_FAIL_FAIL_WIN");
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == true && lvl4Fail.lvl4fail == true && mid.lvl5fail == false)
+        {
+            w_f_f_winPanel.SetActive(true);     //win_fail_fail_win done
+            Debug.Log("WIN_FAIL_FAIL_WIN");
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == true && lvl4Fail.lvl4fail == false && mid.lvl5fail == false)
+        {
+            f_f_w_winPanel.SetActive(true);     //fail_fail_win_win done
+            Debug.Log("FAIL_FAIL_WIN_WIN");
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == false && lvl4Fail.lvl4fail == true && mid.lvl5fail == false)
+        {
+            f_w_f_winPanel.SetActive(true);     //fail_win_fail_win done
+            Debug.Log("FAIL_WIN_FAIL_WIN");
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == false && lvl4Fail.lvl4fail == false && mid.lvl5fail == true)
+        {
+            w_w_w_failPanel.SetActive(true);            //win_win_win_fail done
+            Debug.Log("WIN_WIN_WIN_FAIL");
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == false && lvl4Fail.lvl4fail == false && mid.lvl5fail == true)
+        {
+            f_w_w_failPanel.SetActive(true);         //fail_win_win_fail done
+            Debug.Log("FAIL_WIN_WIN_FAIL");
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == true && lvl4Fail.lvl4fail == false && mid.lvl5fail == true)
+        {
+            w_f_w_failPanel.SetActive(true);     //win_fail_win_fail done
+            Debug.Log("FAIL_WIN_WIN_FAIL");
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == false && lvl4Fail.lvl4fail == true && mid.lvl5fail == true)
+        {
+            w_w_f_failPanel.SetActive(true);     //win_win_fail_fail done
+            Debug.Log("WIN_WIN_FAIL_FAIL");
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == true && lvl4Fail.lvl4fail == true && mid.lvl5fail == true)
+        {
+            failedlevelPanel.SetActive(true);     //fail_fail_fail_fail done
+            Debug.Log("FAIL_FAIL_FAIL_FAIL");
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == true && lvl4Fail.lvl4fail == true && mid.lvl5fail == true)
+        {
+            w_f_f_failPanel.SetActive(true);     //win_fail_fail_fail done
+            Debug.Log("WIN_FAIL_FAIL_FAIL");
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == true && lvl4Fail.lvl4fail == false && mid.lvl5fail == true)
+        {
+            f_f_w_failPanel.SetActive(true);     //fail_fail_win_fail done
+            Debug.Log("FAIL_FAIL_WIN_WIN");
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == false && lvl4Fail.lvl4fail == true && mid.lvl5fail == true)
+        {
+            f_w_f_failPanel.SetActive(true);     //fail_win_fail_fail
+            Debug.Log("FAIL_WIN_FAIL_FAIL");
+            Destroy(rewardPanel);
+        }
+    }
+
     public void Restart()
     {
         SoundManger.soundctrl.playClip(tapSound);
@@ -781,30 +898,769 @@ public class ButtonManager : MonoBehaviour
     public void ExtraRewardx2()
     {
         SoundManger.soundctrl.playClip(tapSound);
-        rewardPanel.SetActive(false);
         cashScript.cashValue += 1050;
         OldcountdownPanel.SetActive(true);
         GameData.SetCoins(cashScript.cashValue);
-        
+        Destroy(rewardPanel);
+
     }
 
     public void ExtraRewardx3()
     {
         SoundManger.soundctrl.playClip(tapSound);
-        rewardPanel.SetActive(false);
         cashScript.cashValue += 1575;
         OldcountdownPanel.SetActive(true);
         GameData.SetCoins(cashScript.cashValue);
+        Destroy(rewardPanel);
     }
 
     public void ExtraRewardx5()
     {
         SoundManger.soundctrl.playClip(tapSound);
-        rewardPanel.SetActive(false);
         cashScript.cashValue += 2625;
         OldcountdownPanel.SetActive(true);
         GameData.SetCoins(cashScript.cashValue);
+        Destroy(rewardPanel);
     }
+
+    public void ExtraRewardx2lvl3()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+        
+        if (mid.lvl2Fail == true)
+        {           
+            cashScript.cashValue += 1050;
+            NewcountdownPanel.SetActive(true);           
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+        else
+        {
+            cashScript.cashValue += 1050;
+            OldcountdownPanel.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+    }
+
+    public void ExtraRewardx3lvl3()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl2Fail == true)
+        {
+            cashScript.cashValue += 1575;
+            NewcountdownPanel.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+        else
+        {
+            cashScript.cashValue += 1575;
+            OldcountdownPanel.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+    }
+
+    public void ExtraRewardx5lvl3()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl2Fail == true)
+        {
+            cashScript.cashValue += 2625;
+            NewcountdownPanel.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+        else
+        {
+            cashScript.cashValue += 2625;
+            OldcountdownPanel.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+    }
+
+    public void ExtraRewardx2lvl4()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == false)
+        {
+            cashScript.cashValue += 1050;
+            OldcountdownPanel.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+        if (mid.lvl2Fail == false && mid.lvl3Fail == true)
+        {
+            cashScript.cashValue += 1050;
+            NewcountdownPanel.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel); ;
+        }
+        if (mid.lvl2Fail == true && mid.lvl3Fail == false)
+        {
+            cashScript.cashValue += 1050;
+            newCountpanel2.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+        if (mid.lvl2Fail == true && mid.lvl3Fail == true)
+        {
+            cashScript.cashValue += 1050;
+            newCountpanel3.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+    }
+
+    public void ExtraRewardx3lvl4()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == false)
+        {
+            cashScript.cashValue += 1575;
+            OldcountdownPanel.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+        if (mid.lvl2Fail == false && mid.lvl3Fail == true)
+        {
+            cashScript.cashValue += 1575;
+            NewcountdownPanel.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel); ;
+        }
+        if (mid.lvl2Fail == true && mid.lvl3Fail == false)
+        {
+            cashScript.cashValue += 1575;
+            newCountpanel2.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+        if (mid.lvl2Fail == true && mid.lvl3Fail == true)
+        {
+            cashScript.cashValue += 1575;
+            newCountpanel3.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+    }
+
+    public void ExtraRewardx5lvl4()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == false)
+        {
+            cashScript.cashValue += 2625;
+            OldcountdownPanel.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+        if (mid.lvl2Fail == false && mid.lvl3Fail == true)
+        {
+            cashScript.cashValue += 2625;
+            NewcountdownPanel.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel); ;
+        }
+        if (mid.lvl2Fail == true && mid.lvl3Fail == false)
+        {
+            cashScript.cashValue += 2625;
+            newCountpanel2.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+        if (mid.lvl2Fail == true && mid.lvl3Fail == true)
+        {
+            cashScript.cashValue += 2625;
+            newCountpanel3.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+    }
+
+    public void ExtraRewardx2lvl5()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == false && lvl4Fail.lvl4fail == false && mid.lvl5fail == false)
+        {
+            cashScript.cashValue += 1050;
+            adPanel1.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == false && lvl4Fail.lvl4fail == false && mid.lvl5fail == false)
+        {
+            cashScript.cashValue += 1050;
+            adPanel2.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == true && lvl4Fail.lvl4fail == false && mid.lvl5fail == false)
+        {
+            cashScript.cashValue += 1050;
+            adPanel3.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == false && lvl4Fail.lvl4fail == true && mid.lvl5fail == false)
+        {
+            cashScript.cashValue += 1050;
+            adPanel4.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == true && lvl4Fail.lvl4fail == true && mid.lvl5fail == false)
+        {
+            cashScript.cashValue += 1050;
+            adPanel5.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == true && lvl4Fail.lvl4fail == true && mid.lvl5fail == false)
+        {
+            cashScript.cashValue += 1050;
+            adPanel6.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == true && lvl4Fail.lvl4fail == false && mid.lvl5fail == false)
+        {
+            cashScript.cashValue += 1050;
+            adPanel7.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == false && lvl4Fail.lvl4fail == true && mid.lvl5fail == false)
+        {
+            cashScript.cashValue += 1050;
+            adPanel8.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+    }
+
+    public void ExtraRewardx3lvl5()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == false && lvl4Fail.lvl4fail == false && mid.lvl5fail == false)
+        {
+            cashScript.cashValue += 1575;
+            adPanel1.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == false && lvl4Fail.lvl4fail == false && mid.lvl5fail == false)
+        {
+            cashScript.cashValue += 1575;
+            adPanel2.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == true && lvl4Fail.lvl4fail == false && mid.lvl5fail == false)
+        {
+            cashScript.cashValue += 1575;
+            adPanel3.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == false && lvl4Fail.lvl4fail == true && mid.lvl5fail == false)
+        {
+            cashScript.cashValue += 1575;
+            adPanel4.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == true && lvl4Fail.lvl4fail == true && mid.lvl5fail == false)
+        {
+            cashScript.cashValue += 1575;
+            adPanel5.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == true && lvl4Fail.lvl4fail == true && mid.lvl5fail == false)
+        {
+            cashScript.cashValue += 1575;
+            adPanel6.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == true && lvl4Fail.lvl4fail == false && mid.lvl5fail == false)
+        {
+            cashScript.cashValue += 1575;
+            adPanel7.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == false && lvl4Fail.lvl4fail == true && mid.lvl5fail == false)
+        {
+            cashScript.cashValue += 1575;
+            adPanel8.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+    }
+
+    public void ExtraRewardx5lvl5()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == false && lvl4Fail.lvl4fail == false && mid.lvl5fail == false)
+        {
+            cashScript.cashValue += 2625;
+            adPanel1.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == false && lvl4Fail.lvl4fail == false && mid.lvl5fail == false)
+        {
+            cashScript.cashValue += 2625;
+            adPanel2.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == true && lvl4Fail.lvl4fail == false && mid.lvl5fail == false)
+        {
+            cashScript.cashValue += 2625;
+            adPanel3.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == false && lvl4Fail.lvl4fail == true && mid.lvl5fail == false)
+        {
+            cashScript.cashValue += 2625;
+            adPanel4.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == true && lvl4Fail.lvl4fail == true && mid.lvl5fail == false)
+        {
+            cashScript.cashValue += 2625;
+            adPanel5.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == false && mid.lvl3Fail == true && lvl4Fail.lvl4fail == true && mid.lvl5fail == false)
+        {
+            cashScript.cashValue += 2625;
+            adPanel6.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == true && lvl4Fail.lvl4fail == false && mid.lvl5fail == false)
+        {
+            cashScript.cashValue += 2625;
+            adPanel7.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl2Fail == true && mid.lvl3Fail == false && lvl4Fail.lvl4fail == true && mid.lvl5fail == false)
+        {
+            cashScript.cashValue += 2625;
+            adPanel8.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+    }
+
+    public void ExtraRewardx2lvl8()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl7fail == true)
+        {
+            cashScript.cashValue += 1050;
+            NewcountdownPanel.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+        else
+        {
+            cashScript.cashValue += 1050;
+            OldcountdownPanel.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+    }
+
+    public void ExtraRewardx3lvl8()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl7fail == true)
+        {
+            cashScript.cashValue += 1575;
+            NewcountdownPanel.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+        else
+        {
+            cashScript.cashValue += 1575;
+            OldcountdownPanel.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+    }
+
+    public void ExtraRewardx5lvl8()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl7fail == true)
+        {
+            cashScript.cashValue += 2625;
+            NewcountdownPanel.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+        else
+        {
+            cashScript.cashValue += 2625;
+            OldcountdownPanel.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+    }
+
+    public void ExtraRewardx2lvl9()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl7fail == false && mid.lvl8fail == false)
+        {
+            cashScript.cashValue += 1050;
+            OldcountdownPanel.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+        if (mid.lvl7fail == false && mid.lvl8fail == true)
+        {
+            cashScript.cashValue += 1050;
+            NewcountdownPanel.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel); ;
+        }
+        if (mid.lvl7fail == true && mid.lvl8fail == false)
+        {
+            cashScript.cashValue += 1050;
+            newCountpanel2.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+        if (mid.lvl7fail == true && mid.lvl8fail == true)
+        {
+            cashScript.cashValue += 1050;
+            newCountpanel3.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+    }
+
+    public void ExtraRewardx3lvl9()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl7fail == false && mid.lvl8fail == false)
+        {
+            cashScript.cashValue += 1575;
+            OldcountdownPanel.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+        if (mid.lvl7fail == false && mid.lvl8fail == true)
+        {
+            cashScript.cashValue += 1575;
+            NewcountdownPanel.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+        if (mid.lvl7fail == true && mid.lvl8fail == false)
+        {
+            cashScript.cashValue += 1575;
+            newCountpanel2.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+        if (mid.lvl7fail == true && mid.lvl8fail == true)
+        {
+            cashScript.cashValue += 1575;
+            newCountpanel3.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+    }
+
+    public void ExtraRewardx5lvl9()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl7fail == false && mid.lvl8fail == false)
+        {
+            cashScript.cashValue += 2625;
+            OldcountdownPanel.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+        if (mid.lvl7fail == false && mid.lvl8fail == true)
+        {
+            cashScript.cashValue += 2625;
+            NewcountdownPanel.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel); ;
+        }
+        if (mid.lvl7fail == true && mid.lvl8fail == false)
+        {
+            cashScript.cashValue += 2625;
+            newCountpanel2.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+        if (mid.lvl7fail == true && mid.lvl8fail == true)
+        {
+            cashScript.cashValue += 2625;
+            newCountpanel3.SetActive(true);
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+    }
+
+    public void ExtraRewardx2lvl10()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl7fail == false && mid.lvl8fail == false && mid.lvl9fail == false && mid.lvl10fail == false)
+        {
+            cashScript.cashValue += 1050;
+            adPanel1.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == false && mid.lvl9fail == false && mid.lvl10fail == false)
+        {
+            cashScript.cashValue += 1050;
+            adPanel2.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == false && mid.lvl8fail == true && mid.lvl9fail == false && mid.lvl10fail == false)
+        {
+            cashScript.cashValue += 1050;
+            adPanel3.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == false && mid.lvl8fail == false && mid.lvl9fail == true && mid.lvl10fail == false)
+        {
+            cashScript.cashValue += 1050;
+            adPanel4.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == true && mid.lvl9fail == true && mid.lvl10fail == false)
+        {
+            cashScript.cashValue += 1050;
+            adPanel5.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == false && mid.lvl8fail == true && mid.lvl9fail == true && mid.lvl10fail == false)
+        {
+            cashScript.cashValue += 1050;
+            adPanel6.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == true && mid.lvl9fail == false && mid.lvl10fail == false)
+        {
+            cashScript.cashValue += 1050;
+            adPanel7.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == false && mid.lvl9fail == true && mid.lvl10fail == false)
+        {
+            cashScript.cashValue += 1050;
+            adPanel8.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+    }
+
+    public void ExtraRewardx3lvl10()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl7fail == false && mid.lvl8fail == false && mid.lvl9fail == false && mid.lvl10fail == false)
+        {
+            cashScript.cashValue += 1575;
+            adPanel1.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == false && mid.lvl9fail == false && mid.lvl10fail == false)
+        {
+            cashScript.cashValue += 1575;
+            adPanel2.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == false && mid.lvl8fail == true && mid.lvl9fail == false && mid.lvl10fail == false)
+        {
+            cashScript.cashValue += 1575;
+            adPanel3.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == false && mid.lvl8fail == false && mid.lvl9fail == true && mid.lvl10fail == false)
+        {
+            cashScript.cashValue += 1575;
+            adPanel4.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == true && mid.lvl9fail == true && mid.lvl10fail == false)
+        {
+            cashScript.cashValue += 1575;
+            adPanel5.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == false && mid.lvl8fail == true && mid.lvl9fail == true && mid.lvl10fail == false)
+        {
+            cashScript.cashValue += 1575;
+            adPanel6.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == true && mid.lvl9fail == false && mid.lvl10fail == false)
+        {
+            cashScript.cashValue += 1575;
+            adPanel7.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == false && mid.lvl9fail == true && mid.lvl10fail == false)
+        {
+            cashScript.cashValue += 1575;
+            adPanel8.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+    }
+
+    public void ExtraRewardx5lvl10()
+    {
+        SoundManger.soundctrl.playClip(tapSound);
+
+        if (mid.lvl7fail == false && mid.lvl8fail == false && mid.lvl9fail == false && mid.lvl10fail == false)
+        {
+            cashScript.cashValue += 2625;
+            adPanel1.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == false && mid.lvl9fail == false && mid.lvl10fail == false)
+        {
+            cashScript.cashValue += 2625;
+            adPanel2.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == false && mid.lvl8fail == true && mid.lvl9fail == false && mid.lvl10fail == false)
+        {
+            cashScript.cashValue += 2625;
+            adPanel3.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == false && mid.lvl8fail == false && mid.lvl9fail == true && mid.lvl10fail == false)
+        {
+            cashScript.cashValue += 2625;
+            adPanel4.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == true && mid.lvl9fail == true && mid.lvl10fail == false)
+        {
+            cashScript.cashValue += 2625;
+            adPanel5.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == false && mid.lvl8fail == true && mid.lvl9fail == true && mid.lvl10fail == false)
+        {
+            cashScript.cashValue += 2625;
+            adPanel6.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == true && mid.lvl9fail == false && mid.lvl10fail == false)
+        {
+            cashScript.cashValue += 2625;
+            adPanel7.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+
+        if (mid.lvl7fail == true && mid.lvl8fail == false && mid.lvl9fail == true && mid.lvl10fail == false)
+        {
+            cashScript.cashValue += 2625;
+            adPanel8.SetActive(true);    //fail_fail
+            GameData.SetCoins(cashScript.cashValue);
+            Destroy(rewardPanel);
+        }
+    }
+
 
     public void ExtraChest()
     {

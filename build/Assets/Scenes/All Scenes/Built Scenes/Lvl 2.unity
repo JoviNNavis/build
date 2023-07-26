@@ -22033,6 +22033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe6d57188392aa4786fdbe1894bae5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
   playerKnife: {fileID: 0}
   knifePlayer2: {fileID: 1817783779}
   knifeplayerrr: {fileID: 0}
@@ -22057,10 +22058,12 @@ MonoBehaviour:
   chestPanel: {fileID: 0}
   ChestlosePanel: {fileID: 268112907}
   OldcountdownPanel: {fileID: 461147659}
-  NewcountdownPanel: {fileID: 0}
+  NewcountdownPanel: {fileID: 461147659}
   countdownpanel_ad: {fileID: 0}
   SculptPanel: {fileID: 0}
   knifeSkniPanel: {fileID: 0}
+  newCountpanel2: {fileID: 0}
+  newCountpanel3: {fileID: 0}
   win_win_FailPanel: {fileID: 0}
   fail_win_FailPanel: {fileID: 0}
   win_fail_FailPanel: {fileID: 0}
@@ -22113,6 +22116,14 @@ MonoBehaviour:
   playerImage: {fileID: 0}
   winValue: 0
   spinBall: {fileID: 1482162624}
+  adPanel1: {fileID: 0}
+  adPanel2: {fileID: 0}
+  adPanel3: {fileID: 0}
+  adPanel4: {fileID: 0}
+  adPanel5: {fileID: 0}
+  adPanel6: {fileID: 0}
+  adPanel7: {fileID: 0}
+  adPanel8: {fileID: 0}
 --- !u!1 &502008678
 GameObject:
   m_ObjectHideFlags: 0
@@ -22961,6 +22972,9 @@ MonoBehaviour:
   islvl3: 0
   islvl4: 0
   islvl5: 0
+  islvl8: 0
+  islvl9: 0
+  islvl10: 0
 --- !u!1 &526831218
 GameObject:
   m_ObjectHideFlags: 0
@@ -25705,6 +25719,9 @@ MonoBehaviour:
   islvl3: 0
   islvl4: 0
   islvl5: 0
+  islvl8: 0
+  islvl9: 0
+  islvl10: 0
 --- !u!1 &624861572
 GameObject:
   m_ObjectHideFlags: 0
@@ -25839,6 +25856,9 @@ MonoBehaviour:
   islvl3: 0
   islvl4: 0
   islvl5: 0
+  islvl8: 0
+  islvl9: 0
+  islvl10: 0
 --- !u!1 &629356711
 GameObject:
   m_ObjectHideFlags: 0
@@ -27461,6 +27481,9 @@ MonoBehaviour:
   islvl3: 0
   islvl4: 0
   islvl5: 0
+  islvl8: 0
+  islvl9: 0
+  islvl10: 0
 --- !u!1 &716137081
 GameObject:
   m_ObjectHideFlags: 0
@@ -34963,6 +34986,16 @@ MonoBehaviour:
   aiTarget: {fileID: 920293312}
   comboText: {fileID: 2140267583}
   lostPanel: {fileID: 1628282492}
+  lostPanelwin_fail: {fileID: 0}
+  lostPanelfail_win: {fileID: 0}
+  lostPanelfail_fail: {fileID: 0}
+  lostPanel1: {fileID: 0}
+  lostPanel2: {fileID: 0}
+  lostPanel3: {fileID: 0}
+  lostPanel4: {fileID: 0}
+  lostPanel5: {fileID: 0}
+  lostPanel6: {fileID: 0}
+  lostPanel7: {fileID: 0}
   islevelcompleted: 0
   isLost: 0
   emptyObj: {fileID: 527990809}
@@ -34975,6 +35008,9 @@ MonoBehaviour:
   BelowLevel5: 1
   fail: {fileID: 980489073}
   newFail: {fileID: 0}
+  lvl3: 0
+  lvl4: 0
+  lvl5: 0
 --- !u!54 &837195052
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -37013,6 +37049,9 @@ MonoBehaviour:
   islvl3: 0
   islvl4: 0
   islvl5: 0
+  islvl8: 0
+  islvl9: 0
+  islvl10: 0
 --- !u!1 &920293312
 GameObject:
   m_ObjectHideFlags: 0
@@ -38523,6 +38562,9 @@ MonoBehaviour:
   islvl3: 0
   islvl4: 0
   islvl5: 0
+  islvl8: 0
+  islvl9: 0
+  islvl10: 0
 --- !u!1 &978043308
 GameObject:
   m_ObjectHideFlags: 0
@@ -47890,6 +47932,9 @@ MonoBehaviour:
   islvl3: 0
   islvl4: 0
   islvl5: 0
+  islvl8: 0
+  islvl9: 0
+  islvl10: 0
 --- !u!1 &1176789027
 GameObject:
   m_ObjectHideFlags: 0
@@ -71456,6 +71501,9 @@ MonoBehaviour:
   islvl3: 0
   islvl4: 0
   islvl5: 0
+  islvl8: 0
+  islvl9: 0
+  islvl10: 0
 --- !u!96 &2007718624
 TrailRenderer:
   serializedVersion: 2
