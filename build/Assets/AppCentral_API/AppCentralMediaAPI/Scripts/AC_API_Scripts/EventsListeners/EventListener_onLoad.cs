@@ -23,7 +23,7 @@ namespace AppCentralCore
             oneTime = false;
 
 
-        //   ApplovinAdManager.Instance.aL_AppOpenImpl.ShowAdIfReady(); 
+            //ApplovinAdManager.Instance.aL_AppOpenImpl.ShowAdIfReady(); 
 
             ACLogger.UserDebug(": EventListener_onLoad");
 
