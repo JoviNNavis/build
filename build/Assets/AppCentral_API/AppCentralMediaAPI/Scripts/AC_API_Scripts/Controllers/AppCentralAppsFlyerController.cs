@@ -30,7 +30,7 @@ namespace AppCentralCore
 
 #else
 
-            ACLogger.UserDebugError(": AppsFlyer is disabled in the AppCentral SDK Setting please enable it othrwise AppCentral SDK will initilaze correctly");
+            ACLogger.UserError(": AppsFlyer is disabled in the AppCentral SDK Setting please enable it othrwise AppCentral SDK will initilaze correctly");
 
 #endif
         }

@@ -17,6 +17,17 @@ namespace GH
             if (Instance == null)
                 Instance = this;
         }
+        [SerializeField]
+        private AL_BannerImpl aL_Banner;
+
+        [SerializeField]
+        private AL_InterstitialImpl aL_Interstitial;
+
+        [SerializeField]
+        public AL_AppOpenImpl aL_AppOpenImpl;
+
+        [SerializeField]
+        private AL_RewardedImpl aL_Rewarded;
 
 #if AC_APPLOVIN
 
@@ -54,18 +65,7 @@ namespace GH
             HideBanner();
         }
 
-        [SerializeField]
-        private AL_BannerImpl aL_Banner;
-
-        [SerializeField]
-        private AL_InterstitialImpl aL_Interstitial;
-
-        [SerializeField]
-        public AL_AppOpenImpl aL_AppOpenImpl;
-
-        [SerializeField]
-        private AL_RewardedImpl aL_Rewarded;
-
+    
         public void InitializeAppLovin()
         {
             ACLogger.UserDebug(": InitializeAppLovin is Called");

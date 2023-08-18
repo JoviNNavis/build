@@ -654,6 +654,6 @@ public class AppCentralInAppPurchaser : MonoBehaviour, IStoreListener
 
     public void OnInitializeFailed(InitializationFailureReason error, string message)
     {
-        throw new NotImplementedException();
+        ((IStoreListener)Instance).OnInitializeFailed(error, message);
     }
 }

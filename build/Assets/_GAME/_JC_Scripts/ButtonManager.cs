@@ -121,9 +121,8 @@ public class ButtonManager : MonoBehaviour
         cam.SetActive(false);
         settingsbutton.SetActive(false);
         button.gameObject.SetActive(false);
-        StartCoroutine(playButton1());
         appce();
-        
+        StartCoroutine(playButton1());
      //   currSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
        // PlayerPrefs.SetInt("SavedScene", currSceneIndex);
       //  GameData.SetCurrentScene(currSceneIndex);
