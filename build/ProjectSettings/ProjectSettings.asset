@@ -790,7 +790,7 @@ PlayerSettings:
   scriptingDefineSymbols:
     Android: DREAMTECK_SPLINES;MOREMOUNTAINS_NICEVIBRATIONS;gameanalytics_max_enabled
     Standalone: DREAMTECK_SPLINES
-    iPhone: DREAMTECK_SPLINES;MOREMOUNTAINS_NICEVIBRATIONS;gameanalytics_max_enabled;AC_APPSFLYER;AC_GAMEANALYTICS;AC_MEDIA_SDK
+    iPhone: DREAMTECK_SPLINES;MOREMOUNTAINS_NICEVIBRATIONS;gameanalytics_max_enabled;AC_APPSFLYER;AC_GAMEANALYTICS;AC_MEDIA_SDK;AC_SMARTLOOK
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
@@ -866,7 +866,13 @@ PlayerSettings:
   XboxOneOverrideIdentityName: 
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    Build: 1
+    Collab: 0
+    Game Performance: 0
+    Purchasing: 0
+    UDP: 0
+    Unity Ads: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -881,11 +887,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 
+  cloudProjectId: cd30852f-0363-4210-9d37-cb512abd40c0
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: KnifeBounce3D (1)
+  organizationId: hari33841
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 

@@ -17,9 +17,9 @@ MonoBehaviour:
     ShowLogs: 1
     UseAppCentralSDKPhase2: 0
     GameIcon: {fileID: 21300000, guid: c5b4d0a1c303a224599da78a26fbdcf3, type: 3}
-    GameName: KnifeBounce3D
-    BundleID: com.justcrypto.knifebounce
-    IOSAppID: 6446150855
+    GameName: KnifeBounce3D!
+    BundleID: com.kf3.knifebounce3d
+    IOSAppID: 6461382120
     OverRide_URLTermsOfConditions: 0
     URLTermsOfConditions: https://www.app-central.com/terms
     OverRide_URLPrivacyPolicy: 0
